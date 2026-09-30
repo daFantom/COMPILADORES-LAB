@@ -6,15 +6,15 @@ declaration_list: declaration+ ;
 
 declaration: var_declaration | func_declaration ;
 
-var_declaration: (INT_VAR ID ';') | (INT_VAR ID'['NUM']' ';') ;
+var_declaration: (INT_TYPE ID ';') | (INT_TYPE ID'['NUM']' ';') ;
 
-func_declaration: (INT_VAR | VOID_TYPE) ID '(' params ')' compound_stmt ;
+func_declaration: (INT_TYPE | VOID_TYPE) ID '(' params ')' compound_stmt ;
 
 params: param_list | VOID_TYPE ;
 
 param_list: param_list',' param | param ;
 
-param: (INT_VAR | VOID_TYPE) ID | INT_VAR ID'['']' ;
+param: (INT_TYPE | VOID_TYPE) ID | INT_TYPE ID'['']' ;
 
 compound_stmt: '{' (local_declarations | statment_list)* '}' ;
 
@@ -56,10 +56,14 @@ outputfun: 'output' '(' (var | NUM | additive_expression+) ')' ';' ;
 IF: 'if';
 ELSE: 'else';
 
+FOR: 'for';
 WHILE: 'while';
 
 RET         : 'return';
-INT_VAR     : 'int';
+INT_TYPE    : 'int';
+CHAR_TYPE   : 'char';
+BOOL_TRUE   : 'true';
+BOOL_FALSE   : 'true';
 VOID_TYPE   : 'void';
 
 fragment LETRA: [a-zA-Z];
@@ -68,10 +72,12 @@ fragment DIGIT: [0-9];
 ID: LETRA(LETRA|NUM)*;
 NUM: DIGIT+;
 
-EQUAL : '=';
+EQUAL: '=';
+MINUS: '-';
 COMP: ( '<' |'>' | '<='  |'>=' |'==' |'!=');
+LOGOP: ('&&' | '||' | '!');
 ADDOP: ('+' | '-');
-MULOP: ('*' | '/');
+MULOP: ('*' | '/' | '%');
 
 COMMENT: '/*' .*? '*/' -> skip ;
 WS: [ \r\n\t]->skip;
