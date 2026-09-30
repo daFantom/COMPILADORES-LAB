@@ -16,7 +16,7 @@ param_list: param_list',' param | param ;
 
 param: (INT_VAR | VOID_TYPE) ID | INT_VAR ID'['']' ;
 
-compound_stmt: '{' (local_declarations* statment_list+)+ '}' ;
+compound_stmt: '{' (local_declarations | statment_list)* '}' ;
 
 local_declarations: var_declaration+;
 
@@ -26,11 +26,11 @@ statment: expression_stmt | compound_stmt | selection_stmt | iteration_stmt | re
 
 expression_stmt: (expression ';') | ';' ;
 
-selection_stmt: IF '(' simple_expression ')' statment | IF '(' simple_expression ')' statment ELSE statment ;
+selection_stmt: (IF '(' simple_expression ')' statment ELSE statment) | (IF '(' simple_expression ')' statment) ;
 
 iteration_stmt: WHILE '(' simple_expression ')' statment ;
 
-return_stmt: RET ';' | RET expression ;
+return_stmt: RET expression ';' | RET ';' ;
 
 expression: ( (var EQUAL)+ expression | simple_expression) ;
 
