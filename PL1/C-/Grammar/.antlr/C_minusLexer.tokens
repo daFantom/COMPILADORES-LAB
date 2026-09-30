@@ -1,0 +1,15 @@
+ELSE=1
+IF=2
+INT_VAR=3
+RET=4
+VOID_TYPE=5
+WHILE=6
+ID=7
+NUM=8
+WS=9
+'else'=1
+'if'=2
+'int'=3
+'return'=4
+'void'=5
+'while'=6
