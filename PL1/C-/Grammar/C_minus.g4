@@ -1,8 +1,5 @@
 grammar C_minus;
 
-// =======================================================
-// Símbolos terminales / definiciones regulares.
-
 ELSE : 'else';
 IF: 'if';
 INT_VAR : 'int';
