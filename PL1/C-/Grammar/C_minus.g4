@@ -16,7 +16,7 @@ param_list: param_list',' param | param ;
 
 param: (INT_VAR | VOID_TYPE) ID | INT_VAR ID'['']' ;
 
-compound_stmt: '{' local_declarations* statment_list+ '}' ;
+compound_stmt: '{' (local_declarations* statment_list+)+ '}' ;
 
 local_declarations: var_declaration+;
 
