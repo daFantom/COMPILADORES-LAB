@@ -65,7 +65,7 @@ VOID_TYPE   : 'void';
 fragment LETRA: [a-zA-Z];
 fragment DIGIT: [0-9];
 
-ID: LETRA+;
+ID: LETRA(LETRA|NUM)*;
 NUM: DIGIT+;
 
 EQUAL : '=';
