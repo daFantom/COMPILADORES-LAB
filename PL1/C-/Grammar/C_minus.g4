@@ -32,17 +32,17 @@ iteration_stmt: WHILE '(' simple_expression ')' statment ;
 
 return_stmt: RET ';' | RET expression ;
 
-expression: var EQUAL simple_expression ;
+expression: (var EQUAL)+ simple_expression ;
 
 var: ID | (ID '[' expression ']') ;
 
-simple_expression: additive_expression COMP additive_expression | additive_expression ;
+simple_expression: (additive_expression COMP additive_expression) | additive_expression ;
 
-additive_expression: additive_expression ADDOP term | term ;
+additive_expression: (term ADDOP additive_expression) | term ;
 
-term: term MULOP value | value ;
+term: (value MULOP term) | value ;
 
-value: '(' expression ')' | var | call | NUM ;
+value: '(' simple_expression ')' | var | call | NUM ;
 
 call: ID '(' args ')' ;
 
@@ -51,7 +51,7 @@ args: args_list* ;
 args_list: args_list ',' expression | expression ;
 
 inputfun: 'input' '(' VOID_TYPE ')' ';';
-outputfun: 'output' '(' (var | NUM | call) ')' ';' ;
+outputfun: 'output' '(' (var | NUM | additive_expression+) ')' ';' ;
 
 IF: 'if';
 ELSE: 'else';
@@ -70,8 +70,8 @@ NUM: DIGIT+;
 
 EQUAL : '=';
 COMP: ( '<' |'>' | '<='  |'>=' |'==' |'!=');
-ADDOP: '+' | '-';
-MULOP: '*' | '/';
+ADDOP: ('+' | '-');
+MULOP: ('*' | '/');
 
 COMMENT: '/*' .*? '*/' -> skip ;
 WS: [ \r\n\t]->skip;
