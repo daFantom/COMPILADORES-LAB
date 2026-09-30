@@ -1,18 +1,5 @@
 grammar C_minus;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // =======================================================
 // Símbolos terminales / definiciones regulares.
 
