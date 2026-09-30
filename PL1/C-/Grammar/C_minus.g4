@@ -26,13 +26,13 @@ statment: expression_stmt | compound_stmt | selection_stmt | iteration_stmt | re
 
 expression_stmt: (expression ';') | ';' ;
 
-selection_stmt: IF '(' expression ')' statment | IF '(' expression ')' statment ELSE statment ;
+selection_stmt: IF '(' simple_expression ')' statment | IF '(' simple_expression ')' statment ELSE statment ;
 
 iteration_stmt: WHILE '(' simple_expression ')' statment ;
 
 return_stmt: RET ';' | RET expression ;
 
-expression: (var EQUAL)+ simple_expression ;
+expression: ( (var EQUAL)+ expression | simple_expression) ;
 
 var: ID | (ID '[' expression ']') ;
 
