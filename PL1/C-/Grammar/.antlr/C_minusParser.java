@@ -1210,13 +1210,13 @@ public class C_minusParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Simple_expressionContext extends ParserRuleContext {
-		public List<Additive_expressionContext> additive_expression() {
-			return getRuleContexts(Additive_expressionContext.class);
-		}
-		public Additive_expressionContext additive_expression(int i) {
-			return getRuleContext(Additive_expressionContext.class,i);
+		public Additive_expressionContext additive_expression() {
+			return getRuleContext(Additive_expressionContext.class,0);
 		}
 		public TerminalNode COMP() { return getToken(C_minusParser.COMP, 0); }
+		public Simple_expressionContext simple_expression() {
+			return getRuleContext(Simple_expressionContext.class,0);
+		}
 		public Simple_expressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -1239,7 +1239,7 @@ public class C_minusParser extends Parser {
 				setState(195);
 				match(COMP);
 				setState(196);
-				additive_expression();
+				simple_expression();
 				}
 				}
 				break;
@@ -1869,7 +1869,7 @@ public class C_minusParser extends Parser {
 		"\u00be\u0003 \u0010\u0000\u00be\u00bf\u0005\u0003\u0000\u0000\u00bf\u00c1"+
 		"\u0001\u0000\u0000\u0000\u00c0\u00ba\u0001\u0000\u0000\u0000\u00c0\u00bb"+
 		"\u0001\u0000\u0000\u0000\u00c1#\u0001\u0000\u0000\u0000\u00c2\u00c3\u0003"+
-		"&\u0013\u0000\u00c3\u00c4\u0005\u0014\u0000\u0000\u00c4\u00c5\u0003&\u0013"+
+		"&\u0013\u0000\u00c3\u00c4\u0005\u0014\u0000\u0000\u00c4\u00c5\u0003$\u0012"+
 		"\u0000\u00c5\u00c8\u0001\u0000\u0000\u0000\u00c6\u00c8\u0003&\u0013\u0000"+
 		"\u00c7\u00c2\u0001\u0000\u0000\u0000\u00c7\u00c6\u0001\u0000\u0000\u0000"+
 		"\u00c8%\u0001\u0000\u0000\u0000\u00c9\u00ca\u0003(\u0014\u0000\u00ca\u00cb"+

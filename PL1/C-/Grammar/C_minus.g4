@@ -36,7 +36,7 @@ expression: ( (var EQUAL)+ expression | simple_expression) ;
 
 var: ID | (ID '[' expression ']') ;
 
-simple_expression: (additive_expression COMP additive_expression) | additive_expression ;
+simple_expression: (additive_expression COMP simple_expression) | additive_expression ;
 
 additive_expression: (term ADDOP additive_expression) | term ;
 
