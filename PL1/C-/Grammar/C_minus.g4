@@ -32,13 +32,9 @@ expression_stmt: (expression ';') | ';' ;
 
 selection_stmt: (IF '(' simple_expression ')' statment ELSE statment) | (IF '(' simple_expression ')' statment) ;
 
-iteration_stmt: for_stmt | while_stmt ;
-
-for_stmt: FOR for_cond (compound_stmt | statment) ;
+iteration_stmt: (FOR for_cond | WHILE while_cond) (compound_stmt | statment) ;
 
 for_cond: '(' expression? ';' expression? ';' expression? ')' ;
-
-while_stmt: WHILE while_cond  (compound_stmt | statment) ;
 
 while_cond: '(' expression ')' ;
 
