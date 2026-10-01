@@ -19,7 +19,7 @@ public class C_minusLexer extends Lexer {
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
 		T__9=10, SINGLE_QUOTES=11, IF=12, ELSE=13, FOR=14, WHILE=15, BOOL=16, 
 		RET=17, INT_TYPE=18, CHAR_TYPE=19, BOOL_TYPE=20, BOOL_TRUE=21, BOOL_FALSE=22, 
-		VOID_TYPE=23, CHAR=24, ID=25, NUM=26, EQUAL=27, MINUS=28, COMP=29, NEG=30, 
+		VOID_TYPE=23, CHAR=24, ID=25, NUM=26, EQUAL=27, COMP=28, NEG=29, MINUS=30, 
 		ADDOP=31, MULOP=32, COMMENT=33, WS=34;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
@@ -34,7 +34,7 @@ public class C_minusLexer extends Lexer {
 			"T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "T__6", "T__7", "T__8", 
 			"T__9", "SINGLE_QUOTES", "IF", "ELSE", "FOR", "WHILE", "BOOL", "RET", 
 			"INT_TYPE", "CHAR_TYPE", "BOOL_TYPE", "BOOL_TRUE", "BOOL_FALSE", "VOID_TYPE", 
-			"CHAR", "ID", "NUM", "EQUAL", "MINUS", "COMP", "NEG", "ADDOP", "MULOP", 
+			"CHAR", "ID", "NUM", "EQUAL", "COMP", "NEG", "MINUS", "ADDOP", "MULOP", 
 			"LETRA", "DIGIT", "COMMENT", "WS"
 		};
 	}
@@ -45,7 +45,7 @@ public class C_minusLexer extends Lexer {
 			null, "'['", "']'", "';'", "'('", "')'", "','", "'{'", "'}'", "'input'", 
 			"'output'", "'''", "'if'", "'else'", "'for'", "'while'", null, "'return'", 
 			"'int'", "'char'", "'bool'", "'true'", "'false'", "'void'", null, null, 
-			null, "'='", "'-'", null, "'!'"
+			null, "'='"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -54,7 +54,7 @@ public class C_minusLexer extends Lexer {
 			null, null, null, null, null, null, null, null, null, null, null, "SINGLE_QUOTES", 
 			"IF", "ELSE", "FOR", "WHILE", "BOOL", "RET", "INT_TYPE", "CHAR_TYPE", 
 			"BOOL_TYPE", "BOOL_TRUE", "BOOL_FALSE", "VOID_TYPE", "CHAR", "ID", "NUM", 
-			"EQUAL", "MINUS", "COMP", "NEG", "ADDOP", "MULOP", "COMMENT", "WS"
+			"EQUAL", "COMP", "NEG", "MINUS", "ADDOP", "MULOP", "COMMENT", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -145,9 +145,9 @@ public class C_minusLexer extends Lexer {
 		"\u0017\u00a9\b\u0017\u0001\u0017\u0001\u0017\u0001\u0018\u0001\u0018\u0001"+
 		"\u0018\u0005\u0018\u00b0\b\u0018\n\u0018\f\u0018\u00b3\t\u0018\u0001\u0019"+
 		"\u0004\u0019\u00b6\b\u0019\u000b\u0019\f\u0019\u00b7\u0001\u001a\u0001"+
-		"\u001a\u0001\u001b\u0001\u001b\u0001\u001c\u0001\u001c\u0001\u001c\u0001"+
-		"\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001"+
-		"\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0003\u001c\u00cb\b\u001c\u0001"+
+		"\u001a\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001"+
+		"\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001"+
+		"\u001b\u0001\u001b\u0003\u001b\u00c9\b\u001b\u0001\u001c\u0001\u001c\u0001"+
 		"\u001d\u0001\u001d\u0001\u001e\u0001\u001e\u0001\u001f\u0001\u001f\u0001"+
 		" \u0001 \u0001!\u0001!\u0001\"\u0001\"\u0001\"\u0001\"\u0005\"\u00db\b"+
 		"\"\n\"\f\"\u00de\t\"\u0001\"\u0001\"\u0001\"\u0001\"\u0001\"\u0001#\u0001"+
@@ -184,7 +184,7 @@ public class C_minusLexer extends Lexer {
 		"\'\u008e\u0001\u0000\u0000\u0000)\u0093\u0001\u0000\u0000\u0000+\u0098"+
 		"\u0001\u0000\u0000\u0000-\u009e\u0001\u0000\u0000\u0000/\u00a3\u0001\u0000"+
 		"\u0000\u00001\u00ac\u0001\u0000\u0000\u00003\u00b5\u0001\u0000\u0000\u0000"+
-		"5\u00b9\u0001\u0000\u0000\u00007\u00bb\u0001\u0000\u0000\u00009\u00ca"+
+		"5\u00b9\u0001\u0000\u0000\u00007\u00c8\u0001\u0000\u0000\u00009\u00ca"+
 		"\u0001\u0000\u0000\u0000;\u00cc\u0001\u0000\u0000\u0000=\u00ce\u0001\u0000"+
 		"\u0000\u0000?\u00d0\u0001\u0000\u0000\u0000A\u00d2\u0001\u0000\u0000\u0000"+
 		"C\u00d4\u0001\u0000\u0000\u0000E\u00d6\u0001\u0000\u0000\u0000G\u00e4"+
@@ -235,18 +235,18 @@ public class C_minusLexer extends Lexer {
 		"\u0000\u0000\u00b4\u00b6\u0003C!\u0000\u00b5\u00b4\u0001\u0000\u0000\u0000"+
 		"\u00b6\u00b7\u0001\u0000\u0000\u0000\u00b7\u00b5\u0001\u0000\u0000\u0000"+
 		"\u00b7\u00b8\u0001\u0000\u0000\u0000\u00b84\u0001\u0000\u0000\u0000\u00b9"+
-		"\u00ba\u0005=\u0000\u0000\u00ba6\u0001\u0000\u0000\u0000\u00bb\u00bc\u0005"+
-		"-\u0000\u0000\u00bc8\u0001\u0000\u0000\u0000\u00bd\u00cb\u0007\u0000\u0000"+
-		"\u0000\u00be\u00bf\u0005<\u0000\u0000\u00bf\u00cb\u0005=\u0000\u0000\u00c0"+
-		"\u00c1\u0005>\u0000\u0000\u00c1\u00cb\u0005=\u0000\u0000\u00c2\u00c3\u0005"+
-		"=\u0000\u0000\u00c3\u00cb\u0005=\u0000\u0000\u00c4\u00c5\u0005!\u0000"+
-		"\u0000\u00c5\u00cb\u0005=\u0000\u0000\u00c6\u00c7\u0005&\u0000\u0000\u00c7"+
-		"\u00cb\u0005&\u0000\u0000\u00c8\u00c9\u0005|\u0000\u0000\u00c9\u00cb\u0005"+
-		"|\u0000\u0000\u00ca\u00bd\u0001\u0000\u0000\u0000\u00ca\u00be\u0001\u0000"+
-		"\u0000\u0000\u00ca\u00c0\u0001\u0000\u0000\u0000\u00ca\u00c2\u0001\u0000"+
-		"\u0000\u0000\u00ca\u00c4\u0001\u0000\u0000\u0000\u00ca\u00c6\u0001\u0000"+
-		"\u0000\u0000\u00ca\u00c8\u0001\u0000\u0000\u0000\u00cb:\u0001\u0000\u0000"+
-		"\u0000\u00cc\u00cd\u0005!\u0000\u0000\u00cd<\u0001\u0000\u0000\u0000\u00ce"+
+		"\u00ba\u0005=\u0000\u0000\u00ba6\u0001\u0000\u0000\u0000\u00bb\u00c9\u0007"+
+		"\u0000\u0000\u0000\u00bc\u00bd\u0005<\u0000\u0000\u00bd\u00c9\u0005=\u0000"+
+		"\u0000\u00be\u00bf\u0005>\u0000\u0000\u00bf\u00c9\u0005=\u0000\u0000\u00c0"+
+		"\u00c1\u0005=\u0000\u0000\u00c1\u00c9\u0005=\u0000\u0000\u00c2\u00c3\u0005"+
+		"!\u0000\u0000\u00c3\u00c9\u0005=\u0000\u0000\u00c4\u00c5\u0005&\u0000"+
+		"\u0000\u00c5\u00c9\u0005&\u0000\u0000\u00c6\u00c7\u0005|\u0000\u0000\u00c7"+
+		"\u00c9\u0005|\u0000\u0000\u00c8\u00bb\u0001\u0000\u0000\u0000\u00c8\u00bc"+
+		"\u0001\u0000\u0000\u0000\u00c8\u00be\u0001\u0000\u0000\u0000\u00c8\u00c0"+
+		"\u0001\u0000\u0000\u0000\u00c8\u00c2\u0001\u0000\u0000\u0000\u00c8\u00c4"+
+		"\u0001\u0000\u0000\u0000\u00c8\u00c6\u0001\u0000\u0000\u0000\u00c98\u0001"+
+		"\u0000\u0000\u0000\u00ca\u00cb\u0005!\u0000\u0000\u00cb:\u0001\u0000\u0000"+
+		"\u0000\u00cc\u00cd\u0005-\u0000\u0000\u00cd<\u0001\u0000\u0000\u0000\u00ce"+
 		"\u00cf\u0007\u0001\u0000\u0000\u00cf>\u0001\u0000\u0000\u0000\u00d0\u00d1"+
 		"\u0007\u0002\u0000\u0000\u00d1@\u0001\u0000\u0000\u0000\u00d2\u00d3\u0007"+
 		"\u0003\u0000\u0000\u00d3B\u0001\u0000\u0000\u0000\u00d4\u00d5\u0007\u0004"+
@@ -259,7 +259,7 @@ public class C_minusLexer extends Lexer {
 		"/\u0000\u0000\u00e1\u00e2\u0001\u0000\u0000\u0000\u00e2\u00e3\u0006\""+
 		"\u0000\u0000\u00e3F\u0001\u0000\u0000\u0000\u00e4\u00e5\u0007\u0005\u0000"+
 		"\u0000\u00e5\u00e6\u0001\u0000\u0000\u0000\u00e6\u00e7\u0006#\u0000\u0000"+
-		"\u00e7H\u0001\u0000\u0000\u0000\b\u0000|\u00a8\u00af\u00b1\u00b7\u00ca"+
+		"\u00e7H\u0001\u0000\u0000\u0000\b\u0000|\u00a8\u00af\u00b1\u00b7\u00c8"+
 		"\u00dc\u0001\u0006\u0000\u0000";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
