@@ -6,7 +6,11 @@ declaration_list: declaration+ ;
 
 declaration: var_declaration | func_declaration ;
 
-var_declaration: (INT_TYPE ID ';') | (INT_TYPE ID'['NUM']' ';') ;
+var_declaration:    (INT_TYPE   ID) 
+                |   (INT_TYPE   ID'['NUM']') 
+                |   (CHAR_TYPE  ID)
+                    ';'
+                ;
 
 func_declaration: (INT_TYPE | VOID_TYPE) ID '(' params ')' compound_stmt ;
 
@@ -50,7 +54,7 @@ additive_expression: (term ADDOP additive_expression) | term ;
 
 term: (value MULOP term) | value ;
 
-value: '(' simple_expression ')' | var | call | NUM ;
+value: '(' simple_expression ')' | var | call | NUM | CHAR ;
 
 call: ID '(' args ')' ;
 
@@ -60,6 +64,8 @@ args_list: args_list ',' expression | expression ;
 
 inputfun: 'input' '(' VOID_TYPE ')' ';';
 outputfun: 'output' '(' (var | NUM | additive_expression+) ')' ';' ;
+
+SINGLE_QUOTES: '\'';
 
 IF: 'if';
 ELSE: 'else';
@@ -77,6 +83,7 @@ VOID_TYPE   : 'void';
 fragment LETRA: [a-zA-Z];
 fragment DIGIT: [0-9];
 
+CHAR: SINGLE_QUOTES (LETRA|DIGIT|'\\n')? SINGLE_QUOTES;
 ID: LETRA(LETRA|NUM)*;
 NUM: DIGIT+;
 
