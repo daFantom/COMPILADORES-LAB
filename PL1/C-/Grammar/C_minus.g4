@@ -6,19 +6,19 @@ declaration_list: declaration+ ;
 
 declaration: var_declaration | func_declaration ;
 
-var_declaration:    (INT_TYPE   ID) 
+var_declaration:    (INT_TYPE | CHAR_TYPE | BOOL_TYPE)  ID
                 |   (INT_TYPE   ID'['NUM']') 
-                |   (CHAR_TYPE  ID)
                     ';'
                 ;
 
-func_declaration: (INT_TYPE | CHAR_TYPE | VOID_TYPE) ID '(' params ')' compound_stmt ;
+func_declaration:   (INT_TYPE | CHAR_TYPE | BOOL_TYPE | VOID_TYPE) 
+                    ID '(' params ')' compound_stmt ;
 
 params: param_list | VOID_TYPE ;
 
 param_list: param_list',' param | param ;
 
-param: (INT_TYPE | CHAR_TYPE | VOID_TYPE) ID | INT_TYPE ID'['']' ;
+param: (INT_TYPE | CHAR_TYPE | BOOL_TYPE | VOID_TYPE) ID | INT_TYPE ID'['']' ;
 
 compound_stmt: '{' (local_declarations | statment_list)* '}' ;
 
@@ -50,11 +50,11 @@ var: ID | (ID '[' expression ']') ;
 
 simple_expression: (additive_expression COMP simple_expression) | additive_expression ;
 
-additive_expression: (term ADDOP additive_expression) | term ;
+additive_expression: (term ADDOP additive_expression) | NEG* term ;
 
 term: (value MULOP term) | value ;
 
-value: '(' simple_expression ')' | var | call | NUM | CHAR ;
+value: BOOL | NUM | CHAR | var | call | '(' simple_expression ')' ;
 
 call: ID '(' args ')' ;
 
@@ -63,7 +63,7 @@ args: args_list* ;
 args_list: args_list ',' expression | expression ;
 
 inputfun: 'input' '(' ')' ';';
-outputfun: 'output' '(' (var | NUM | additive_expression+) ')' ';' ;
+outputfun: 'output' '(' (var | NUM | CHAR | BOOL | simple_expression) ')' ';' ;
 
 SINGLE_QUOTES: '\'';
 
@@ -73,27 +73,29 @@ ELSE: 'else';
 FOR: 'for';
 WHILE: 'while';
 
+BOOL: (BOOL_TRUE | BOOL_FALSE) ;
+
 RET         : 'return';
 INT_TYPE    : 'int';
 CHAR_TYPE   : 'char';
 BOOL_TYPE   : 'bool';
 BOOL_TRUE   : 'true';
-BOOL_FALSE   : 'false';
+BOOL_FALSE  : 'false';
 VOID_TYPE   : 'void';
-
-fragment LETRA: [a-zA-Z];
-fragment DIGIT: [0-9];
 
 CHAR: SINGLE_QUOTES (LETRA|DIGIT|'\\n')? SINGLE_QUOTES;
 ID: LETRA(LETRA|NUM)*;
 NUM: DIGIT+;
 
-EQUAL: '=';
-MINUS: '-';
-COMP: ( '<' |'>' | '<='  |'>=' |'==' |'!=');
-LOGOP: ('&&' | '||' | '!');
-ADDOP: ('+' | '-');
-MULOP: ('*' | '/' | '%');
+EQUAL:  '=';
+MINUS:  '-';
+COMP:   ( '<' |'>' | '<='  |'>=' |'==' |'!=' | '&&' | '||');
+NEG:    '!';
+ADDOP:  ('+' | '-');
+MULOP:  ('*' | '/' | '%');
+
+fragment LETRA: [a-zA-Z];
+fragment DIGIT: [0-9];
 
 COMMENT: '/*' .*? '*/' -> skip ;
 WS: [ \r\n\t]->skip;
