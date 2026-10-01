@@ -30,9 +30,13 @@ selection_stmt: (IF '(' simple_expression ')' statment ELSE statment) | (IF '(' 
 
 iteration_stmt: for_stmt | while_stmt ;
 
-for_stmt: FOR '(' expression ';' expression ';' expression ')' compound_stmt ;
+for_stmt: FOR for_cond (compound_stmt | statment) ;
 
-while_stmt: WHILE '(' expression ')' statment ;
+for_cond: '(' expression? ';' expression? ';' expression? ')' ;
+
+while_stmt: WHILE while_cond  (compound_stmt | statment) ;
+
+while_cond: '(' expression ')' ;
 
 return_stmt: RET expression ';' | RET ';' ;
 
