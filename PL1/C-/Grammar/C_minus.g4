@@ -12,13 +12,13 @@ var_declaration:    (INT_TYPE   ID)
                     ';'
                 ;
 
-func_declaration: (INT_TYPE | VOID_TYPE) ID '(' params ')' compound_stmt ;
+func_declaration: (INT_TYPE | CHAR_TYPE | VOID_TYPE) ID '(' params ')' compound_stmt ;
 
 params: param_list | VOID_TYPE ;
 
 param_list: param_list',' param | param ;
 
-param: (INT_TYPE | VOID_TYPE) ID | INT_TYPE ID'['']' ;
+param: (INT_TYPE | CHAR_TYPE | VOID_TYPE) ID | INT_TYPE ID'['']' ;
 
 compound_stmt: '{' (local_declarations | statment_list)* '}' ;
 
@@ -62,7 +62,7 @@ args: args_list* ;
 
 args_list: args_list ',' expression | expression ;
 
-inputfun: 'input' '(' VOID_TYPE ')' ';';
+inputfun: 'input' '(' ')' ';';
 outputfun: 'output' '(' (var | NUM | additive_expression+) ')' ';' ;
 
 SINGLE_QUOTES: '\'';
@@ -76,6 +76,7 @@ WHILE: 'while';
 RET         : 'return';
 INT_TYPE    : 'int';
 CHAR_TYPE   : 'char';
+BOOL_TYPE   : 'bool';
 BOOL_TRUE   : 'true';
 BOOL_FALSE   : 'false';
 VOID_TYPE   : 'void';
