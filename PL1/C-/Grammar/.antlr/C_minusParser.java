@@ -44,7 +44,7 @@ public class C_minusParser extends Parser {
 		return new String[] {
 			null, "';'", "'['", "']'", "'('", "')'", "','", "'{'", "'}'", "'input'", 
 			"'output'", "'if'", "'else'", "'for'", "'while'", "'return'", "'int'", 
-			"'char'", null, null, "'void'", null, null, "'='", "'-'"
+			"'char'", "'true'", "'false'", "'void'", null, null, "'='", "'-'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();

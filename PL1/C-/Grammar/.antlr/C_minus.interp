@@ -17,8 +17,8 @@ null
 'return'
 'int'
 'char'
-null
-null
+'true'
+'false'
 'void'
 null
 null

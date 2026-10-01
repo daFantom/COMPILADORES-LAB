@@ -63,7 +63,7 @@ RET         : 'return';
 INT_TYPE    : 'int';
 CHAR_TYPE   : 'char';
 BOOL_TRUE   : 'true';
-BOOL_FALSE   : 'true';
+BOOL_FALSE   : 'false';
 VOID_TYPE   : 'void';
 
 fragment LETRA: [a-zA-Z];
