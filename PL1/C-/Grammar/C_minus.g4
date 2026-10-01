@@ -28,7 +28,7 @@ expression_stmt: (expression ';') | ';' ;
 
 selection_stmt: (IF '(' simple_expression ')' statment ELSE statment) | (IF '(' simple_expression ')' statment) ;
 
-iteration_stmt: WHILE '(' simple_expression ')' statment ;
+iteration_stmt: WHILE '(' expression ')' statment ;
 
 return_stmt: RET expression ';' | RET ';' ;
 
