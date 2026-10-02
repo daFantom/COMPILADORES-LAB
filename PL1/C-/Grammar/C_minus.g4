@@ -13,8 +13,8 @@ declaration: var_declaration | func_declaration ;
 /*  Las variables se declaran con su tipo e identificador.
     "int a = 0;" No está soportado en la especificación orignal de C-*/
 
-var_declaration:    (INT_TYPE | CHAR_TYPE | BOOL_TYPE)  ID
-                |   (INT_TYPE   ID'['INT']') 
+var_declaration:    ( (INT_TYPE | CHAR_TYPE | BOOL_TYPE)  ID
+                |   (INT_TYPE   ID'['INT']') )
                     ';'
                 ;
 /*  Las funciones deben ser declaradas con su cuerpo.
