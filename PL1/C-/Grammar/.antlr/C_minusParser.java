@@ -19,7 +19,7 @@ public class C_minusParser extends Parser {
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
 		T__9=10, SINGLE_QUOTES=11, IF=12, ELSE=13, FOR=14, WHILE=15, BOOL=16, 
 		RET=17, INT_TYPE=18, CHAR_TYPE=19, BOOL_TYPE=20, BOOL_TRUE=21, BOOL_FALSE=22, 
-		VOID_TYPE=23, CHAR=24, ID=25, NUM=26, EQUAL=27, COMP=28, NEG=29, MINUS=30, 
+		VOID_TYPE=23, CHAR=24, ID=25, INT=26, EQUAL=27, COMP=28, NEG=29, MINUS=30, 
 		ADDOP=31, MULOP=32, COMMENT=33, WS=34;
 	public static final int
 		RULE_prog = 0, RULE_declaration_list = 1, RULE_declaration = 2, RULE_var_declaration = 3, 
@@ -55,7 +55,7 @@ public class C_minusParser extends Parser {
 		return new String[] {
 			null, null, null, null, null, null, null, null, null, null, null, "SINGLE_QUOTES", 
 			"IF", "ELSE", "FOR", "WHILE", "BOOL", "RET", "INT_TYPE", "CHAR_TYPE", 
-			"BOOL_TYPE", "BOOL_TRUE", "BOOL_FALSE", "VOID_TYPE", "CHAR", "ID", "NUM", 
+			"BOOL_TYPE", "BOOL_TRUE", "BOOL_FALSE", "VOID_TYPE", "CHAR", "ID", "INT", 
 			"EQUAL", "COMP", "NEG", "MINUS", "ADDOP", "MULOP", "COMMENT", "WS"
 		};
 	}
@@ -266,7 +266,7 @@ public class C_minusParser extends Parser {
 		public TerminalNode INT_TYPE() { return getToken(C_minusParser.INT_TYPE, 0); }
 		public TerminalNode CHAR_TYPE() { return getToken(C_minusParser.CHAR_TYPE, 0); }
 		public TerminalNode BOOL_TYPE() { return getToken(C_minusParser.BOOL_TYPE, 0); }
-		public TerminalNode NUM() { return getToken(C_minusParser.NUM, 0); }
+		public TerminalNode INT() { return getToken(C_minusParser.INT, 0); }
 		public Var_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -309,7 +309,7 @@ public class C_minusParser extends Parser {
 				setState(76);
 				match(T__0);
 				setState(77);
-				match(NUM);
+				match(INT);
 				setState(78);
 				match(T__1);
 				}
@@ -627,7 +627,7 @@ public class C_minusParser extends Parser {
 				case RET:
 				case CHAR:
 				case ID:
-				case NUM:
+				case INT:
 				case NEG:
 				case MINUS:
 					{
@@ -807,7 +807,7 @@ public class C_minusParser extends Parser {
 			case BOOL:
 			case CHAR:
 			case ID:
-			case NUM:
+			case INT:
 			case NEG:
 			case MINUS:
 				enterOuterAlt(_localctx, 1);
@@ -896,7 +896,7 @@ public class C_minusParser extends Parser {
 			case BOOL:
 			case CHAR:
 			case ID:
-			case NUM:
+			case INT:
 			case NEG:
 			case MINUS:
 				enterOuterAlt(_localctx, 1);
@@ -1593,7 +1593,7 @@ public class C_minusParser extends Parser {
 	@SuppressWarnings("CheckReturnValue")
 	public static class ValueContext extends ParserRuleContext {
 		public TerminalNode BOOL() { return getToken(C_minusParser.BOOL, 0); }
-		public TerminalNode NUM() { return getToken(C_minusParser.NUM, 0); }
+		public TerminalNode INT() { return getToken(C_minusParser.INT, 0); }
 		public TerminalNode CHAR() { return getToken(C_minusParser.CHAR, 0); }
 		public VarContext var() {
 			return getRuleContext(VarContext.class,0);
@@ -1628,7 +1628,7 @@ public class C_minusParser extends Parser {
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(253);
-				match(NUM);
+				match(INT);
 				}
 				break;
 			case 3:
@@ -1874,7 +1874,7 @@ public class C_minusParser extends Parser {
 		public VarContext var() {
 			return getRuleContext(VarContext.class,0);
 		}
-		public TerminalNode NUM() { return getToken(C_minusParser.NUM, 0); }
+		public TerminalNode INT() { return getToken(C_minusParser.INT, 0); }
 		public TerminalNode CHAR() { return getToken(C_minusParser.CHAR, 0); }
 		public TerminalNode BOOL() { return getToken(C_minusParser.BOOL, 0); }
 		public Simple_expressionContext simple_expression() {
@@ -1908,7 +1908,7 @@ public class C_minusParser extends Parser {
 			case 2:
 				{
 				setState(293);
-				match(NUM);
+				match(INT);
 				}
 				break;
 			case 3:

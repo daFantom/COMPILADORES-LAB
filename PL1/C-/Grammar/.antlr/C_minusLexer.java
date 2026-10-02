@@ -19,7 +19,7 @@ public class C_minusLexer extends Lexer {
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
 		T__9=10, SINGLE_QUOTES=11, IF=12, ELSE=13, FOR=14, WHILE=15, BOOL=16, 
 		RET=17, INT_TYPE=18, CHAR_TYPE=19, BOOL_TYPE=20, BOOL_TRUE=21, BOOL_FALSE=22, 
-		VOID_TYPE=23, CHAR=24, ID=25, NUM=26, EQUAL=27, COMP=28, NEG=29, MINUS=30, 
+		VOID_TYPE=23, CHAR=24, ID=25, INT=26, EQUAL=27, COMP=28, NEG=29, MINUS=30, 
 		ADDOP=31, MULOP=32, COMMENT=33, WS=34;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
@@ -34,7 +34,7 @@ public class C_minusLexer extends Lexer {
 			"T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "T__6", "T__7", "T__8", 
 			"T__9", "SINGLE_QUOTES", "IF", "ELSE", "FOR", "WHILE", "BOOL", "RET", 
 			"INT_TYPE", "CHAR_TYPE", "BOOL_TYPE", "BOOL_TRUE", "BOOL_FALSE", "VOID_TYPE", 
-			"CHAR", "ID", "NUM", "EQUAL", "COMP", "NEG", "MINUS", "ADDOP", "MULOP", 
+			"CHAR", "ID", "INT", "EQUAL", "COMP", "NEG", "MINUS", "ADDOP", "MULOP", 
 			"LETRA", "DIGIT", "COMMENT", "WS"
 		};
 	}
@@ -53,7 +53,7 @@ public class C_minusLexer extends Lexer {
 		return new String[] {
 			null, null, null, null, null, null, null, null, null, null, null, "SINGLE_QUOTES", 
 			"IF", "ELSE", "FOR", "WHILE", "BOOL", "RET", "INT_TYPE", "CHAR_TYPE", 
-			"BOOL_TYPE", "BOOL_TRUE", "BOOL_FALSE", "VOID_TYPE", "CHAR", "ID", "NUM", 
+			"BOOL_TYPE", "BOOL_TRUE", "BOOL_FALSE", "VOID_TYPE", "CHAR", "ID", "INT", 
 			"EQUAL", "COMP", "NEG", "MINUS", "ADDOP", "MULOP", "COMMENT", "WS"
 		};
 	}
