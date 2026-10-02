@@ -70,13 +70,13 @@ expression: ( (var EQUAL)+ expression | simple_expression) ;
 
 var: ID | (ID '[' expression ']') ;
 
-simple_expression: (additive_expression COMP simple_expression) | additive_expression ;
+simple_expression: (additive_expression COMP simple_expression) | additive_expression;
 
 additive_expression: (term ADDOP additive_expression) | (MINUS? | NEG*) term ;
 
 term: (value MULOP term) | value ;
 
-value: BOOL | INT | CHAR | var | call | '(' simple_expression ')' ;
+value: '(' simple_expression ')' | INT | BOOL | CHAR | var | call  ;
 
 /*  LLamadas a función. */
 call: ID '(' args ')' ;
@@ -109,15 +109,15 @@ BOOL_FALSE  : 'false';
 VOID_TYPE   : 'void';
 
 CHAR: SINGLE_QUOTES (LETRA|DIGIT|'\\n')? SINGLE_QUOTES;
-ID: LETRA(LETRA|INT)*;
 INT: DIGIT+;
+ID: LETRA(LETRA|INT)*;
 
 EQUAL:  '=';
-COMP:   ( '<' |'>' | '<='  |'>=' |'==' |'!=' | '&&' | '||');
-NEG:    ('!');
-MINUS:  ('-');
 ADDOP:  ('+' | '-');
 MULOP:  ('*' | '/' | '%');
+MINUS:  ('-');
+COMP:   ( '<' |'>' | '<='  |'>=' |'==' |'!=' | '&&' | '||');
+NEG:    ('!');
 
 fragment LETRA: [a-zA-Z];
 fragment DIGIT: [0-9];
