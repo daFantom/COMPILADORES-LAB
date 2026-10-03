@@ -40,7 +40,7 @@ local_declarations: var_declaration+;
 statment_list: statment+ ;
 
 /*  Tipos de instrucciones aceptadas. */
-statment: expression_stmt | compound_stmt | selection_stmt | iteration_stmt | return_stmt | inputfun | outputfun ;
+statment: expression_stmt | compound_stmt | selection_stmt | iteration_stmt | return_stmt ;
 
 /*  Instrucción común de expresión.
     Ej: "x = 1 + y;"
@@ -84,11 +84,6 @@ call: ID '(' args ')' ;
 args: args_list* ;
 
 args_list: args_list ',' expression | expression ;
-
-/*  Definicion de funciones propias del lenguaje de programación.
-    Potencialmente incorrecto. */
-inputfun: 'input' '(' ')' ';';
-outputfun: 'output' '(' (var | INT | CHAR | BOOL | simple_expression) ')' ';' ;
 
 SINGLE_QUOTES: '\'';
 
