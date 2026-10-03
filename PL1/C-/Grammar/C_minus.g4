@@ -40,7 +40,12 @@ local_declarations: var_declaration+;
 statment_list: statment+ ;
 
 /*  Tipos de instrucciones aceptadas. */
-statment: expression_stmt | compound_stmt | selection_stmt | iteration_stmt | return_stmt ;
+statment: expression_stmt 
+        | compound_stmt 
+        | selection_stmt 
+        | iteration_stmt 
+        | return_stmt 
+        ;
 
 /*  Instrucción común de expresión.
     Ej: "x = 1 + y;"
@@ -51,7 +56,8 @@ expression_stmt: (expression ';') | ';' ;
 
 /*  Instrucción if.
 */
-selection_stmt: (IF '(' simple_expression ')' statment ELSE statment) | (IF '(' simple_expression ')' statment) ;
+selection_stmt:     (IF '(' simple_expression ')' statment ELSE statment) 
+                |   (IF '(' simple_expression ')' statment) ;
 
 /*  Instrucción de iteración (For o While).
 */
@@ -66,17 +72,39 @@ while_cond: '(' expression ')' ;
 return_stmt: RET expression ';' | RET ';' ;
 
 /*  Expresión que define una asignación, una operación o un valor. */
-expression: ( (var EQUAL)+ expression | simple_expression) ;
+expression: ( (var ASSIGN)+ expression | simple_expression) ;
 
 var: ID | (ID '[' expression ']') ;
 
-simple_expression: (additive_expression COMP simple_expression) | additive_expression;
+simple_expression: simple_expression COMP logical_expression | logical_expression;
 
-additive_expression: (term ADDOP additive_expression) | (MINUS? | NEG*) term ;
+logical_expression:     logical_expression AND additive_expression
+                    |   logical_expression OR additive_expression
+                    |   additive_expression
+                    ;
 
-term: (value MULOP term) | value ;
+additive_expression:    additive_expression (PLUS|MINUS) factor_expression 
+                    |   factor_expression
+                    ;
 
-value: '(' simple_expression ')' | INT | BOOL | CHAR | var | call  ;
+factor_expression:      
+                        factor_expression (MUL|DIV|MOD) unary_expression
+                    |   unary_expression
+                    ;
+
+unary_expression:       PLUS unary_expression
+                    |   MINUS unary_expression
+                    |   NOT unary_expression
+                    |   value
+                    ;
+
+value:      '(' simple_expression ')'
+        |   INT
+        |   BOOL
+        |   CHAR
+        |   var
+        |   call
+        ;
 
 /*  LLamadas a función. */
 call: ID '(' args ')' ;
@@ -85,37 +113,45 @@ args: args_list* ;
 
 args_list: args_list ',' expression | expression ;
 
-SINGLE_QUOTES: '\'';
-
 IF: 'if';
 ELSE: 'else';
 
 FOR: 'for';
 WHILE: 'while';
 
-BOOL: (BOOL_TRUE | BOOL_FALSE) ;
-
 RET         : 'return';
+
+VOID_TYPE   : 'void';
 INT_TYPE    : 'int';
 CHAR_TYPE   : 'char';
 BOOL_TYPE   : 'bool';
+
+BOOL: (BOOL_TRUE | BOOL_FALSE) ;
 BOOL_TRUE   : 'true';
 BOOL_FALSE  : 'false';
-VOID_TYPE   : 'void';
+
 
 CHAR: SINGLE_QUOTES (LETRA|DIGIT|'\\n')? SINGLE_QUOTES;
 INT: DIGIT+;
-ID: LETRA(LETRA|INT)*;
 
-EQUAL:  '=';
-ADDOP:  ('+' | '-');
-MULOP:  ('*' | '/' | '%');
-MINUS:  ('-');
-COMP:   ( '<' |'>' | '<='  |'>=' |'==' |'!=' | '&&' | '||');
-NEG:    ('!');
+ID: LETRA(LETRA|DIGIT)*;
+
+ASSIGN: '=';
+
+PLUS:   '+';
+MINUS:  '-';
+MUL:    '*';
+DIV:    '/';
+MOD:    '%';
+
+COMP:   ( '<' |'>' | '<='  |'>=' |'==' |'!=');
+AND:    '&&';
+OR:     '||';
+NOT:    '!';
 
 fragment LETRA: [a-zA-Z];
 fragment DIGIT: [0-9];
+fragment SINGLE_QUOTES: '\'';
 
 COMMENT: '/*' .*? '*/' -> skip ;
 WS: [ \r\n\t]->skip;
