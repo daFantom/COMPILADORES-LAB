@@ -1,4 +1,4 @@
-// Generated from u:/UAH/Year 3/Cuatrimestre 1/Compiladores/COMPILADORES-LAB/PL1/PokemonTCG/Grammar/gTCGLexer.g4 by ANTLR 4.13.1
+// Generated from c:/Users/pavei/Desktop/Git/COMPILADORES-LAB/PL1/PokemonTCG/Grammar/gTCGLexer.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
