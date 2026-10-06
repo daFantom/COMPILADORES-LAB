@@ -5,4 +5,9 @@ void main(void)
     b = 3+3 * 4;
     c = (3*3*3) + 4*(8-5) / 6 ;
     d = true && false;
+
+    if(a < b && b < c){
+        output(1);
+    }
+    
 }
