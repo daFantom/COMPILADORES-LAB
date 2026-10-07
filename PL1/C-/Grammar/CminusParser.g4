@@ -16,24 +16,24 @@ declaration: var_declaration | func_declaration ;
     "int a = 0;" No está soportado en la especificación orignal de C-*/
 
 var_declaration:    ( (INT_TYPE | CHAR_TYPE | BOOL_TYPE)  ID
-                |   (INT_TYPE   ID'['INT']') )
-                    ';'
+                |   (INT_TYPE   ID OBRACKETS INT CBRACKETS) )
+                    SC
                 ;
 /*  Las funciones deben ser declaradas con su cuerpo.
     Prototipos de funciones no está soportado en la especificación de C-*/
 func_declaration:   (INT_TYPE | CHAR_TYPE | BOOL_TYPE | VOID_TYPE) 
-                    ID '(' params ')' compound_stmt ;
+                    ID OPAREN params CPAREN compound_stmt ;
 
 params: param_list | VOID_TYPE ;
 
-param_list: param_list',' param | param ;
+param_list: param_list COMMA param | param ;
 
 /* Parametros permitdos en las funciones. */
-param: (INT_TYPE | CHAR_TYPE | BOOL_TYPE | VOID_TYPE) ID | INT_TYPE ID'['']' ;
+param: (INT_TYPE | CHAR_TYPE | BOOL_TYPE | VOID_TYPE) ID | INT_TYPE ID OBRACKETS CBRACKETS ;
 
 /*  Cuerpo de una función. Notese que unicamente se permite declaración de variables y no de funciones.
     Funciones anidadas no está soportado en la especificación de C- */
-compound_stmt: '{' (local_declarations | statment_list)* '}' ;
+compound_stmt: OBRACES (local_declarations | statment_list)* CBRACES ;
 
 /*  Declaración de variables dentro de una función. */
 local_declarations: var_declaration+;
@@ -54,29 +54,29 @@ statment: expression_stmt
         "x = i && j;"
         "x = x * y + z;" 
 */
-expression_stmt: (expression ';') | ';' ;
+expression_stmt: (expression SC) | SC ;
 
 /*  Instrucción if.
 */
-selection_stmt:     (IF '(' simple_expression ')' statment ELSE statment) 
-                |   (IF '(' simple_expression ')' statment) ;
+selection_stmt:     (IF OPAREN simple_expression CPAREN statment ELSE statment) 
+                |   (IF OPAREN simple_expression CPAREN statment) ;
 
 /*  Instrucción de iteración (For o While).
 */
 iteration_stmt: (FOR for_cond | WHILE while_cond) (compound_stmt | statment) ;
 
-for_cond: '(' expression? ';' expression? ';' expression? ')' ;
+for_cond: OPAREN expression? SC expression? SC expression? CPAREN ;
 
-while_cond: '(' expression ')' ;
+while_cond: OPAREN expression CPAREN ;
 
 /*  Instrucción "return".
 */
-return_stmt: RET expression ';' | RET ';' ;
+return_stmt: RET expression SC | RET SC ;
 
 /*  Expresión que define una asignación, una operación o un valor. */
 expression: ( (var ASSIGN)+ expression | simple_expression) ;
 
-var: ID | (ID '[' expression ']') ;
+var: ID | (ID OBRACKETS expression CBRACKETS) ;
 
 simple_expression: simple_expression COMP logical_expression | logical_expression;
 
@@ -100,7 +100,7 @@ unary_expression:       PLUS unary_expression
                     |   value
                     ;
 
-value:      '(' simple_expression ')'
+value:      OPAREN simple_expression CPAREN
         |   INT
         |   BOOL
         |   CHAR
@@ -109,8 +109,8 @@ value:      '(' simple_expression ')'
         ;
 
 /*  LLamadas a función. */
-call: ID '(' args ')' ;
+call: ID OPAREN args CPAREN ;
 
 args: args_list* ;
 
-args_list: args_list ',' expression | expression ;
+args_list: args_list COMMA expression | expression ;

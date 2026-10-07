@@ -31,10 +31,25 @@ MUL:    '*';
 DIV:    '/';
 MOD:    '%';
 
-COMP:   ( '<' |'>' | '<='  |'>=' |'==' |'!=');
-AND:    '&&';
-OR:     '||';
-NOT:    '!';
+LE      : '<=';
+GE      : '>=';
+LT      : '<';
+GT      : '>';
+EQUAL   : '==';
+NEQUAL  : '!=';
+COMP:   ( LE | LT | GE | GT | EQUAL | NEQUAL );
+AND     :    '&&';
+OR      :     '||';
+NOT     :    '!';
+
+COMMA       : ',';
+SC          : ';';
+OPAREN      : '(';
+CPAREN      : ')';
+OBRACKETS   : '[';
+CBRACKETS   : ']';
+OBRACES     : '{';
+CBRACES     : '}';
 
 fragment LETRA: [a-zA-Z];
 fragment DIGIT: [0-9];
