@@ -31,16 +31,16 @@ MUL:    '*';
 DIV:    '/';
 MOD:    '%';
 
+COMP    : ( LE | LT | GE | GT | EQUAL | NEQUAL );
 LE      : '<=';
 GE      : '>=';
 LT      : '<';
 GT      : '>';
 EQUAL   : '==';
 NEQUAL  : '!=';
-COMP:   ( LE | LT | GE | GT | EQUAL | NEQUAL );
-AND     :    '&&';
-OR      :     '||';
-NOT     :    '!';
+AND     : '&&';
+OR      : '||';
+NOT     : '!';
 
 COMMA       : ',';
 SC          : ';';
