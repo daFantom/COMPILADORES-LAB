@@ -4,7 +4,7 @@ import CminusLexer;
 
 /*  Cuerpo del programa */
 
-prog:  declaration_list+ ;
+prog: declaration_list EOF ;
 
 /*  Todos los programas deben estar formados por declaraciones. */
 
@@ -26,14 +26,16 @@ func_declaration:   (INT_TYPE | CHAR_TYPE | BOOL_TYPE | VOID_TYPE)
 
 params: param_list | VOID_TYPE ;
 
-param_list: param_list COMMA param | param ;
+param_list: param (COMMA param)* ;
 
 /* Parametros permitdos en las funciones. */
 param: (INT_TYPE | CHAR_TYPE | BOOL_TYPE | VOID_TYPE) ID | INT_TYPE ID OBRACKETS CBRACKETS ;
 
 /*  Cuerpo de una función. Notese que unicamente se permite declaración de variables y no de funciones.
     Funciones anidadas no está soportado en la especificación de C- */
-compound_stmt: OBRACES (local_declarations | statment_list)* CBRACES ;
+compound_stmt
+    : OBRACES local_declarations? statment_list? CBRACES
+    ;
 
 /*  Declaración de variables dentro de una función. */
 local_declarations: var_declaration+;
@@ -58,8 +60,9 @@ expression_stmt: (expression SC) | SC ;
 
 /*  Instrucción if.
 */
-selection_stmt:     (IF OPAREN simple_expression CPAREN statment ELSE statment) 
-                |   (IF OPAREN simple_expression CPAREN statment) ;
+selection_stmt
+    : IF OPAREN expression CPAREN statment (ELSE statment)?
+    ;
 
 /*  Instrucción de iteración (For o While).
 */
@@ -74,25 +77,33 @@ while_cond: OPAREN expression CPAREN ;
 return_stmt: RET expression SC | RET SC ;
 
 /*  Expresión que define una asignación, una operación o un valor. */
-expression: ( (var ASSIGN)+ expression | simple_expression) ;
+expression: var ASSIGN expression | simple_expression ;
 
 var: ID | (ID OBRACKETS expression CBRACKETS) ;
 
-simple_expression: simple_expression COMP logical_expression | logical_expression;
+simple_expression
+    : logical_or_expression
+    ;
 
-logical_expression:     logical_expression AND additive_expression
-                    |   logical_expression OR additive_expression
-                    |   additive_expression
-                    ;
+logical_or_expression
+    : logical_and_expression (OR logical_and_expression)*
+    ;
 
-additive_expression:    additive_expression (PLUS|MINUS) factor_expression 
-                    |   factor_expression
-                    ;
+logical_and_expression
+    : relational_expression (AND relational_expression)*
+    ;
 
-factor_expression:      
-                        factor_expression (MUL|DIV|MOD) unary_expression
-                    |   unary_expression
-                    ;
+relational_expression
+    : additive_expression (COMP additive_expression)?
+    ;
+
+additive_expression
+    : factor_expression ((PLUS | MINUS) factor_expression)*
+    ;
+
+factor_expression
+    : unary_expression ((MUL | DIV | MOD) unary_expression)*
+    ;
 
 unary_expression:       PLUS unary_expression
                     |   MINUS unary_expression
@@ -100,7 +111,7 @@ unary_expression:       PLUS unary_expression
                     |   value
                     ;
 
-value:      OPAREN simple_expression CPAREN
+value:      OPAREN expression CPAREN
         |   INT
         |   BOOL
         |   CHAR
@@ -111,6 +122,5 @@ value:      OPAREN simple_expression CPAREN
 /*  LLamadas a función. */
 call: ID OPAREN args CPAREN ;
 
-args: args_list* ;
-
-args_list: args_list COMMA expression | expression ;
+args: args_list? ;
+args_list: expression (COMMA expression)* ;
