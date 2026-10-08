@@ -34,7 +34,7 @@ param: (INT_TYPE | CHAR_TYPE | BOOL_TYPE | VOID_TYPE) ID | INT_TYPE ID OBRACKETS
 /*  Cuerpo de una función. Notese que unicamente se permite declaración de variables y no de funciones.
     Funciones anidadas no está soportado en la especificación de C- */
 compound_stmt
-    : OBRACES local_declarations? statment_list? CBRACES
+    : OBRACES (local_declarations | statment_list)* CBRACES
     ;
 
 /*  Declaración de variables dentro de una función. */
@@ -94,7 +94,7 @@ logical_and_expression
     ;
 
 relational_expression
-    : additive_expression (COMP additive_expression)?
+    : additive_expression (COMP additive_expression)*
     ;
 
 additive_expression
