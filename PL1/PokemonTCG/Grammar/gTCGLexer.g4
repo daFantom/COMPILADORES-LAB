@@ -1,6 +1,6 @@
 lexer grammar gTCGLexer;
 
-TURN    : 'Turn' ;
+TURN    : 'Turn' | 'turn' ;
 POKEMON : 'Pokémon' ;
 ADDED   : 'added' ;
 
@@ -245,6 +245,17 @@ TAKEN
     : 'taken'
     ;
 
+A_SOMETHING
+    : 'a' | 'A'
+    ;
+
+AND
+    : 'and'
+    ;
+
+THEM
+    : 'them'
+    ;
 
 // ============================================================
 // CASOS ESPECIALES
@@ -457,6 +468,7 @@ CARD
     | 'Fan Rotom'
     | 'Hoothoot'
     | 'Noctowl'
+    | 'Prime Catcher'
     ;
 
 

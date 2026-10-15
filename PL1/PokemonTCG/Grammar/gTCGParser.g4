@@ -10,22 +10,19 @@ options {
 // ============================================================
 
 log
-    : (NEWLINE | logEntry)* EOF
+    : setup (NEWLINE
+        turn
+    |   gameEnd
+    )*
+
+    EOF
     ;
 
 
 // ============================================================
 // ENTRADAS PRINCIPALES
 // ============================================================
-
-logEntry
-    : setup
-    | turn
-    | gameEnd
-    | setupAction
-    | playerAction
-    | subAction
-    ;
+    
 
 
 // ============================================================
@@ -45,18 +42,6 @@ setupAction
     | initialPokemon
     ;
 
-playerAction
-    : playAction
-    | attachAction
-    | evolveAction
-    | attackAction
-    | switchAction
-    | retreatAction
-    | shuffleAction
-    | discardAction
-    | prizeAction
-    | moveToHandAction
-    ;
 // ------------------------------------------------------------
 // Moneda
 // ------------------------------------------------------------
@@ -95,7 +80,7 @@ drawnCards
 // ------------------------------------------------------------
 
 initialPokemon
-    : PLAYER PLAYED card TO (ACTIVE SPOT | BENCH) DOT NEWLINE
+    : PLAYER PLAYED card TO THE (ACTIVE SPOT | BENCH) DOT NEWLINE
     ;
 
 
@@ -122,6 +107,7 @@ turnAction
     | switchAction
     | retreatAction
     | shuffleAction
+    | cardMovedAction
     | discardAction
     | prizeAction
     | moveToHandAction
@@ -138,6 +124,7 @@ turnAction
 
 drawAction
     : PLAYER DREW CARD_WORD DOT NEWLINE
+    | PLAYER DREW A_SOMETHING CARD_WORD DOT NEWLINE
     | PLAYER DREW card DOT NEWLINE
     | PLAYER DREW NUMBER CARDS DOT NEWLINE
       subAction*
@@ -160,7 +147,7 @@ playAction
 
 attachAction
     : PLAYER ATTACHED card TO card
-      (ON BENCH | IN ACTIVE SPOT)
+      (ON THE BENCH | IN THE ACTIVE SPOT)
       DOT NEWLINE
     ;
 
@@ -171,7 +158,7 @@ attachAction
 
 evolveAction
     : PLAYER EVOLVED card TO card
-      (ON BENCH | IN ACTIVE SPOT)
+      (ON THE BENCH | IN THE ACTIVE SPOT)
       DOT NEWLINE
     ;
 
@@ -182,11 +169,11 @@ evolveAction
 
 attackAction
     : PLAYER POSSESSIVE card
-      USED attack
-      ON PLAYER POSSESSIVE card
+      USED attack DOT? NEWLINE?
+      (ON PLAYER POSSESSIVE card
       FOR NUMBER DAMAGE DOT NEWLINE
       damageBreakdown?
-      subAction*
+      subAction*)?
     ;
 
 
@@ -196,14 +183,13 @@ attackAction
 
 damageBreakdown
     : HYPHEN DAMAGE_BREAKDOWN COLON NEWLINE
-      damageLine+
+      damageLine+ NEWLINE
     ;
 
 damageLine
-    : BULLET BASE_DAMAGE COLON NUMBER DAMAGE DOT NEWLINE
-    | BULLET LPAREN ITEM RPAREN card
-      COLON NUMBER DAMAGE DOT NEWLINE
-    | BULLET TOTAL_DAMAGE COLON NUMBER DAMAGE DOT NEWLINE
+    : BULLET BASE_DAMAGE COLON NUMBER DAMAGE DOT? NEWLINE
+    | BULLET LPAREN ITEM RPAREN card COLON NUMBER DAMAGE DOT? NEWLINE
+    | BULLET TOTAL_DAMAGE COLON NUMBER DAMAGE DOT? NEWLINE
     ;
 
 
@@ -220,7 +206,7 @@ switchAction
 switchResult
     : HYPHEN
       PLAYER POSSESSIVE card
-      SWITCHED WITH
+      WAS? SWITCHED WITH
       PLAYER POSSESSIVE card
       TO BECOME THE ACTIVE POKEMON
       DOT NEWLINE
@@ -232,7 +218,7 @@ switchResult
 // ============================================================
 
 retreatAction
-    : PLAYER RETIRED card TO BENCH DOT NEWLINE
+    : PLAYER RETIRED card TO THE BENCH DOT NEWLINE
       subAction*
     ;
 
@@ -253,7 +239,8 @@ shuffleAction
 // ============================================================
 
 discardAction
-    : PLAYER DISCARDED NUMBER CARDS DOT NEWLINE
+    : PLAYER DISCARDED CARD DOT NEWLINE
+    | PLAYER DISCARDED NUMBER CARDS DOT NEWLINE
       cardList?
     | NUMBER CARDS WERE DISCARDED FROM
       PLAYER POSSESSIVE card DOT NEWLINE
@@ -268,8 +255,8 @@ discardAction
 // ============================================================
 
 prizeAction
-    : PLAYER TAKE PRIZE CARD DOT NEWLINE
-    | PLAYER TAKE NUMBER PRIZE CARDS DOT NEWLINE
+    : PLAYER TAKE A_SOMETHING? PRIZE CARD_WORD DOT NEWLINE
+    | PLAYER TAKE NUMBER PRIZE_CARDS DOT NEWLINE
     ;
 
 
@@ -303,6 +290,11 @@ knockoutAction
       WAS KNOCKED OUT EXCLAMATION NEWLINE
     ;
 
+cardMovedAction
+    : A_SOMETHING CARD_WORD WAS ADDED TO PLAYER POSSESSIVE HAND DOT NEWLINE
+    | (CARD | SWITCH) WAS ADDED TO PLAYER POSSESSIVE HAND DOT NEWLINE
+    ;
+
 
 // ============================================================
 // SUBACCIONES
@@ -319,15 +311,18 @@ knockoutAction
 
 subAction
     : HYPHEN subActionBody DOT NEWLINE
+    (cardList | damageLine)*
     ;
 
 subActionBody
     : PLAYER DREW card
+    | PLAYER DREW A_SOMETHING CARD_WORD
     | PLAYER DREW NUMBER CARDS
+    | PLAYER DREW NUMBER CARDS AND PLAYED THEM TO THE BENCH
     | PLAYER SHUFFLED THEIR DECK
     | PLAYER SHUFFLED NUMBER CARDS INTO THEIR DECK
     | PLAYER SHUFFLED card INTO THEIR DECK
-
+    | PLAYER DISCARDED CARD
     | PLAYER DISCARDED NUMBER CARDS
     | NUMBER CARDS WERE DISCARDED FROM PLAYER POSSESSIVE card
     | card WAS DISCARDED FROM PLAYER POSSESSIVE card
@@ -336,6 +331,12 @@ subActionBody
     | PLAYER TAKE NUMBER PRIZE CARDS
 
     | PLAYER MOVED PLAYER POSSESSIVE card TO THEIR HAND
+
+    | PLAYER POSSESSIVE CARD WAS SWITCHED WITH PLAYER POSSESSIVE CARD TO BECOME THE ACTIVE POKEMON
+    | PLAYER ATTACHED CARD TO CARD ON THE BENCH
+    | PLAYER ATTACHED CARD TO CARD IN THE ACTIVE SPOT
+    | PLAYER POSSESSIVE CARD TAKE NUMBER DAMAGE
+    | PLAYER EVOLVED CARD TO CARD IN THE ACTIVE SPOT
 
     | cardAddedToHand
     ;
@@ -355,8 +356,8 @@ endTurn
 // ============================================================
 
 gameEnd
-    : ALL PRIZE CARDS TAKEN DOT PLAYER WINS DOT NEWLINE
-    | OPPONENT CONCEDED DOT PLAYER WINS DOT NEWLINE
+    : ALL PRIZE_CARDS TAKEN DOT PLAYER WINS DOT
+    | OPPONENT CONCEDED DOT PLAYER WINS DOT
     ;
 
 
