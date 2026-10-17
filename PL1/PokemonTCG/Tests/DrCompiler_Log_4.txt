@@ -1,0 +1,140 @@
+Setup
+MetalHeadGC chose tails for the opening coin flip.
+GGnoread won the coin toss.
+GGnoread decided to go first.
+MetalHeadGC drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • Energy Coin, Boss's Orders, Basic Fighting Energy, Cinderace, Hero's Cape, Basic Fighting Energy, Team Rocket's Watchtower
+GGnoread drew 7 cards for the opening hand.
+- 7 drawn cards.
+MetalHeadGC played Cinderace to the Active Spot.
+GGnoread played Riolu to the Active Spot.
+
+GGnoread's Turn
+GGnoread drew a card.
+GGnoread attached Basic Fighting Energy to Riolu in the Active Spot.
+GGnoread played Fighting Gong.
+- GGnoread drew Mega Zygarde ex.
+- GGnoread shuffled their deck.
+GGnoread played Mega Zygarde ex to the Bench.
+GGnoread ended their turn.
+
+MetalHeadGC's Turn
+MetalHeadGC drew Lillie's Determination.
+MetalHeadGC attached Basic Fighting Energy to Cinderace in the Active Spot.
+MetalHeadGC played Team Rocket's Watchtower to the Stadium spot.
+MetalHeadGC played Lillie's Determination.
+- MetalHeadGC shuffled 4 cards into their deck.
+   • Energy Coin, Boss's Orders, Basic Fighting Energy, Hero's Cape
+- MetalHeadGC drew 8 cards.
+   • Basic Fighting Energy, Mega Zygarde ex, Colress's Tenacity, Boss's Orders, Rocky Fighting Energy, Fighting Gong, Boss's Orders, Colress's Tenacity
+MetalHeadGC played Mega Zygarde ex to the Bench.
+MetalHeadGC played Fighting Gong.
+- MetalHeadGC drew Basic Fighting Energy.
+- MetalHeadGC shuffled their deck.
+MetalHeadGC's Cinderace used Turbo Flare on GGnoread’s Riolu for 50 damage.
+- MetalHeadGC attached Basic Fighting Energy to Mega Zygarde ex on the Bench.
+- MetalHeadGC attached Basic Fighting Energy to Mega Zygarde ex on the Bench.
+- MetalHeadGC attached Basic Fighting Energy to Mega Zygarde ex on the Bench.
+- MetalHeadGC shuffled their deck.
+
+GGnoread's Turn
+GGnoread drew a card.
+GGnoread played Ultra Ball.
+- GGnoread discarded 2 cards.
+   • Boss's Orders, Basic Fighting Energy
+- GGnoread drew Mega Lucario ex.
+- GGnoread shuffled their deck.
+GGnoread evolved Riolu to Mega Lucario ex in the Active Spot.
+GGnoread attached Maximum Belt to Mega Lucario ex in the Active Spot.
+GGnoread played Night Stretcher.
+- GGnoread moved GGnoread's Basic Fighting Energy to their hand.
+GGnoread attached Basic Fighting Energy to Mega Lucario ex in the Active Spot.
+GGnoread played Lillie's Determination.
+- GGnoread drew 8 cards.
+GGnoread played Lunatone to the Bench.
+GGnoread played Solrock to the Bench.
+GGnoread played Poké Pad.
+- GGnoread drew Makuhita.
+- GGnoread shuffled their deck.
+GGnoread played Makuhita to the Bench.
+GGnoread played Poké Pad.
+- GGnoread drew Riolu.
+- GGnoread shuffled their deck.
+GGnoread played Riolu to the Bench.
+GGnoread played Premium Power Pro.
+GGnoread's Mega Lucario ex used Aura Jab on MetalHeadGC’s Cinderace for 160 damage.
+- Damage breakdown:
+   • Base damage: 130 damage
+   • (Item) Premium Power Pro: 30 damage
+   • Total damage: 160 damage
+MetalHeadGC's Cinderace was Knocked Out!
+Basic Fighting Energy was discarded from MetalHeadGC's Cinderace.
+GGnoread took a Prize card.
+A card was added to GGnoread's hand.
+MetalHeadGC's Mega Zygarde ex is now in the Active Spot.
+
+MetalHeadGC's Turn
+MetalHeadGC drew Mega Signal.
+MetalHeadGC attached Rocky Fighting Energy to Mega Zygarde ex in the Active Spot.
+MetalHeadGC played Boss's Orders.
+- GGnoread's Mega Zygarde ex was switched with GGnoread's Mega Lucario ex to become the Active Pokémon.
+GGnoread's Mega Zygarde ex is now in the Active Spot.
+MetalHeadGC's Mega Zygarde ex used Gaia Wave on GGnoread’s Mega Zygarde ex for 200 damage.
+
+GGnoread's Turn
+GGnoread drew a card.
+GGnoread attached Air Balloon to Mega Zygarde ex in the Active Spot.
+GGnoread retreated Mega Zygarde ex to the Bench.
+GGnoread's Mega Lucario ex is now in the Active Spot.
+GGnoread played Lillie's Determination.
+- GGnoread shuffled 3 cards into their deck.
+- GGnoread drew 6 cards.
+GGnoread evolved Riolu to Mega Lucario ex on the Bench.
+GGnoread's Lunatone used Lunar Cycle.
+- GGnoread discarded Basic Fighting Energy.
+- GGnoread drew 3 cards.
+GGnoread played Fighting Gong.
+- GGnoread drew Basic Fighting Energy.
+- GGnoread shuffled their deck.
+GGnoread attached Rocky Fighting Energy to Mega Lucario ex on the Bench.
+GGnoread attached Air Balloon to Mega Lucario ex on the Bench.
+GGnoread's Mega Lucario ex used Mega Brave on MetalHeadGC’s Mega Zygarde ex for 290 damage.
+- Damage breakdown:
+   • Base damage: 270 damage
+   • (Pokémon Tool) Maximum Belt: 50 damage
+   • (Attack) Gaia Wave: -30 damage
+   • Total damage: 290 damage
+
+MetalHeadGC's Turn
+MetalHeadGC drew Core Memory.
+MetalHeadGC attached Basic Fighting Energy to Mega Zygarde ex in the Active Spot.
+MetalHeadGC played Boss's Orders.
+- GGnoread's Makuhita was switched with GGnoread's Mega Lucario ex to become the Active Pokémon.
+GGnoread's Makuhita is now in the Active Spot.
+MetalHeadGC's Mega Zygarde ex used Nullifying Zero.
+- MetalHeadGC flipped a coin and it landed on tails.
+- MetalHeadGC flipped a coin and it landed on heads.
+- GGnoread's Lunatone took 150 damage.
+- MetalHeadGC flipped a coin and it landed on heads.
+- GGnoread's Solrock took 150 damage.
+- MetalHeadGC flipped a coin and it landed on heads.
+- GGnoread's Mega Zygarde ex took 150 damage.
+- MetalHeadGC flipped a coin and it landed on heads.
+- GGnoread's Mega Lucario ex took 150 damage.
+- MetalHeadGC flipped a coin and it landed on heads.
+- GGnoread's Mega Lucario ex took 150 damage.
+Basic Fighting Energy was added to MetalHeadGC's hand.
+Jumbo Ice Cream was added to MetalHeadGC's hand.
+Team Rocket's Watchtower was added to MetalHeadGC's hand.
+MetalHeadGC took 5 Prize cards.
+Air Balloon was discarded from GGnoread's Mega Zygarde ex.
+GGnoread's Mega Zygarde ex was Knocked Out!
+GGnoread's Solrock was Knocked Out!
+GGnoread's Lunatone was Knocked Out!
+Mega Zygarde ex was added to MetalHeadGC's hand.
+Judge was added to MetalHeadGC's hand.
+
+GGnoread's Turn
+GGnoread drew a card.
+Opponent conceded. MetalHeadGC wins.

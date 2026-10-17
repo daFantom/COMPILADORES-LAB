@@ -1,0 +1,62 @@
+Setup
+Opponent chose tails for the opening coin flip.
+Organmaster98 won the coin toss.
+Organmaster98 decided to go first.
+Opponent drew 7 cards for the opening hand.
+- 7 drawn cards.
+Organmaster98 drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • Cyrano, Lillie's Determination, N's Zorua, Ciphermaniac's Codebreaking, Basic Darkness Energy, Binding Mochi, Basic Darkness Energy
+Opponent played Gastly to the Active Spot.
+Opponent played Mega Darkrai ex to the Bench.
+Organmaster98 played N's Zorua to the Active Spot.
+
+Organmaster98's Turn
+Organmaster98 drew Yveltal.
+Organmaster98 played Yveltal to the Bench.
+Organmaster98 attached Basic Darkness Energy to N's Zorua in the Active Spot.
+Organmaster98 ended their turn.
+
+Opponent's Turn
+Opponent drew a card.
+Opponent attached Basic Darkness Energy to Mega Darkrai ex on the Bench.
+Opponent ended their turn.
+
+Organmaster98's Turn
+Organmaster98 drew Poké Pad.
+Organmaster98 played Cyrano.
+- Organmaster98 drew 3 cards.
+   • N's Zoroark ex, N's Zoroark ex, Pecharunt ex
+- Organmaster98 shuffled their deck.
+Organmaster98 evolved N's Zorua to N's Zoroark ex in the Active Spot.
+Organmaster98 played Pecharunt ex to the Bench.
+Organmaster98 attached Basic Darkness Energy to N's Zoroark ex in the Active Spot.
+Organmaster98 played Poké Pad.
+- Organmaster98 drew N's Zekrom.
+- Organmaster98 shuffled their deck.
+Organmaster98 played N's Zekrom to the Bench.
+Organmaster98's N's Zoroark ex used Night Joker on Opponent’s Gastly for 70 damage.
+- Organmaster98 chose Shred
+Opponent's Gastly was Knocked Out!
+Organmaster98 took a Prize card.
+Buddy-Buddy Poffin was added to Organmaster98's hand.
+Opponent's Mega Darkrai ex is now in the Active Spot.
+
+Opponent's Turn
+Opponent drew a card.
+Opponent played Boss's Orders.
+- Organmaster98's N's Zekrom was switched with Organmaster98's N's Zoroark ex to become the Active Pokémon.
+Organmaster98's N's Zekrom is now in the Active Spot.
+Opponent attached Basic Darkness Energy to Mega Darkrai ex in the Active Spot.
+Opponent played Dark Bell.
+- Organmaster98's N's Zekrom is now Confused.
+Opponent's Mega Darkrai ex used Dusk Raid on Organmaster98’s N's Zekrom for 110 damage.
+
+Organmaster98's Turn
+Organmaster98 drew Basic Darkness Energy.
+Organmaster98 attached Binding Mochi to N's Zoroark ex on the Bench.
+Organmaster98's Pecharunt ex used Subjugating Chains.
+- Organmaster98's N's Zoroark ex was switched with Organmaster98's N's Zekrom to become the Active Pokémon.
+- Organmaster98's N's Zoroark ex is now Poisoned.
+Organmaster98's N's Zoroark ex is now in the Active Spot.
+Opponent conceded. Organmaster98 wins.

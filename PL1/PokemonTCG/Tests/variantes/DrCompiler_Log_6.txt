@@ -1,0 +1,66 @@
+Setup
+Zerofo3384 chose tails for the opening coin flip.
+ctd_Panda won the coin toss.
+ctd_Panda decided to go first.
+Zerofo3384 drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • Weedle, Air Balloon, Kakuna, Lilligant, Night Stretcher, Weedle, Colress's Tenacity
+ctd_Panda drew 7 cards for the opening hand.
+- 7 drawn cards.
+Zerofo3384 played Weedle to the Active Spot.
+Zerofo3384 played Weedle to the Bench.
+ctd_Panda played Axew to the Active Spot.
+ctd_Panda played Axew to the Bench.
+
+ctd_Panda's Turn
+ctd_Panda drew a card.
+ctd_Panda attached Thick Scale to Axew in the Active Spot.
+ctd_Panda ended their turn.
+
+Zerofo3384's Turn
+Zerofo3384 drew Sacred Ash.
+Zerofo3384 played Colress's Tenacity.
+- Zerofo3384 drew 2 cards.
+   • Forest of Vitality, Growing Grass Energy
+- Zerofo3384 shuffled their deck.
+Zerofo3384 played Forest of Vitality to the Stadium spot.
+Zerofo3384 attached Growing Grass Energy to Weedle in the Active Spot.
+Zerofo3384 attached Air Balloon to Weedle in the Active Spot.
+Zerofo3384 ended their turn.
+
+ctd_Panda's Turn
+ctd_Panda drew a card.
+ctd_Panda played Nighttime Mine to the Stadium spot.
+- ctd_Panda discarded Forest of Vitality.
+ctd_Panda played Hilda.
+- ctd_Panda drew 2 cards.
+   • Fraxure, Mist Energy
+- ctd_Panda shuffled their deck.
+ctd_Panda evolved Axew to Fraxure in the Active Spot.
+ctd_Panda attached Mist Energy to Fraxure in the Active Spot.
+ctd_Panda played Poké Pad.
+- ctd_Panda drew Haxorus.
+- ctd_Panda shuffled their deck.
+ctd_Panda ended their turn.
+
+Zerofo3384's Turn
+Zerofo3384 drew Patrat.
+Zerofo3384 played Patrat to the Bench.
+Zerofo3384 evolved Weedle to Kakuna in the Active Spot.
+Zerofo3384 ended their turn.
+
+ctd_Panda's Turn
+ctd_Panda drew a card.
+ctd_Panda evolved Fraxure to Haxorus in the Active Spot.
+ctd_Panda played Dawn.
+- ctd_Panda drew 3 cards.
+   • Axew, Amaura, Haxorus
+- ctd_Panda shuffled their deck.
+ctd_Panda played Rare Candy.
+- ctd_Panda evolved Axew to Haxorus on the Bench.
+ctd_Panda played Axew to the Bench.
+ctd_Panda ended their turn.
+
+Zerofo3384's Turn
+Zerofo3384 drew Night Stretcher.
+You conceded. ctd_Panda wins.
