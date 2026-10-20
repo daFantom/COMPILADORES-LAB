@@ -94,7 +94,7 @@ turn
 // ============================================================
 
 turnAction
-    : drawAction
+    : (drawAction
     | playAction
     | attachAction
     | evolveAction
@@ -107,8 +107,8 @@ turnAction
     | moveToHandAction
     | activeSpotAction
     | knockoutAction
-    | subAction
-    | endTurn
+    | endTurn)
+    subAction*
     ;
 
 
@@ -121,7 +121,6 @@ drawAction
     | PLAYER DREW A_SOMETHING CARD_WORD DOT NEWLINE
     | PLAYER DREW CARD DOT NEWLINE
     | PLAYER DREW NUMBER CARDS DOT NEWLINE
-      subAction*
     ;
 
 
@@ -131,7 +130,6 @@ drawAction
 
 playAction
     : PLAYER PLAYED CARD (TO THE (BENCH | ACTIVE SPOT))? DOT NEWLINE
-      subAction*
     ;
 
 
@@ -168,7 +166,7 @@ attackAction
         | 
         ON PLAYER POSSESSIVE CARD FOR NUMBER DAMAGE DOT NEWLINE
         damageBreakdown?
-        subAction* ) 
+         )
     ;
 
 // ------------------------------------------------------------
@@ -196,7 +194,6 @@ damageBonusLine
 
 retreatAction
     : PLAYER RETIRED CARD TO THE BENCH DOT NEWLINE
-      subAction*
     ;
 
 
@@ -263,8 +260,7 @@ activeSpotAction
 // ============================================================
 
 knockoutAction
-    : PLAYER POSSESSIVE CARD
-      WAS KNOCKED OUT EXCLAMATION NEWLINE
+    : PLAYER POSSESSIVE CARD WAS KNOCKED OUT EXCLAMATION NEWLINE
     ;
 
 cardMovedAction
