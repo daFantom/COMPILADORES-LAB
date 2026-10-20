@@ -85,7 +85,7 @@ initialPokemon
 
 turn
     : PLAYER POSSESSIVE TURN NEWLINE
-      turnAction*
+      mainTurnAction*
     ;
 
 
@@ -93,8 +93,18 @@ turn
 // ACCIONES DE UN TURNO
 // ============================================================
 
-turnAction
-    : (drawAction
+mainTurnAction
+    :   turnActionBody (DOT|EXCLAMATION) NEWLINE
+        (subTurnAction | damageBreakdown)*
+    ;
+
+subTurnAction
+    : HYPHEN turnActionBody DOT NEWLINE
+    (cardList)*
+    ;
+
+turnActionBody
+    : drawAction
     | playAction
     | attachAction
     | evolveAction
@@ -106,9 +116,10 @@ turnAction
     | prizeAction
     | moveToHandAction
     | activeSpotAction
+    | switchAction
     | knockoutAction
-    | endTurn)
-    subAction*
+    | damagedAction
+    | endTurn
     ;
 
 
@@ -117,10 +128,12 @@ turnAction
 // ============================================================
 
 drawAction
-    : PLAYER DREW CARD_WORD DOT NEWLINE
-    | PLAYER DREW A_SOMETHING CARD_WORD DOT NEWLINE
-    | PLAYER DREW CARD DOT NEWLINE
-    | PLAYER DREW NUMBER CARDS DOT NEWLINE
+    : PLAYER DREW CARD_WORD
+    | PLAYER DREW A_SOMETHING CARD_WORD
+    | PLAYER DREW CARD
+    | PLAYER DREW NUMBER CARD
+    | PLAYER DREW NUMBER CARDS
+    | PLAYER DREW NUMBER CARDS AND PLAYED THEM TO THE BENCH
     ;
 
 
@@ -129,7 +142,7 @@ drawAction
 // ============================================================
 
 playAction
-    : PLAYER PLAYED CARD (TO THE (BENCH | ACTIVE SPOT))? DOT NEWLINE
+    : PLAYER PLAYED CARD (TO THE (BENCH | ACTIVE SPOT))?
     ;
 
 
@@ -138,9 +151,7 @@ playAction
 // ============================================================
 
 attachAction
-    : PLAYER ATTACHED CARD TO CARD
-      (ON THE BENCH | IN THE ACTIVE SPOT)
-      DOT NEWLINE
+    : PLAYER ATTACHED CARD TO CARD (ON THE BENCH | IN THE ACTIVE SPOT)
     ;
 
 
@@ -149,9 +160,7 @@ attachAction
 // ============================================================
 
 evolveAction
-    : PLAYER EVOLVED CARD TO CARD
-      (ON THE BENCH | IN THE ACTIVE SPOT)
-      DOT NEWLINE
+    : PLAYER EVOLVED CARD TO CARD (ON THE BENCH | IN THE ACTIVE SPOT)
     ;
 
 
@@ -160,13 +169,7 @@ evolveAction
 // ============================================================
 
 attackAction
-    : PLAYER POSSESSIVE CARD
-      USED ATTACK ( 
-        DOT NEWLINE
-        | 
-        ON PLAYER POSSESSIVE CARD FOR NUMBER DAMAGE DOT NEWLINE
-        damageBreakdown?
-         )
+    : PLAYER POSSESSIVE CARD USED ATTACK (ON PLAYER POSSESSIVE CARD FOR NUMBER DAMAGE)?
     ;
 
 // ------------------------------------------------------------
@@ -174,10 +177,7 @@ attackAction
 // ------------------------------------------------------------
 
 damageBreakdown
-    : HYPHEN 
-    DAMAGE_BREAKDOWN 
-    COLON 
-    NEWLINE
+    : HYPHEN DAMAGE_BREAKDOWN COLON NEWLINE
     BULLET BASE_DAMAGE COLON NUMBER DAMAGE NEWLINE
     damageBonusLine
     BULLET TOTAL_DAMAGE COLON NUMBER DAMAGE NEWLINE
@@ -193,7 +193,7 @@ damageBonusLine
 // ============================================================
 
 retreatAction
-    : PLAYER RETIRED CARD TO THE BENCH DOT NEWLINE
+    : PLAYER RETIRED CARD TO THE BENCH
     ;
 
 
@@ -202,9 +202,9 @@ retreatAction
 // ============================================================
 
 shuffleAction
-    : PLAYER SHUFFLED THEIR DECK DOT NEWLINE
-    | PLAYER SHUFFLED NUMBER CARDS INTO THEIR DECK DOT NEWLINE
-    | PLAYER SHUFFLED CARD INTO THEIR DECK DOT NEWLINE
+    : PLAYER SHUFFLED THEIR DECK
+    | PLAYER SHUFFLED NUMBER CARDS INTO THEIR DECK
+    | PLAYER SHUFFLED CARD INTO THEIR DECK
     ;
 
 
@@ -213,14 +213,10 @@ shuffleAction
 // ============================================================
 
 discardAction
-    : PLAYER DISCARDED CARD DOT NEWLINE
-    | PLAYER DISCARDED NUMBER CARDS DOT NEWLINE
-      cardList?
-    | NUMBER CARDS WERE DISCARDED FROM
-      PLAYER POSSESSIVE CARD DOT NEWLINE
-      cardList?
-    | CARD WAS DISCARDED FROM
-      PLAYER POSSESSIVE CARD DOT NEWLINE
+    : PLAYER DISCARDED CARD
+    | PLAYER DISCARDED NUMBER CARDS
+    | NUMBER CARDS WERE DISCARDED FROM PLAYER POSSESSIVE CARD
+    | CARD WAS DISCARDED FROM PLAYER POSSESSIVE CARD
     ;
 
 
@@ -229,8 +225,8 @@ discardAction
 // ============================================================
 
 prizeAction
-    : PLAYER TAKE A_SOMETHING? PRIZE CARD_WORD DOT NEWLINE
-    | PLAYER TAKE NUMBER PRIZE_CARDS DOT NEWLINE
+    : PLAYER TAKE A_SOMETHING? PRIZE CARD_WORD
+    | PLAYER TAKE NUMBER PRIZE_CARDS
     ;
 
 
@@ -241,7 +237,7 @@ prizeAction
 moveToHandAction
     : PLAYER MOVED
       PLAYER POSSESSIVE CARD
-      TO THEIR HAND DOT NEWLINE
+      TO THEIR HAND
     ;
 
 
@@ -251,7 +247,7 @@ moveToHandAction
 
 activeSpotAction
     : PLAYER POSSESSIVE CARD
-      IS NOW IN THE ACTIVE SPOT DOT NEWLINE
+      IS NOW IN THE ACTIVE SPOT
     ;
 
 
@@ -260,65 +256,28 @@ activeSpotAction
 // ============================================================
 
 knockoutAction
-    : PLAYER POSSESSIVE CARD WAS KNOCKED OUT EXCLAMATION NEWLINE
+    : PLAYER POSSESSIVE CARD WAS KNOCKED OUT
     ;
 
 cardMovedAction
-    : A_SOMETHING CARD_WORD WAS ADDED TO PLAYER POSSESSIVE HAND DOT NEWLINE
-    | CARD WAS ADDED TO PLAYER POSSESSIVE HAND DOT NEWLINE
+    : A_SOMETHING CARD_WORD WAS ADDED TO PLAYER POSSESSIVE HAND
+    | CARD WAS ADDED TO PLAYER POSSESSIVE HAND
     ;
 
-
-// ============================================================
-// SUBACCIONES
-// ============================================================
-//
-// Ejemplos:
-//
-// - DudeJaden drew Riolu.
-// - DudeJaden shuffled their deck.
-// - 2 cards were discarded...
-// - DudeJaden took 3 Prize cards.
-// - A CARD was added to DudeJaden's hand.
-// ============================================================
-
-subAction
-    : HYPHEN subActionBody DOT NEWLINE
-    (cardList)*
+switchAction
+    : PLAYER POSSESSIVE CARD WAS SWITCHED WITH PLAYER POSSESSIVE CARD TO BECOME THE ACTIVE POKEMON
     ;
 
-subActionBody
-    : PLAYER DREW CARD
-    | PLAYER DREW A_SOMETHING CARD_WORD
-    | PLAYER DREW NUMBER CARDS
-    | PLAYER DREW NUMBER CARDS AND PLAYED THEM TO THE BENCH
-    | PLAYER SHUFFLED THEIR DECK
-    | PLAYER SHUFFLED NUMBER CARDS INTO THEIR DECK
-    | PLAYER SHUFFLED CARD INTO THEIR DECK
-    | PLAYER DISCARDED CARD
-    | PLAYER DISCARDED NUMBER CARDS
-    | NUMBER CARDS WERE DISCARDED FROM PLAYER POSSESSIVE CARD
-    | CARD WAS DISCARDED FROM PLAYER POSSESSIVE CARD
-
-    | PLAYER TAKE PRIZE CARD
-    | PLAYER TAKE NUMBER PRIZE CARDS
-
-    | PLAYER MOVED PLAYER POSSESSIVE CARD TO THEIR HAND
-
-    | PLAYER POSSESSIVE CARD WAS SWITCHED WITH PLAYER POSSESSIVE CARD TO BECOME THE ACTIVE POKEMON
-    | PLAYER ATTACHED CARD TO CARD ON THE BENCH
-    | PLAYER ATTACHED CARD TO CARD IN THE ACTIVE SPOT
-    | PLAYER POSSESSIVE CARD TAKE NUMBER DAMAGE
-    | PLAYER EVOLVED CARD TO CARD IN THE ACTIVE SPOT
+damagedAction
+    : PLAYER POSSESSIVE CARD TAKE NUMBER DAMAGE
     ;
-
 
 // ============================================================
 // FIN DE TURNO
 // ============================================================
 
 endTurn
-    : PLAYER ENDED THEIR TURN DOT NEWLINE
+    : PLAYER ENDED THEIR TURN
     ;
 
 
