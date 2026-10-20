@@ -20,12 +20,6 @@ log
 
 
 // ============================================================
-// ENTRADAS PRINCIPALES
-// ============================================================
-    
-
-
-// ============================================================
 // SETUP
 // ============================================================
 
@@ -33,6 +27,7 @@ setup
     : SETUP NEWLINE
       setupAction*
     ;
+
 
 setupAction
     : coinChoice
@@ -50,6 +45,7 @@ coinChoice
     : PLAYER CHOSE (HEADS | TAILS)
       FOR THE OPENING COIN FLIP DOT NEWLINE
     ;
+
 
 coinToss
     : PLAYER WON THE COIN TOSS DOT NEWLINE
@@ -169,27 +165,31 @@ evolveAction
 
 attackAction
     : PLAYER POSSESSIVE card
-      USED attack DOT? NEWLINE?
-      (ON PLAYER POSSESSIVE card
-      FOR NUMBER DAMAGE DOT NEWLINE
-      damageBreakdown?
-      subAction*)?
+      USED attack ( 
+        DOT NEWLINE
+        | 
+        ON PLAYER POSSESSIVE card FOR NUMBER DAMAGE DOT NEWLINE
+        damageBreakdown?
+        subAction* ) 
     ;
-
 
 // ------------------------------------------------------------
 // Desglose de daño
 // ------------------------------------------------------------
 
 damageBreakdown
-    : HYPHEN DAMAGE_BREAKDOWN COLON NEWLINE
-      damageLine+ NEWLINE
+    : HYPHEN 
+    DAMAGE_BREAKDOWN 
+    COLON 
+    NEWLINE
+    BULLET BASE_DAMAGE COLON NUMBER DAMAGE NEWLINE
+    damageBonusLine
+    BULLET TOTAL_DAMAGE COLON NUMBER DAMAGE NEWLINE
+    NEWLINE
     ;
 
-damageLine
-    : BULLET BASE_DAMAGE COLON NUMBER DAMAGE DOT? NEWLINE
-    | BULLET LPAREN ITEM RPAREN card COLON NUMBER DAMAGE DOT? NEWLINE
-    | BULLET TOTAL_DAMAGE COLON NUMBER DAMAGE DOT? NEWLINE
+damageBonusLine
+    : BULLET LPAREN ITEM RPAREN card COLON NUMBER DAMAGE NEWLINE
     ;
 
 
@@ -311,7 +311,7 @@ cardMovedAction
 
 subAction
     : HYPHEN subActionBody DOT NEWLINE
-    (cardList | damageLine)*
+    (cardList)*
     ;
 
 subActionBody
