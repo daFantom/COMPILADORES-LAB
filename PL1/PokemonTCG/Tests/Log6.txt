@@ -1,0 +1,356 @@
+Setup
+Fernandolimax chose tails for the opening coin flip.
+paveiii won the coin toss.
+paveiii decided to go first.
+Fernandolimax drew 7 cards for the opening hand.
+- 7 drawn cards.
+paveiii drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • Ultra Ball, Poké Pad, Switch, Tarragon, Solrock, Judge, Gravity Mountain
+Fernandolimax played Budew to the Active Spot.
+paveiii played Solrock to the Active Spot.
+
+paveiii's Turn
+paveiii drew Air Balloon.
+paveiii played Ultra Ball.
+- paveiii discarded 2 cards.
+   • Gravity Mountain, Air Balloon
+- paveiii drew Fezandipiti ex.
+- paveiii shuffled their deck.
+paveiii played Fezandipiti ex to the Bench.
+paveiii played Switch.
+- paveiii's Fezandipiti ex was switched with paveiii's Solrock to become the Active Pokémon.
+paveiii's Fezandipiti ex is now in the Active Spot.
+paveiii played Poké Pad.
+- paveiii drew Hariyama.
+- paveiii shuffled their deck.
+paveiii ended their turn.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax played Boss's Orders.
+- paveiii's Solrock was switched with paveiii's Fezandipiti ex to become the Active Pokémon.
+paveiii's Solrock is now in the Active Spot.
+Fernandolimax's Budew used Itchy Pollen on paveiii’s Solrock for 20 damage. paveiii's Solrock took 10 more damage because of Grass Weakness.
+- Damage breakdown:
+   • Base damage: 10 damage
+   • Weakness to Grass: 10 damage
+   • Total damage: 20 damage
+
+
+paveiii's Turn
+paveiii drew Premium Power Pro.
+paveiii played Judge.
+- paveiii shuffled 3 cards into their deck.
+   • Tarragon, Hariyama, Premium Power Pro
+- Fernandolimax shuffled 6 cards into their deck.
+- paveiii drew 4 cards.
+   • Team Rocket's Petrel, Lillie's Determination, Premium Power Pro, Basic Fighting Energy
+- Fernandolimax drew 4 cards.
+paveiii attached Basic Fighting Energy to Solrock in the Active Spot.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax played Meowth ex to the Bench.
+Fernandolimax's Meowth ex used Last-Ditch Catch.
+- Fernandolimax drew Lillie's Determination.
+- Fernandolimax shuffled their deck.
+Fernandolimax played Lillie's Determination.
+- Fernandolimax shuffled 4 cards into their deck.
+- Fernandolimax drew 8 cards.
+Fernandolimax played N's Zorua to the Bench.
+Fernandolimax attached Basic Darkness Energy to N's Zorua on the Bench.
+Fernandolimax played Poké Pad.
+- Fernandolimax drew N's Reshiram.
+- Fernandolimax shuffled their deck.
+Fernandolimax played N's Reshiram to the Bench.
+Fernandolimax's Budew used Itchy Pollen on paveiii’s Solrock for 20 damage. paveiii's Solrock took 10 more damage because of Grass Weakness.
+- Damage breakdown:
+   • Base damage: 10 damage
+   • Weakness to Grass: 10 damage
+   • Total damage: 20 damage
+
+
+paveiii's Turn
+paveiii drew Mega Lucario ex.
+paveiii played Lillie's Determination.
+- paveiii shuffled 3 cards into their deck.
+   • Team Rocket's Petrel, Premium Power Pro, Mega Lucario ex
+- paveiii drew 8 cards.
+   • Lillie's Determination, Basic Fighting Energy, Makuhita, Boss's Orders, Air Balloon, Mega Lucario ex, Hariyama, Fighting Gong
+paveiii played Makuhita to the Bench.
+paveiii attached Basic Fighting Energy to Fezandipiti ex on the Bench.
+paveiii attached Air Balloon to Solrock in the Active Spot.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax attached Basic Darkness Energy to N's Zorua on the Bench.
+Fernandolimax evolved N's Zorua to N's Zoroark ex on the Bench.
+Fernandolimax's Budew used Itchy Pollen on paveiii’s Solrock for 20 damage. paveiii's Solrock took 10 more damage because of Grass Weakness.
+- Damage breakdown:
+   • Base damage: 10 damage
+   • Weakness to Grass: 10 damage
+   • Total damage: 20 damage
+
+
+paveiii's Turn
+paveiii drew Premium Power Pro.
+paveiii played Boss's Orders.
+- Fernandolimax's Meowth ex was switched with Fernandolimax's Budew to become the Active Pokémon.
+Fernandolimax's Meowth ex is now in the Active Spot.
+paveiii evolved Makuhita to Hariyama on the Bench.
+paveiii's Hariyama used Heave-Ho Catcher.
+- Fernandolimax's Budew was switched with Fernandolimax's Meowth ex to become the Active Pokémon.
+Fernandolimax's Budew is now in the Active Spot.
+paveiii ended their turn.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax's Budew used Itchy Pollen on paveiii’s Solrock for 20 damage. paveiii's Solrock took 10 more damage because of Grass Weakness.
+- Damage breakdown:
+   • Base damage: 10 damage
+   • Weakness to Grass: 10 damage
+   • Total damage: 20 damage
+
+
+paveiii's Turn
+paveiii drew Makuhita.
+paveiii played Lillie's Determination.
+- paveiii shuffled 4 cards into their deck.
+   • Mega Lucario ex, Fighting Gong, Premium Power Pro, Makuhita
+- paveiii drew 8 cards.
+   • Makuhita, Salvatore, Mega Lucario ex, Team Rocket's Petrel, Fighting Gong, Meowth ex, Riolu, Fighting Gong
+paveiii played Meowth ex to the Bench.
+paveiii played Riolu to the Bench.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax's N's Zoroark ex used Trade.
+- Fernandolimax discarded Cyrano.
+- Fernandolimax drew 2 cards.
+Fernandolimax's Budew used Itchy Pollen on paveiii’s Solrock for 20 damage. paveiii's Solrock took 10 more damage because of Grass Weakness.
+- Damage breakdown:
+   • Base damage: 10 damage
+   • Weakness to Grass: 10 damage
+   • Total damage: 20 damage
+
+
+paveiii's Turn
+paveiii drew Premium Power Pro.
+paveiii evolved Riolu to Mega Lucario ex on the Bench.
+paveiii played Team Rocket's Petrel.
+- paveiii drew Judge.
+- paveiii shuffled their deck.
+paveiii played Makuhita to the Bench.
+paveiii ended their turn.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax played Buddy-Buddy Poffin.
+- Fernandolimax drew 2 cards and played them to the Bench.
+   • N's Zorua, N's Zorua
+- Fernandolimax shuffled their deck.
+Fernandolimax played Lillie's Determination.
+- Fernandolimax shuffled 6 cards into their deck.
+- Fernandolimax drew 8 cards.
+Fernandolimax played Ultra Ball.
+- Fernandolimax discarded 2 cards.
+   • Cyrano, Basic Darkness Energy
+- Fernandolimax drew N's Zoroark ex.
+- Fernandolimax shuffled their deck.
+Fernandolimax attached Basic Darkness Energy to N's Zoroark ex on the Bench.
+Fernandolimax retreated Budew to the Bench.
+Fernandolimax's N's Zoroark ex is now in the Active Spot.
+Fernandolimax ended their turn.
+
+paveiii's Turn
+paveiii drew Basic Fighting Energy.
+paveiii attached Basic Fighting Energy to Mega Lucario ex on the Bench.
+paveiii played Premium Power Pro.
+paveiii played Salvatore.
+- paveiii shuffled their deck.
+paveiii played Fighting Gong.
+- paveiii drew Lunatone.
+- paveiii shuffled their deck.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax played Lillie's Determination.
+- Fernandolimax shuffled 5 cards into their deck.
+- Fernandolimax drew 8 cards.
+Fernandolimax played N's Castle to the Stadium spot.
+Fernandolimax retreated N's Zoroark ex to the Bench.
+Fernandolimax's Budew is now in the Active Spot.
+Fernandolimax's Budew used Itchy Pollen on paveiii’s Solrock for 20 damage. paveiii's Solrock took 10 more damage because of Grass Weakness.
+- Damage breakdown:
+   • Base damage: 10 damage
+   • Weakness to Grass: 10 damage
+   • Total damage: 20 damage
+
+paveiii's Solrock was Knocked Out!
+- 2 cards were discarded from paveiii's Solrock.
+   • Basic Fighting Energy, Air Balloon
+Fernandolimax took a Prize card.
+A card was added to Fernandolimax's hand.
+paveiii's Mega Lucario ex is now in the Active Spot.
+
+paveiii's Turn
+paveiii drew Ultra Ball.
+paveiii played Lunatone to the Bench.
+paveiii played Judge.
+- paveiii shuffled 2 cards into their deck.
+   • Fighting Gong, Ultra Ball
+- Fernandolimax shuffled 8 cards into their deck.
+- paveiii drew 4 cards.
+   • Boss's Orders, Mega Lucario ex, Ultra Ball, Lillie's Determination
+- Fernandolimax drew 4 cards.
+paveiii's Mega Lucario ex used Aura Jab on Fernandolimax’s Budew for 130 damage.
+- paveiii attached Basic Fighting Energy to Makuhita on the Bench.
+Fernandolimax's Budew was Knocked Out!
+paveiii took a Prize card.
+Night Stretcher was added to paveiii's hand.
+Fernandolimax's N's Zoroark ex is now in the Active Spot.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax played Ultra Ball.
+- Fernandolimax discarded 2 cards.
+   • Team Rocket's Petrel, Shadowy Darkness Energy
+- Fernandolimax drew N's Zekrom.
+- Fernandolimax shuffled their deck.
+Fernandolimax played N's Zekrom to the Bench.
+Fernandolimax played Night Stretcher.
+- Fernandolimax moved Fernandolimax's Budew to their hand.
+Fernandolimax's N's Zoroark ex used Night Joker on paveiii’s Mega Lucario ex for 250 damage.
+- Fernandolimax chose Rampaging Thunder
+
+paveiii's Turn
+paveiii drew Gravity Mountain.
+paveiii played Boss's Orders.
+- Fernandolimax's N's Zorua was switched with Fernandolimax's N's Zoroark ex to become the Active Pokémon.
+Fernandolimax's N's Zorua is now in the Active Spot.
+paveiii's Mega Lucario ex used Aura Jab on Fernandolimax’s N's Zorua for 130 damage.
+Fernandolimax's N's Zorua was Knocked Out!
+paveiii took a Prize card.
+Riolu was added to paveiii's hand.
+Fernandolimax's N's Zorua is now in the Active Spot.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax played Budew to the Bench.
+Fernandolimax's N's Zoroark ex used Trade.
+- Fernandolimax discarded Buddy-Buddy Poffin.
+- Fernandolimax drew 2 cards.
+Fernandolimax retreated N's Zorua to the Bench.
+Fernandolimax's Budew is now in the Active Spot.
+Fernandolimax played Black Belt's Training.
+Fernandolimax attached Basic Darkness Energy to N's Zorua on the Bench.
+Fernandolimax's Budew used Itchy Pollen on paveiii’s Mega Lucario ex for 50 damage.
+- Damage breakdown:
+   • Base damage: 10 damage
+   • (Supporter) Black Belt's Training: 40 damage
+   • Total damage: 50 damage
+
+
+paveiii's Turn
+paveiii drew Riolu.
+paveiii played Lillie's Determination.
+- paveiii shuffled 6 cards into their deck.
+   • Mega Lucario ex, Ultra Ball, Night Stretcher, Gravity Mountain, Riolu, Riolu
+- paveiii drew 6 cards.
+   • Hariyama, Lillie's Determination, Gravity Mountain, Premium Power Pro, Ultra Ball, Riolu
+paveiii evolved Makuhita to Hariyama on the Bench.
+paveiii's Hariyama used Heave-Ho Catcher.
+- Fernandolimax's N's Zorua was switched with Fernandolimax's Budew to become the Active Pokémon.
+Fernandolimax's N's Zorua is now in the Active Spot.
+paveiii's Mega Lucario ex used Aura Jab on Fernandolimax’s N's Zorua for 130 damage.
+Fernandolimax's N's Zorua was Knocked Out!
+Basic Darkness Energy was discarded from Fernandolimax's N's Zorua.
+paveiii took a Prize card.
+Basic Fighting Energy was added to paveiii's hand.
+Fernandolimax's N's Zoroark ex is now in the Active Spot.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax's N's Zoroark ex used Trade.
+- Fernandolimax discarded Buddy-Buddy Poffin.
+- Fernandolimax drew 2 cards.
+Fernandolimax's N's Zoroark ex used Night Joker on paveiii’s Mega Lucario ex for 170 damage.
+- Fernandolimax chose Virtuous Flame
+paveiii's Mega Lucario ex was Knocked Out!
+- 2 cards were discarded from paveiii's Mega Lucario ex.
+   • Basic Fighting Energy, Riolu
+Fernandolimax took 3 Prize cards.
+A card was added to Fernandolimax's hand.
+A card was added to Fernandolimax's hand.
+A card was added to Fernandolimax's hand.
+paveiii's Fezandipiti ex is now in the Active Spot.
+
+paveiii's Turn
+paveiii drew Riolu.
+paveiii attached Basic Fighting Energy to Meowth ex on the Bench.
+paveiii played Riolu to the Bench.
+paveiii played Premium Power Pro.
+paveiii's Fezandipiti ex used Flip the Script.
+- paveiii drew 3 cards.
+   • Maximum Belt, Mega Lucario ex, Basic Fighting Energy
+paveiii attached Maximum Belt to Hariyama on the Bench.
+paveiii played Lillie's Determination.
+- paveiii shuffled 5 cards into their deck.
+   • Gravity Mountain, Ultra Ball, Riolu, Mega Lucario ex, Basic Fighting Energy
+- paveiii drew 6 cards.
+   • Mega Lucario ex, Tarragon, Basic Fighting Energy, Switch, Basic Fighting Energy, Mega Lucario ex
+paveiii played Switch.
+- paveiii's Hariyama was switched with paveiii's Fezandipiti ex to become the Active Pokémon.
+paveiii's Hariyama is now in the Active Spot.
+paveiii ended their turn.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax played Pecharunt ex to the Bench.
+Fernandolimax played Judge.
+- Fernandolimax shuffled 5 cards into their deck.
+- paveiii shuffled 5 cards into their deck.
+   • Mega Lucario ex, Tarragon, Basic Fighting Energy, Basic Fighting Energy, Mega Lucario ex
+- Fernandolimax drew 4 cards.
+- paveiii drew 4 cards.
+   • Night Stretcher, Premium Power Pro, Lunatone, Riolu
+Fernandolimax's N's Zoroark ex used Trade.
+- Fernandolimax discarded N's Castle.
+- Fernandolimax drew 2 cards.
+Fernandolimax's N's Zoroark ex used Night Joker on paveiii’s Hariyama for 170 damage.
+- Fernandolimax chose Virtuous Flame
+paveiii's Hariyama was Knocked Out!
+- 3 cards were discarded from paveiii's Hariyama.
+   • Basic Fighting Energy, Makuhita, Maximum Belt
+Fernandolimax took a Prize card.
+A card was added to Fernandolimax's hand.
+paveiii's Fezandipiti ex is now in the Active Spot.
+
+paveiii's Turn
+paveiii drew Basic Fighting Energy.
+paveiii played Premium Power Pro.
+paveiii attached Basic Fighting Energy to Fezandipiti ex in the Active Spot.
+paveiii played Lunatone to the Bench.
+paveiii's Fezandipiti ex used Flip the Script.
+- paveiii drew 3 cards.
+   • Mega Lucario ex, Ultra Ball, Basic Fighting Energy
+paveiii evolved Riolu to Mega Lucario ex on the Bench.
+paveiii played Ultra Ball.
+- paveiii discarded 2 cards.
+   • Night Stretcher, Riolu
+- paveiii drew Okidogi.
+- paveiii shuffled their deck.
+paveiii ended their turn.
+
+Fernandolimax's Turn
+Fernandolimax drew a card.
+Fernandolimax's N's Zoroark ex used Night Joker on paveiii’s Fezandipiti ex for 250 damage.
+- Fernandolimax chose Rampaging Thunder
+paveiii's Fezandipiti ex was Knocked Out!
+- 2 cards were discarded from paveiii's Fezandipiti ex.
+   • Basic Fighting Energy, Basic Fighting Energy
+Fernandolimax took a Prize card.
+A card was added to Fernandolimax's hand.
+Opponent took all of their Prize cards. Fernandolimax wins.
+
