@@ -49,6 +49,10 @@ FLIP
     : 'flip'
     ;
 
+FLIPPED
+    : 'flipped'
+    ;
+
 WON
     : 'won'
     ;
@@ -89,6 +93,18 @@ CARD_WORD
     : 'card'
     ;
 
+ABILITY_WORD
+    : 'Ability'
+    ;
+
+ATTACK_WORD
+    : 'Attack'
+    ;
+
+POKEMON_TOOL
+    : 'Pokémon Tool'
+    ;
+
 HAND
     : 'hand'
     ;
@@ -117,6 +133,10 @@ IN
     : 'in'
     ;
 
+IT
+    : 'it'
+    ;
+
 WITH
     : 'with'
     ;
@@ -141,16 +161,24 @@ BECOME
     : 'become'
     ;
 
+LANDED
+    : 'landed'
+    ;
+
 ACTIVE
     : 'Active'
     ;
 
 SPOT
-    : 'Spot'
+    : 'Spot' | 'spot'
     ;
 
 BENCH
     : 'Bench'
+    ;
+
+STADIUM
+    : 'Stadium'
     ;
 
 DAMAGE
@@ -251,6 +279,14 @@ AND
 
 THEM
     : 'them'
+    ;
+
+ENERGY
+    : 'Energy'
+    ;
+
+SELECTED
+    : 'selected'
     ;
 
 // ============================================================
@@ -457,6 +493,7 @@ CARD
     | 'Basic Fighting Energy'
     | 'Prism Energy'
     | 'Neo Upper Energy'
+    | 'Energy Coin'
 
 // ---------- CARTAS QUE APARECEN EN LOS LOGS ----------
 
@@ -466,6 +503,31 @@ CARD
     | 'Noctowl'
     | 'Prime Catcher'
     | 'Switch'
+    | 'Cinderace'
+    | 'Mega Zygarde ex'
+    | 'Team Rocket\'s Watchtower'
+    | 'Pokégear 3.0'
+    | 'Scorbunny'
+    | 'Fennekin'
+    | 'Smoochum'
+    | 'Teal Mask Ogerpon'
+    | 'Mega Diancie ex'
+    | 'Ralts'
+    | 'Clefairy'
+    | 'Mega Kangaskhan ex'
+    | 'Hearthflame Mask Ogerpon'
+    | 'Brock\'s Scouting'
+    | 'Mega Clefable ex'
+    | 'Delphox'
+    | 'Mega Audino ex'
+    | 'Raboot'
+    | 'Kirlia'
+    | 'Wondrous Patch'
+    | 'Mega Floette ex'
+    | 'Mystery Garden'
+    | 'Braixen'
+    | 'Jumbo Ice Cream'
+    | 'Core Memory'
     ;
 
 
@@ -483,8 +545,26 @@ ATTACK
     | 'Flip the Script'
     | 'Fan Call'
     | 'Teal Dance'
+    | 'Grass Kagura'
+    | 'Delightful Kiss'
+    | 'Myriad Leaf Shower'
+    | 'Garland Ray'
+    | 'Run Errand'
+    | 'Shooting Moons'
+    | 'Energized Storm'
+    | 'Flaring Magic'
+    | 'Turbo Flare'
+    | 'Gaia Wave'
+    | 'Nullifying Zero'
     ;
 
+// ============================================================
+// HABILIADES
+// ============================================================
+
+ABILITY
+    : 'Diamond Coat'
+    ;
 
 // ============================================================
 // NÚMEROS

@@ -13,7 +13,7 @@ log
     : setup 
     (NEWLINE turn)*
     gameEnd
-
+    NEWLINE*
     EOF
     ;
 
@@ -119,6 +119,7 @@ turnActionBody
     | switchAction
     | knockoutAction
     | damagedAction
+    | flippedAction
     | endTurn
     ;
 
@@ -142,7 +143,7 @@ drawAction
 // ============================================================
 
 playAction
-    : PLAYER PLAYED CARD (TO THE (BENCH | ACTIVE SPOT))?
+    : PLAYER PLAYED CARD (TO THE (BENCH | ACTIVE SPOT | STADIUM SPOT))?
     ;
 
 
@@ -177,15 +178,30 @@ attackAction
 // ------------------------------------------------------------
 
 damageBreakdown
-    : HYPHEN DAMAGE_BREAKDOWN COLON NEWLINE
-    BULLET BASE_DAMAGE COLON NUMBER DAMAGE NEWLINE
+    : HYPHEN DAMAGE_BREAKDOWN COLON NEWLINE 
+    BULLET
+    (
+    NUMBER ATTACHED ENERGY COLON NUMBER DAMAGE NEWLINE
+    | NUMBER SELECTED ENERGY COLON NUMBER DAMAGE NEWLINE
+    |
+    ( 
+    BASE_DAMAGE COLON NUMBER DAMAGE NEWLINE
     damageBonusLine
     BULLET TOTAL_DAMAGE COLON NUMBER DAMAGE NEWLINE
-    NEWLINE
+    )
+
+    )
+
+    NEWLINE?
     ;
 
 damageBonusLine
     : BULLET LPAREN ITEM RPAREN CARD COLON NUMBER DAMAGE NEWLINE
+    | BULLET NUMBER (ATTACHED | SELECTED) ENERGY COLON NUMBER DAMAGE NEWLINE
+    | ( BULLET LPAREN ABILITY_WORD RPAREN ABILITY COLON '-'? NUMBER DAMAGE NEWLINE
+        BULLET NUMBER ATTACHED ENERGY COLON NUMBER DAMAGE NEWLINE)
+    | ( BULLET LPAREN POKEMON_TOOL RPAREN CARD COLON '-'? NUMBER DAMAGE NEWLINE
+        BULLET LPAREN ATTACK_WORD RPAREN ATTACK COLON '-'? NUMBER DAMAGE NEWLINE)
     ;
 
 // ============================================================
@@ -270,6 +286,10 @@ switchAction
 
 damagedAction
     : PLAYER POSSESSIVE CARD TAKE NUMBER DAMAGE
+    ;
+
+flippedAction
+    : PLAYER FLIPPED A_SOMETHING COIN AND IT LANDED ON (TAILS|HEADS)
     ;
 
 // ============================================================
