@@ -10,10 +10,9 @@ options {
 // ============================================================
 
 log
-    : setup (NEWLINE
-        turn
-    |   gameEnd
-    )*
+    : setup 
+    (NEWLINE turn)*
+    gameEnd
 
     EOF
     ;
