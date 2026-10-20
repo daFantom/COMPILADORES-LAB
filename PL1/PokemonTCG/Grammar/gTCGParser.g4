@@ -161,7 +161,7 @@ evolveAction
 
 attackAction
     : PLAYER POSSESSIVE CARD
-      USED attack ( 
+      USED ATTACK ( 
         DOT NEWLINE
         | 
         ON PLAYER POSSESSIVE CARD FOR NUMBER DAMAGE DOT NEWLINE
@@ -310,7 +310,6 @@ subActionBody
     | PLAYER ATTACHED CARD TO CARD IN THE ACTIVE SPOT
     | PLAYER POSSESSIVE CARD TAKE NUMBER DAMAGE
     | PLAYER EVOLVED CARD TO CARD IN THE ACTIVE SPOT
-    | cardAddedToHand
     ;
 
 
@@ -338,28 +337,7 @@ gameEnd
 // ============================================================
 
 cardList
-    : BULLET cardListItem
-      (COMMA cardListItem)*
+    : BULLET CARD
+      (COMMA CARD)*
       NEWLINE
-    ;
-
-cardListItem
-    : CARD
-    ;
-
-// ============================================================
-// ATAQUES
-// ============================================================
-
-attack
-    : ATTACK
-    ;
-
-
-// ============================================================
-// TOKEN AUXILIAR PARA "A CARD was added..."
-// ============================================================
-
-cardAddedToHand
-    : ADDED
     ;
