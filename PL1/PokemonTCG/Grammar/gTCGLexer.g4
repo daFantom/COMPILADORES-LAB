@@ -209,10 +209,6 @@ OUT
     : 'Out'
     ;
 
-SWITCH
-    : 'Switch'
-    ;
-
 SWITCHED
     : 'switched'
     ;
@@ -469,6 +465,7 @@ CARD
     | 'Hoothoot'
     | 'Noctowl'
     | 'Prime Catcher'
+    | 'Switch'
     ;
 
 
