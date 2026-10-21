@@ -10,19 +10,12 @@ options {
 // ============================================================
 
 log
-    : setup (NEWLINE
-        turn
-    |   gameEnd
-    )*
-
+    : setup 
+    (NEWLINE turn)*
+    gameEnd
+    NEWLINE*
     EOF
     ;
-
-
-// ============================================================
-// ENTRADAS PRINCIPALES
-// ============================================================
-    
 
 
 // ============================================================
@@ -33,6 +26,7 @@ setup
     : SETUP NEWLINE
       setupAction*
     ;
+
 
 setupAction
     : coinChoice
@@ -50,6 +44,7 @@ coinChoice
     : PLAYER CHOSE (HEADS | TAILS)
       FOR THE OPENING COIN FLIP DOT NEWLINE
     ;
+
 
 coinToss
     : PLAYER WON THE COIN TOSS DOT NEWLINE
@@ -80,7 +75,7 @@ drawnCards
 // ------------------------------------------------------------
 
 initialPokemon
-    : PLAYER PLAYED card TO THE (ACTIVE SPOT | BENCH) DOT NEWLINE
+    : PLAYER PLAYED CARD TO THE (ACTIVE SPOT | BENCH) DOT NEWLINE
     ;
 
 
@@ -90,7 +85,7 @@ initialPokemon
 
 turn
     : PLAYER POSSESSIVE TURN NEWLINE
-      turnAction*
+      mainTurnAction*
     ;
 
 
@@ -98,13 +93,22 @@ turn
 // ACCIONES DE UN TURNO
 // ============================================================
 
-turnAction
+mainTurnAction
+    :   turnActionBody (DOT|EXCLAMATION) NEWLINE
+        (subTurnAction | damageBreakdown)*
+    ;
+
+subTurnAction
+    : HYPHEN turnActionBody DOT NEWLINE
+    (cardList)*
+    ;
+
+turnActionBody
     : drawAction
     | playAction
     | attachAction
     | evolveAction
     | attackAction
-    | switchAction
     | retreatAction
     | shuffleAction
     | cardMovedAction
@@ -112,8 +116,10 @@ turnAction
     | prizeAction
     | moveToHandAction
     | activeSpotAction
+    | switchAction
     | knockoutAction
-    | subAction
+    | damagedAction
+    | flippedAction
     | endTurn
     ;
 
@@ -123,11 +129,12 @@ turnAction
 // ============================================================
 
 drawAction
-    : PLAYER DREW CARD_WORD DOT NEWLINE
-    | PLAYER DREW A_SOMETHING CARD_WORD DOT NEWLINE
-    | PLAYER DREW card DOT NEWLINE
-    | PLAYER DREW NUMBER CARDS DOT NEWLINE
-      subAction*
+    : PLAYER DREW CARD_WORD
+    | PLAYER DREW A_SOMETHING CARD_WORD
+    | PLAYER DREW CARD
+    | PLAYER DREW NUMBER CARD
+    | PLAYER DREW NUMBER CARDS
+    | PLAYER DREW NUMBER CARDS AND PLAYED THEM TO THE BENCH
     ;
 
 
@@ -136,8 +143,7 @@ drawAction
 // ============================================================
 
 playAction
-    : PLAYER PLAYED card (TO THE (BENCH | ACTIVE SPOT))? DOT NEWLINE
-      subAction*
+    : PLAYER PLAYED CARD (TO THE (BENCH | ACTIVE SPOT | STADIUM SPOT))?
     ;
 
 
@@ -146,9 +152,7 @@ playAction
 // ============================================================
 
 attachAction
-    : PLAYER ATTACHED card TO card
-      (ON THE BENCH | IN THE ACTIVE SPOT)
-      DOT NEWLINE
+    : PLAYER ATTACHED CARD TO CARD (ON THE BENCH | IN THE ACTIVE SPOT)
     ;
 
 
@@ -157,9 +161,7 @@ attachAction
 // ============================================================
 
 evolveAction
-    : PLAYER EVOLVED card TO card
-      (ON THE BENCH | IN THE ACTIVE SPOT)
-      DOT NEWLINE
+    : PLAYER EVOLVED CARD TO CARD (ON THE BENCH | IN THE ACTIVE SPOT)
     ;
 
 
@@ -168,58 +170,46 @@ evolveAction
 // ============================================================
 
 attackAction
-    : PLAYER POSSESSIVE card
-      USED attack DOT? NEWLINE?
-      (ON PLAYER POSSESSIVE card
-      FOR NUMBER DAMAGE DOT NEWLINE
-      damageBreakdown?
-      subAction*)?
+    : PLAYER POSSESSIVE CARD USED ATTACK (ON PLAYER POSSESSIVE CARD FOR NUMBER DAMAGE)?
     ;
-
 
 // ------------------------------------------------------------
 // Desglose de daño
 // ------------------------------------------------------------
 
 damageBreakdown
-    : HYPHEN DAMAGE_BREAKDOWN COLON NEWLINE
-      damageLine+ NEWLINE
+    : HYPHEN DAMAGE_BREAKDOWN COLON NEWLINE 
+    BULLET
+    (
+    NUMBER ATTACHED ENERGY COLON NUMBER DAMAGE NEWLINE
+    | NUMBER SELECTED ENERGY COLON NUMBER DAMAGE NEWLINE
+    |
+    ( 
+    BASE_DAMAGE COLON NUMBER DAMAGE NEWLINE
+    damageBonusLine
+    BULLET TOTAL_DAMAGE COLON NUMBER DAMAGE NEWLINE
+    )
+
+    )
+
+    NEWLINE?
     ;
 
-damageLine
-    : BULLET BASE_DAMAGE COLON NUMBER DAMAGE DOT? NEWLINE
-    | BULLET LPAREN ITEM RPAREN card COLON NUMBER DAMAGE DOT? NEWLINE
-    | BULLET TOTAL_DAMAGE COLON NUMBER DAMAGE DOT? NEWLINE
+damageBonusLine
+    : BULLET LPAREN ITEM RPAREN CARD COLON NUMBER DAMAGE NEWLINE
+    | BULLET NUMBER (ATTACHED | SELECTED) ENERGY COLON NUMBER DAMAGE NEWLINE
+    | ( BULLET LPAREN ABILITY_WORD RPAREN ABILITY COLON '-'? NUMBER DAMAGE NEWLINE
+        BULLET NUMBER ATTACHED ENERGY COLON NUMBER DAMAGE NEWLINE)
+    | ( BULLET LPAREN POKEMON_TOOL RPAREN CARD COLON '-'? NUMBER DAMAGE NEWLINE
+        BULLET LPAREN ATTACK_WORD RPAREN ATTACK COLON '-'? NUMBER DAMAGE NEWLINE)
     ;
-
-
-// ============================================================
-// CAMBIAR POKÉMON ACTIVO
-// ============================================================
-
-switchAction
-    : PLAYER PLAYED SWITCH DOT NEWLINE
-      switchResult
-      activeSpotAction?
-    ;
-
-switchResult
-    : HYPHEN
-      PLAYER POSSESSIVE card
-      WAS? SWITCHED WITH
-      PLAYER POSSESSIVE card
-      TO BECOME THE ACTIVE POKEMON
-      DOT NEWLINE
-    ;
-
 
 // ============================================================
 // RETIRADA
 // ============================================================
 
 retreatAction
-    : PLAYER RETIRED card TO THE BENCH DOT NEWLINE
-      subAction*
+    : PLAYER RETIRED CARD TO THE BENCH
     ;
 
 
@@ -228,9 +218,9 @@ retreatAction
 // ============================================================
 
 shuffleAction
-    : PLAYER SHUFFLED THEIR DECK DOT NEWLINE
-    | PLAYER SHUFFLED NUMBER CARDS INTO THEIR DECK DOT NEWLINE
-    | PLAYER SHUFFLED card INTO THEIR DECK DOT NEWLINE
+    : PLAYER SHUFFLED THEIR DECK
+    | PLAYER SHUFFLED NUMBER CARDS INTO THEIR DECK
+    | PLAYER SHUFFLED CARD INTO THEIR DECK
     ;
 
 
@@ -239,14 +229,10 @@ shuffleAction
 // ============================================================
 
 discardAction
-    : PLAYER DISCARDED CARD DOT NEWLINE
-    | PLAYER DISCARDED NUMBER CARDS DOT NEWLINE
-      cardList?
-    | NUMBER CARDS WERE DISCARDED FROM
-      PLAYER POSSESSIVE card DOT NEWLINE
-      cardList?
-    | card WAS DISCARDED FROM
-      PLAYER POSSESSIVE card DOT NEWLINE
+    : PLAYER DISCARDED CARD
+    | PLAYER DISCARDED NUMBER CARDS
+    | NUMBER CARDS WERE DISCARDED FROM PLAYER POSSESSIVE CARD
+    | CARD WAS DISCARDED FROM PLAYER POSSESSIVE CARD
     ;
 
 
@@ -255,8 +241,8 @@ discardAction
 // ============================================================
 
 prizeAction
-    : PLAYER TAKE A_SOMETHING? PRIZE CARD_WORD DOT NEWLINE
-    | PLAYER TAKE NUMBER PRIZE_CARDS DOT NEWLINE
+    : PLAYER TAKE A_SOMETHING? PRIZE CARD_WORD
+    | PLAYER TAKE NUMBER PRIZE_CARDS
     ;
 
 
@@ -266,8 +252,8 @@ prizeAction
 
 moveToHandAction
     : PLAYER MOVED
-      PLAYER POSSESSIVE card
-      TO THEIR HAND DOT NEWLINE
+      PLAYER POSSESSIVE CARD
+      TO THEIR HAND
     ;
 
 
@@ -276,8 +262,8 @@ moveToHandAction
 // ============================================================
 
 activeSpotAction
-    : PLAYER POSSESSIVE card
-      IS NOW IN THE ACTIVE SPOT DOT NEWLINE
+    : PLAYER POSSESSIVE CARD
+      IS NOW IN THE ACTIVE SPOT
     ;
 
 
@@ -286,68 +272,32 @@ activeSpotAction
 // ============================================================
 
 knockoutAction
-    : PLAYER POSSESSIVE card
-      WAS KNOCKED OUT EXCLAMATION NEWLINE
+    : PLAYER POSSESSIVE CARD WAS KNOCKED OUT
     ;
 
 cardMovedAction
-    : A_SOMETHING CARD_WORD WAS ADDED TO PLAYER POSSESSIVE HAND DOT NEWLINE
-    | (CARD | SWITCH) WAS ADDED TO PLAYER POSSESSIVE HAND DOT NEWLINE
+    : A_SOMETHING CARD_WORD WAS ADDED TO PLAYER POSSESSIVE HAND
+    | CARD WAS ADDED TO PLAYER POSSESSIVE HAND
     ;
 
-
-// ============================================================
-// SUBACCIONES
-// ============================================================
-//
-// Ejemplos:
-//
-// - DudeJaden drew Riolu.
-// - DudeJaden shuffled their deck.
-// - 2 cards were discarded...
-// - DudeJaden took 3 Prize cards.
-// - A card was added to DudeJaden's hand.
-// ============================================================
-
-subAction
-    : HYPHEN subActionBody DOT NEWLINE
-    (cardList | damageLine)*
+switchAction
+    : PLAYER POSSESSIVE CARD WAS SWITCHED WITH PLAYER POSSESSIVE CARD TO BECOME THE ACTIVE POKEMON
     ;
 
-subActionBody
-    : PLAYER DREW card
-    | PLAYER DREW A_SOMETHING CARD_WORD
-    | PLAYER DREW NUMBER CARDS
-    | PLAYER DREW NUMBER CARDS AND PLAYED THEM TO THE BENCH
-    | PLAYER SHUFFLED THEIR DECK
-    | PLAYER SHUFFLED NUMBER CARDS INTO THEIR DECK
-    | PLAYER SHUFFLED card INTO THEIR DECK
-    | PLAYER DISCARDED CARD
-    | PLAYER DISCARDED NUMBER CARDS
-    | NUMBER CARDS WERE DISCARDED FROM PLAYER POSSESSIVE card
-    | card WAS DISCARDED FROM PLAYER POSSESSIVE card
-
-    | PLAYER TAKE PRIZE CARD
-    | PLAYER TAKE NUMBER PRIZE CARDS
-
-    | PLAYER MOVED PLAYER POSSESSIVE card TO THEIR HAND
-
-    | PLAYER POSSESSIVE CARD WAS SWITCHED WITH PLAYER POSSESSIVE CARD TO BECOME THE ACTIVE POKEMON
-    | PLAYER ATTACHED CARD TO CARD ON THE BENCH
-    | PLAYER ATTACHED CARD TO CARD IN THE ACTIVE SPOT
-    | PLAYER POSSESSIVE CARD TAKE NUMBER DAMAGE
-    | PLAYER EVOLVED CARD TO CARD IN THE ACTIVE SPOT
-
-    | cardAddedToHand
+damagedAction
+    : PLAYER POSSESSIVE CARD TAKE NUMBER DAMAGE
     ;
 
+flippedAction
+    : PLAYER FLIPPED A_SOMETHING COIN AND IT LANDED ON (TAILS|HEADS)
+    ;
 
 // ============================================================
 // FIN DE TURNO
 // ============================================================
 
 endTurn
-    : PLAYER ENDED THEIR TURN DOT NEWLINE
+    : PLAYER ENDED THEIR TURN
     ;
 
 
@@ -366,36 +316,7 @@ gameEnd
 // ============================================================
 
 cardList
-    : BULLET cardListItem
-      (COMMA cardListItem)*
+    : BULLET CARD
+      (COMMA CARD)*
       NEWLINE
-    ;
-
-cardListItem
-    : card
-    ;
-
-
-// ============================================================
-// VOCABULARIO
-// ============================================================
-
-card
-    : CARD | SWITCH
-    ;
-// ============================================================
-// ATAQUES
-// ============================================================
-
-attack
-    : ATTACK
-    ;
-
-
-// ============================================================
-// TOKEN AUXILIAR PARA "A card was added..."
-// ============================================================
-
-cardAddedToHand
-    : ADDED
     ;
