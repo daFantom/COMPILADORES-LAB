@@ -1,4 +1,4 @@
-// Generated from u:/UAH/Year 3/Cuatrimestre 1/Compiladores/COMPILADORES-LAB/PL1/PokemonTCG/Grammar/gTCGParser.g4 by ANTLR 4.13.1
+// Generated from e:/School stuff/Universidad/3er Año/1er Cuatrimestre/Procesadores del Lenguaje/COMPILADORES-LAB/PL1/PokemonTCG/Grammar/gTCGParser.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
