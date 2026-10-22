@@ -96,6 +96,9 @@ CARD_WORD
 ABILITY_WORD
     : 'Ability'
     ;
+SUPPORTER_WORD
+    : 'Supporter'
+    ;
 
 ATTACK_WORD
     : 'Attack'
@@ -298,6 +301,18 @@ SELECTED
 
 YOU
     : 'You' | 'you'
+    ;
+
+MORE_WORD
+    : 'more'
+    ;
+
+BECAUSE
+    : 'because'
+    ;
+
+WEAKNESS
+    : 'Weakness'
     ;
 
 // ============================================================
@@ -575,6 +590,8 @@ CARD
     | 'Mist Energy'
     | 'Patrat'
     | 'Amaura'
+    | 'Budew'
+    | 'Shadowy Darkness Energy'
     ;
 
 
@@ -616,6 +633,10 @@ ATTACK
     | 'Flashing Draw'
     | 'Frightening Howl'
     | 'Flamebody Cannon'
+    | 'Itchy Pollen'
+    | 'Trade'
+    | 'Rampaging Thunder'
+    | 'Virtuous Flame'
     ;
 
 // ============================================================
@@ -637,6 +658,23 @@ SPECIAL_CONDITION
     | 'Confused'
     | 'Paralyzed'
     | 'Poisoned'
+    ;
+
+// ============================================================
+// TIPO DE POKEMON
+// ============================================================
+
+POKEMON_TYPE
+    : 'Grass'
+    | 'Fire'
+    | 'Water'
+    | 'Lighting'
+    | 'Fighting'
+    | 'Psychic'
+    | 'Colorless'
+    | 'Darkness'
+    | 'Metal'
+    | 'Dragon'
     ;
 
 // ============================================================
