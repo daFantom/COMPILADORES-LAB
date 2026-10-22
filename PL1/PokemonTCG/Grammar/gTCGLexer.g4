@@ -125,6 +125,10 @@ USED
     : 'used'
     ;
 
+OF
+    : 'of'
+    ;
+
 ON
     : 'on'
     ;
@@ -167,6 +171,9 @@ LANDED
 
 ACTIVE
     : 'Active'
+    ;
+ACTIVATED
+    : 'activated'
     ;
 
 SPOT
@@ -262,7 +269,7 @@ WINS
     ;
 
 ALL
-    : 'All'
+    : 'all' | 'All'
     ;
 
 TAKEN
@@ -533,6 +540,24 @@ CARD
     | 'Mega Darkrai ex'
     | 'Gastly'
     | 'Dark Bell'
+    | 'Hop\'s Corviknight'
+    | 'Hop\'s Rookidee'
+    | 'Nemona'
+    | 'Drayton'
+    | 'Reshiram ex'
+    | 'Noibat'
+    | 'Technical Machine: Evolution'
+    | 'Hop\'s Cramorant'
+    | 'Boomerang Energy'
+    | 'Levincia'
+    | 'Surfer'
+    | 'Hop\'s Corvisquire'
+    | 'Noivern'
+    | 'Hop\'s Snorlax'
+    | 'Jet Energy'
+    | 'Iono\'s Kilowattrel'
+    | 'Cramorant'
+    | 'Iono\'s Wattrel'
     ;
 
 
@@ -565,6 +590,15 @@ ATTACK
     | 'Subjugating Chains'
     | 'Dusk Raid'
     | 'Shred'
+    | 'Intimidating Stare'
+    | 'Speed Dive'
+    | 'Scorching Fire'
+    | 'Fickle Spitting'
+    | 'Evolution'
+    | 'Shoot Through'
+    | 'Flashing Draw'
+    | 'Frightening Howl'
+    | 'Flamebody Cannon'
     ;
 
 // ============================================================
@@ -573,6 +607,7 @@ ATTACK
 
 ABILITY
     : 'Diamond Coat'
+    | 'Extra Helpings'
     ;
 
 // ============================================================
