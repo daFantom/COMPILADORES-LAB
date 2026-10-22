@@ -1,8 +1,14 @@
 lexer grammar gTCGLexer;
 
+MULLIGAN: 'Mulligan' | 'Mulligans' | 'mulligan' | 'mulligans';
 TURN    : 'Turn' | 'turn' ;
 POKEMON : 'Pokémon' ;
 ADDED   : 'added' ;
+REVEALED : 'revealed';
+AT : 'at';
+LEAST : 'least';
+PUT : 'put';
+COUNTERS : 'counters';
 
 // ============================================================
 // gTCG - POKÉMON TCG LIVE LOG LEXER
@@ -86,7 +92,7 @@ DRAWN
     ;
 
 CARDS
-    : 'cards'
+    : 'cards' | 'Cards'
     ;
 
 CARD_WORD
@@ -592,6 +598,12 @@ CARD
     | 'Amaura'
     | 'Budew'
     | 'Shadowy Darkness Energy'
+    | 'Tauros'
+    | 'Risky Ruins'
+    | 'Paldean Tauros'
+    | 'Crushing Hammer'
+    | 'Brave Bangle'
+    | 'Team Rocket\'s Transceiver'
     ;
 
 
@@ -637,6 +649,8 @@ ATTACK
     | 'Trade'
     | 'Rampaging Thunder'
     | 'Virtuous Flame'
+    | 'Raging Charge'
+    | 'Cosmic Beam'
     ;
 
 // ============================================================
