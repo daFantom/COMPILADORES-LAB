@@ -296,6 +296,10 @@ SELECTED
     : 'selected'
     ;
 
+YOU
+    : 'You' | 'you'
+    ;
+
 // ============================================================
 // CASOS ESPECIALES
 // ============================================================
@@ -558,6 +562,19 @@ CARD
     | 'Iono\'s Kilowattrel'
     | 'Cramorant'
     | 'Iono\'s Wattrel'
+    | 'Weedle'
+    | 'Growing Grass Energy'
+    | 'Axew'
+    | 'Haxorus'
+    | 'Lilligant'
+    | 'Kakuna'
+    | 'Thick Scale'
+    | 'Nighttime Mine'
+    | 'Sacred Ash'
+    | 'Fraxure'
+    | 'Mist Energy'
+    | 'Patrat'
+    | 'Amaura'
     ;
 
 
