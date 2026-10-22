@@ -1,22 +1,12 @@
-// Generated from gTCGParser.g4 by ANTLR 4.13.2
-import java.util.List;
-
-import org.antlr.v4.runtime.NoViableAltException;
-import org.antlr.v4.runtime.Parser;
-import org.antlr.v4.runtime.ParserRuleContext;
-import org.antlr.v4.runtime.RecognitionException;
-import org.antlr.v4.runtime.RuntimeMetaData;
-import org.antlr.v4.runtime.Token;
-import org.antlr.v4.runtime.TokenStream;
-import org.antlr.v4.runtime.Vocabulary;
-import org.antlr.v4.runtime.VocabularyImpl;
-import org.antlr.v4.runtime.atn.ATN;
-import org.antlr.v4.runtime.atn.ATNDeserializer;
-import org.antlr.v4.runtime.atn.ParserATNSimulator;
-import org.antlr.v4.runtime.atn.PredictionContextCache;
+// Generated from ./gTCGParser.g4 by ANTLR 4.13.2
+import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
-import org.antlr.v4.runtime.tree.ParseTreeListener;
-import org.antlr.v4.runtime.tree.TerminalNode;
+import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.*;
+import org.antlr.v4.runtime.tree.*;
+import java.util.List;
+import java.util.Iterator;
+import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue", "this-escape"})
 public class gTCGParser extends Parser {
@@ -180,6 +170,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitLog(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitLog(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final LogContext log() throws RecognitionException {
@@ -260,6 +255,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitSetup(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitSetup(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final SetupContext setup() throws RecognitionException {
@@ -328,6 +328,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitSetupAction(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitSetupAction(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -411,6 +416,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitCoinChoice(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitCoinChoice(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final CoinChoiceContext coinChoice() throws RecognitionException {
@@ -482,6 +492,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitCoinToss(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitCoinToss(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final CoinTossContext coinToss() throws RecognitionException {
@@ -537,6 +552,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitFirstPlayer(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitFirstPlayer(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -599,6 +619,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitOpeningHand(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitOpeningHand(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -675,6 +700,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitDrawnCards(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitDrawnCards(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final DrawnCardsContext drawnCards() throws RecognitionException {
@@ -742,6 +772,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitInitialPokemon(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitInitialPokemon(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -822,6 +857,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitTurn(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitTurn(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final TurnContext turn() throws RecognitionException {
@@ -897,6 +937,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitMainTurnAction(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitMainTurnAction(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -985,6 +1030,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitSubTurnAction(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitSubTurnAction(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1094,6 +1144,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitTurnActionBody(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitTurnActionBody(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1263,6 +1318,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitDrawAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitDrawAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final DrawActionContext drawAction() throws RecognitionException {
@@ -1394,6 +1454,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitPlayAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitPlayAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final PlayActionContext playAction() throws RecognitionException {
@@ -1489,6 +1554,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitAttachAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitAttachAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final AttachActionContext attachAction() throws RecognitionException {
@@ -1574,6 +1644,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitEvolveAction(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitEvolveAction(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1665,6 +1740,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitAttackAction(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitAttackAction(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1763,6 +1843,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitDamageBreakdown(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitDamageBreakdown(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1930,6 +2015,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitDamageBonusLine(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitDamageBonusLine(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2140,6 +2230,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitRetreatAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitRetreatAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final RetreatActionContext retreatAction() throws RecognitionException {
@@ -2194,6 +2289,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitShuffleAction(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitShuffleAction(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2291,6 +2391,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitDiscardAction(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitDiscardAction(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2399,6 +2504,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitPrizeAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitPrizeAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final PrizeActionContext prizeAction() throws RecognitionException {
@@ -2482,6 +2592,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitMoveToHandAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitMoveToHandAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final MoveToHandActionContext moveToHandAction() throws RecognitionException {
@@ -2542,6 +2657,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitActiveSpotAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitActiveSpotAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ActiveSpotActionContext activeSpotAction() throws RecognitionException {
@@ -2601,6 +2721,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitKnockoutAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitKnockoutAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final KnockoutActionContext knockoutAction() throws RecognitionException {
@@ -2656,6 +2781,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitCardMovedAction(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitCardMovedAction(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2755,6 +2885,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitSwitchAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitSwitchAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final SwitchActionContext switchAction() throws RecognitionException {
@@ -2824,6 +2959,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitDamagedAction(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitDamagedAction(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final DamagedActionContext damagedAction() throws RecognitionException {
@@ -2880,6 +3020,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitFlippedAction(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitFlippedAction(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2947,6 +3092,11 @@ public class gTCGParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitEndTurn(this);
 		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitEndTurn(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final EndTurnContext endTurn() throws RecognitionException {
@@ -3000,6 +3150,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitGameEnd(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitGameEnd(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3084,6 +3239,11 @@ public class gTCGParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof gTCGParserListener ) ((gTCGParserListener)listener).exitCardList(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof gTCGParserVisitor ) return ((gTCGParserVisitor<? extends T>)visitor).visitCardList(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 

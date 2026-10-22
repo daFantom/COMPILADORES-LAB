@@ -4,6 +4,7 @@ import java.io.InputStream;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
+import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 public class Analizador
 {
@@ -31,6 +32,21 @@ public class Analizador
 
         // Generar árbol a partir del axioma de la gramática.
         ParseTree tree = parser.log();
+
+        // Recorrer el árbol
+        // 1- Inicializar un recorredor
+        // 2- Inicializar un escuchador
+        // 3- Recorrer el árbol.
+
+        // ======== Paso 1: Preparar un recorredor ========
+        ParseTreeWalker walker = new ParseTreeWalker();
+
+        // ======== Paso 2: Inicializar el escuchador ========
+        AnalizadorListener escuchador = new AnalizadorListener();
+
+        // ======== Paso 3: Conectar ambos elementos y recorrer el árbol ========
+        // - Recorre el árbol utilizando el listener que hemos creado.
+        walker.walk(escuchador, tree);
 
         // Mostrar el árbol por consola
         System.out.println(tree.toStringTree(parser));
