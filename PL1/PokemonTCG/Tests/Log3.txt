@@ -1,0 +1,285 @@
+Setup
+Hades0918 chose tails for the opening coin flip.
+Jillovanillo won the coin toss.
+Jillovanillo decided to go first.
+Hades0918 drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • Teal Mask Ogerpon ex, Scorbunny, Chikorita, Basic Grass Energy, Dawn, Basic Fire Energy, Fennekin
+Jillovanillo drew 7 cards for the opening hand.
+- 7 drawn cards.
+Hades0918 played Teal Mask Ogerpon ex to the Active Spot.
+Hades0918 played Scorbunny to the Bench.
+Hades0918 played Fennekin to the Bench.
+Hades0918 played Chikorita to the Bench.
+Jillovanillo played Munkidori to the Active Spot.
+
+Jillovanillo's Turn
+Jillovanillo drew a card.
+Jillovanillo played Poké Pad.
+- Jillovanillo drew Smoochum.
+- Jillovanillo shuffled their deck.
+Jillovanillo played Smoochum to the Bench.
+Jillovanillo played Switch.
+- Jillovanillo's Smoochum was switched with Jillovanillo's Munkidori to become the Active Pokémon.
+Jillovanillo's Smoochum is now in the Active Spot.
+Jillovanillo attached Basic Psychic Energy to Munkidori on the Bench.
+Jillovanillo ended their turn.
+
+Hades0918's Turn
+Hades0918 drew Basic Grass Energy.
+Hades0918's Teal Mask Ogerpon ex used Teal Dance.
+- Hades0918 attached Basic Grass Energy to Teal Mask Ogerpon ex in the Active Spot.
+- Hades0918 drew Basic Fire Energy.
+Hades0918 played Dawn.
+- Hades0918 drew 3 cards.
+   • Teal Mask Ogerpon, Bayleef, Meganium
+- Hades0918 shuffled their deck.
+Hades0918 played Teal Mask Ogerpon to the Bench.
+Hades0918 retreated Teal Mask Ogerpon ex to the Bench.
+- Basic Grass Energy was discarded from Hades0918's Teal Mask Ogerpon ex.
+Hades0918's Teal Mask Ogerpon is now in the Active Spot.
+Hades0918 attached Basic Fire Energy to Teal Mask Ogerpon in the Active Spot.
+Hades0918's Teal Mask Ogerpon used Grass Kagura.
+- Hades0918 attached Basic Grass Energy to Teal Mask Ogerpon ex on the Bench.
+- Hades0918 shuffled their deck.
+
+Jillovanillo's Turn
+Jillovanillo drew a card.
+Jillovanillo played Lillie's Determination.
+- Jillovanillo shuffled 4 cards into their deck.
+- Jillovanillo drew 8 cards.
+Jillovanillo played Mega Diancie ex to the Bench.
+Jillovanillo attached Basic Psychic Energy to Mega Diancie ex on the Bench.
+Jillovanillo's Smoochum used Delightful Kiss.
+- Jillovanillo attached Basic Psychic Energy to Mega Diancie ex on the Bench.
+- Jillovanillo attached Basic Psychic Energy to Mega Diancie ex on the Bench.
+- Jillovanillo shuffled their deck.
+
+Hades0918's Turn
+Hades0918 drew Basic Grass Energy.
+Hades0918's Teal Mask Ogerpon ex used Teal Dance.
+- Hades0918 attached Basic Grass Energy to Teal Mask Ogerpon ex on the Bench.
+- Hades0918 drew Teal Mask Ogerpon ex.
+Hades0918 evolved Chikorita to Bayleef on the Bench.
+Hades0918 played Teal Mask Ogerpon ex to the Bench.
+Hades0918's Teal Mask Ogerpon ex used Teal Dance.
+- Hades0918 attached Basic Grass Energy to Teal Mask Ogerpon ex on the Bench.
+- Hades0918 drew Basic Fire Energy.
+Hades0918 attached Basic Fire Energy to Fennekin on the Bench.
+Hades0918's Teal Mask Ogerpon used Grass Kagura.
+- Hades0918 attached Basic Grass Energy to Teal Mask Ogerpon ex on the Bench.
+- Hades0918 shuffled their deck.
+
+Jillovanillo's Turn
+Jillovanillo drew a card.
+Jillovanillo played Buddy-Buddy Poffin.
+- Jillovanillo drew 2 cards and played them to the Bench.
+   • Ralts, Clefairy
+- Jillovanillo shuffled their deck.
+Jillovanillo's Smoochum used Delightful Kiss.
+- Jillovanillo attached Basic Psychic Energy to Ralts on the Bench.
+- Jillovanillo attached Basic Psychic Energy to Ralts on the Bench.
+- Jillovanillo shuffled their deck.
+
+Hades0918's Turn
+Hades0918 drew Crispin.
+Hades0918 evolved Bayleef to Meganium on the Bench.
+Hades0918 attached Basic Fire Energy to Fennekin on the Bench.
+Hades0918 played Crispin.
+- Hades0918 drew Basic Grass Energy.
+- Hades0918 attached Basic Fire Energy to Scorbunny on the Bench.
+- Hades0918 shuffled their deck.
+Hades0918's Teal Mask Ogerpon ex used Teal Dance.
+- Hades0918 attached Basic Grass Energy to Teal Mask Ogerpon ex on the Bench.
+- Hades0918 drew Hilda.
+Hades0918 retreated Teal Mask Ogerpon to the Bench.
+- Basic Fire Energy was discarded from Hades0918's Teal Mask Ogerpon.
+Hades0918's Teal Mask Ogerpon ex is now in the Active Spot.
+Hades0918's Teal Mask Ogerpon ex used Myriad Leaf Shower on Jillovanillo’s Smoochum for 270 damage.
+- Damage breakdown:
+   • Base damage: 30 damage
+   • 8 attached Energy: 240 damage
+   • Total damage: 270 damage
+Jillovanillo's Smoochum was Knocked Out!
+Hades0918 took a Prize card.
+Lillie's Determination was added to Hades0918's hand.
+Jillovanillo's Mega Diancie ex is now in the Active Spot.
+
+Jillovanillo's Turn
+Jillovanillo drew a card.
+Jillovanillo played Mega Kangaskhan ex to the Bench.
+Jillovanillo played Night Stretcher.
+- Jillovanillo moved Jillovanillo's Smoochum to their hand.
+Jillovanillo played Smoochum to the Bench.
+Jillovanillo attached Basic Psychic Energy to Clefairy on the Bench.
+Jillovanillo's Mega Diancie ex used Garland Ray on Hades0918’s Teal Mask Ogerpon ex for 240 damage.
+- Damage breakdown:
+   • 2 selected Energy: 240 damage
+- 2 cards were discarded from Jillovanillo's Mega Diancie ex.
+   • Basic Psychic Energy, Basic Psychic Energy
+Hades0918's Teal Mask Ogerpon ex was Knocked Out!
+- 4 cards were discarded from Hades0918's Teal Mask Ogerpon ex.
+   • Basic Grass Energy, Basic Grass Energy, Basic Grass Energy, Basic Grass Energy
+Jillovanillo took 2 Prize cards.
+A card was added to Jillovanillo's hand.
+A card was added to Jillovanillo's hand.
+Hades0918's Teal Mask Ogerpon ex is now in the Active Spot.
+
+Hades0918's Turn
+Hades0918 drew Hearthflame Mask Ogerpon.
+Hades0918 played Lillie's Determination.
+- Hades0918 shuffled 2 cards into their deck.
+   • Hilda, Hearthflame Mask Ogerpon
+- Hades0918 drew 6 cards.
+   • Basic Fire Energy, Brock's Scouting, Basic Grass Energy, Buddy-Buddy Poffin, Basic Grass Energy, Fennekin
+Hades0918's Teal Mask Ogerpon ex used Teal Dance.
+- Hades0918 attached Basic Grass Energy to Teal Mask Ogerpon ex in the Active Spot.
+- Hades0918 drew Dawn.
+Hades0918 attached Basic Grass Energy to Teal Mask Ogerpon ex in the Active Spot.
+Hades0918 played Fennekin to the Bench.
+Hades0918's Teal Mask Ogerpon ex used Myriad Leaf Shower on Jillovanillo’s Mega Diancie ex for 210 damage.
+- Damage breakdown:
+   • Base damage: 30 damage
+   • (Ability) Diamond Coat: -30 damage
+   • 7 attached Energy: 210 damage
+   • Total damage: 210 damage
+
+Jillovanillo's Turn
+Jillovanillo drew a card.
+Jillovanillo played Switch.
+- Jillovanillo's Mega Kangaskhan ex was switched with Jillovanillo's Mega Diancie ex to become the Active Pokémon.
+Jillovanillo's Mega Kangaskhan ex is now in the Active Spot.
+Jillovanillo attached Basic Psychic Energy to Clefairy on the Bench.
+Jillovanillo played Lillie's Determination.
+- Jillovanillo shuffled 4 cards into their deck.
+- Jillovanillo drew 6 cards.
+Jillovanillo played Pokégear 3.0.
+- Jillovanillo shuffled their deck.
+Jillovanillo's Mega Kangaskhan ex used Run Errand.
+- Jillovanillo drew 2 cards.
+Jillovanillo played Ultra Ball.
+- Jillovanillo discarded 2 cards.
+   • Poké Pad, Energy Recycler
+- Jillovanillo drew Mega Clefable ex.
+- Jillovanillo shuffled their deck.
+Jillovanillo evolved Clefairy to Mega Clefable ex on the Bench.
+Jillovanillo played Switch.
+- Jillovanillo's Mega Clefable ex was switched with Jillovanillo's Mega Kangaskhan ex to become the Active Pokémon.
+Jillovanillo's Mega Clefable ex is now in the Active Spot.
+Jillovanillo attached Hero's Cape to Mega Clefable ex in the Active Spot.
+Jillovanillo's Mega Clefable ex used Shooting Moons on Hades0918’s Teal Mask Ogerpon ex for 160 damage.
+- Damage breakdown:
+   • Base damage: 120 damage
+   • 1 selected Energy: 40 damage
+   • Total damage: 160 damage
+- Jillovanillo discarded Basic Psychic Energy.
+
+Hades0918's Turn
+Hades0918 drew Rare Candy.
+Hades0918 played Dawn.
+- Hades0918 drew 2 cards.
+   • Teal Mask Ogerpon ex, Delphox
+- Hades0918 shuffled their deck.
+Hades0918 played Rare Candy.
+- Hades0918 evolved Fennekin to Delphox on the Bench.
+Hades0918 attached Basic Fire Energy to Teal Mask Ogerpon ex in the Active Spot.
+Hades0918 retreated Teal Mask Ogerpon ex to the Bench.
+- Basic Fire Energy was discarded from Hades0918's Teal Mask Ogerpon ex.
+Hades0918's Delphox is now in the Active Spot.
+Hades0918's Delphox used Energized Storm on Jillovanillo’s Mega Clefable ex for 450 damage.
+- Damage breakdown:
+   • 15 attached Energy: 450 damage
+Jillovanillo's Mega Clefable ex was Knocked Out!
+- 4 cards were discarded from Jillovanillo's Mega Clefable ex.
+   • Basic Psychic Energy, Basic Psychic Energy, Clefairy, Hero's Cape
+Hades0918 took 3 Prize cards.
+Mega Audino ex was added to Hades0918's hand.
+Raboot was added to Hades0918's hand.
+Mega Audino ex was added to Hades0918's hand.
+Jillovanillo's Mega Kangaskhan ex is now in the Active Spot.
+
+Jillovanillo's Turn
+Jillovanillo drew a card.
+Jillovanillo's Mega Kangaskhan ex used Run Errand.
+- Jillovanillo drew 2 cards.
+Jillovanillo played Lillie's Clefairy ex to the Bench.
+Jillovanillo played Poké Pad.
+- Jillovanillo drew Kirlia.
+- Jillovanillo shuffled their deck.
+Jillovanillo evolved Ralts to Kirlia on the Bench.
+Jillovanillo played Boss's Orders.
+- Hades0918's Meganium was switched with Hades0918's Delphox to become the Active Pokémon.
+Hades0918's Meganium is now in the Active Spot.
+Jillovanillo ended their turn.
+
+Hades0918's Turn
+Hades0918 drew Delphox.
+Hades0918 evolved Scorbunny to Raboot on the Bench.
+Hades0918 played Brock's Scouting.
+- Hades0918 drew Cinderace.
+- Hades0918 shuffled their deck.
+Hades0918 ended their turn.
+
+Jillovanillo's Turn
+Jillovanillo drew a card.
+Jillovanillo's Mega Kangaskhan ex used Run Errand.
+- Jillovanillo drew 2 cards.
+Jillovanillo played Wondrous Patch.
+- Jillovanillo attached Basic Psychic Energy to Lillie's Clefairy ex on the Bench.
+Jillovanillo played Dawn.
+- Jillovanillo drew 2 cards.
+   • Mega Floette ex, Jellicent ex
+- Jillovanillo shuffled their deck.
+Jillovanillo ended their turn.
+
+Hades0918's Turn
+Hades0918 drew Basic Fire Energy.
+Hades0918 evolved Raboot to Cinderace on the Bench.
+Hades0918's Delphox used Flaring Magic.
+- Hades0918 discarded Basic Fire Energy.
+- Hades0918 drew 2 cards.
+   • Powerglass, Cinderace
+Hades0918 attached Powerglass to Delphox on the Bench.
+Hades0918 ended their turn.
+
+Jillovanillo's Turn
+Jillovanillo drew a card.
+Jillovanillo's Mega Kangaskhan ex used Run Errand.
+- Jillovanillo drew 2 cards.
+Jillovanillo played Mystery Garden to the Stadium spot.
+Jillovanillo ended their turn.
+
+Hades0918's Turn
+Hades0918 drew Lillie's Determination.
+Hades0918 played Lillie's Determination.
+- Hades0918 shuffled 6 cards into their deck.
+   • Buddy-Buddy Poffin, Teal Mask Ogerpon ex, Mega Audino ex, Mega Audino ex, Delphox, Cinderace
+- Hades0918 drew 6 cards.
+   • Crispin, Cyrano, Mega Audino ex, Maximum Belt, Delphox, Hilda
+Hades0918 attached Maximum Belt to Teal Mask Ogerpon ex on the Bench.
+Hades0918 ended their turn.
+
+Jillovanillo's Turn
+Jillovanillo drew a card.
+Jillovanillo's Mega Kangaskhan ex used Run Errand.
+- Jillovanillo drew 2 cards.
+Jillovanillo ended their turn.
+
+Hades0918's Turn
+Hades0918 drew Hearthflame Mask Ogerpon.
+Hades0918 played Crispin.
+- Hades0918 drew Basic Fire Energy.
+- Hades0918 attached Basic Grass Energy to Meganium in the Active Spot.
+- Hades0918 shuffled their deck.
+Hades0918 retreated Meganium to the Bench.
+- Basic Grass Energy was discarded from Hades0918's Meganium.
+Hades0918's Delphox is now in the Active Spot.
+Hades0918 attached Basic Fire Energy to Fennekin on the Bench.
+Hades0918's Delphox used Energized Storm on Jillovanillo’s Mega Kangaskhan ex for 450 damage.
+- Damage breakdown:
+   • 15 attached Energy: 450 damage
+Jillovanillo's Mega Kangaskhan ex was Knocked Out!
+Hades0918 took 2 Prize cards.
+Teal Mask Ogerpon ex was added to Hades0918's hand.
+Braixen was added to Hades0918's hand.
+All Prize cards taken. Hades0918 wins.

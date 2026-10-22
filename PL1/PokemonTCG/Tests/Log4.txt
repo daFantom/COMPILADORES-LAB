@@ -1,0 +1,227 @@
+Setup
+serjfan7 chose tails for the opening coin flip.
+Mpiskoto won the coin toss.
+Mpiskoto decided to go first.
+serjfan7 drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • Hop's Corviknight, Basic Lightning Energy, Hop's Rookidee, Nemona, Drayton, Basic Metal Energy, Basic Metal Energy
+Mpiskoto drew 7 cards for the opening hand.
+- 7 drawn cards.
+serjfan7 played Hop's Rookidee to the Active Spot.
+Mpiskoto played N's Darumaka to the Active Spot.
+Mpiskoto played Reshiram ex to the Bench.
+
+Mpiskoto's Turn
+Mpiskoto drew a card.
+Mpiskoto attached Basic Fire Energy to Reshiram ex on the Bench.
+Mpiskoto ended their turn.
+
+serjfan7's Turn
+serjfan7 drew Technical Machine: Evolution.
+serjfan7 attached Basic Metal Energy to Hop's Rookidee in the Active Spot.
+serjfan7 played Drayton.
+- serjfan7 drew Hop's Cramorant.
+- serjfan7 shuffled their deck.
+serjfan7 played Hop's Cramorant to the Bench.
+serjfan7's Hop's Rookidee used Intimidating Stare.
+
+Mpiskoto's Turn
+Mpiskoto drew a card.
+Mpiskoto played Nemona.
+- Mpiskoto drew 3 cards.
+Mpiskoto attached Boomerang Energy to Reshiram ex on the Bench.
+Mpiskoto played Levincia to the Stadium spot.
+Mpiskoto attached Technical Machine: Evolution to N's Darumaka in the Active Spot.
+Mpiskoto ended their turn.
+Technical Machine: Evolution was activated.
+- Technical Machine: Evolution was discarded from Mpiskoto's N's Darumaka.
+
+serjfan7's Turn
+serjfan7 drew Basic Lightning Energy.
+serjfan7 played Nemona.
+- serjfan7 drew 3 cards.
+   • Surfer, Noivern, Brock's Scouting
+serjfan7 attached Basic Lightning Energy to Hop's Rookidee in the Active Spot.
+serjfan7's Hop's Rookidee used Intimidating Stare.
+
+Mpiskoto's Turn
+Mpiskoto drew a card.
+Mpiskoto attached Basic Fire Energy to Reshiram ex on the Bench.
+Mpiskoto ended their turn.
+
+serjfan7's Turn
+serjfan7 drew Hop's Corvisquire.
+serjfan7 evolved Hop's Rookidee to Hop's Corvisquire in the Active Spot.
+serjfan7 played Brock's Scouting.
+- serjfan7 drew 2 cards.
+   • Hop's Cramorant, Hop's Snorlax
+- serjfan7 shuffled their deck.
+serjfan7 played Hop's Snorlax to the Bench.
+serjfan7 played Hop's Cramorant to the Bench.
+serjfan7 attached Basic Metal Energy to Hop's Corvisquire in the Active Spot.
+serjfan7's Hop's Corvisquire used Speed Dive on Mpiskoto’s N's Darumaka for 60 damage.
+- Damage breakdown:
+   • Base damage: 30 damage
+   • (Ability) Extra Helpings: 30 damage
+   • Total damage: 60 damage
+
+Mpiskoto's Turn
+Mpiskoto drew a card.
+Mpiskoto attached Jet Energy to Reshiram ex on the Bench.
+Jet Energy was activated.
+- Mpiskoto's Reshiram ex was switched with Mpiskoto's N's Darumaka to become the Active Pokémon.
+Mpiskoto's Reshiram ex is now in the Active Spot.
+Mpiskoto's Reshiram ex used Scorching Fire on serjfan7’s Hop's Corvisquire for 200 damage.
+- Boomerang Energy was discarded from Mpiskoto's Reshiram ex.
+serjfan7's Hop's Corvisquire was Knocked Out!
+- 4 cards were discarded from serjfan7's Hop's Corvisquire.
+   • Basic Metal Energy, Basic Lightning Energy, Basic Metal Energy, Hop's Rookidee
+Boomerang Energy was activated.
+- Mpiskoto attached Boomerang Energy to Reshiram ex in the Active Spot.
+Mpiskoto took a Prize card.
+A card was added to Mpiskoto's hand.
+serjfan7's Hop's Cramorant is now in the Active Spot.
+
+serjfan7's Turn
+serjfan7 drew Cramorant.
+serjfan7 attached Basic Lightning Energy to Hop's Cramorant in the Active Spot.
+serjfan7 played Cramorant to the Bench.
+serjfan7 played Levincia.
+- Mpiskoto moved Mpiskoto's Basic Lightning Energy to their hand.
+serjfan7's Hop's Cramorant used Fickle Spitting on Mpiskoto’s Reshiram ex for 150 damage.
+- Damage breakdown:
+   • Base damage: 120 damage
+   • (Ability) Extra Helpings: 30 damage
+   • Total damage: 150 damage
+
+Mpiskoto's Turn
+Mpiskoto drew a card.
+Mpiskoto played Iono's Wattrel to the Bench.
+Mpiskoto played Brock's Scouting.
+- Mpiskoto drew Iono's Kilowattrel.
+- Mpiskoto shuffled their deck.
+Mpiskoto played N's Darumaka to the Bench.
+Mpiskoto's Reshiram ex used Scorching Fire on serjfan7’s Hop's Cramorant for 200 damage.
+- Boomerang Energy was discarded from Mpiskoto's Reshiram ex.
+serjfan7's Hop's Cramorant was Knocked Out!
+Basic Lightning Energy was discarded from serjfan7's Hop's Cramorant.
+Boomerang Energy was activated.
+- Mpiskoto attached Boomerang Energy to Reshiram ex in the Active Spot.
+Mpiskoto took a Prize card.
+A card was added to Mpiskoto's hand.
+serjfan7's Cramorant is now in the Active Spot.
+
+serjfan7's Turn
+serjfan7 drew Buddy-Buddy Poffin.
+serjfan7 played Buddy-Buddy Poffin.
+- serjfan7 drew 2 cards and played them to the Bench.
+   • Hop's Rookidee, Noibat
+- serjfan7 shuffled their deck.
+serjfan7 played Surfer.
+- serjfan7's Hop's Cramorant was switched with serjfan7's Cramorant to become the Active Pokémon.
+- serjfan7 drew Basic Lightning Energy.
+serjfan7's Hop's Cramorant is now in the Active Spot.
+serjfan7 attached Basic Lightning Energy to Hop's Cramorant in the Active Spot.
+serjfan7 attached Technical Machine: Evolution to Hop's Cramorant in the Active Spot.
+serjfan7 played Levincia.
+- Mpiskoto moved Mpiskoto's Basic Lightning Energy to their hand.
+serjfan7's Hop's Cramorant used Evolution.
+- serjfan7 evolved Noibat to Noivern on the Bench.
+- serjfan7 evolved Hop's Rookidee to Hop's Corvisquire on the Bench.
+- serjfan7 shuffled their deck.
+Technical Machine: Evolution was activated.
+- Technical Machine: Evolution was discarded from serjfan7's Hop's Cramorant.
+
+Mpiskoto's Turn
+Mpiskoto drew a card.
+Mpiskoto played Noibat to the Bench.
+Mpiskoto played Brock's Scouting.
+- Mpiskoto drew N's Darmanitan.
+- Mpiskoto shuffled their deck.
+Mpiskoto evolved N's Darumaka to N's Darmanitan on the Bench.
+Mpiskoto evolved Iono's Wattrel to Iono's Kilowattrel on the Bench.
+Mpiskoto attached Basic Lightning Energy to Iono's Kilowattrel on the Bench.
+Mpiskoto's Reshiram ex used Scorching Fire on serjfan7’s Hop's Cramorant for 200 damage.
+- Boomerang Energy was discarded from Mpiskoto's Reshiram ex.
+serjfan7's Hop's Cramorant was Knocked Out!
+Basic Lightning Energy was discarded from serjfan7's Hop's Cramorant.
+Boomerang Energy was activated.
+- Mpiskoto attached Boomerang Energy to Reshiram ex in the Active Spot.
+Mpiskoto took a Prize card.
+A card was added to Mpiskoto's hand.
+serjfan7's Noivern is now in the Active Spot.
+
+serjfan7's Turn
+serjfan7 drew Iris's Fighting Spirit.
+serjfan7 played Iris's Fighting Spirit.
+- serjfan7 discarded Noivern.
+- serjfan7 drew 3 cards.
+   • Hop's Corviknight, Jet Energy, Basic Lightning Energy
+serjfan7 evolved Hop's Corvisquire to Hop's Corviknight on the Bench.
+serjfan7 attached Basic Lightning Energy to Hop's Corviknight on the Bench.
+serjfan7 retreated Noivern to the Bench.
+serjfan7's Hop's Corviknight is now in the Active Spot.
+serjfan7's Hop's Corviknight used Shoot Through on Mpiskoto’s Reshiram ex for 80 damage.
+- Damage breakdown:
+   • Base damage: 50 damage
+   • (Ability) Extra Helpings: 30 damage
+   • Total damage: 80 damage
+- Mpiskoto's Iono's Kilowattrel took 50 damage.
+Mpiskoto's Reshiram ex was Knocked Out!
+- 4 cards were discarded from Mpiskoto's Reshiram ex.
+   • Basic Fire Energy, Basic Fire Energy, Jet Energy, Boomerang Energy
+serjfan7 took 2 Prize cards.
+Basic Metal Energy was added to serjfan7's hand.
+Basic Metal Energy was added to serjfan7's hand.
+Mpiskoto's Noibat is now in the Active Spot.
+
+Mpiskoto's Turn
+Mpiskoto drew a card.
+Mpiskoto evolved Noibat to Noivern in the Active Spot.
+Mpiskoto's Iono's Kilowattrel used Flashing Draw.
+- Basic Lightning Energy was discarded from Mpiskoto's Iono's Kilowattrel.
+- Mpiskoto drew 2 cards.
+Mpiskoto's Noivern used Frightening Howl on serjfan7’s Hop's Corviknight for 110 damage.
+- serjfan7's Hop's Corviknight is now Confused.
+
+serjfan7's Turn
+serjfan7 drew Noibat.
+serjfan7 attached Jet Energy to Noivern on the Bench.
+Jet Energy was activated.
+- serjfan7's Noivern was switched with serjfan7's Hop's Corviknight to become the Active Pokémon.
+serjfan7's Noivern is now in the Active Spot.
+serjfan7 played Noibat to the Bench.
+serjfan7 played Levincia.
+- Mpiskoto moved Mpiskoto's Basic Lightning Energy to their hand.
+serjfan7 retreated Noivern to the Bench.
+serjfan7's Hop's Snorlax is now in the Active Spot.
+serjfan7 ended their turn.
+
+Mpiskoto's Turn
+Mpiskoto drew a card.
+Mpiskoto attached Basic Fire Energy to N's Darmanitan on the Bench.
+Mpiskoto played Drayton.
+- Mpiskoto drew Iris's Fighting Spirit.
+- Mpiskoto shuffled their deck.
+Mpiskoto played N's PP Up.
+- Mpiskoto attached Basic Fire Energy to N's Darmanitan on the Bench.
+Mpiskoto ended their turn.
+
+serjfan7's Turn
+serjfan7 drew Basic Lightning Energy.
+serjfan7 attached Basic Lightning Energy to Hop's Corviknight on the Bench.
+serjfan7 ended their turn.
+
+Mpiskoto's Turn
+Mpiskoto drew a card.
+Mpiskoto attached Basic Fire Energy to N's Darmanitan on the Bench.
+Mpiskoto retreated Noivern to the Bench.
+Mpiskoto's N's Darmanitan is now in the Active Spot.
+Mpiskoto's N's Darmanitan used Flamebody Cannon on serjfan7’s Hop's Snorlax for 90 damage.
+- serjfan7's Noibat took 90 damage.
+- 3 cards were discarded from Mpiskoto's N's Darmanitan.
+   • Basic Fire Energy, Basic Fire Energy, Basic Fire Energy
+serjfan7's Noibat was Knocked Out!
+Mpiskoto took a Prize card.
+A card was added to Mpiskoto's hand.
+Opponent took all of their Prize cards. Mpiskoto wins.
