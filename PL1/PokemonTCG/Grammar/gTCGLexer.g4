@@ -651,6 +651,10 @@ ATTACK
     | 'Virtuous Flame'
     | 'Raging Charge'
     | 'Cosmic Beam'
+    | 'Light Punch'
+    | 'Cruel Arrow'
+    | 'Flash Ray'
+    | 'Riotous Blasting'
     ;
 
 // ============================================================
