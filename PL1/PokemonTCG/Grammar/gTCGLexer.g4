@@ -528,6 +528,11 @@ CARD
     | 'Braixen'
     | 'Jumbo Ice Cream'
     | 'Core Memory'
+    | 'Ciphermaniac\'s Codebreaking'
+    | 'Yveltal'
+    | 'Mega Darkrai ex'
+    | 'Gastly'
+    | 'Dark Bell'
     ;
 
 
@@ -556,6 +561,10 @@ ATTACK
     | 'Turbo Flare'
     | 'Gaia Wave'
     | 'Nullifying Zero'
+    | 'Night Joker'
+    | 'Subjugating Chains'
+    | 'Dusk Raid'
+    | 'Shred'
     ;
 
 // ============================================================
@@ -564,6 +573,18 @@ ATTACK
 
 ABILITY
     : 'Diamond Coat'
+    ;
+
+// ============================================================
+// CONDICIONES ESPECIALES
+// ============================================================
+
+SPECIAL_CONDITION
+    : 'Asleep'
+    | 'Burned'
+    | 'Confused'
+    | 'Paralyzed'
+    | 'Poisoned'
     ;
 
 // ============================================================
@@ -591,6 +612,7 @@ NUMBER
 
 PLAYER
     : [a-zA-Z0-9_]+
+     
     
     ;
 

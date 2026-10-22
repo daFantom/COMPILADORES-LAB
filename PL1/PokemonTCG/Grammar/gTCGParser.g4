@@ -41,17 +41,17 @@ setupAction
 // ------------------------------------------------------------
 
 coinChoice
-    : PLAYER CHOSE (HEADS | TAILS)
+    : (OPPONENT | PLAYER) CHOSE (HEADS | TAILS)
       FOR THE OPENING COIN FLIP DOT NEWLINE
     ;
 
 
 coinToss
-    : PLAYER WON THE COIN TOSS DOT NEWLINE
+    : (OPPONENT | PLAYER) WON THE COIN TOSS DOT NEWLINE
     ;
 
 firstPlayer
-    : PLAYER DECIDED TO GO FIRST DOT NEWLINE
+    : (OPPONENT | PLAYER) DECIDED TO GO FIRST DOT NEWLINE
     ;
 
 
@@ -60,7 +60,7 @@ firstPlayer
 // ------------------------------------------------------------
 
 openingHand
-    : PLAYER DREW NUMBER CARDS FOR THE OPENING HAND DOT NEWLINE
+    : (OPPONENT | PLAYER) DREW NUMBER CARDS FOR THE OPENING HAND DOT NEWLINE
       drawnCards?
     ;
 
@@ -75,7 +75,7 @@ drawnCards
 // ------------------------------------------------------------
 
 initialPokemon
-    : PLAYER PLAYED CARD TO THE (ACTIVE SPOT | BENCH) DOT NEWLINE
+    : (OPPONENT | PLAYER) PLAYED CARD TO THE (ACTIVE SPOT | BENCH) DOT NEWLINE
     ;
 
 
@@ -84,7 +84,7 @@ initialPokemon
 // ============================================================
 
 turn
-    : PLAYER POSSESSIVE TURN NEWLINE
+    : (OPPONENT | PLAYER) POSSESSIVE TURN NEWLINE
       mainTurnAction*
     ;
 
@@ -99,7 +99,7 @@ mainTurnAction
     ;
 
 subTurnAction
-    : HYPHEN turnActionBody DOT NEWLINE
+    : HYPHEN turnActionBody DOT? NEWLINE
     (cardList)*
     ;
 
@@ -120,6 +120,8 @@ turnActionBody
     | knockoutAction
     | damagedAction
     | flippedAction
+    | choiceAction
+    | specialConditionAction
     | endTurn
     ;
 
@@ -129,12 +131,12 @@ turnActionBody
 // ============================================================
 
 drawAction
-    : PLAYER DREW CARD_WORD
-    | PLAYER DREW A_SOMETHING CARD_WORD
-    | PLAYER DREW CARD
-    | PLAYER DREW NUMBER CARD
-    | PLAYER DREW NUMBER CARDS
-    | PLAYER DREW NUMBER CARDS AND PLAYED THEM TO THE BENCH
+    : (OPPONENT | PLAYER) DREW CARD_WORD
+    | (OPPONENT | PLAYER) DREW A_SOMETHING CARD_WORD
+    | (OPPONENT | PLAYER) DREW CARD
+    | (OPPONENT | PLAYER) DREW NUMBER CARD
+    | (OPPONENT | PLAYER) DREW NUMBER CARDS
+    | (OPPONENT | PLAYER) DREW NUMBER CARDS AND PLAYED THEM TO THE BENCH
     ;
 
 
@@ -143,7 +145,7 @@ drawAction
 // ============================================================
 
 playAction
-    : PLAYER PLAYED CARD (TO THE (BENCH | ACTIVE SPOT | STADIUM SPOT))?
+    : (OPPONENT | PLAYER) PLAYED CARD (TO THE (BENCH | ACTIVE SPOT | STADIUM SPOT))?
     ;
 
 
@@ -152,7 +154,7 @@ playAction
 // ============================================================
 
 attachAction
-    : PLAYER ATTACHED CARD TO CARD (ON THE BENCH | IN THE ACTIVE SPOT)
+    : (OPPONENT | PLAYER) ATTACHED CARD TO CARD (ON THE BENCH | IN THE ACTIVE SPOT)
     ;
 
 
@@ -161,7 +163,7 @@ attachAction
 // ============================================================
 
 evolveAction
-    : PLAYER EVOLVED CARD TO CARD (ON THE BENCH | IN THE ACTIVE SPOT)
+    : (OPPONENT | PLAYER) EVOLVED CARD TO CARD (ON THE BENCH | IN THE ACTIVE SPOT)
     ;
 
 
@@ -170,7 +172,7 @@ evolveAction
 // ============================================================
 
 attackAction
-    : PLAYER POSSESSIVE CARD USED ATTACK (ON PLAYER POSSESSIVE CARD FOR NUMBER DAMAGE)?
+    : (OPPONENT | PLAYER) POSSESSIVE CARD USED ATTACK (ON (OPPONENT | PLAYER) POSSESSIVE CARD FOR NUMBER DAMAGE)?
     ;
 
 // ------------------------------------------------------------
@@ -209,7 +211,7 @@ damageBonusLine
 // ============================================================
 
 retreatAction
-    : PLAYER RETIRED CARD TO THE BENCH
+    : (OPPONENT | PLAYER) RETIRED CARD TO THE BENCH
     ;
 
 
@@ -218,9 +220,9 @@ retreatAction
 // ============================================================
 
 shuffleAction
-    : PLAYER SHUFFLED THEIR DECK
-    | PLAYER SHUFFLED NUMBER CARDS INTO THEIR DECK
-    | PLAYER SHUFFLED CARD INTO THEIR DECK
+    : (OPPONENT | PLAYER) SHUFFLED THEIR DECK
+    | (OPPONENT | PLAYER) SHUFFLED NUMBER CARDS INTO THEIR DECK
+    | (OPPONENT | PLAYER) SHUFFLED CARD INTO THEIR DECK
     ;
 
 
@@ -229,10 +231,10 @@ shuffleAction
 // ============================================================
 
 discardAction
-    : PLAYER DISCARDED CARD
-    | PLAYER DISCARDED NUMBER CARDS
-    | NUMBER CARDS WERE DISCARDED FROM PLAYER POSSESSIVE CARD
-    | CARD WAS DISCARDED FROM PLAYER POSSESSIVE CARD
+    : (OPPONENT | PLAYER) DISCARDED CARD
+    | (OPPONENT | PLAYER) DISCARDED NUMBER CARDS
+    | NUMBER CARDS WERE DISCARDED FROM (OPPONENT | PLAYER) POSSESSIVE CARD
+    | CARD WAS DISCARDED FROM (OPPONENT | PLAYER) POSSESSIVE CARD
     ;
 
 
@@ -241,8 +243,8 @@ discardAction
 // ============================================================
 
 prizeAction
-    : PLAYER TAKE A_SOMETHING? PRIZE CARD_WORD
-    | PLAYER TAKE NUMBER PRIZE_CARDS
+    : (OPPONENT | PLAYER) TAKE A_SOMETHING? PRIZE CARD_WORD
+    | (OPPONENT | PLAYER) TAKE NUMBER PRIZE_CARDS
     ;
 
 
@@ -251,8 +253,8 @@ prizeAction
 // ============================================================
 
 moveToHandAction
-    : PLAYER MOVED
-      PLAYER POSSESSIVE CARD
+    : (OPPONENT | PLAYER) MOVED
+      (OPPONENT | PLAYER) POSSESSIVE CARD
       TO THEIR HAND
     ;
 
@@ -262,7 +264,7 @@ moveToHandAction
 // ============================================================
 
 activeSpotAction
-    : PLAYER POSSESSIVE CARD
+    : (OPPONENT | PLAYER) POSSESSIVE CARD
       IS NOW IN THE ACTIVE SPOT
     ;
 
@@ -272,24 +274,30 @@ activeSpotAction
 // ============================================================
 
 knockoutAction
-    : PLAYER POSSESSIVE CARD WAS KNOCKED OUT
+    : (OPPONENT | PLAYER) POSSESSIVE CARD WAS KNOCKED OUT
     ;
 
 cardMovedAction
-    : A_SOMETHING CARD_WORD WAS ADDED TO PLAYER POSSESSIVE HAND
-    | CARD WAS ADDED TO PLAYER POSSESSIVE HAND
+    : A_SOMETHING CARD_WORD WAS ADDED TO (OPPONENT | PLAYER) POSSESSIVE HAND
+    | CARD WAS ADDED TO (OPPONENT | PLAYER) POSSESSIVE HAND
     ;
 
 switchAction
-    : PLAYER POSSESSIVE CARD WAS SWITCHED WITH PLAYER POSSESSIVE CARD TO BECOME THE ACTIVE POKEMON
+    : (OPPONENT | PLAYER) POSSESSIVE CARD WAS SWITCHED WITH (OPPONENT | PLAYER) POSSESSIVE CARD TO BECOME THE ACTIVE POKEMON
     ;
 
 damagedAction
-    : PLAYER POSSESSIVE CARD TAKE NUMBER DAMAGE
+    : (OPPONENT | PLAYER) POSSESSIVE CARD TAKE NUMBER DAMAGE
     ;
 
 flippedAction
-    : PLAYER FLIPPED A_SOMETHING COIN AND IT LANDED ON (TAILS|HEADS)
+    : (OPPONENT | PLAYER) FLIPPED A_SOMETHING COIN AND IT LANDED ON (TAILS|HEADS)
+    ;
+choiceAction
+    : (OPPONENT | PLAYER) CHOSE ATTACK
+    ;
+specialConditionAction
+    : (OPPONENT | PLAYER) POSSESSIVE CARD IS NOW SPECIAL_CONDITION
     ;
 
 // ============================================================
@@ -297,7 +305,7 @@ flippedAction
 // ============================================================
 
 endTurn
-    : PLAYER ENDED THEIR TURN
+    : (OPPONENT | PLAYER) ENDED THEIR TURN
     ;
 
 
@@ -306,8 +314,8 @@ endTurn
 // ============================================================
 
 gameEnd
-    : ALL PRIZE_CARDS TAKEN DOT PLAYER WINS DOT
-    | OPPONENT CONCEDED DOT PLAYER WINS DOT
+    : ALL PRIZE_CARDS TAKEN DOT (OPPONENT | PLAYER) WINS DOT
+    | OPPONENT CONCEDED DOT (OPPONENT | PLAYER) WINS DOT
     ;
 
 

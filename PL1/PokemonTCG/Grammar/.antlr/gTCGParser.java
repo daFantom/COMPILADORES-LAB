@@ -27,8 +27,9 @@ public class gTCGParser extends Parser {
 		RETIRED=61, ENDED=62, OPPONENT=63, CONCEDED=64, WINS=65, ALL=66, TAKEN=67, 
 		A_SOMETHING=68, AND=69, THEM=70, ENERGY=71, SELECTED=72, DAMAGE_BREAKDOWN=73, 
 		BASE_DAMAGE=74, TOTAL_DAMAGE=75, ITEM=76, POSSESSIVE=77, CARD=78, ATTACK=79, 
-		ABILITY=80, NUMBER=81, PLAYER=82, DOT=83, COMMA=84, COLON=85, EXCLAMATION=86, 
-		LPAREN=87, RPAREN=88, BULLET=89, HYPHEN=90, NEWLINE=91, WS=92;
+		ABILITY=80, SPECIAL_CONDITION=81, NUMBER=82, PLAYER=83, DOT=84, COMMA=85, 
+		COLON=86, EXCLAMATION=87, LPAREN=88, RPAREN=89, BULLET=90, HYPHEN=91, 
+		NEWLINE=92, WS=93;
 	public static final int
 		RULE_log = 0, RULE_setup = 1, RULE_setupAction = 2, RULE_coinChoice = 3, 
 		RULE_coinToss = 4, RULE_firstPlayer = 5, RULE_openingHand = 6, RULE_drawnCards = 7, 
@@ -39,7 +40,8 @@ public class gTCGParser extends Parser {
 		RULE_shuffleAction = 21, RULE_discardAction = 22, RULE_prizeAction = 23, 
 		RULE_moveToHandAction = 24, RULE_activeSpotAction = 25, RULE_knockoutAction = 26, 
 		RULE_cardMovedAction = 27, RULE_switchAction = 28, RULE_damagedAction = 29, 
-		RULE_flippedAction = 30, RULE_endTurn = 31, RULE_gameEnd = 32, RULE_cardList = 33;
+		RULE_flippedAction = 30, RULE_choiceAction = 31, RULE_specialConditionAction = 32, 
+		RULE_endTurn = 33, RULE_gameEnd = 34, RULE_cardList = 35;
 	private static String[] makeRuleNames() {
 		return new String[] {
 			"log", "setup", "setupAction", "coinChoice", "coinToss", "firstPlayer", 
@@ -48,7 +50,8 @@ public class gTCGParser extends Parser {
 			"evolveAction", "attackAction", "damageBreakdown", "damageBonusLine", 
 			"retreatAction", "shuffleAction", "discardAction", "prizeAction", "moveToHandAction", 
 			"activeSpotAction", "knockoutAction", "cardMovedAction", "switchAction", 
-			"damagedAction", "flippedAction", "endTurn", "gameEnd", "cardList"
+			"damagedAction", "flippedAction", "choiceAction", "specialConditionAction", 
+			"endTurn", "gameEnd", "cardList"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
@@ -67,7 +70,8 @@ public class gTCGParser extends Parser {
 			"'retreated'", "'ended'", "'Opponent'", "'conceded'", "'wins'", "'All'", 
 			"'taken'", null, "'and'", "'them'", "'Energy'", "'selected'", "'Damage breakdown'", 
 			"'Base damage'", "'Total damage'", "'Item'", null, null, null, "'Diamond Coat'", 
-			null, null, "'.'", "','", "':'", "'!'", "'('", "')'", "'\\u2022'", "'-'"
+			null, null, null, "'.'", "','", "':'", "'!'", "'('", "')'", "'\\u2022'", 
+			"'-'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -83,9 +87,9 @@ public class gTCGParser extends Parser {
 			"PRIZE", "PRIZE_CARDS", "KNOCKED", "OUT", "SWITCHED", "RETIRED", "ENDED", 
 			"OPPONENT", "CONCEDED", "WINS", "ALL", "TAKEN", "A_SOMETHING", "AND", 
 			"THEM", "ENERGY", "SELECTED", "DAMAGE_BREAKDOWN", "BASE_DAMAGE", "TOTAL_DAMAGE", 
-			"ITEM", "POSSESSIVE", "CARD", "ATTACK", "ABILITY", "NUMBER", "PLAYER", 
-			"DOT", "COMMA", "COLON", "EXCLAMATION", "LPAREN", "RPAREN", "BULLET", 
-			"HYPHEN", "NEWLINE", "WS"
+			"ITEM", "POSSESSIVE", "CARD", "ATTACK", "ABILITY", "SPECIAL_CONDITION", 
+			"NUMBER", "PLAYER", "DOT", "COMMA", "COLON", "EXCLAMATION", "LPAREN", 
+			"RPAREN", "BULLET", "HYPHEN", "NEWLINE", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -171,41 +175,41 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(68);
+			setState(72);
 			setup();
-			setState(73);
+			setState(77);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==NEWLINE) {
 				{
 				{
-				setState(69);
+				setState(73);
 				match(NEWLINE);
-				setState(70);
+				setState(74);
 				turn();
 				}
 				}
-				setState(75);
+				setState(79);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(76);
-			gameEnd();
 			setState(80);
+			gameEnd();
+			setState(84);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==NEWLINE) {
 				{
 				{
-				setState(77);
+				setState(81);
 				match(NEWLINE);
 				}
 				}
-				setState(82);
+				setState(86);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(83);
+			setState(87);
 			match(EOF);
 			}
 		}
@@ -239,27 +243,29 @@ public class gTCGParser extends Parser {
 	public final SetupContext setup() throws RecognitionException {
 		SetupContext _localctx = new SetupContext(_ctx, getState());
 		enterRule(_localctx, 2, RULE_setup);
-		int _la;
 		try {
+			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(85);
+			setState(89);
 			match(SETUP);
-			setState(86);
-			match(NEWLINE);
 			setState(90);
+			match(NEWLINE);
+			setState(94);
 			_errHandler.sync(this);
-			_la = _input.LA(1);
-			while (_la==PLAYER) {
-				{
-				{
-				setState(87);
-				setupAction();
+			_alt = getInterpreter().adaptivePredict(_input,2,_ctx);
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+				if ( _alt==1 ) {
+					{
+					{
+					setState(91);
+					setupAction();
+					}
+					} 
 				}
-				}
-				setState(92);
+				setState(96);
 				_errHandler.sync(this);
-				_la = _input.LA(1);
+				_alt = getInterpreter().adaptivePredict(_input,2,_ctx);
 			}
 			}
 		}
@@ -301,41 +307,41 @@ public class gTCGParser extends Parser {
 		SetupActionContext _localctx = new SetupActionContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_setupAction);
 		try {
-			setState(98);
+			setState(102);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,3,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(93);
+				setState(97);
 				coinChoice();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(94);
+				setState(98);
 				coinToss();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(95);
+				setState(99);
 				firstPlayer();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(96);
+				setState(100);
 				openingHand();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(97);
+				setState(101);
 				initialPokemon();
 				}
 				break;
@@ -354,7 +360,6 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class CoinChoiceContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode CHOSE() { return getToken(gTCGParser.CHOSE, 0); }
 		public TerminalNode FOR() { return getToken(gTCGParser.FOR, 0); }
 		public TerminalNode THE() { return getToken(gTCGParser.THE, 0); }
@@ -363,6 +368,8 @@ public class gTCGParser extends Parser {
 		public TerminalNode FLIP() { return getToken(gTCGParser.FLIP, 0); }
 		public TerminalNode DOT() { return getToken(gTCGParser.DOT, 0); }
 		public TerminalNode NEWLINE() { return getToken(gTCGParser.NEWLINE, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode HEADS() { return getToken(gTCGParser.HEADS, 0); }
 		public TerminalNode TAILS() { return getToken(gTCGParser.TAILS, 0); }
 		public CoinChoiceContext(ParserRuleContext parent, int invokingState) {
@@ -378,11 +385,19 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(100);
-			match(PLAYER);
-			setState(101);
+			setState(104);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(105);
 			match(CHOSE);
-			setState(102);
+			setState(106);
 			_la = _input.LA(1);
 			if ( !(_la==HEADS || _la==TAILS) ) {
 			_errHandler.recoverInline(this);
@@ -392,19 +407,19 @@ public class gTCGParser extends Parser {
 				_errHandler.reportMatch(this);
 				consume();
 			}
-			setState(103);
-			match(FOR);
-			setState(104);
-			match(THE);
-			setState(105);
-			match(OPENING);
-			setState(106);
-			match(COIN);
 			setState(107);
-			match(FLIP);
+			match(FOR);
 			setState(108);
-			match(DOT);
+			match(THE);
 			setState(109);
+			match(OPENING);
+			setState(110);
+			match(COIN);
+			setState(111);
+			match(FLIP);
+			setState(112);
+			match(DOT);
+			setState(113);
 			match(NEWLINE);
 			}
 		}
@@ -421,13 +436,14 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class CoinTossContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode WON() { return getToken(gTCGParser.WON, 0); }
 		public TerminalNode THE() { return getToken(gTCGParser.THE, 0); }
 		public TerminalNode COIN() { return getToken(gTCGParser.COIN, 0); }
 		public TerminalNode TOSS() { return getToken(gTCGParser.TOSS, 0); }
 		public TerminalNode DOT() { return getToken(gTCGParser.DOT, 0); }
 		public TerminalNode NEWLINE() { return getToken(gTCGParser.NEWLINE, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public CoinTossContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -437,22 +453,31 @@ public class gTCGParser extends Parser {
 	public final CoinTossContext coinToss() throws RecognitionException {
 		CoinTossContext _localctx = new CoinTossContext(_ctx, getState());
 		enterRule(_localctx, 8, RULE_coinToss);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(111);
-			match(PLAYER);
-			setState(112);
-			match(WON);
-			setState(113);
-			match(THE);
-			setState(114);
-			match(COIN);
 			setState(115);
-			match(TOSS);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			setState(116);
-			match(DOT);
+			match(WON);
 			setState(117);
+			match(THE);
+			setState(118);
+			match(COIN);
+			setState(119);
+			match(TOSS);
+			setState(120);
+			match(DOT);
+			setState(121);
 			match(NEWLINE);
 			}
 		}
@@ -469,13 +494,14 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class FirstPlayerContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode DECIDED() { return getToken(gTCGParser.DECIDED, 0); }
 		public TerminalNode TO() { return getToken(gTCGParser.TO, 0); }
 		public TerminalNode GO() { return getToken(gTCGParser.GO, 0); }
 		public TerminalNode FIRST() { return getToken(gTCGParser.FIRST, 0); }
 		public TerminalNode DOT() { return getToken(gTCGParser.DOT, 0); }
 		public TerminalNode NEWLINE() { return getToken(gTCGParser.NEWLINE, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public FirstPlayerContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -485,22 +511,31 @@ public class gTCGParser extends Parser {
 	public final FirstPlayerContext firstPlayer() throws RecognitionException {
 		FirstPlayerContext _localctx = new FirstPlayerContext(_ctx, getState());
 		enterRule(_localctx, 10, RULE_firstPlayer);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(119);
-			match(PLAYER);
-			setState(120);
-			match(DECIDED);
-			setState(121);
-			match(TO);
-			setState(122);
-			match(GO);
 			setState(123);
-			match(FIRST);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			setState(124);
-			match(DOT);
+			match(DECIDED);
 			setState(125);
+			match(TO);
+			setState(126);
+			match(GO);
+			setState(127);
+			match(FIRST);
+			setState(128);
+			match(DOT);
+			setState(129);
 			match(NEWLINE);
 			}
 		}
@@ -517,7 +552,6 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class OpeningHandContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode DREW() { return getToken(gTCGParser.DREW, 0); }
 		public TerminalNode NUMBER() { return getToken(gTCGParser.NUMBER, 0); }
 		public TerminalNode CARDS() { return getToken(gTCGParser.CARDS, 0); }
@@ -527,6 +561,8 @@ public class gTCGParser extends Parser {
 		public TerminalNode HAND() { return getToken(gTCGParser.HAND, 0); }
 		public TerminalNode DOT() { return getToken(gTCGParser.DOT, 0); }
 		public TerminalNode NEWLINE() { return getToken(gTCGParser.NEWLINE, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public DrawnCardsContext drawnCards() {
 			return getRuleContext(DrawnCardsContext.class,0);
 		}
@@ -543,32 +579,40 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(127);
-			match(PLAYER);
-			setState(128);
-			match(DREW);
-			setState(129);
-			match(NUMBER);
-			setState(130);
-			match(CARDS);
 			setState(131);
-			match(FOR);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			setState(132);
-			match(THE);
+			match(DREW);
 			setState(133);
-			match(OPENING);
+			match(NUMBER);
 			setState(134);
-			match(HAND);
+			match(CARDS);
 			setState(135);
-			match(DOT);
+			match(FOR);
 			setState(136);
-			match(NEWLINE);
+			match(THE);
+			setState(137);
+			match(OPENING);
 			setState(138);
+			match(HAND);
+			setState(139);
+			match(DOT);
+			setState(140);
+			match(NEWLINE);
+			setState(142);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==HYPHEN) {
 				{
-				setState(137);
+				setState(141);
 				drawnCards();
 				}
 			}
@@ -610,24 +654,24 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(140);
-			match(HYPHEN);
-			setState(141);
-			match(NUMBER);
-			setState(142);
-			match(DRAWN);
-			setState(143);
-			match(CARDS);
 			setState(144);
-			match(DOT);
+			match(HYPHEN);
 			setState(145);
-			match(NEWLINE);
+			match(NUMBER);
+			setState(146);
+			match(DRAWN);
 			setState(147);
+			match(CARDS);
+			setState(148);
+			match(DOT);
+			setState(149);
+			match(NEWLINE);
+			setState(151);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==BULLET) {
 				{
-				setState(146);
+				setState(150);
 				cardList();
 				}
 			}
@@ -647,13 +691,14 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class InitialPokemonContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode PLAYED() { return getToken(gTCGParser.PLAYED, 0); }
 		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
 		public TerminalNode TO() { return getToken(gTCGParser.TO, 0); }
 		public TerminalNode THE() { return getToken(gTCGParser.THE, 0); }
 		public TerminalNode DOT() { return getToken(gTCGParser.DOT, 0); }
 		public TerminalNode NEWLINE() { return getToken(gTCGParser.NEWLINE, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode ACTIVE() { return getToken(gTCGParser.ACTIVE, 0); }
 		public TerminalNode SPOT() { return getToken(gTCGParser.SPOT, 0); }
 		public TerminalNode BENCH() { return getToken(gTCGParser.BENCH, 0); }
@@ -666,42 +711,51 @@ public class gTCGParser extends Parser {
 	public final InitialPokemonContext initialPokemon() throws RecognitionException {
 		InitialPokemonContext _localctx = new InitialPokemonContext(_ctx, getState());
 		enterRule(_localctx, 16, RULE_initialPokemon);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(149);
-			match(PLAYER);
-			setState(150);
-			match(PLAYED);
-			setState(151);
-			match(CARD);
-			setState(152);
-			match(TO);
 			setState(153);
-			match(THE);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(154);
+			match(PLAYED);
+			setState(155);
+			match(CARD);
+			setState(156);
+			match(TO);
 			setState(157);
+			match(THE);
+			setState(161);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ACTIVE:
 				{
-				setState(154);
+				setState(158);
 				match(ACTIVE);
-				setState(155);
+				setState(159);
 				match(SPOT);
 				}
 				break;
 			case BENCH:
 				{
-				setState(156);
+				setState(160);
 				match(BENCH);
 				}
 				break;
 			default:
 				throw new NoViableAltException(this);
 			}
-			setState(159);
+			setState(163);
 			match(DOT);
-			setState(160);
+			setState(164);
 			match(NEWLINE);
 			}
 		}
@@ -718,10 +772,11 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class TurnContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode POSSESSIVE() { return getToken(gTCGParser.POSSESSIVE, 0); }
 		public TerminalNode TURN() { return getToken(gTCGParser.TURN, 0); }
 		public TerminalNode NEWLINE() { return getToken(gTCGParser.NEWLINE, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public List<MainTurnActionContext> mainTurnAction() {
 			return getRuleContexts(MainTurnActionContext.class);
 		}
@@ -739,29 +794,40 @@ public class gTCGParser extends Parser {
 		enterRule(_localctx, 18, RULE_turn);
 		int _la;
 		try {
+			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(162);
-			match(PLAYER);
-			setState(163);
-			match(POSSESSIVE);
-			setState(164);
-			match(TURN);
-			setState(165);
-			match(NEWLINE);
-			setState(169);
-			_errHandler.sync(this);
+			setState(166);
 			_la = _input.LA(1);
-			while (((((_la - 68)) & ~0x3f) == 0 && ((1L << (_la - 68)) & 25601L) != 0)) {
-				{
-				{
-				setState(166);
-				mainTurnAction();
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(167);
+			match(POSSESSIVE);
+			setState(168);
+			match(TURN);
+			setState(169);
+			match(NEWLINE);
+			setState(173);
+			_errHandler.sync(this);
+			_alt = getInterpreter().adaptivePredict(_input,7,_ctx);
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+				if ( _alt==1 ) {
+					{
+					{
+					setState(170);
+					mainTurnAction();
+					}
+					} 
 				}
-				}
-				setState(171);
+				setState(175);
 				_errHandler.sync(this);
-				_la = _input.LA(1);
+				_alt = getInterpreter().adaptivePredict(_input,7,_ctx);
 			}
 			}
 		}
@@ -809,9 +875,9 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(172);
+			setState(176);
 			turnActionBody();
-			setState(173);
+			setState(177);
 			_la = _input.LA(1);
 			if ( !(_la==DOT || _la==EXCLAMATION) ) {
 			_errHandler.recoverInline(this);
@@ -821,31 +887,31 @@ public class gTCGParser extends Parser {
 				_errHandler.reportMatch(this);
 				consume();
 			}
-			setState(174);
+			setState(178);
 			match(NEWLINE);
-			setState(179);
+			setState(183);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==HYPHEN) {
 				{
-				setState(177);
+				setState(181);
 				_errHandler.sync(this);
 				switch ( getInterpreter().adaptivePredict(_input,8,_ctx) ) {
 				case 1:
 					{
-					setState(175);
+					setState(179);
 					subTurnAction();
 					}
 					break;
 				case 2:
 					{
-					setState(176);
+					setState(180);
 					damageBreakdown();
 					}
 					break;
 				}
 				}
-				setState(181);
+				setState(185);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
@@ -868,8 +934,8 @@ public class gTCGParser extends Parser {
 		public TurnActionBodyContext turnActionBody() {
 			return getRuleContext(TurnActionBodyContext.class,0);
 		}
-		public TerminalNode DOT() { return getToken(gTCGParser.DOT, 0); }
 		public TerminalNode NEWLINE() { return getToken(gTCGParser.NEWLINE, 0); }
+		public TerminalNode DOT() { return getToken(gTCGParser.DOT, 0); }
 		public List<CardListContext> cardList() {
 			return getRuleContexts(CardListContext.class);
 		}
@@ -889,25 +955,33 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(182);
+			setState(186);
 			match(HYPHEN);
-			setState(183);
+			setState(187);
 			turnActionBody();
-			setState(184);
-			match(DOT);
-			setState(185);
-			match(NEWLINE);
 			setState(189);
+			_errHandler.sync(this);
+			_la = _input.LA(1);
+			if (_la==DOT) {
+				{
+				setState(188);
+				match(DOT);
+				}
+			}
+
+			setState(191);
+			match(NEWLINE);
+			setState(195);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==BULLET) {
 				{
 				{
-				setState(186);
+				setState(192);
 				cardList();
 				}
 				}
-				setState(191);
+				setState(197);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
@@ -974,6 +1048,12 @@ public class gTCGParser extends Parser {
 		public FlippedActionContext flippedAction() {
 			return getRuleContext(FlippedActionContext.class,0);
 		}
+		public ChoiceActionContext choiceAction() {
+			return getRuleContext(ChoiceActionContext.class,0);
+		}
+		public SpecialConditionActionContext specialConditionAction() {
+			return getRuleContext(SpecialConditionActionContext.class,0);
+		}
 		public EndTurnContext endTurn() {
 			return getRuleContext(EndTurnContext.class,0);
 		}
@@ -987,125 +1067,139 @@ public class gTCGParser extends Parser {
 		TurnActionBodyContext _localctx = new TurnActionBodyContext(_ctx, getState());
 		enterRule(_localctx, 24, RULE_turnActionBody);
 		try {
-			setState(209);
+			setState(217);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,11,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,12,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(192);
+				setState(198);
 				drawAction();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(193);
+				setState(199);
 				playAction();
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(194);
+				setState(200);
 				attachAction();
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(195);
+				setState(201);
 				evolveAction();
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(196);
+				setState(202);
 				attackAction();
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(197);
+				setState(203);
 				retreatAction();
 				}
 				break;
 			case 7:
 				enterOuterAlt(_localctx, 7);
 				{
-				setState(198);
+				setState(204);
 				shuffleAction();
 				}
 				break;
 			case 8:
 				enterOuterAlt(_localctx, 8);
 				{
-				setState(199);
+				setState(205);
 				cardMovedAction();
 				}
 				break;
 			case 9:
 				enterOuterAlt(_localctx, 9);
 				{
-				setState(200);
+				setState(206);
 				discardAction();
 				}
 				break;
 			case 10:
 				enterOuterAlt(_localctx, 10);
 				{
-				setState(201);
+				setState(207);
 				prizeAction();
 				}
 				break;
 			case 11:
 				enterOuterAlt(_localctx, 11);
 				{
-				setState(202);
+				setState(208);
 				moveToHandAction();
 				}
 				break;
 			case 12:
 				enterOuterAlt(_localctx, 12);
 				{
-				setState(203);
+				setState(209);
 				activeSpotAction();
 				}
 				break;
 			case 13:
 				enterOuterAlt(_localctx, 13);
 				{
-				setState(204);
+				setState(210);
 				switchAction();
 				}
 				break;
 			case 14:
 				enterOuterAlt(_localctx, 14);
 				{
-				setState(205);
+				setState(211);
 				knockoutAction();
 				}
 				break;
 			case 15:
 				enterOuterAlt(_localctx, 15);
 				{
-				setState(206);
+				setState(212);
 				damagedAction();
 				}
 				break;
 			case 16:
 				enterOuterAlt(_localctx, 16);
 				{
-				setState(207);
+				setState(213);
 				flippedAction();
 				}
 				break;
 			case 17:
 				enterOuterAlt(_localctx, 17);
 				{
-				setState(208);
+				setState(214);
+				choiceAction();
+				}
+				break;
+			case 18:
+				enterOuterAlt(_localctx, 18);
+				{
+				setState(215);
+				specialConditionAction();
+				}
+				break;
+			case 19:
+				enterOuterAlt(_localctx, 19);
+				{
+				setState(216);
 				endTurn();
 				}
 				break;
@@ -1124,9 +1218,10 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class DrawActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode DREW() { return getToken(gTCGParser.DREW, 0); }
 		public TerminalNode CARD_WORD() { return getToken(gTCGParser.CARD_WORD, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode A_SOMETHING() { return getToken(gTCGParser.A_SOMETHING, 0); }
 		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
 		public TerminalNode NUMBER() { return getToken(gTCGParser.NUMBER, 0); }
@@ -1146,93 +1241,142 @@ public class gTCGParser extends Parser {
 	public final DrawActionContext drawAction() throws RecognitionException {
 		DrawActionContext _localctx = new DrawActionContext(_ctx, getState());
 		enterRule(_localctx, 26, RULE_drawAction);
+		int _la;
 		try {
-			setState(239);
+			setState(247);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,12,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,13,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(211);
-				match(PLAYER);
-				setState(212);
+				setState(219);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(220);
 				match(DREW);
-				setState(213);
+				setState(221);
 				match(CARD_WORD);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(214);
-				match(PLAYER);
-				setState(215);
+				setState(222);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(223);
 				match(DREW);
-				setState(216);
+				setState(224);
 				match(A_SOMETHING);
-				setState(217);
+				setState(225);
 				match(CARD_WORD);
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(218);
-				match(PLAYER);
-				setState(219);
+				setState(226);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(227);
 				match(DREW);
-				setState(220);
+				setState(228);
 				match(CARD);
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(221);
-				match(PLAYER);
-				setState(222);
+				setState(229);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(230);
 				match(DREW);
-				setState(223);
+				setState(231);
 				match(NUMBER);
-				setState(224);
+				setState(232);
 				match(CARD);
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(225);
-				match(PLAYER);
-				setState(226);
+				setState(233);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(234);
 				match(DREW);
-				setState(227);
+				setState(235);
 				match(NUMBER);
-				setState(228);
+				setState(236);
 				match(CARDS);
 				}
 				break;
 			case 6:
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(229);
-				match(PLAYER);
-				setState(230);
-				match(DREW);
-				setState(231);
-				match(NUMBER);
-				setState(232);
-				match(CARDS);
-				setState(233);
-				match(AND);
-				setState(234);
-				match(PLAYED);
-				setState(235);
-				match(THEM);
-				setState(236);
-				match(TO);
 				setState(237);
-				match(THE);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				setState(238);
+				match(DREW);
+				setState(239);
+				match(NUMBER);
+				setState(240);
+				match(CARDS);
+				setState(241);
+				match(AND);
+				setState(242);
+				match(PLAYED);
+				setState(243);
+				match(THEM);
+				setState(244);
+				match(TO);
+				setState(245);
+				match(THE);
+				setState(246);
 				match(BENCH);
 				}
 				break;
@@ -1251,9 +1395,10 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class PlayActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode PLAYED() { return getToken(gTCGParser.PLAYED, 0); }
 		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode TO() { return getToken(gTCGParser.TO, 0); }
 		public TerminalNode THE() { return getToken(gTCGParser.THE, 0); }
 		public TerminalNode BENCH() { return getToken(gTCGParser.BENCH, 0); }
@@ -1273,43 +1418,51 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(241);
-			match(PLAYER);
-			setState(242);
+			setState(249);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(250);
 			match(PLAYED);
-			setState(243);
+			setState(251);
 			match(CARD);
-			setState(253);
+			setState(261);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==TO) {
 				{
-				setState(244);
+				setState(252);
 				match(TO);
-				setState(245);
+				setState(253);
 				match(THE);
-				setState(251);
+				setState(259);
 				_errHandler.sync(this);
 				switch (_input.LA(1)) {
 				case BENCH:
 					{
-					setState(246);
+					setState(254);
 					match(BENCH);
 					}
 					break;
 				case ACTIVE:
 					{
-					setState(247);
+					setState(255);
 					match(ACTIVE);
-					setState(248);
+					setState(256);
 					match(SPOT);
 					}
 					break;
 				case STADIUM:
 					{
-					setState(249);
+					setState(257);
 					match(STADIUM);
-					setState(250);
+					setState(258);
 					match(SPOT);
 					}
 					break;
@@ -1334,13 +1487,14 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class AttachActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode ATTACHED() { return getToken(gTCGParser.ATTACHED, 0); }
 		public List<TerminalNode> CARD() { return getTokens(gTCGParser.CARD); }
 		public TerminalNode CARD(int i) {
 			return getToken(gTCGParser.CARD, i);
 		}
 		public TerminalNode TO() { return getToken(gTCGParser.TO, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode ON() { return getToken(gTCGParser.ON, 0); }
 		public TerminalNode THE() { return getToken(gTCGParser.THE, 0); }
 		public TerminalNode BENCH() { return getToken(gTCGParser.BENCH, 0); }
@@ -1356,41 +1510,50 @@ public class gTCGParser extends Parser {
 	public final AttachActionContext attachAction() throws RecognitionException {
 		AttachActionContext _localctx = new AttachActionContext(_ctx, getState());
 		enterRule(_localctx, 30, RULE_attachAction);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(255);
-			match(PLAYER);
-			setState(256);
+			setState(263);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(264);
 			match(ATTACHED);
-			setState(257);
+			setState(265);
 			match(CARD);
-			setState(258);
+			setState(266);
 			match(TO);
-			setState(259);
-			match(CARD);
 			setState(267);
+			match(CARD);
+			setState(275);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ON:
 				{
-				setState(260);
+				setState(268);
 				match(ON);
-				setState(261);
+				setState(269);
 				match(THE);
-				setState(262);
+				setState(270);
 				match(BENCH);
 				}
 				break;
 			case IN:
 				{
-				setState(263);
+				setState(271);
 				match(IN);
-				setState(264);
+				setState(272);
 				match(THE);
-				setState(265);
+				setState(273);
 				match(ACTIVE);
-				setState(266);
+				setState(274);
 				match(SPOT);
 				}
 				break;
@@ -1412,13 +1575,14 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class EvolveActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode EVOLVED() { return getToken(gTCGParser.EVOLVED, 0); }
 		public List<TerminalNode> CARD() { return getTokens(gTCGParser.CARD); }
 		public TerminalNode CARD(int i) {
 			return getToken(gTCGParser.CARD, i);
 		}
 		public TerminalNode TO() { return getToken(gTCGParser.TO, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode ON() { return getToken(gTCGParser.ON, 0); }
 		public TerminalNode THE() { return getToken(gTCGParser.THE, 0); }
 		public TerminalNode BENCH() { return getToken(gTCGParser.BENCH, 0); }
@@ -1434,41 +1598,50 @@ public class gTCGParser extends Parser {
 	public final EvolveActionContext evolveAction() throws RecognitionException {
 		EvolveActionContext _localctx = new EvolveActionContext(_ctx, getState());
 		enterRule(_localctx, 32, RULE_evolveAction);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(269);
-			match(PLAYER);
-			setState(270);
+			setState(277);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(278);
 			match(EVOLVED);
-			setState(271);
+			setState(279);
 			match(CARD);
-			setState(272);
+			setState(280);
 			match(TO);
-			setState(273);
-			match(CARD);
 			setState(281);
+			match(CARD);
+			setState(289);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ON:
 				{
-				setState(274);
+				setState(282);
 				match(ON);
-				setState(275);
+				setState(283);
 				match(THE);
-				setState(276);
+				setState(284);
 				match(BENCH);
 				}
 				break;
 			case IN:
 				{
-				setState(277);
+				setState(285);
 				match(IN);
-				setState(278);
+				setState(286);
 				match(THE);
-				setState(279);
+				setState(287);
 				match(ACTIVE);
-				setState(280);
+				setState(288);
 				match(SPOT);
 				}
 				break;
@@ -1490,10 +1663,6 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class AttackActionContext extends ParserRuleContext {
-		public List<TerminalNode> PLAYER() { return getTokens(gTCGParser.PLAYER); }
-		public TerminalNode PLAYER(int i) {
-			return getToken(gTCGParser.PLAYER, i);
-		}
 		public List<TerminalNode> POSSESSIVE() { return getTokens(gTCGParser.POSSESSIVE); }
 		public TerminalNode POSSESSIVE(int i) {
 			return getToken(gTCGParser.POSSESSIVE, i);
@@ -1504,6 +1673,14 @@ public class gTCGParser extends Parser {
 		}
 		public TerminalNode USED() { return getToken(gTCGParser.USED, 0); }
 		public TerminalNode ATTACK() { return getToken(gTCGParser.ATTACK, 0); }
+		public List<TerminalNode> OPPONENT() { return getTokens(gTCGParser.OPPONENT); }
+		public TerminalNode OPPONENT(int i) {
+			return getToken(gTCGParser.OPPONENT, i);
+		}
+		public List<TerminalNode> PLAYER() { return getTokens(gTCGParser.PLAYER); }
+		public TerminalNode PLAYER(int i) {
+			return getToken(gTCGParser.PLAYER, i);
+		}
 		public TerminalNode ON() { return getToken(gTCGParser.ON, 0); }
 		public TerminalNode FOR() { return getToken(gTCGParser.FOR, 0); }
 		public TerminalNode NUMBER() { return getToken(gTCGParser.NUMBER, 0); }
@@ -1521,34 +1698,50 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(283);
-			match(PLAYER);
-			setState(284);
+			setState(291);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(292);
 			match(POSSESSIVE);
-			setState(285);
+			setState(293);
 			match(CARD);
-			setState(286);
+			setState(294);
 			match(USED);
-			setState(287);
-			match(ATTACK);
 			setState(295);
+			match(ATTACK);
+			setState(303);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==ON) {
 				{
-				setState(288);
+				setState(296);
 				match(ON);
-				setState(289);
-				match(PLAYER);
-				setState(290);
+				setState(297);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(298);
 				match(POSSESSIVE);
-				setState(291);
+				setState(299);
 				match(CARD);
-				setState(292);
+				setState(300);
 				match(FOR);
-				setState(293);
+				setState(301);
 				match(NUMBER);
-				setState(294);
+				setState(302);
 				match(DAMAGE);
 				}
 			}
@@ -1610,92 +1803,92 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(297);
+			setState(305);
 			match(HYPHEN);
-			setState(298);
+			setState(306);
 			match(DAMAGE_BREAKDOWN);
-			setState(299);
+			setState(307);
 			match(COLON);
-			setState(300);
+			setState(308);
 			match(NEWLINE);
-			setState(301);
+			setState(309);
 			match(BULLET);
-			setState(329);
+			setState(337);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,18,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,19,_ctx) ) {
 			case 1:
 				{
-				setState(302);
+				setState(310);
 				match(NUMBER);
-				setState(303);
+				setState(311);
 				match(ATTACHED);
-				setState(304);
+				setState(312);
 				match(ENERGY);
-				setState(305);
+				setState(313);
 				match(COLON);
-				setState(306);
+				setState(314);
 				match(NUMBER);
-				setState(307);
+				setState(315);
 				match(DAMAGE);
-				setState(308);
+				setState(316);
 				match(NEWLINE);
 				}
 				break;
 			case 2:
 				{
-				setState(309);
+				setState(317);
 				match(NUMBER);
-				setState(310);
+				setState(318);
 				match(SELECTED);
-				setState(311);
+				setState(319);
 				match(ENERGY);
-				setState(312);
+				setState(320);
 				match(COLON);
-				setState(313);
+				setState(321);
 				match(NUMBER);
-				setState(314);
+				setState(322);
 				match(DAMAGE);
-				setState(315);
+				setState(323);
 				match(NEWLINE);
 				}
 				break;
 			case 3:
 				{
 				{
-				setState(316);
-				match(BASE_DAMAGE);
-				setState(317);
-				match(COLON);
-				setState(318);
-				match(NUMBER);
-				setState(319);
-				match(DAMAGE);
-				setState(320);
-				match(NEWLINE);
-				setState(321);
-				damageBonusLine();
-				setState(322);
-				match(BULLET);
-				setState(323);
-				match(TOTAL_DAMAGE);
 				setState(324);
-				match(COLON);
+				match(BASE_DAMAGE);
 				setState(325);
-				match(NUMBER);
+				match(COLON);
 				setState(326);
-				match(DAMAGE);
+				match(NUMBER);
 				setState(327);
+				match(DAMAGE);
+				setState(328);
+				match(NEWLINE);
+				setState(329);
+				damageBonusLine();
+				setState(330);
+				match(BULLET);
+				setState(331);
+				match(TOTAL_DAMAGE);
+				setState(332);
+				match(COLON);
+				setState(333);
+				match(NUMBER);
+				setState(334);
+				match(DAMAGE);
+				setState(335);
 				match(NEWLINE);
 				}
 				}
 				break;
 			}
-			setState(332);
+			setState(340);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,19,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,20,_ctx) ) {
 			case 1:
 				{
-				setState(331);
+				setState(339);
 				match(NEWLINE);
 				}
 				break;
@@ -1768,51 +1961,22 @@ public class gTCGParser extends Parser {
 		enterRule(_localctx, 38, RULE_damageBonusLine);
 		int _la;
 		try {
-			setState(395);
+			setState(403);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,23,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,24,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(334);
-				match(BULLET);
-				setState(335);
-				match(LPAREN);
-				setState(336);
-				match(ITEM);
-				setState(337);
-				match(RPAREN);
-				setState(338);
-				match(CARD);
-				setState(339);
-				match(COLON);
-				setState(340);
-				match(NUMBER);
-				setState(341);
-				match(DAMAGE);
 				setState(342);
-				match(NEWLINE);
-				}
-				break;
-			case 2:
-				enterOuterAlt(_localctx, 2);
-				{
-				setState(343);
 				match(BULLET);
+				setState(343);
+				match(LPAREN);
 				setState(344);
-				match(NUMBER);
+				match(ITEM);
 				setState(345);
-				_la = _input.LA(1);
-				if ( !(_la==ATTACHED || _la==SELECTED) ) {
-				_errHandler.recoverInline(this);
-				}
-				else {
-					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
-					_errHandler.reportMatch(this);
-					consume();
-				}
+				match(RPAREN);
 				setState(346);
-				match(ENERGY);
+				match(CARD);
 				setState(347);
 				match(COLON);
 				setState(348);
@@ -1823,53 +1987,82 @@ public class gTCGParser extends Parser {
 				match(NEWLINE);
 				}
 				break;
-			case 3:
-				enterOuterAlt(_localctx, 3);
-				{
+			case 2:
+				enterOuterAlt(_localctx, 2);
 				{
 				setState(351);
 				match(BULLET);
 				setState(352);
-				match(LPAREN);
+				match(NUMBER);
 				setState(353);
-				match(ABILITY_WORD);
+				_la = _input.LA(1);
+				if ( !(_la==ATTACHED || _la==SELECTED) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
 				setState(354);
-				match(RPAREN);
+				match(ENERGY);
 				setState(355);
-				match(ABILITY);
-				setState(356);
 				match(COLON);
+				setState(356);
+				match(NUMBER);
+				setState(357);
+				match(DAMAGE);
 				setState(358);
+				match(NEWLINE);
+				}
+				break;
+			case 3:
+				enterOuterAlt(_localctx, 3);
+				{
+				{
+				setState(359);
+				match(BULLET);
+				setState(360);
+				match(LPAREN);
+				setState(361);
+				match(ABILITY_WORD);
+				setState(362);
+				match(RPAREN);
+				setState(363);
+				match(ABILITY);
+				setState(364);
+				match(COLON);
+				setState(366);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==HYPHEN) {
 					{
-					setState(357);
+					setState(365);
 					match(HYPHEN);
 					}
 				}
 
-				setState(360);
-				match(NUMBER);
-				setState(361);
-				match(DAMAGE);
-				setState(362);
-				match(NEWLINE);
-				setState(363);
-				match(BULLET);
-				setState(364);
-				match(NUMBER);
-				setState(365);
-				match(ATTACHED);
-				setState(366);
-				match(ENERGY);
-				setState(367);
-				match(COLON);
 				setState(368);
 				match(NUMBER);
 				setState(369);
 				match(DAMAGE);
 				setState(370);
+				match(NEWLINE);
+				setState(371);
+				match(BULLET);
+				setState(372);
+				match(NUMBER);
+				setState(373);
+				match(ATTACHED);
+				setState(374);
+				match(ENERGY);
+				setState(375);
+				match(COLON);
+				setState(376);
+				match(NUMBER);
+				setState(377);
+				match(DAMAGE);
+				setState(378);
 				match(NEWLINE);
 				}
 				}
@@ -1878,61 +2071,61 @@ public class gTCGParser extends Parser {
 				enterOuterAlt(_localctx, 4);
 				{
 				{
-				setState(371);
+				setState(379);
 				match(BULLET);
-				setState(372);
-				match(LPAREN);
-				setState(373);
-				match(POKEMON_TOOL);
-				setState(374);
-				match(RPAREN);
-				setState(375);
-				match(CARD);
-				setState(376);
-				match(COLON);
-				setState(378);
-				_errHandler.sync(this);
-				_la = _input.LA(1);
-				if (_la==HYPHEN) {
-					{
-					setState(377);
-					match(HYPHEN);
-					}
-				}
-
 				setState(380);
-				match(NUMBER);
-				setState(381);
-				match(DAMAGE);
-				setState(382);
-				match(NEWLINE);
-				setState(383);
-				match(BULLET);
-				setState(384);
 				match(LPAREN);
-				setState(385);
-				match(ATTACK_WORD);
-				setState(386);
+				setState(381);
+				match(POKEMON_TOOL);
+				setState(382);
 				match(RPAREN);
-				setState(387);
-				match(ATTACK);
-				setState(388);
+				setState(383);
+				match(CARD);
+				setState(384);
 				match(COLON);
-				setState(390);
+				setState(386);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==HYPHEN) {
 					{
-					setState(389);
+					setState(385);
 					match(HYPHEN);
 					}
 				}
 
-				setState(392);
+				setState(388);
 				match(NUMBER);
-				setState(393);
+				setState(389);
 				match(DAMAGE);
+				setState(390);
+				match(NEWLINE);
+				setState(391);
+				match(BULLET);
+				setState(392);
+				match(LPAREN);
+				setState(393);
+				match(ATTACK_WORD);
 				setState(394);
+				match(RPAREN);
+				setState(395);
+				match(ATTACK);
+				setState(396);
+				match(COLON);
+				setState(398);
+				_errHandler.sync(this);
+				_la = _input.LA(1);
+				if (_la==HYPHEN) {
+					{
+					setState(397);
+					match(HYPHEN);
+					}
+				}
+
+				setState(400);
+				match(NUMBER);
+				setState(401);
+				match(DAMAGE);
+				setState(402);
 				match(NEWLINE);
 				}
 				}
@@ -1952,12 +2145,13 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class RetreatActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode RETIRED() { return getToken(gTCGParser.RETIRED, 0); }
 		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
 		public TerminalNode TO() { return getToken(gTCGParser.TO, 0); }
 		public TerminalNode THE() { return getToken(gTCGParser.THE, 0); }
 		public TerminalNode BENCH() { return getToken(gTCGParser.BENCH, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public RetreatActionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -1967,20 +2161,29 @@ public class gTCGParser extends Parser {
 	public final RetreatActionContext retreatAction() throws RecognitionException {
 		RetreatActionContext _localctx = new RetreatActionContext(_ctx, getState());
 		enterRule(_localctx, 40, RULE_retreatAction);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(397);
-			match(PLAYER);
-			setState(398);
+			setState(405);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(406);
 			match(RETIRED);
-			setState(399);
+			setState(407);
 			match(CARD);
-			setState(400);
+			setState(408);
 			match(TO);
-			setState(401);
+			setState(409);
 			match(THE);
-			setState(402);
+			setState(410);
 			match(BENCH);
 			}
 		}
@@ -1997,10 +2200,11 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ShuffleActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode SHUFFLED() { return getToken(gTCGParser.SHUFFLED, 0); }
 		public TerminalNode THEIR() { return getToken(gTCGParser.THEIR, 0); }
 		public TerminalNode DECK() { return getToken(gTCGParser.DECK, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode NUMBER() { return getToken(gTCGParser.NUMBER, 0); }
 		public TerminalNode CARDS() { return getToken(gTCGParser.CARDS, 0); }
 		public TerminalNode INTO() { return getToken(gTCGParser.INTO, 0); }
@@ -2014,56 +2218,81 @@ public class gTCGParser extends Parser {
 	public final ShuffleActionContext shuffleAction() throws RecognitionException {
 		ShuffleActionContext _localctx = new ShuffleActionContext(_ctx, getState());
 		enterRule(_localctx, 42, RULE_shuffleAction);
+		int _la;
 		try {
-			setState(421);
+			setState(429);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,24,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,25,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(404);
-				match(PLAYER);
-				setState(405);
+				setState(412);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(413);
 				match(SHUFFLED);
-				setState(406);
+				setState(414);
 				match(THEIR);
-				setState(407);
+				setState(415);
 				match(DECK);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(408);
-				match(PLAYER);
-				setState(409);
+				setState(416);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(417);
 				match(SHUFFLED);
-				setState(410);
+				setState(418);
 				match(NUMBER);
-				setState(411);
+				setState(419);
 				match(CARDS);
-				setState(412);
+				setState(420);
 				match(INTO);
-				setState(413);
+				setState(421);
 				match(THEIR);
-				setState(414);
+				setState(422);
 				match(DECK);
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(415);
-				match(PLAYER);
-				setState(416);
+				setState(423);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(424);
 				match(SHUFFLED);
-				setState(417);
+				setState(425);
 				match(CARD);
-				setState(418);
+				setState(426);
 				match(INTO);
-				setState(419);
+				setState(427);
 				match(THEIR);
-				setState(420);
+				setState(428);
 				match(DECK);
 				}
 				break;
@@ -2082,12 +2311,13 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class DiscardActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode DISCARDED() { return getToken(gTCGParser.DISCARDED, 0); }
 		public List<TerminalNode> CARD() { return getTokens(gTCGParser.CARD); }
 		public TerminalNode CARD(int i) {
 			return getToken(gTCGParser.CARD, i);
 		}
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode NUMBER() { return getToken(gTCGParser.NUMBER, 0); }
 		public TerminalNode CARDS() { return getToken(gTCGParser.CARDS, 0); }
 		public TerminalNode WERE() { return getToken(gTCGParser.WERE, 0); }
@@ -2103,71 +2333,104 @@ public class gTCGParser extends Parser {
 	public final DiscardActionContext discardAction() throws RecognitionException {
 		DiscardActionContext _localctx = new DiscardActionContext(_ctx, getState());
 		enterRule(_localctx, 44, RULE_discardAction);
+		int _la;
 		try {
-			setState(445);
+			setState(453);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,25,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,26,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(423);
-				match(PLAYER);
-				setState(424);
+				setState(431);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(432);
 				match(DISCARDED);
-				setState(425);
+				setState(433);
 				match(CARD);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(426);
-				match(PLAYER);
-				setState(427);
+				setState(434);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(435);
 				match(DISCARDED);
-				setState(428);
+				setState(436);
 				match(NUMBER);
-				setState(429);
+				setState(437);
 				match(CARDS);
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(430);
+				setState(438);
 				match(NUMBER);
-				setState(431);
+				setState(439);
 				match(CARDS);
-				setState(432);
+				setState(440);
 				match(WERE);
-				setState(433);
+				setState(441);
 				match(DISCARDED);
-				setState(434);
+				setState(442);
 				match(FROM);
-				setState(435);
-				match(PLAYER);
-				setState(436);
+				setState(443);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(444);
 				match(POSSESSIVE);
-				setState(437);
+				setState(445);
 				match(CARD);
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(438);
+				setState(446);
 				match(CARD);
-				setState(439);
+				setState(447);
 				match(WAS);
-				setState(440);
+				setState(448);
 				match(DISCARDED);
-				setState(441);
+				setState(449);
 				match(FROM);
-				setState(442);
-				match(PLAYER);
-				setState(443);
+				setState(450);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(451);
 				match(POSSESSIVE);
-				setState(444);
+				setState(452);
 				match(CARD);
 				}
 				break;
@@ -2186,10 +2449,11 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class PrizeActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode TAKE() { return getToken(gTCGParser.TAKE, 0); }
 		public TerminalNode PRIZE() { return getToken(gTCGParser.PRIZE, 0); }
 		public TerminalNode CARD_WORD() { return getToken(gTCGParser.CARD_WORD, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode A_SOMETHING() { return getToken(gTCGParser.A_SOMETHING, 0); }
 		public TerminalNode NUMBER() { return getToken(gTCGParser.NUMBER, 0); }
 		public TerminalNode PRIZE_CARDS() { return getToken(gTCGParser.PRIZE_CARDS, 0); }
@@ -2204,42 +2468,58 @@ public class gTCGParser extends Parser {
 		enterRule(_localctx, 46, RULE_prizeAction);
 		int _la;
 		try {
-			setState(458);
+			setState(466);
 			_errHandler.sync(this);
-			switch ( getInterpreter().adaptivePredict(_input,27,_ctx) ) {
+			switch ( getInterpreter().adaptivePredict(_input,28,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(447);
-				match(PLAYER);
-				setState(448);
+				setState(455);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(456);
 				match(TAKE);
-				setState(450);
+				setState(458);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				if (_la==A_SOMETHING) {
 					{
-					setState(449);
+					setState(457);
 					match(A_SOMETHING);
 					}
 				}
 
-				setState(452);
+				setState(460);
 				match(PRIZE);
-				setState(453);
+				setState(461);
 				match(CARD_WORD);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(454);
-				match(PLAYER);
-				setState(455);
+				setState(462);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(463);
 				match(TAKE);
-				setState(456);
+				setState(464);
 				match(NUMBER);
-				setState(457);
+				setState(465);
 				match(PRIZE_CARDS);
 				}
 				break;
@@ -2258,16 +2538,20 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class MoveToHandActionContext extends ParserRuleContext {
-		public List<TerminalNode> PLAYER() { return getTokens(gTCGParser.PLAYER); }
-		public TerminalNode PLAYER(int i) {
-			return getToken(gTCGParser.PLAYER, i);
-		}
 		public TerminalNode MOVED() { return getToken(gTCGParser.MOVED, 0); }
 		public TerminalNode POSSESSIVE() { return getToken(gTCGParser.POSSESSIVE, 0); }
 		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
 		public TerminalNode TO() { return getToken(gTCGParser.TO, 0); }
 		public TerminalNode THEIR() { return getToken(gTCGParser.THEIR, 0); }
 		public TerminalNode HAND() { return getToken(gTCGParser.HAND, 0); }
+		public List<TerminalNode> OPPONENT() { return getTokens(gTCGParser.OPPONENT); }
+		public TerminalNode OPPONENT(int i) {
+			return getToken(gTCGParser.OPPONENT, i);
+		}
+		public List<TerminalNode> PLAYER() { return getTokens(gTCGParser.PLAYER); }
+		public TerminalNode PLAYER(int i) {
+			return getToken(gTCGParser.PLAYER, i);
+		}
 		public MoveToHandActionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2277,24 +2561,41 @@ public class gTCGParser extends Parser {
 	public final MoveToHandActionContext moveToHandAction() throws RecognitionException {
 		MoveToHandActionContext _localctx = new MoveToHandActionContext(_ctx, getState());
 		enterRule(_localctx, 48, RULE_moveToHandAction);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(460);
-			match(PLAYER);
-			setState(461);
+			setState(468);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(469);
 			match(MOVED);
-			setState(462);
-			match(PLAYER);
-			setState(463);
+			setState(470);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(471);
 			match(POSSESSIVE);
-			setState(464);
+			setState(472);
 			match(CARD);
-			setState(465);
+			setState(473);
 			match(TO);
-			setState(466);
+			setState(474);
 			match(THEIR);
-			setState(467);
+			setState(475);
 			match(HAND);
 			}
 		}
@@ -2311,7 +2612,6 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ActiveSpotActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode POSSESSIVE() { return getToken(gTCGParser.POSSESSIVE, 0); }
 		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
 		public TerminalNode IS() { return getToken(gTCGParser.IS, 0); }
@@ -2320,6 +2620,8 @@ public class gTCGParser extends Parser {
 		public TerminalNode THE() { return getToken(gTCGParser.THE, 0); }
 		public TerminalNode ACTIVE() { return getToken(gTCGParser.ACTIVE, 0); }
 		public TerminalNode SPOT() { return getToken(gTCGParser.SPOT, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public ActiveSpotActionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2329,26 +2631,35 @@ public class gTCGParser extends Parser {
 	public final ActiveSpotActionContext activeSpotAction() throws RecognitionException {
 		ActiveSpotActionContext _localctx = new ActiveSpotActionContext(_ctx, getState());
 		enterRule(_localctx, 50, RULE_activeSpotAction);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(469);
-			match(PLAYER);
-			setState(470);
-			match(POSSESSIVE);
-			setState(471);
-			match(CARD);
-			setState(472);
-			match(IS);
-			setState(473);
-			match(NOW);
-			setState(474);
-			match(IN);
-			setState(475);
-			match(THE);
-			setState(476);
-			match(ACTIVE);
 			setState(477);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(478);
+			match(POSSESSIVE);
+			setState(479);
+			match(CARD);
+			setState(480);
+			match(IS);
+			setState(481);
+			match(NOW);
+			setState(482);
+			match(IN);
+			setState(483);
+			match(THE);
+			setState(484);
+			match(ACTIVE);
+			setState(485);
 			match(SPOT);
 			}
 		}
@@ -2365,12 +2676,13 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class KnockoutActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode POSSESSIVE() { return getToken(gTCGParser.POSSESSIVE, 0); }
 		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
 		public TerminalNode WAS() { return getToken(gTCGParser.WAS, 0); }
 		public TerminalNode KNOCKED() { return getToken(gTCGParser.KNOCKED, 0); }
 		public TerminalNode OUT() { return getToken(gTCGParser.OUT, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public KnockoutActionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2380,20 +2692,29 @@ public class gTCGParser extends Parser {
 	public final KnockoutActionContext knockoutAction() throws RecognitionException {
 		KnockoutActionContext _localctx = new KnockoutActionContext(_ctx, getState());
 		enterRule(_localctx, 52, RULE_knockoutAction);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(479);
-			match(PLAYER);
-			setState(480);
+			setState(487);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(488);
 			match(POSSESSIVE);
-			setState(481);
+			setState(489);
 			match(CARD);
-			setState(482);
+			setState(490);
 			match(WAS);
-			setState(483);
+			setState(491);
 			match(KNOCKED);
-			setState(484);
+			setState(492);
 			match(OUT);
 			}
 		}
@@ -2415,9 +2736,10 @@ public class gTCGParser extends Parser {
 		public TerminalNode WAS() { return getToken(gTCGParser.WAS, 0); }
 		public TerminalNode ADDED() { return getToken(gTCGParser.ADDED, 0); }
 		public TerminalNode TO() { return getToken(gTCGParser.TO, 0); }
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode POSSESSIVE() { return getToken(gTCGParser.POSSESSIVE, 0); }
 		public TerminalNode HAND() { return getToken(gTCGParser.HAND, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
 		public CardMovedActionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2428,47 +2750,64 @@ public class gTCGParser extends Parser {
 	public final CardMovedActionContext cardMovedAction() throws RecognitionException {
 		CardMovedActionContext _localctx = new CardMovedActionContext(_ctx, getState());
 		enterRule(_localctx, 54, RULE_cardMovedAction);
+		int _la;
 		try {
-			setState(501);
+			setState(509);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case A_SOMETHING:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(486);
+				setState(494);
 				match(A_SOMETHING);
-				setState(487);
+				setState(495);
 				match(CARD_WORD);
-				setState(488);
+				setState(496);
 				match(WAS);
-				setState(489);
+				setState(497);
 				match(ADDED);
-				setState(490);
+				setState(498);
 				match(TO);
-				setState(491);
-				match(PLAYER);
-				setState(492);
+				setState(499);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(500);
 				match(POSSESSIVE);
-				setState(493);
+				setState(501);
 				match(HAND);
 				}
 				break;
 			case CARD:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(494);
+				setState(502);
 				match(CARD);
-				setState(495);
+				setState(503);
 				match(WAS);
-				setState(496);
+				setState(504);
 				match(ADDED);
-				setState(497);
+				setState(505);
 				match(TO);
-				setState(498);
-				match(PLAYER);
-				setState(499);
+				setState(506);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(507);
 				match(POSSESSIVE);
-				setState(500);
+				setState(508);
 				match(HAND);
 				}
 				break;
@@ -2489,10 +2828,6 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class SwitchActionContext extends ParserRuleContext {
-		public List<TerminalNode> PLAYER() { return getTokens(gTCGParser.PLAYER); }
-		public TerminalNode PLAYER(int i) {
-			return getToken(gTCGParser.PLAYER, i);
-		}
 		public List<TerminalNode> POSSESSIVE() { return getTokens(gTCGParser.POSSESSIVE); }
 		public TerminalNode POSSESSIVE(int i) {
 			return getToken(gTCGParser.POSSESSIVE, i);
@@ -2509,6 +2844,14 @@ public class gTCGParser extends Parser {
 		public TerminalNode THE() { return getToken(gTCGParser.THE, 0); }
 		public TerminalNode ACTIVE() { return getToken(gTCGParser.ACTIVE, 0); }
 		public TerminalNode POKEMON() { return getToken(gTCGParser.POKEMON, 0); }
+		public List<TerminalNode> OPPONENT() { return getTokens(gTCGParser.OPPONENT); }
+		public TerminalNode OPPONENT(int i) {
+			return getToken(gTCGParser.OPPONENT, i);
+		}
+		public List<TerminalNode> PLAYER() { return getTokens(gTCGParser.PLAYER); }
+		public TerminalNode PLAYER(int i) {
+			return getToken(gTCGParser.PLAYER, i);
+		}
 		public SwitchActionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2518,36 +2861,53 @@ public class gTCGParser extends Parser {
 	public final SwitchActionContext switchAction() throws RecognitionException {
 		SwitchActionContext _localctx = new SwitchActionContext(_ctx, getState());
 		enterRule(_localctx, 56, RULE_switchAction);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(503);
-			match(PLAYER);
-			setState(504);
-			match(POSSESSIVE);
-			setState(505);
-			match(CARD);
-			setState(506);
-			match(WAS);
-			setState(507);
-			match(SWITCHED);
-			setState(508);
-			match(WITH);
-			setState(509);
-			match(PLAYER);
-			setState(510);
-			match(POSSESSIVE);
 			setState(511);
-			match(CARD);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			setState(512);
-			match(TO);
+			match(POSSESSIVE);
 			setState(513);
-			match(BECOME);
+			match(CARD);
 			setState(514);
-			match(THE);
+			match(WAS);
 			setState(515);
-			match(ACTIVE);
+			match(SWITCHED);
 			setState(516);
+			match(WITH);
+			setState(517);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(518);
+			match(POSSESSIVE);
+			setState(519);
+			match(CARD);
+			setState(520);
+			match(TO);
+			setState(521);
+			match(BECOME);
+			setState(522);
+			match(THE);
+			setState(523);
+			match(ACTIVE);
+			setState(524);
 			match(POKEMON);
 			}
 		}
@@ -2564,12 +2924,13 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class DamagedActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode POSSESSIVE() { return getToken(gTCGParser.POSSESSIVE, 0); }
 		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
 		public TerminalNode TAKE() { return getToken(gTCGParser.TAKE, 0); }
 		public TerminalNode NUMBER() { return getToken(gTCGParser.NUMBER, 0); }
 		public TerminalNode DAMAGE() { return getToken(gTCGParser.DAMAGE, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public DamagedActionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2579,20 +2940,29 @@ public class gTCGParser extends Parser {
 	public final DamagedActionContext damagedAction() throws RecognitionException {
 		DamagedActionContext _localctx = new DamagedActionContext(_ctx, getState());
 		enterRule(_localctx, 58, RULE_damagedAction);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(518);
-			match(PLAYER);
-			setState(519);
+			setState(526);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(527);
 			match(POSSESSIVE);
-			setState(520);
+			setState(528);
 			match(CARD);
-			setState(521);
+			setState(529);
 			match(TAKE);
-			setState(522);
+			setState(530);
 			match(NUMBER);
-			setState(523);
+			setState(531);
 			match(DAMAGE);
 			}
 		}
@@ -2609,7 +2979,6 @@ public class gTCGParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class FlippedActionContext extends ParserRuleContext {
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode FLIPPED() { return getToken(gTCGParser.FLIPPED, 0); }
 		public TerminalNode A_SOMETHING() { return getToken(gTCGParser.A_SOMETHING, 0); }
 		public TerminalNode COIN() { return getToken(gTCGParser.COIN, 0); }
@@ -2617,6 +2986,8 @@ public class gTCGParser extends Parser {
 		public TerminalNode IT() { return getToken(gTCGParser.IT, 0); }
 		public TerminalNode LANDED() { return getToken(gTCGParser.LANDED, 0); }
 		public TerminalNode ON() { return getToken(gTCGParser.ON, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode TAILS() { return getToken(gTCGParser.TAILS, 0); }
 		public TerminalNode HEADS() { return getToken(gTCGParser.HEADS, 0); }
 		public FlippedActionContext(ParserRuleContext parent, int invokingState) {
@@ -2632,23 +3003,31 @@ public class gTCGParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(525);
-			match(PLAYER);
-			setState(526);
-			match(FLIPPED);
-			setState(527);
-			match(A_SOMETHING);
-			setState(528);
-			match(COIN);
-			setState(529);
-			match(AND);
-			setState(530);
-			match(IT);
-			setState(531);
-			match(LANDED);
-			setState(532);
-			match(ON);
 			setState(533);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(534);
+			match(FLIPPED);
+			setState(535);
+			match(A_SOMETHING);
+			setState(536);
+			match(COIN);
+			setState(537);
+			match(AND);
+			setState(538);
+			match(IT);
+			setState(539);
+			match(LANDED);
+			setState(540);
+			match(ON);
+			setState(541);
 			_la = _input.LA(1);
 			if ( !(_la==HEADS || _la==TAILS) ) {
 			_errHandler.recoverInline(this);
@@ -2672,11 +3051,113 @@ public class gTCGParser extends Parser {
 	}
 
 	@SuppressWarnings("CheckReturnValue")
-	public static class EndTurnContext extends ParserRuleContext {
+	public static class ChoiceActionContext extends ParserRuleContext {
+		public TerminalNode CHOSE() { return getToken(gTCGParser.CHOSE, 0); }
+		public TerminalNode ATTACK() { return getToken(gTCGParser.ATTACK, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
 		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
+		public ChoiceActionContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_choiceAction; }
+	}
+
+	public final ChoiceActionContext choiceAction() throws RecognitionException {
+		ChoiceActionContext _localctx = new ChoiceActionContext(_ctx, getState());
+		enterRule(_localctx, 62, RULE_choiceAction);
+		int _la;
+		try {
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(543);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(544);
+			match(CHOSE);
+			setState(545);
+			match(ATTACK);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	@SuppressWarnings("CheckReturnValue")
+	public static class SpecialConditionActionContext extends ParserRuleContext {
+		public TerminalNode POSSESSIVE() { return getToken(gTCGParser.POSSESSIVE, 0); }
+		public TerminalNode CARD() { return getToken(gTCGParser.CARD, 0); }
+		public TerminalNode IS() { return getToken(gTCGParser.IS, 0); }
+		public TerminalNode NOW() { return getToken(gTCGParser.NOW, 0); }
+		public TerminalNode SPECIAL_CONDITION() { return getToken(gTCGParser.SPECIAL_CONDITION, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
+		public SpecialConditionActionContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_specialConditionAction; }
+	}
+
+	public final SpecialConditionActionContext specialConditionAction() throws RecognitionException {
+		SpecialConditionActionContext _localctx = new SpecialConditionActionContext(_ctx, getState());
+		enterRule(_localctx, 64, RULE_specialConditionAction);
+		int _la;
+		try {
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(547);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(548);
+			match(POSSESSIVE);
+			setState(549);
+			match(CARD);
+			setState(550);
+			match(IS);
+			setState(551);
+			match(NOW);
+			setState(552);
+			match(SPECIAL_CONDITION);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	@SuppressWarnings("CheckReturnValue")
+	public static class EndTurnContext extends ParserRuleContext {
 		public TerminalNode ENDED() { return getToken(gTCGParser.ENDED, 0); }
 		public TerminalNode THEIR() { return getToken(gTCGParser.THEIR, 0); }
 		public TerminalNode TURN() { return getToken(gTCGParser.TURN, 0); }
+		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public EndTurnContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -2685,17 +3166,26 @@ public class gTCGParser extends Parser {
 
 	public final EndTurnContext endTurn() throws RecognitionException {
 		EndTurnContext _localctx = new EndTurnContext(_ctx, getState());
-		enterRule(_localctx, 62, RULE_endTurn);
+		enterRule(_localctx, 66, RULE_endTurn);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(535);
-			match(PLAYER);
-			setState(536);
+			setState(554);
+			_la = _input.LA(1);
+			if ( !(_la==OPPONENT || _la==PLAYER) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
+			setState(555);
 			match(ENDED);
-			setState(537);
+			setState(556);
 			match(THEIR);
-			setState(538);
+			setState(557);
 			match(TURN);
 			}
 		}
@@ -2719,9 +3209,12 @@ public class gTCGParser extends Parser {
 		public TerminalNode DOT(int i) {
 			return getToken(gTCGParser.DOT, i);
 		}
-		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode WINS() { return getToken(gTCGParser.WINS, 0); }
-		public TerminalNode OPPONENT() { return getToken(gTCGParser.OPPONENT, 0); }
+		public List<TerminalNode> OPPONENT() { return getTokens(gTCGParser.OPPONENT); }
+		public TerminalNode OPPONENT(int i) {
+			return getToken(gTCGParser.OPPONENT, i);
+		}
+		public TerminalNode PLAYER() { return getToken(gTCGParser.PLAYER, 0); }
 		public TerminalNode CONCEDED() { return getToken(gTCGParser.CONCEDED, 0); }
 		public GameEndContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -2731,44 +3224,61 @@ public class gTCGParser extends Parser {
 
 	public final GameEndContext gameEnd() throws RecognitionException {
 		GameEndContext _localctx = new GameEndContext(_ctx, getState());
-		enterRule(_localctx, 64, RULE_gameEnd);
+		enterRule(_localctx, 68, RULE_gameEnd);
+		int _la;
 		try {
-			setState(553);
+			setState(572);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ALL:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(540);
+				setState(559);
 				match(ALL);
-				setState(541);
+				setState(560);
 				match(PRIZE_CARDS);
-				setState(542);
+				setState(561);
 				match(TAKEN);
-				setState(543);
+				setState(562);
 				match(DOT);
-				setState(544);
-				match(PLAYER);
-				setState(545);
+				setState(563);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(564);
 				match(WINS);
-				setState(546);
+				setState(565);
 				match(DOT);
 				}
 				break;
 			case OPPONENT:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(547);
+				setState(566);
 				match(OPPONENT);
-				setState(548);
+				setState(567);
 				match(CONCEDED);
-				setState(549);
+				setState(568);
 				match(DOT);
-				setState(550);
-				match(PLAYER);
-				setState(551);
+				setState(569);
+				_la = _input.LA(1);
+				if ( !(_la==OPPONENT || _la==PLAYER) ) {
+				_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(570);
 				match(WINS);
-				setState(552);
+				setState(571);
 				match(DOT);
 				}
 				break;
@@ -2807,32 +3317,32 @@ public class gTCGParser extends Parser {
 
 	public final CardListContext cardList() throws RecognitionException {
 		CardListContext _localctx = new CardListContext(_ctx, getState());
-		enterRule(_localctx, 66, RULE_cardList);
+		enterRule(_localctx, 70, RULE_cardList);
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(555);
+			setState(574);
 			match(BULLET);
-			setState(556);
+			setState(575);
 			match(CARD);
-			setState(561);
+			setState(580);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			while (_la==COMMA) {
 				{
 				{
-				setState(557);
+				setState(576);
 				match(COMMA);
-				setState(558);
+				setState(577);
 				match(CARD);
 				}
 				}
-				setState(563);
+				setState(582);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(564);
+			setState(583);
 			match(NEWLINE);
 			}
 		}
@@ -2848,7 +3358,7 @@ public class gTCGParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\\\u0237\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0004\u0001]\u024a\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
 		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0002"+
 		"\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007\u0002"+
 		"\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0002\u000b\u0007\u000b\u0002"+
@@ -2858,67 +3368,68 @@ public class gTCGParser extends Parser {
 		"\u0002\u0016\u0007\u0016\u0002\u0017\u0007\u0017\u0002\u0018\u0007\u0018"+
 		"\u0002\u0019\u0007\u0019\u0002\u001a\u0007\u001a\u0002\u001b\u0007\u001b"+
 		"\u0002\u001c\u0007\u001c\u0002\u001d\u0007\u001d\u0002\u001e\u0007\u001e"+
-		"\u0002\u001f\u0007\u001f\u0002 \u0007 \u0002!\u0007!\u0001\u0000\u0001"+
-		"\u0000\u0001\u0000\u0005\u0000H\b\u0000\n\u0000\f\u0000K\t\u0000\u0001"+
-		"\u0000\u0001\u0000\u0005\u0000O\b\u0000\n\u0000\f\u0000R\t\u0000\u0001"+
-		"\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0005\u0001Y\b"+
-		"\u0001\n\u0001\f\u0001\\\t\u0001\u0001\u0002\u0001\u0002\u0001\u0002\u0001"+
-		"\u0002\u0001\u0002\u0003\u0002c\b\u0002\u0001\u0003\u0001\u0003\u0001"+
+		"\u0002\u001f\u0007\u001f\u0002 \u0007 \u0002!\u0007!\u0002\"\u0007\"\u0002"+
+		"#\u0007#\u0001\u0000\u0001\u0000\u0001\u0000\u0005\u0000L\b\u0000\n\u0000"+
+		"\f\u0000O\t\u0000\u0001\u0000\u0001\u0000\u0005\u0000S\b\u0000\n\u0000"+
+		"\f\u0000V\t\u0000\u0001\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001"+
+		"\u0001\u0005\u0001]\b\u0001\n\u0001\f\u0001`\t\u0001\u0001\u0002\u0001"+
+		"\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0003\u0002g\b\u0002\u0001"+
 		"\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001"+
-		"\u0003\u0001\u0003\u0001\u0003\u0001\u0004\u0001\u0004\u0001\u0004\u0001"+
-		"\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0005\u0001"+
-		"\u0005\u0001\u0005\u0001\u0005\u0001\u0005\u0001\u0005\u0001\u0005\u0001"+
-		"\u0005\u0001\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001"+
-		"\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0003"+
-		"\u0006\u008b\b\u0006\u0001\u0007\u0001\u0007\u0001\u0007\u0001\u0007\u0001"+
-		"\u0007\u0001\u0007\u0001\u0007\u0003\u0007\u0094\b\u0007\u0001\b\u0001"+
-		"\b\u0001\b\u0001\b\u0001\b\u0001\b\u0001\b\u0001\b\u0003\b\u009e\b\b\u0001"+
-		"\b\u0001\b\u0001\b\u0001\t\u0001\t\u0001\t\u0001\t\u0001\t\u0005\t\u00a8"+
-		"\b\t\n\t\f\t\u00ab\t\t\u0001\n\u0001\n\u0001\n\u0001\n\u0001\n\u0005\n"+
-		"\u00b2\b\n\n\n\f\n\u00b5\t\n\u0001\u000b\u0001\u000b\u0001\u000b\u0001"+
-		"\u000b\u0001\u000b\u0005\u000b\u00bc\b\u000b\n\u000b\f\u000b\u00bf\t\u000b"+
-		"\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001"+
-		"\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0003"+
-		"\f\u00d2\b\f\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001"+
+		"\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0004\u0001"+
+		"\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001"+
+		"\u0004\u0001\u0005\u0001\u0005\u0001\u0005\u0001\u0005\u0001\u0005\u0001"+
+		"\u0005\u0001\u0005\u0001\u0005\u0001\u0006\u0001\u0006\u0001\u0006\u0001"+
+		"\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001"+
+		"\u0006\u0001\u0006\u0003\u0006\u008f\b\u0006\u0001\u0007\u0001\u0007\u0001"+
+		"\u0007\u0001\u0007\u0001\u0007\u0001\u0007\u0001\u0007\u0003\u0007\u0098"+
+		"\b\u0007\u0001\b\u0001\b\u0001\b\u0001\b\u0001\b\u0001\b\u0001\b\u0001"+
+		"\b\u0003\b\u00a2\b\b\u0001\b\u0001\b\u0001\b\u0001\t\u0001\t\u0001\t\u0001"+
+		"\t\u0001\t\u0005\t\u00ac\b\t\n\t\f\t\u00af\t\t\u0001\n\u0001\n\u0001\n"+
+		"\u0001\n\u0001\n\u0005\n\u00b6\b\n\n\n\f\n\u00b9\t\n\u0001\u000b\u0001"+
+		"\u000b\u0001\u000b\u0003\u000b\u00be\b\u000b\u0001\u000b\u0001\u000b\u0005"+
+		"\u000b\u00c2\b\u000b\n\u000b\f\u000b\u00c5\t\u000b\u0001\f\u0001\f\u0001"+
+		"\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001"+
+		"\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0001\f\u0003\f\u00da"+
+		"\b\f\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001"+
 		"\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001"+
 		"\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001\r\u0001"+
-		"\r\u0001\r\u0001\r\u0003\r\u00f0\b\r\u0001\u000e\u0001\u000e\u0001\u000e"+
-		"\u0001\u000e\u0001\u000e\u0001\u000e\u0001\u000e\u0001\u000e\u0001\u000e"+
-		"\u0001\u000e\u0003\u000e\u00fc\b\u000e\u0003\u000e\u00fe\b\u000e\u0001"+
-		"\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0001"+
-		"\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0003"+
-		"\u000f\u010c\b\u000f\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001"+
-		"\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001"+
-		"\u0010\u0001\u0010\u0003\u0010\u011a\b\u0010\u0001\u0011\u0001\u0011\u0001"+
-		"\u0011\u0001\u0011\u0001\u0011\u0001\u0011\u0001\u0011\u0001\u0011\u0001"+
-		"\u0011\u0001\u0011\u0001\u0011\u0001\u0011\u0003\u0011\u0128\b\u0011\u0001"+
-		"\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001"+
-		"\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001"+
-		"\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001"+
-		"\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001"+
-		"\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001"+
-		"\u0012\u0001\u0012\u0003\u0012\u014a\b\u0012\u0001\u0012\u0003\u0012\u014d"+
-		"\b\u0012\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
+		"\r\u0001\r\u0003\r\u00f8\b\r\u0001\u000e\u0001\u000e\u0001\u000e\u0001"+
+		"\u000e\u0001\u000e\u0001\u000e\u0001\u000e\u0001\u000e\u0001\u000e\u0001"+
+		"\u000e\u0003\u000e\u0104\b\u000e\u0003\u000e\u0106\b\u000e\u0001\u000f"+
+		"\u0001\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0001\u000f"+
+		"\u0001\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0001\u000f\u0003\u000f"+
+		"\u0114\b\u000f\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010"+
+		"\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010\u0001\u0010"+
+		"\u0001\u0010\u0003\u0010\u0122\b\u0010\u0001\u0011\u0001\u0011\u0001\u0011"+
+		"\u0001\u0011\u0001\u0011\u0001\u0011\u0001\u0011\u0001\u0011\u0001\u0011"+
+		"\u0001\u0011\u0001\u0011\u0001\u0011\u0003\u0011\u0130\b\u0011\u0001\u0012"+
+		"\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012"+
+		"\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012"+
+		"\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012"+
+		"\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012"+
+		"\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012\u0001\u0012"+
+		"\u0001\u0012\u0003\u0012\u0152\b\u0012\u0001\u0012\u0003\u0012\u0155\b"+
+		"\u0012\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
 		"\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
 		"\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
 		"\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
-		"\u0013\u0003\u0013\u0167\b\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
+		"\u0013\u0003\u0013\u016f\b\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
 		"\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
 		"\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
-		"\u0013\u0001\u0013\u0001\u0013\u0003\u0013\u017b\b\u0013\u0001\u0013\u0001"+
+		"\u0013\u0001\u0013\u0001\u0013\u0003\u0013\u0183\b\u0013\u0001\u0013\u0001"+
 		"\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001\u0013\u0001"+
-		"\u0013\u0001\u0013\u0001\u0013\u0003\u0013\u0187\b\u0013\u0001\u0013\u0001"+
-		"\u0013\u0001\u0013\u0003\u0013\u018c\b\u0013\u0001\u0014\u0001\u0014\u0001"+
+		"\u0013\u0001\u0013\u0001\u0013\u0003\u0013\u018f\b\u0013\u0001\u0013\u0001"+
+		"\u0013\u0001\u0013\u0003\u0013\u0194\b\u0013\u0001\u0014\u0001\u0014\u0001"+
 		"\u0014\u0001\u0014\u0001\u0014\u0001\u0014\u0001\u0014\u0001\u0015\u0001"+
 		"\u0015\u0001\u0015\u0001\u0015\u0001\u0015\u0001\u0015\u0001\u0015\u0001"+
 		"\u0015\u0001\u0015\u0001\u0015\u0001\u0015\u0001\u0015\u0001\u0015\u0001"+
-		"\u0015\u0001\u0015\u0001\u0015\u0001\u0015\u0003\u0015\u01a6\b\u0015\u0001"+
+		"\u0015\u0001\u0015\u0001\u0015\u0001\u0015\u0003\u0015\u01ae\b\u0015\u0001"+
 		"\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001"+
 		"\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001"+
 		"\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0001"+
-		"\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0003\u0016\u01be\b\u0016\u0001"+
-		"\u0017\u0001\u0017\u0001\u0017\u0003\u0017\u01c3\b\u0017\u0001\u0017\u0001"+
-		"\u0017\u0001\u0017\u0001\u0017\u0001\u0017\u0001\u0017\u0003\u0017\u01cb"+
+		"\u0016\u0001\u0016\u0001\u0016\u0001\u0016\u0003\u0016\u01c6\b\u0016\u0001"+
+		"\u0017\u0001\u0017\u0001\u0017\u0003\u0017\u01cb\b\u0017\u0001\u0017\u0001"+
+		"\u0017\u0001\u0017\u0001\u0017\u0001\u0017\u0001\u0017\u0003\u0017\u01d3"+
 		"\b\u0017\u0001\u0018\u0001\u0018\u0001\u0018\u0001\u0018\u0001\u0018\u0001"+
 		"\u0018\u0001\u0018\u0001\u0018\u0001\u0018\u0001\u0019\u0001\u0019\u0001"+
 		"\u0019\u0001\u0019\u0001\u0019\u0001\u0019\u0001\u0019\u0001\u0019\u0001"+
@@ -2926,281 +3437,295 @@ public class gTCGParser extends Parser {
 		"\u001a\u0001\u001a\u0001\u001a\u0001\u001b\u0001\u001b\u0001\u001b\u0001"+
 		"\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001"+
 		"\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0001\u001b\u0003"+
-		"\u001b\u01f6\b\u001b\u0001\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001"+
+		"\u001b\u01fe\b\u001b\u0001\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001"+
 		"\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001"+
 		"\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001\u001c\u0001\u001d\u0001"+
 		"\u001d\u0001\u001d\u0001\u001d\u0001\u001d\u0001\u001d\u0001\u001d\u0001"+
 		"\u001e\u0001\u001e\u0001\u001e\u0001\u001e\u0001\u001e\u0001\u001e\u0001"+
 		"\u001e\u0001\u001e\u0001\u001e\u0001\u001e\u0001\u001f\u0001\u001f\u0001"+
-		"\u001f\u0001\u001f\u0001\u001f\u0001 \u0001 \u0001 \u0001 \u0001 \u0001"+
-		" \u0001 \u0001 \u0001 \u0001 \u0001 \u0001 \u0001 \u0003 \u022a\b \u0001"+
-		"!\u0001!\u0001!\u0001!\u0005!\u0230\b!\n!\f!\u0233\t!\u0001!\u0001!\u0001"+
-		"!\u0000\u0000\"\u0000\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014"+
-		"\u0016\u0018\u001a\u001c\u001e \"$&(*,.02468:<>@B\u0000\u0003\u0001\u0000"+
-		"\u0006\u0007\u0002\u0000SSVV\u0002\u0000\u001d\u001dHH\u0250\u0000D\u0001"+
-		"\u0000\u0000\u0000\u0002U\u0001\u0000\u0000\u0000\u0004b\u0001\u0000\u0000"+
-		"\u0000\u0006d\u0001\u0000\u0000\u0000\bo\u0001\u0000\u0000\u0000\nw\u0001"+
-		"\u0000\u0000\u0000\f\u007f\u0001\u0000\u0000\u0000\u000e\u008c\u0001\u0000"+
-		"\u0000\u0000\u0010\u0095\u0001\u0000\u0000\u0000\u0012\u00a2\u0001\u0000"+
-		"\u0000\u0000\u0014\u00ac\u0001\u0000\u0000\u0000\u0016\u00b6\u0001\u0000"+
-		"\u0000\u0000\u0018\u00d1\u0001\u0000\u0000\u0000\u001a\u00ef\u0001\u0000"+
-		"\u0000\u0000\u001c\u00f1\u0001\u0000\u0000\u0000\u001e\u00ff\u0001\u0000"+
-		"\u0000\u0000 \u010d\u0001\u0000\u0000\u0000\"\u011b\u0001\u0000\u0000"+
-		"\u0000$\u0129\u0001\u0000\u0000\u0000&\u018b\u0001\u0000\u0000\u0000("+
-		"\u018d\u0001\u0000\u0000\u0000*\u01a5\u0001\u0000\u0000\u0000,\u01bd\u0001"+
-		"\u0000\u0000\u0000.\u01ca\u0001\u0000\u0000\u00000\u01cc\u0001\u0000\u0000"+
-		"\u00002\u01d5\u0001\u0000\u0000\u00004\u01df\u0001\u0000\u0000\u00006"+
-		"\u01f5\u0001\u0000\u0000\u00008\u01f7\u0001\u0000\u0000\u0000:\u0206\u0001"+
-		"\u0000\u0000\u0000<\u020d\u0001\u0000\u0000\u0000>\u0217\u0001\u0000\u0000"+
-		"\u0000@\u0229\u0001\u0000\u0000\u0000B\u022b\u0001\u0000\u0000\u0000D"+
-		"I\u0003\u0002\u0001\u0000EF\u0005[\u0000\u0000FH\u0003\u0012\t\u0000G"+
-		"E\u0001\u0000\u0000\u0000HK\u0001\u0000\u0000\u0000IG\u0001\u0000\u0000"+
-		"\u0000IJ\u0001\u0000\u0000\u0000JL\u0001\u0000\u0000\u0000KI\u0001\u0000"+
-		"\u0000\u0000LP\u0003@ \u0000MO\u0005[\u0000\u0000NM\u0001\u0000\u0000"+
-		"\u0000OR\u0001\u0000\u0000\u0000PN\u0001\u0000\u0000\u0000PQ\u0001\u0000"+
-		"\u0000\u0000QS\u0001\u0000\u0000\u0000RP\u0001\u0000\u0000\u0000ST\u0005"+
-		"\u0000\u0000\u0001T\u0001\u0001\u0000\u0000\u0000UV\u0005\u0004\u0000"+
-		"\u0000VZ\u0005[\u0000\u0000WY\u0003\u0004\u0002\u0000XW\u0001\u0000\u0000"+
-		"\u0000Y\\\u0001\u0000\u0000\u0000ZX\u0001\u0000\u0000\u0000Z[\u0001\u0000"+
-		"\u0000\u0000[\u0003\u0001\u0000\u0000\u0000\\Z\u0001\u0000\u0000\u0000"+
-		"]c\u0003\u0006\u0003\u0000^c\u0003\b\u0004\u0000_c\u0003\n\u0005\u0000"+
-		"`c\u0003\f\u0006\u0000ac\u0003\u0010\b\u0000b]\u0001\u0000\u0000\u0000"+
-		"b^\u0001\u0000\u0000\u0000b_\u0001\u0000\u0000\u0000b`\u0001\u0000\u0000"+
-		"\u0000ba\u0001\u0000\u0000\u0000c\u0005\u0001\u0000\u0000\u0000de\u0005"+
-		"R\u0000\u0000ef\u0005\u0005\u0000\u0000fg\u0007\u0000\u0000\u0000gh\u0005"+
-		"\b\u0000\u0000hi\u0005\t\u0000\u0000ij\u0005\n\u0000\u0000jk\u0005\u000b"+
-		"\u0000\u0000kl\u0005\f\u0000\u0000lm\u0005S\u0000\u0000mn\u0005[\u0000"+
-		"\u0000n\u0007\u0001\u0000\u0000\u0000op\u0005R\u0000\u0000pq\u0005\u000e"+
-		"\u0000\u0000qr\u0005\t\u0000\u0000rs\u0005\u000b\u0000\u0000st\u0005\u000f"+
-		"\u0000\u0000tu\u0005S\u0000\u0000uv\u0005[\u0000\u0000v\t\u0001\u0000"+
-		"\u0000\u0000wx\u0005R\u0000\u0000xy\u0005\u0010\u0000\u0000yz\u0005\u0011"+
-		"\u0000\u0000z{\u0005\u0012\u0000\u0000{|\u0005\u0013\u0000\u0000|}\u0005"+
-		"S\u0000\u0000}~\u0005[\u0000\u0000~\u000b\u0001\u0000\u0000\u0000\u007f"+
-		"\u0080\u0005R\u0000\u0000\u0080\u0081\u0005\u0014\u0000\u0000\u0081\u0082"+
-		"\u0005Q\u0000\u0000\u0082\u0083\u0005\u0016\u0000\u0000\u0083\u0084\u0005"+
-		"\b\u0000\u0000\u0084\u0085\u0005\t\u0000\u0000\u0085\u0086\u0005\n\u0000"+
-		"\u0000\u0086\u0087\u0005\u001b\u0000\u0000\u0087\u0088\u0005S\u0000\u0000"+
-		"\u0088\u008a\u0005[\u0000\u0000\u0089\u008b\u0003\u000e\u0007\u0000\u008a"+
-		"\u0089\u0001\u0000\u0000\u0000\u008a\u008b\u0001\u0000\u0000\u0000\u008b"+
-		"\r\u0001\u0000\u0000\u0000\u008c\u008d\u0005Z\u0000\u0000\u008d\u008e"+
-		"\u0005Q\u0000\u0000\u008e\u008f\u0005\u0015\u0000\u0000\u008f\u0090\u0005"+
-		"\u0016\u0000\u0000\u0090\u0091\u0005S\u0000\u0000\u0091\u0093\u0005[\u0000"+
-		"\u0000\u0092\u0094\u0003B!\u0000\u0093\u0092\u0001\u0000\u0000\u0000\u0093"+
-		"\u0094\u0001\u0000\u0000\u0000\u0094\u000f\u0001\u0000\u0000\u0000\u0095"+
-		"\u0096\u0005R\u0000\u0000\u0096\u0097\u0005\u001c\u0000\u0000\u0097\u0098"+
-		"\u0005N\u0000\u0000\u0098\u0099\u0005\u0011\u0000\u0000\u0099\u009d\u0005"+
-		"\t\u0000\u0000\u009a\u009b\u0005*\u0000\u0000\u009b\u009e\u0005+\u0000"+
-		"\u0000\u009c\u009e\u0005,\u0000\u0000\u009d\u009a\u0001\u0000\u0000\u0000"+
-		"\u009d\u009c\u0001\u0000\u0000\u0000\u009e\u009f\u0001\u0000\u0000\u0000"+
-		"\u009f\u00a0\u0005S\u0000\u0000\u00a0\u00a1\u0005[\u0000\u0000\u00a1\u0011"+
-		"\u0001\u0000\u0000\u0000\u00a2\u00a3\u0005R\u0000\u0000\u00a3\u00a4\u0005"+
-		"M\u0000\u0000\u00a4\u00a5\u0005\u0001\u0000\u0000\u00a5\u00a9\u0005[\u0000"+
-		"\u0000\u00a6\u00a8\u0003\u0014\n\u0000\u00a7\u00a6\u0001\u0000\u0000\u0000"+
-		"\u00a8\u00ab\u0001\u0000\u0000\u0000\u00a9\u00a7\u0001\u0000\u0000\u0000"+
-		"\u00a9\u00aa\u0001\u0000\u0000\u0000\u00aa\u0013\u0001\u0000\u0000\u0000"+
-		"\u00ab\u00a9\u0001\u0000\u0000\u0000\u00ac\u00ad\u0003\u0018\f\u0000\u00ad"+
-		"\u00ae\u0007\u0001\u0000\u0000\u00ae\u00b3\u0005[\u0000\u0000\u00af\u00b2"+
-		"\u0003\u0016\u000b\u0000\u00b0\u00b2\u0003$\u0012\u0000\u00b1\u00af\u0001"+
-		"\u0000\u0000\u0000\u00b1\u00b0\u0001\u0000\u0000\u0000\u00b2\u00b5\u0001"+
-		"\u0000\u0000\u0000\u00b3\u00b1\u0001\u0000\u0000\u0000\u00b3\u00b4\u0001"+
-		"\u0000\u0000\u0000\u00b4\u0015\u0001\u0000\u0000\u0000\u00b5\u00b3\u0001"+
-		"\u0000\u0000\u0000\u00b6\u00b7\u0005Z\u0000\u0000\u00b7\u00b8\u0003\u0018"+
-		"\f\u0000\u00b8\u00b9\u0005S\u0000\u0000\u00b9\u00bd\u0005[\u0000\u0000"+
-		"\u00ba\u00bc\u0003B!\u0000\u00bb\u00ba\u0001\u0000\u0000\u0000\u00bc\u00bf"+
-		"\u0001\u0000\u0000\u0000\u00bd\u00bb\u0001\u0000\u0000\u0000\u00bd\u00be"+
-		"\u0001\u0000\u0000\u0000\u00be\u0017\u0001\u0000\u0000\u0000\u00bf\u00bd"+
-		"\u0001\u0000\u0000\u0000\u00c0\u00d2\u0003\u001a\r\u0000\u00c1\u00d2\u0003"+
-		"\u001c\u000e\u0000\u00c2\u00d2\u0003\u001e\u000f\u0000\u00c3\u00d2\u0003"+
-		" \u0010\u0000\u00c4\u00d2\u0003\"\u0011\u0000\u00c5\u00d2\u0003(\u0014"+
-		"\u0000\u00c6\u00d2\u0003*\u0015\u0000\u00c7\u00d2\u00036\u001b\u0000\u00c8"+
-		"\u00d2\u0003,\u0016\u0000\u00c9\u00d2\u0003.\u0017\u0000\u00ca\u00d2\u0003"+
-		"0\u0018\u0000\u00cb\u00d2\u00032\u0019\u0000\u00cc\u00d2\u00038\u001c"+
-		"\u0000\u00cd\u00d2\u00034\u001a\u0000\u00ce\u00d2\u0003:\u001d\u0000\u00cf"+
-		"\u00d2\u0003<\u001e\u0000\u00d0\u00d2\u0003>\u001f\u0000\u00d1\u00c0\u0001"+
-		"\u0000\u0000\u0000\u00d1\u00c1\u0001\u0000\u0000\u0000\u00d1\u00c2\u0001"+
-		"\u0000\u0000\u0000\u00d1\u00c3\u0001\u0000\u0000\u0000\u00d1\u00c4\u0001"+
-		"\u0000\u0000\u0000\u00d1\u00c5\u0001\u0000\u0000\u0000\u00d1\u00c6\u0001"+
-		"\u0000\u0000\u0000\u00d1\u00c7\u0001\u0000\u0000\u0000\u00d1\u00c8\u0001"+
-		"\u0000\u0000\u0000\u00d1\u00c9\u0001\u0000\u0000\u0000\u00d1\u00ca\u0001"+
-		"\u0000\u0000\u0000\u00d1\u00cb\u0001\u0000\u0000\u0000\u00d1\u00cc\u0001"+
-		"\u0000\u0000\u0000\u00d1\u00cd\u0001\u0000\u0000\u0000\u00d1\u00ce\u0001"+
-		"\u0000\u0000\u0000\u00d1\u00cf\u0001\u0000\u0000\u0000\u00d1\u00d0\u0001"+
-		"\u0000\u0000\u0000\u00d2\u0019\u0001\u0000\u0000\u0000\u00d3\u00d4\u0005"+
-		"R\u0000\u0000\u00d4\u00d5\u0005\u0014\u0000\u0000\u00d5\u00f0\u0005\u0017"+
-		"\u0000\u0000\u00d6\u00d7\u0005R\u0000\u0000\u00d7\u00d8\u0005\u0014\u0000"+
-		"\u0000\u00d8\u00d9\u0005D\u0000\u0000\u00d9\u00f0\u0005\u0017\u0000\u0000"+
-		"\u00da\u00db\u0005R\u0000\u0000\u00db\u00dc\u0005\u0014\u0000\u0000\u00dc"+
-		"\u00f0\u0005N\u0000\u0000\u00dd\u00de\u0005R\u0000\u0000\u00de\u00df\u0005"+
-		"\u0014\u0000\u0000\u00df\u00e0\u0005Q\u0000\u0000\u00e0\u00f0\u0005N\u0000"+
-		"\u0000\u00e1\u00e2\u0005R\u0000\u0000\u00e2\u00e3\u0005\u0014\u0000\u0000"+
-		"\u00e3\u00e4\u0005Q\u0000\u0000\u00e4\u00f0\u0005\u0016\u0000\u0000\u00e5"+
-		"\u00e6\u0005R\u0000\u0000\u00e6\u00e7\u0005\u0014\u0000\u0000\u00e7\u00e8"+
-		"\u0005Q\u0000\u0000\u00e8\u00e9\u0005\u0016\u0000\u0000\u00e9\u00ea\u0005"+
-		"E\u0000\u0000\u00ea\u00eb\u0005\u001c\u0000\u0000\u00eb\u00ec\u0005F\u0000"+
-		"\u0000\u00ec\u00ed\u0005\u0011\u0000\u0000\u00ed\u00ee\u0005\t\u0000\u0000"+
-		"\u00ee\u00f0\u0005,\u0000\u0000\u00ef\u00d3\u0001\u0000\u0000\u0000\u00ef"+
-		"\u00d6\u0001\u0000\u0000\u0000\u00ef\u00da\u0001\u0000\u0000\u0000\u00ef"+
-		"\u00dd\u0001\u0000\u0000\u0000\u00ef\u00e1\u0001\u0000\u0000\u0000\u00ef"+
-		"\u00e5\u0001\u0000\u0000\u0000\u00f0\u001b\u0001\u0000\u0000\u0000\u00f1"+
-		"\u00f2\u0005R\u0000\u0000\u00f2\u00f3\u0005\u001c\u0000\u0000\u00f3\u00fd"+
-		"\u0005N\u0000\u0000\u00f4\u00f5\u0005\u0011\u0000\u0000\u00f5\u00fb\u0005"+
-		"\t\u0000\u0000\u00f6\u00fc\u0005,\u0000\u0000\u00f7\u00f8\u0005*\u0000"+
-		"\u0000\u00f8\u00fc\u0005+\u0000\u0000\u00f9\u00fa\u0005-\u0000\u0000\u00fa"+
-		"\u00fc\u0005+\u0000\u0000\u00fb\u00f6\u0001\u0000\u0000\u0000\u00fb\u00f7"+
-		"\u0001\u0000\u0000\u0000\u00fb\u00f9\u0001\u0000\u0000\u0000\u00fc\u00fe"+
-		"\u0001\u0000\u0000\u0000\u00fd\u00f4\u0001\u0000\u0000\u0000\u00fd\u00fe"+
-		"\u0001\u0000\u0000\u0000\u00fe\u001d\u0001\u0000\u0000\u0000\u00ff\u0100"+
-		"\u0005R\u0000\u0000\u0100\u0101\u0005\u001d\u0000\u0000\u0101\u0102\u0005"+
-		"N\u0000\u0000\u0102\u0103\u0005\u0011\u0000\u0000\u0103\u010b\u0005N\u0000"+
-		"\u0000\u0104\u0105\u0005 \u0000\u0000\u0105\u0106\u0005\t\u0000\u0000"+
-		"\u0106\u010c\u0005,\u0000\u0000\u0107\u0108\u0005!\u0000\u0000\u0108\u0109"+
-		"\u0005\t\u0000\u0000\u0109\u010a\u0005*\u0000\u0000\u010a\u010c\u0005"+
-		"+\u0000\u0000\u010b\u0104\u0001\u0000\u0000\u0000\u010b\u0107\u0001\u0000"+
-		"\u0000\u0000\u010c\u001f\u0001\u0000\u0000\u0000\u010d\u010e\u0005R\u0000"+
-		"\u0000\u010e\u010f\u0005\u001e\u0000\u0000\u010f\u0110\u0005N\u0000\u0000"+
-		"\u0110\u0111\u0005\u0011\u0000\u0000\u0111\u0119\u0005N\u0000\u0000\u0112"+
-		"\u0113\u0005 \u0000\u0000\u0113\u0114\u0005\t\u0000\u0000\u0114\u011a"+
-		"\u0005,\u0000\u0000\u0115\u0116\u0005!\u0000\u0000\u0116\u0117\u0005\t"+
-		"\u0000\u0000\u0117\u0118\u0005*\u0000\u0000\u0118\u011a\u0005+\u0000\u0000"+
-		"\u0119\u0112\u0001\u0000\u0000\u0000\u0119\u0115\u0001\u0000\u0000\u0000"+
-		"\u011a!\u0001\u0000\u0000\u0000\u011b\u011c\u0005R\u0000\u0000\u011c\u011d"+
-		"\u0005M\u0000\u0000\u011d\u011e\u0005N\u0000\u0000\u011e\u011f\u0005\u001f"+
-		"\u0000\u0000\u011f\u0127\u0005O\u0000\u0000\u0120\u0121\u0005 \u0000\u0000"+
-		"\u0121\u0122\u0005R\u0000\u0000\u0122\u0123\u0005M\u0000\u0000\u0123\u0124"+
-		"\u0005N\u0000\u0000\u0124\u0125\u0005\b\u0000\u0000\u0125\u0126\u0005"+
-		"Q\u0000\u0000\u0126\u0128\u0005.\u0000\u0000\u0127\u0120\u0001\u0000\u0000"+
-		"\u0000\u0127\u0128\u0001\u0000\u0000\u0000\u0128#\u0001\u0000\u0000\u0000"+
-		"\u0129\u012a\u0005Z\u0000\u0000\u012a\u012b\u0005I\u0000\u0000\u012b\u012c"+
-		"\u0005U\u0000\u0000\u012c\u012d\u0005[\u0000\u0000\u012d\u0149\u0005Y"+
-		"\u0000\u0000\u012e\u012f\u0005Q\u0000\u0000\u012f\u0130\u0005\u001d\u0000"+
-		"\u0000\u0130\u0131\u0005G\u0000\u0000\u0131\u0132\u0005U\u0000\u0000\u0132"+
-		"\u0133\u0005Q\u0000\u0000\u0133\u0134\u0005.\u0000\u0000\u0134\u014a\u0005"+
-		"[\u0000\u0000\u0135\u0136\u0005Q\u0000\u0000\u0136\u0137\u0005H\u0000"+
-		"\u0000\u0137\u0138\u0005G\u0000\u0000\u0138\u0139\u0005U\u0000\u0000\u0139"+
-		"\u013a\u0005Q\u0000\u0000\u013a\u013b\u0005.\u0000\u0000\u013b\u014a\u0005"+
-		"[\u0000\u0000\u013c\u013d\u0005J\u0000\u0000\u013d\u013e\u0005U\u0000"+
-		"\u0000\u013e\u013f\u0005Q\u0000\u0000\u013f\u0140\u0005.\u0000\u0000\u0140"+
-		"\u0141\u0005[\u0000\u0000\u0141\u0142\u0003&\u0013\u0000\u0142\u0143\u0005"+
-		"Y\u0000\u0000\u0143\u0144\u0005K\u0000\u0000\u0144\u0145\u0005U\u0000"+
-		"\u0000\u0145\u0146\u0005Q\u0000\u0000\u0146\u0147\u0005.\u0000\u0000\u0147"+
-		"\u0148\u0005[\u0000\u0000\u0148\u014a\u0001\u0000\u0000\u0000\u0149\u012e"+
-		"\u0001\u0000\u0000\u0000\u0149\u0135\u0001\u0000\u0000\u0000\u0149\u013c"+
-		"\u0001\u0000\u0000\u0000\u014a\u014c\u0001\u0000\u0000\u0000\u014b\u014d"+
-		"\u0005[\u0000\u0000\u014c\u014b\u0001\u0000\u0000\u0000\u014c\u014d\u0001"+
-		"\u0000\u0000\u0000\u014d%\u0001\u0000\u0000\u0000\u014e\u014f\u0005Y\u0000"+
-		"\u0000\u014f\u0150\u0005W\u0000\u0000\u0150\u0151\u0005L\u0000\u0000\u0151"+
-		"\u0152\u0005X\u0000\u0000\u0152\u0153\u0005N\u0000\u0000\u0153\u0154\u0005"+
-		"U\u0000\u0000\u0154\u0155\u0005Q\u0000\u0000\u0155\u0156\u0005.\u0000"+
-		"\u0000\u0156\u018c\u0005[\u0000\u0000\u0157\u0158\u0005Y\u0000\u0000\u0158"+
-		"\u0159\u0005Q\u0000\u0000\u0159\u015a\u0007\u0002\u0000\u0000\u015a\u015b"+
-		"\u0005G\u0000\u0000\u015b\u015c\u0005U\u0000\u0000\u015c\u015d\u0005Q"+
-		"\u0000\u0000\u015d\u015e\u0005.\u0000\u0000\u015e\u018c\u0005[\u0000\u0000"+
-		"\u015f\u0160\u0005Y\u0000\u0000\u0160\u0161\u0005W\u0000\u0000\u0161\u0162"+
-		"\u0005\u0018\u0000\u0000\u0162\u0163\u0005X\u0000\u0000\u0163\u0164\u0005"+
-		"P\u0000\u0000\u0164\u0166\u0005U\u0000\u0000\u0165\u0167\u0005Z\u0000"+
-		"\u0000\u0166\u0165\u0001\u0000\u0000\u0000\u0166\u0167\u0001\u0000\u0000"+
-		"\u0000\u0167\u0168\u0001\u0000\u0000\u0000\u0168\u0169\u0005Q\u0000\u0000"+
-		"\u0169\u016a\u0005.\u0000\u0000\u016a\u016b\u0005[\u0000\u0000\u016b\u016c"+
-		"\u0005Y\u0000\u0000\u016c\u016d\u0005Q\u0000\u0000\u016d\u016e\u0005\u001d"+
-		"\u0000\u0000\u016e\u016f\u0005G\u0000\u0000\u016f\u0170\u0005U\u0000\u0000"+
-		"\u0170\u0171\u0005Q\u0000\u0000\u0171\u0172\u0005.\u0000\u0000\u0172\u018c"+
-		"\u0005[\u0000\u0000\u0173\u0174\u0005Y\u0000\u0000\u0174\u0175\u0005W"+
-		"\u0000\u0000\u0175\u0176\u0005\u001a\u0000\u0000\u0176\u0177\u0005X\u0000"+
-		"\u0000\u0177\u0178\u0005N\u0000\u0000\u0178\u017a\u0005U\u0000\u0000\u0179"+
-		"\u017b\u0005Z\u0000\u0000\u017a\u0179\u0001\u0000\u0000\u0000\u017a\u017b"+
-		"\u0001\u0000\u0000\u0000\u017b\u017c\u0001\u0000\u0000\u0000\u017c\u017d"+
-		"\u0005Q\u0000\u0000\u017d\u017e\u0005.\u0000\u0000\u017e\u017f\u0005["+
-		"\u0000\u0000\u017f\u0180\u0005Y\u0000\u0000\u0180\u0181\u0005W\u0000\u0000"+
-		"\u0181\u0182\u0005\u0019\u0000\u0000\u0182\u0183\u0005X\u0000\u0000\u0183"+
-		"\u0184\u0005O\u0000\u0000\u0184\u0186\u0005U\u0000\u0000\u0185\u0187\u0005"+
-		"Z\u0000\u0000\u0186\u0185\u0001\u0000\u0000\u0000\u0186\u0187\u0001\u0000"+
-		"\u0000\u0000\u0187\u0188\u0001\u0000\u0000\u0000\u0188\u0189\u0005Q\u0000"+
-		"\u0000\u0189\u018a\u0005.\u0000\u0000\u018a\u018c\u0005[\u0000\u0000\u018b"+
-		"\u014e\u0001\u0000\u0000\u0000\u018b\u0157\u0001\u0000\u0000\u0000\u018b"+
-		"\u015f\u0001\u0000\u0000\u0000\u018b\u0173\u0001\u0000\u0000\u0000\u018c"+
-		"\'\u0001\u0000\u0000\u0000\u018d\u018e\u0005R\u0000\u0000\u018e\u018f"+
-		"\u0005=\u0000\u0000\u018f\u0190\u0005N\u0000\u0000\u0190\u0191\u0005\u0011"+
-		"\u0000\u0000\u0191\u0192\u0005\t\u0000\u0000\u0192\u0193\u0005,\u0000"+
-		"\u0000\u0193)\u0001\u0000\u0000\u0000\u0194\u0195\u0005R\u0000\u0000\u0195"+
-		"\u0196\u00051\u0000\u0000\u0196\u0197\u00054\u0000\u0000\u0197\u01a6\u0005"+
-		"2\u0000\u0000\u0198\u0199\u0005R\u0000\u0000\u0199\u019a\u00051\u0000"+
-		"\u0000\u019a\u019b\u0005Q\u0000\u0000\u019b\u019c\u0005\u0016\u0000\u0000"+
-		"\u019c\u019d\u00053\u0000\u0000\u019d\u019e\u00054\u0000\u0000\u019e\u01a6"+
-		"\u00052\u0000\u0000\u019f\u01a0\u0005R\u0000\u0000\u01a0\u01a1\u00051"+
-		"\u0000\u0000\u01a1\u01a2\u0005N\u0000\u0000\u01a2\u01a3\u00053\u0000\u0000"+
-		"\u01a3\u01a4\u00054\u0000\u0000\u01a4\u01a6\u00052\u0000\u0000\u01a5\u0194"+
-		"\u0001\u0000\u0000\u0000\u01a5\u0198\u0001\u0000\u0000\u0000\u01a5\u019f"+
-		"\u0001\u0000\u0000\u0000\u01a6+\u0001\u0000\u0000\u0000\u01a7\u01a8\u0005"+
-		"R\u0000\u0000\u01a8\u01a9\u0005/\u0000\u0000\u01a9\u01be\u0005N\u0000"+
-		"\u0000\u01aa\u01ab\u0005R\u0000\u0000\u01ab\u01ac\u0005/\u0000\u0000\u01ac"+
-		"\u01ad\u0005Q\u0000\u0000\u01ad\u01be\u0005\u0016\u0000\u0000\u01ae\u01af"+
-		"\u0005Q\u0000\u0000\u01af\u01b0\u0005\u0016\u0000\u0000\u01b0\u01b1\u0005"+
-		"%\u0000\u0000\u01b1\u01b2\u0005/\u0000\u0000\u01b2\u01b3\u00055\u0000"+
-		"\u0000\u01b3\u01b4\u0005R\u0000\u0000\u01b4\u01b5\u0005M\u0000\u0000\u01b5"+
-		"\u01be\u0005N\u0000\u0000\u01b6\u01b7\u0005N\u0000\u0000\u01b7\u01b8\u0005"+
-		"$\u0000\u0000\u01b8\u01b9\u0005/\u0000\u0000\u01b9\u01ba\u00055\u0000"+
-		"\u0000\u01ba\u01bb\u0005R\u0000\u0000\u01bb\u01bc\u0005M\u0000\u0000\u01bc"+
-		"\u01be\u0005N\u0000\u0000\u01bd\u01a7\u0001\u0000\u0000\u0000\u01bd\u01aa"+
-		"\u0001\u0000\u0000\u0000\u01bd\u01ae\u0001\u0000\u0000\u0000\u01bd\u01b6"+
-		"\u0001\u0000\u0000\u0000\u01be-\u0001\u0000\u0000\u0000\u01bf\u01c0\u0005"+
-		"R\u0000\u0000\u01c0\u01c2\u00057\u0000\u0000\u01c1\u01c3\u0005D\u0000"+
-		"\u0000\u01c2\u01c1\u0001\u0000\u0000\u0000\u01c2\u01c3\u0001\u0000\u0000"+
-		"\u0000\u01c3\u01c4\u0001\u0000\u0000\u0000\u01c4\u01c5\u00058\u0000\u0000"+
-		"\u01c5\u01cb\u0005\u0017\u0000\u0000\u01c6\u01c7\u0005R\u0000\u0000\u01c7"+
-		"\u01c8\u00057\u0000\u0000\u01c8\u01c9\u0005Q\u0000\u0000\u01c9\u01cb\u0005"+
-		"9\u0000\u0000\u01ca\u01bf\u0001\u0000\u0000\u0000\u01ca\u01c6\u0001\u0000"+
-		"\u0000\u0000\u01cb/\u0001\u0000\u0000\u0000\u01cc\u01cd\u0005R\u0000\u0000"+
-		"\u01cd\u01ce\u00056\u0000\u0000\u01ce\u01cf\u0005R\u0000\u0000\u01cf\u01d0"+
-		"\u0005M\u0000\u0000\u01d0\u01d1\u0005N\u0000\u0000\u01d1\u01d2\u0005\u0011"+
-		"\u0000\u0000\u01d2\u01d3\u00054\u0000\u0000\u01d3\u01d4\u0005\u001b\u0000"+
-		"\u0000\u01d41\u0001\u0000\u0000\u0000\u01d5\u01d6\u0005R\u0000\u0000\u01d6"+
-		"\u01d7\u0005M\u0000\u0000\u01d7\u01d8\u0005N\u0000\u0000\u01d8\u01d9\u0005"+
-		"&\u0000\u0000\u01d9\u01da\u0005\'\u0000\u0000\u01da\u01db\u0005!\u0000"+
-		"\u0000\u01db\u01dc\u0005\t\u0000\u0000\u01dc\u01dd\u0005*\u0000\u0000"+
-		"\u01dd\u01de\u0005+\u0000\u0000\u01de3\u0001\u0000\u0000\u0000\u01df\u01e0"+
-		"\u0005R\u0000\u0000\u01e0\u01e1\u0005M\u0000\u0000\u01e1\u01e2\u0005N"+
-		"\u0000\u0000\u01e2\u01e3\u0005$\u0000\u0000\u01e3\u01e4\u0005:\u0000\u0000"+
-		"\u01e4\u01e5\u0005;\u0000\u0000\u01e55\u0001\u0000\u0000\u0000\u01e6\u01e7"+
-		"\u0005D\u0000\u0000\u01e7\u01e8\u0005\u0017\u0000\u0000\u01e8\u01e9\u0005"+
-		"$\u0000\u0000\u01e9\u01ea\u0005\u0003\u0000\u0000\u01ea\u01eb\u0005\u0011"+
-		"\u0000\u0000\u01eb\u01ec\u0005R\u0000\u0000\u01ec\u01ed\u0005M\u0000\u0000"+
-		"\u01ed\u01f6\u0005\u001b\u0000\u0000\u01ee\u01ef\u0005N\u0000\u0000\u01ef"+
-		"\u01f0\u0005$\u0000\u0000\u01f0\u01f1\u0005\u0003\u0000\u0000\u01f1\u01f2"+
-		"\u0005\u0011\u0000\u0000\u01f2\u01f3\u0005R\u0000\u0000\u01f3\u01f4\u0005"+
-		"M\u0000\u0000\u01f4\u01f6\u0005\u001b\u0000\u0000\u01f5\u01e6\u0001\u0000"+
-		"\u0000\u0000\u01f5\u01ee\u0001\u0000\u0000\u0000\u01f67\u0001\u0000\u0000"+
-		"\u0000\u01f7\u01f8\u0005R\u0000\u0000\u01f8\u01f9\u0005M\u0000\u0000\u01f9"+
-		"\u01fa\u0005N\u0000\u0000\u01fa\u01fb\u0005$\u0000\u0000\u01fb\u01fc\u0005"+
-		"<\u0000\u0000\u01fc\u01fd\u0005#\u0000\u0000\u01fd\u01fe\u0005R\u0000"+
-		"\u0000\u01fe\u01ff\u0005M\u0000\u0000\u01ff\u0200\u0005N\u0000\u0000\u0200"+
-		"\u0201\u0005\u0011\u0000\u0000\u0201\u0202\u0005(\u0000\u0000\u0202\u0203"+
-		"\u0005\t\u0000\u0000\u0203\u0204\u0005*\u0000\u0000\u0204\u0205\u0005"+
-		"\u0002\u0000\u0000\u02059\u0001\u0000\u0000\u0000\u0206\u0207\u0005R\u0000"+
-		"\u0000\u0207\u0208\u0005M\u0000\u0000\u0208\u0209\u0005N\u0000\u0000\u0209"+
-		"\u020a\u00057\u0000\u0000\u020a\u020b\u0005Q\u0000\u0000\u020b\u020c\u0005"+
-		".\u0000\u0000\u020c;\u0001\u0000\u0000\u0000\u020d\u020e\u0005R\u0000"+
-		"\u0000\u020e\u020f\u0005\r\u0000\u0000\u020f\u0210\u0005D\u0000\u0000"+
-		"\u0210\u0211\u0005\u000b\u0000\u0000\u0211\u0212\u0005E\u0000\u0000\u0212"+
-		"\u0213\u0005\"\u0000\u0000\u0213\u0214\u0005)\u0000\u0000\u0214\u0215"+
-		"\u0005 \u0000\u0000\u0215\u0216\u0007\u0000\u0000\u0000\u0216=\u0001\u0000"+
-		"\u0000\u0000\u0217\u0218\u0005R\u0000\u0000\u0218\u0219\u0005>\u0000\u0000"+
-		"\u0219\u021a\u00054\u0000\u0000\u021a\u021b\u0005\u0001\u0000\u0000\u021b"+
-		"?\u0001\u0000\u0000\u0000\u021c\u021d\u0005B\u0000\u0000\u021d\u021e\u0005"+
-		"9\u0000\u0000\u021e\u021f\u0005C\u0000\u0000\u021f\u0220\u0005S\u0000"+
-		"\u0000\u0220\u0221\u0005R\u0000\u0000\u0221\u0222\u0005A\u0000\u0000\u0222"+
-		"\u022a\u0005S\u0000\u0000\u0223\u0224\u0005?\u0000\u0000\u0224\u0225\u0005"+
-		"@\u0000\u0000\u0225\u0226\u0005S\u0000\u0000\u0226\u0227\u0005R\u0000"+
-		"\u0000\u0227\u0228\u0005A\u0000\u0000\u0228\u022a\u0005S\u0000\u0000\u0229"+
-		"\u021c\u0001\u0000\u0000\u0000\u0229\u0223\u0001\u0000\u0000\u0000\u022a"+
-		"A\u0001\u0000\u0000\u0000\u022b\u022c\u0005Y\u0000\u0000\u022c\u0231\u0005"+
-		"N\u0000\u0000\u022d\u022e\u0005T\u0000\u0000\u022e\u0230\u0005N\u0000"+
-		"\u0000\u022f\u022d\u0001\u0000\u0000\u0000\u0230\u0233\u0001\u0000\u0000"+
-		"\u0000\u0231\u022f\u0001\u0000\u0000\u0000\u0231\u0232\u0001\u0000\u0000"+
-		"\u0000\u0232\u0234\u0001\u0000\u0000\u0000\u0233\u0231\u0001\u0000\u0000"+
-		"\u0000\u0234\u0235\u0005[\u0000\u0000\u0235C\u0001\u0000\u0000\u0000\u001f"+
-		"IPZb\u008a\u0093\u009d\u00a9\u00b1\u00b3\u00bd\u00d1\u00ef\u00fb\u00fd"+
-		"\u010b\u0119\u0127\u0149\u014c\u0166\u017a\u0186\u018b\u01a5\u01bd\u01c2"+
-		"\u01ca\u01f5\u0229\u0231";
+		"\u001f\u0001\u001f\u0001 \u0001 \u0001 \u0001 \u0001 \u0001 \u0001 \u0001"+
+		"!\u0001!\u0001!\u0001!\u0001!\u0001\"\u0001\"\u0001\"\u0001\"\u0001\""+
+		"\u0001\"\u0001\"\u0001\"\u0001\"\u0001\"\u0001\"\u0001\"\u0001\"\u0003"+
+		"\"\u023d\b\"\u0001#\u0001#\u0001#\u0001#\u0005#\u0243\b#\n#\f#\u0246\t"+
+		"#\u0001#\u0001#\u0001#\u0000\u0000$\u0000\u0002\u0004\u0006\b\n\f\u000e"+
+		"\u0010\u0012\u0014\u0016\u0018\u001a\u001c\u001e \"$&(*,.02468:<>@BDF"+
+		"\u0000\u0004\u0002\u0000??SS\u0001\u0000\u0006\u0007\u0002\u0000TTWW\u0002"+
+		"\u0000\u001d\u001dHH\u0264\u0000H\u0001\u0000\u0000\u0000\u0002Y\u0001"+
+		"\u0000\u0000\u0000\u0004f\u0001\u0000\u0000\u0000\u0006h\u0001\u0000\u0000"+
+		"\u0000\bs\u0001\u0000\u0000\u0000\n{\u0001\u0000\u0000\u0000\f\u0083\u0001"+
+		"\u0000\u0000\u0000\u000e\u0090\u0001\u0000\u0000\u0000\u0010\u0099\u0001"+
+		"\u0000\u0000\u0000\u0012\u00a6\u0001\u0000\u0000\u0000\u0014\u00b0\u0001"+
+		"\u0000\u0000\u0000\u0016\u00ba\u0001\u0000\u0000\u0000\u0018\u00d9\u0001"+
+		"\u0000\u0000\u0000\u001a\u00f7\u0001\u0000\u0000\u0000\u001c\u00f9\u0001"+
+		"\u0000\u0000\u0000\u001e\u0107\u0001\u0000\u0000\u0000 \u0115\u0001\u0000"+
+		"\u0000\u0000\"\u0123\u0001\u0000\u0000\u0000$\u0131\u0001\u0000\u0000"+
+		"\u0000&\u0193\u0001\u0000\u0000\u0000(\u0195\u0001\u0000\u0000\u0000*"+
+		"\u01ad\u0001\u0000\u0000\u0000,\u01c5\u0001\u0000\u0000\u0000.\u01d2\u0001"+
+		"\u0000\u0000\u00000\u01d4\u0001\u0000\u0000\u00002\u01dd\u0001\u0000\u0000"+
+		"\u00004\u01e7\u0001\u0000\u0000\u00006\u01fd\u0001\u0000\u0000\u00008"+
+		"\u01ff\u0001\u0000\u0000\u0000:\u020e\u0001\u0000\u0000\u0000<\u0215\u0001"+
+		"\u0000\u0000\u0000>\u021f\u0001\u0000\u0000\u0000@\u0223\u0001\u0000\u0000"+
+		"\u0000B\u022a\u0001\u0000\u0000\u0000D\u023c\u0001\u0000\u0000\u0000F"+
+		"\u023e\u0001\u0000\u0000\u0000HM\u0003\u0002\u0001\u0000IJ\u0005\\\u0000"+
+		"\u0000JL\u0003\u0012\t\u0000KI\u0001\u0000\u0000\u0000LO\u0001\u0000\u0000"+
+		"\u0000MK\u0001\u0000\u0000\u0000MN\u0001\u0000\u0000\u0000NP\u0001\u0000"+
+		"\u0000\u0000OM\u0001\u0000\u0000\u0000PT\u0003D\"\u0000QS\u0005\\\u0000"+
+		"\u0000RQ\u0001\u0000\u0000\u0000SV\u0001\u0000\u0000\u0000TR\u0001\u0000"+
+		"\u0000\u0000TU\u0001\u0000\u0000\u0000UW\u0001\u0000\u0000\u0000VT\u0001"+
+		"\u0000\u0000\u0000WX\u0005\u0000\u0000\u0001X\u0001\u0001\u0000\u0000"+
+		"\u0000YZ\u0005\u0004\u0000\u0000Z^\u0005\\\u0000\u0000[]\u0003\u0004\u0002"+
+		"\u0000\\[\u0001\u0000\u0000\u0000]`\u0001\u0000\u0000\u0000^\\\u0001\u0000"+
+		"\u0000\u0000^_\u0001\u0000\u0000\u0000_\u0003\u0001\u0000\u0000\u0000"+
+		"`^\u0001\u0000\u0000\u0000ag\u0003\u0006\u0003\u0000bg\u0003\b\u0004\u0000"+
+		"cg\u0003\n\u0005\u0000dg\u0003\f\u0006\u0000eg\u0003\u0010\b\u0000fa\u0001"+
+		"\u0000\u0000\u0000fb\u0001\u0000\u0000\u0000fc\u0001\u0000\u0000\u0000"+
+		"fd\u0001\u0000\u0000\u0000fe\u0001\u0000\u0000\u0000g\u0005\u0001\u0000"+
+		"\u0000\u0000hi\u0007\u0000\u0000\u0000ij\u0005\u0005\u0000\u0000jk\u0007"+
+		"\u0001\u0000\u0000kl\u0005\b\u0000\u0000lm\u0005\t\u0000\u0000mn\u0005"+
+		"\n\u0000\u0000no\u0005\u000b\u0000\u0000op\u0005\f\u0000\u0000pq\u0005"+
+		"T\u0000\u0000qr\u0005\\\u0000\u0000r\u0007\u0001\u0000\u0000\u0000st\u0007"+
+		"\u0000\u0000\u0000tu\u0005\u000e\u0000\u0000uv\u0005\t\u0000\u0000vw\u0005"+
+		"\u000b\u0000\u0000wx\u0005\u000f\u0000\u0000xy\u0005T\u0000\u0000yz\u0005"+
+		"\\\u0000\u0000z\t\u0001\u0000\u0000\u0000{|\u0007\u0000\u0000\u0000|}"+
+		"\u0005\u0010\u0000\u0000}~\u0005\u0011\u0000\u0000~\u007f\u0005\u0012"+
+		"\u0000\u0000\u007f\u0080\u0005\u0013\u0000\u0000\u0080\u0081\u0005T\u0000"+
+		"\u0000\u0081\u0082\u0005\\\u0000\u0000\u0082\u000b\u0001\u0000\u0000\u0000"+
+		"\u0083\u0084\u0007\u0000\u0000\u0000\u0084\u0085\u0005\u0014\u0000\u0000"+
+		"\u0085\u0086\u0005R\u0000\u0000\u0086\u0087\u0005\u0016\u0000\u0000\u0087"+
+		"\u0088\u0005\b\u0000\u0000\u0088\u0089\u0005\t\u0000\u0000\u0089\u008a"+
+		"\u0005\n\u0000\u0000\u008a\u008b\u0005\u001b\u0000\u0000\u008b\u008c\u0005"+
+		"T\u0000\u0000\u008c\u008e\u0005\\\u0000\u0000\u008d\u008f\u0003\u000e"+
+		"\u0007\u0000\u008e\u008d\u0001\u0000\u0000\u0000\u008e\u008f\u0001\u0000"+
+		"\u0000\u0000\u008f\r\u0001\u0000\u0000\u0000\u0090\u0091\u0005[\u0000"+
+		"\u0000\u0091\u0092\u0005R\u0000\u0000\u0092\u0093\u0005\u0015\u0000\u0000"+
+		"\u0093\u0094\u0005\u0016\u0000\u0000\u0094\u0095\u0005T\u0000\u0000\u0095"+
+		"\u0097\u0005\\\u0000\u0000\u0096\u0098\u0003F#\u0000\u0097\u0096\u0001"+
+		"\u0000\u0000\u0000\u0097\u0098\u0001\u0000\u0000\u0000\u0098\u000f\u0001"+
+		"\u0000\u0000\u0000\u0099\u009a\u0007\u0000\u0000\u0000\u009a\u009b\u0005"+
+		"\u001c\u0000\u0000\u009b\u009c\u0005N\u0000\u0000\u009c\u009d\u0005\u0011"+
+		"\u0000\u0000\u009d\u00a1\u0005\t\u0000\u0000\u009e\u009f\u0005*\u0000"+
+		"\u0000\u009f\u00a2\u0005+\u0000\u0000\u00a0\u00a2\u0005,\u0000\u0000\u00a1"+
+		"\u009e\u0001\u0000\u0000\u0000\u00a1\u00a0\u0001\u0000\u0000\u0000\u00a2"+
+		"\u00a3\u0001\u0000\u0000\u0000\u00a3\u00a4\u0005T\u0000\u0000\u00a4\u00a5"+
+		"\u0005\\\u0000\u0000\u00a5\u0011\u0001\u0000\u0000\u0000\u00a6\u00a7\u0007"+
+		"\u0000\u0000\u0000\u00a7\u00a8\u0005M\u0000\u0000\u00a8\u00a9\u0005\u0001"+
+		"\u0000\u0000\u00a9\u00ad\u0005\\\u0000\u0000\u00aa\u00ac\u0003\u0014\n"+
+		"\u0000\u00ab\u00aa\u0001\u0000\u0000\u0000\u00ac\u00af\u0001\u0000\u0000"+
+		"\u0000\u00ad\u00ab\u0001\u0000\u0000\u0000\u00ad\u00ae\u0001\u0000\u0000"+
+		"\u0000\u00ae\u0013\u0001\u0000\u0000\u0000\u00af\u00ad\u0001\u0000\u0000"+
+		"\u0000\u00b0\u00b1\u0003\u0018\f\u0000\u00b1\u00b2\u0007\u0002\u0000\u0000"+
+		"\u00b2\u00b7\u0005\\\u0000\u0000\u00b3\u00b6\u0003\u0016\u000b\u0000\u00b4"+
+		"\u00b6\u0003$\u0012\u0000\u00b5\u00b3\u0001\u0000\u0000\u0000\u00b5\u00b4"+
+		"\u0001\u0000\u0000\u0000\u00b6\u00b9\u0001\u0000\u0000\u0000\u00b7\u00b5"+
+		"\u0001\u0000\u0000\u0000\u00b7\u00b8\u0001\u0000\u0000\u0000\u00b8\u0015"+
+		"\u0001\u0000\u0000\u0000\u00b9\u00b7\u0001\u0000\u0000\u0000\u00ba\u00bb"+
+		"\u0005[\u0000\u0000\u00bb\u00bd\u0003\u0018\f\u0000\u00bc\u00be\u0005"+
+		"T\u0000\u0000\u00bd\u00bc\u0001\u0000\u0000\u0000\u00bd\u00be\u0001\u0000"+
+		"\u0000\u0000\u00be\u00bf\u0001\u0000\u0000\u0000\u00bf\u00c3\u0005\\\u0000"+
+		"\u0000\u00c0\u00c2\u0003F#\u0000\u00c1\u00c0\u0001\u0000\u0000\u0000\u00c2"+
+		"\u00c5\u0001\u0000\u0000\u0000\u00c3\u00c1\u0001\u0000\u0000\u0000\u00c3"+
+		"\u00c4\u0001\u0000\u0000\u0000\u00c4\u0017\u0001\u0000\u0000\u0000\u00c5"+
+		"\u00c3\u0001\u0000\u0000\u0000\u00c6\u00da\u0003\u001a\r\u0000\u00c7\u00da"+
+		"\u0003\u001c\u000e\u0000\u00c8\u00da\u0003\u001e\u000f\u0000\u00c9\u00da"+
+		"\u0003 \u0010\u0000\u00ca\u00da\u0003\"\u0011\u0000\u00cb\u00da\u0003"+
+		"(\u0014\u0000\u00cc\u00da\u0003*\u0015\u0000\u00cd\u00da\u00036\u001b"+
+		"\u0000\u00ce\u00da\u0003,\u0016\u0000\u00cf\u00da\u0003.\u0017\u0000\u00d0"+
+		"\u00da\u00030\u0018\u0000\u00d1\u00da\u00032\u0019\u0000\u00d2\u00da\u0003"+
+		"8\u001c\u0000\u00d3\u00da\u00034\u001a\u0000\u00d4\u00da\u0003:\u001d"+
+		"\u0000\u00d5\u00da\u0003<\u001e\u0000\u00d6\u00da\u0003>\u001f\u0000\u00d7"+
+		"\u00da\u0003@ \u0000\u00d8\u00da\u0003B!\u0000\u00d9\u00c6\u0001\u0000"+
+		"\u0000\u0000\u00d9\u00c7\u0001\u0000\u0000\u0000\u00d9\u00c8\u0001\u0000"+
+		"\u0000\u0000\u00d9\u00c9\u0001\u0000\u0000\u0000\u00d9\u00ca\u0001\u0000"+
+		"\u0000\u0000\u00d9\u00cb\u0001\u0000\u0000\u0000\u00d9\u00cc\u0001\u0000"+
+		"\u0000\u0000\u00d9\u00cd\u0001\u0000\u0000\u0000\u00d9\u00ce\u0001\u0000"+
+		"\u0000\u0000\u00d9\u00cf\u0001\u0000\u0000\u0000\u00d9\u00d0\u0001\u0000"+
+		"\u0000\u0000\u00d9\u00d1\u0001\u0000\u0000\u0000\u00d9\u00d2\u0001\u0000"+
+		"\u0000\u0000\u00d9\u00d3\u0001\u0000\u0000\u0000\u00d9\u00d4\u0001\u0000"+
+		"\u0000\u0000\u00d9\u00d5\u0001\u0000\u0000\u0000\u00d9\u00d6\u0001\u0000"+
+		"\u0000\u0000\u00d9\u00d7\u0001\u0000\u0000\u0000\u00d9\u00d8\u0001\u0000"+
+		"\u0000\u0000\u00da\u0019\u0001\u0000\u0000\u0000\u00db\u00dc\u0007\u0000"+
+		"\u0000\u0000\u00dc\u00dd\u0005\u0014\u0000\u0000\u00dd\u00f8\u0005\u0017"+
+		"\u0000\u0000\u00de\u00df\u0007\u0000\u0000\u0000\u00df\u00e0\u0005\u0014"+
+		"\u0000\u0000\u00e0\u00e1\u0005D\u0000\u0000\u00e1\u00f8\u0005\u0017\u0000"+
+		"\u0000\u00e2\u00e3\u0007\u0000\u0000\u0000\u00e3\u00e4\u0005\u0014\u0000"+
+		"\u0000\u00e4\u00f8\u0005N\u0000\u0000\u00e5\u00e6\u0007\u0000\u0000\u0000"+
+		"\u00e6\u00e7\u0005\u0014\u0000\u0000\u00e7\u00e8\u0005R\u0000\u0000\u00e8"+
+		"\u00f8\u0005N\u0000\u0000\u00e9\u00ea\u0007\u0000\u0000\u0000\u00ea\u00eb"+
+		"\u0005\u0014\u0000\u0000\u00eb\u00ec\u0005R\u0000\u0000\u00ec\u00f8\u0005"+
+		"\u0016\u0000\u0000\u00ed\u00ee\u0007\u0000\u0000\u0000\u00ee\u00ef\u0005"+
+		"\u0014\u0000\u0000\u00ef\u00f0\u0005R\u0000\u0000\u00f0\u00f1\u0005\u0016"+
+		"\u0000\u0000\u00f1\u00f2\u0005E\u0000\u0000\u00f2\u00f3\u0005\u001c\u0000"+
+		"\u0000\u00f3\u00f4\u0005F\u0000\u0000\u00f4\u00f5\u0005\u0011\u0000\u0000"+
+		"\u00f5\u00f6\u0005\t\u0000\u0000\u00f6\u00f8\u0005,\u0000\u0000\u00f7"+
+		"\u00db\u0001\u0000\u0000\u0000\u00f7\u00de\u0001\u0000\u0000\u0000\u00f7"+
+		"\u00e2\u0001\u0000\u0000\u0000\u00f7\u00e5\u0001\u0000\u0000\u0000\u00f7"+
+		"\u00e9\u0001\u0000\u0000\u0000\u00f7\u00ed\u0001\u0000\u0000\u0000\u00f8"+
+		"\u001b\u0001\u0000\u0000\u0000\u00f9\u00fa\u0007\u0000\u0000\u0000\u00fa"+
+		"\u00fb\u0005\u001c\u0000\u0000\u00fb\u0105\u0005N\u0000\u0000\u00fc\u00fd"+
+		"\u0005\u0011\u0000\u0000\u00fd\u0103\u0005\t\u0000\u0000\u00fe\u0104\u0005"+
+		",\u0000\u0000\u00ff\u0100\u0005*\u0000\u0000\u0100\u0104\u0005+\u0000"+
+		"\u0000\u0101\u0102\u0005-\u0000\u0000\u0102\u0104\u0005+\u0000\u0000\u0103"+
+		"\u00fe\u0001\u0000\u0000\u0000\u0103\u00ff\u0001\u0000\u0000\u0000\u0103"+
+		"\u0101\u0001\u0000\u0000\u0000\u0104\u0106\u0001\u0000\u0000\u0000\u0105"+
+		"\u00fc\u0001\u0000\u0000\u0000\u0105\u0106\u0001\u0000\u0000\u0000\u0106"+
+		"\u001d\u0001\u0000\u0000\u0000\u0107\u0108\u0007\u0000\u0000\u0000\u0108"+
+		"\u0109\u0005\u001d\u0000\u0000\u0109\u010a\u0005N\u0000\u0000\u010a\u010b"+
+		"\u0005\u0011\u0000\u0000\u010b\u0113\u0005N\u0000\u0000\u010c\u010d\u0005"+
+		" \u0000\u0000\u010d\u010e\u0005\t\u0000\u0000\u010e\u0114\u0005,\u0000"+
+		"\u0000\u010f\u0110\u0005!\u0000\u0000\u0110\u0111\u0005\t\u0000\u0000"+
+		"\u0111\u0112\u0005*\u0000\u0000\u0112\u0114\u0005+\u0000\u0000\u0113\u010c"+
+		"\u0001\u0000\u0000\u0000\u0113\u010f\u0001\u0000\u0000\u0000\u0114\u001f"+
+		"\u0001\u0000\u0000\u0000\u0115\u0116\u0007\u0000\u0000\u0000\u0116\u0117"+
+		"\u0005\u001e\u0000\u0000\u0117\u0118\u0005N\u0000\u0000\u0118\u0119\u0005"+
+		"\u0011\u0000\u0000\u0119\u0121\u0005N\u0000\u0000\u011a\u011b\u0005 \u0000"+
+		"\u0000\u011b\u011c\u0005\t\u0000\u0000\u011c\u0122\u0005,\u0000\u0000"+
+		"\u011d\u011e\u0005!\u0000\u0000\u011e\u011f\u0005\t\u0000\u0000\u011f"+
+		"\u0120\u0005*\u0000\u0000\u0120\u0122\u0005+\u0000\u0000\u0121\u011a\u0001"+
+		"\u0000\u0000\u0000\u0121\u011d\u0001\u0000\u0000\u0000\u0122!\u0001\u0000"+
+		"\u0000\u0000\u0123\u0124\u0007\u0000\u0000\u0000\u0124\u0125\u0005M\u0000"+
+		"\u0000\u0125\u0126\u0005N\u0000\u0000\u0126\u0127\u0005\u001f\u0000\u0000"+
+		"\u0127\u012f\u0005O\u0000\u0000\u0128\u0129\u0005 \u0000\u0000\u0129\u012a"+
+		"\u0007\u0000\u0000\u0000\u012a\u012b\u0005M\u0000\u0000\u012b\u012c\u0005"+
+		"N\u0000\u0000\u012c\u012d\u0005\b\u0000\u0000\u012d\u012e\u0005R\u0000"+
+		"\u0000\u012e\u0130\u0005.\u0000\u0000\u012f\u0128\u0001\u0000\u0000\u0000"+
+		"\u012f\u0130\u0001\u0000\u0000\u0000\u0130#\u0001\u0000\u0000\u0000\u0131"+
+		"\u0132\u0005[\u0000\u0000\u0132\u0133\u0005I\u0000\u0000\u0133\u0134\u0005"+
+		"V\u0000\u0000\u0134\u0135\u0005\\\u0000\u0000\u0135\u0151\u0005Z\u0000"+
+		"\u0000\u0136\u0137\u0005R\u0000\u0000\u0137\u0138\u0005\u001d\u0000\u0000"+
+		"\u0138\u0139\u0005G\u0000\u0000\u0139\u013a\u0005V\u0000\u0000\u013a\u013b"+
+		"\u0005R\u0000\u0000\u013b\u013c\u0005.\u0000\u0000\u013c\u0152\u0005\\"+
+		"\u0000\u0000\u013d\u013e\u0005R\u0000\u0000\u013e\u013f\u0005H\u0000\u0000"+
+		"\u013f\u0140\u0005G\u0000\u0000\u0140\u0141\u0005V\u0000\u0000\u0141\u0142"+
+		"\u0005R\u0000\u0000\u0142\u0143\u0005.\u0000\u0000\u0143\u0152\u0005\\"+
+		"\u0000\u0000\u0144\u0145\u0005J\u0000\u0000\u0145\u0146\u0005V\u0000\u0000"+
+		"\u0146\u0147\u0005R\u0000\u0000\u0147\u0148\u0005.\u0000\u0000\u0148\u0149"+
+		"\u0005\\\u0000\u0000\u0149\u014a\u0003&\u0013\u0000\u014a\u014b\u0005"+
+		"Z\u0000\u0000\u014b\u014c\u0005K\u0000\u0000\u014c\u014d\u0005V\u0000"+
+		"\u0000\u014d\u014e\u0005R\u0000\u0000\u014e\u014f\u0005.\u0000\u0000\u014f"+
+		"\u0150\u0005\\\u0000\u0000\u0150\u0152\u0001\u0000\u0000\u0000\u0151\u0136"+
+		"\u0001\u0000\u0000\u0000\u0151\u013d\u0001\u0000\u0000\u0000\u0151\u0144"+
+		"\u0001\u0000\u0000\u0000\u0152\u0154\u0001\u0000\u0000\u0000\u0153\u0155"+
+		"\u0005\\\u0000\u0000\u0154\u0153\u0001\u0000\u0000\u0000\u0154\u0155\u0001"+
+		"\u0000\u0000\u0000\u0155%\u0001\u0000\u0000\u0000\u0156\u0157\u0005Z\u0000"+
+		"\u0000\u0157\u0158\u0005X\u0000\u0000\u0158\u0159\u0005L\u0000\u0000\u0159"+
+		"\u015a\u0005Y\u0000\u0000\u015a\u015b\u0005N\u0000\u0000\u015b\u015c\u0005"+
+		"V\u0000\u0000\u015c\u015d\u0005R\u0000\u0000\u015d\u015e\u0005.\u0000"+
+		"\u0000\u015e\u0194\u0005\\\u0000\u0000\u015f\u0160\u0005Z\u0000\u0000"+
+		"\u0160\u0161\u0005R\u0000\u0000\u0161\u0162\u0007\u0003\u0000\u0000\u0162"+
+		"\u0163\u0005G\u0000\u0000\u0163\u0164\u0005V\u0000\u0000\u0164\u0165\u0005"+
+		"R\u0000\u0000\u0165\u0166\u0005.\u0000\u0000\u0166\u0194\u0005\\\u0000"+
+		"\u0000\u0167\u0168\u0005Z\u0000\u0000\u0168\u0169\u0005X\u0000\u0000\u0169"+
+		"\u016a\u0005\u0018\u0000\u0000\u016a\u016b\u0005Y\u0000\u0000\u016b\u016c"+
+		"\u0005P\u0000\u0000\u016c\u016e\u0005V\u0000\u0000\u016d\u016f\u0005["+
+		"\u0000\u0000\u016e\u016d\u0001\u0000\u0000\u0000\u016e\u016f\u0001\u0000"+
+		"\u0000\u0000\u016f\u0170\u0001\u0000\u0000\u0000\u0170\u0171\u0005R\u0000"+
+		"\u0000\u0171\u0172\u0005.\u0000\u0000\u0172\u0173\u0005\\\u0000\u0000"+
+		"\u0173\u0174\u0005Z\u0000\u0000\u0174\u0175\u0005R\u0000\u0000\u0175\u0176"+
+		"\u0005\u001d\u0000\u0000\u0176\u0177\u0005G\u0000\u0000\u0177\u0178\u0005"+
+		"V\u0000\u0000\u0178\u0179\u0005R\u0000\u0000\u0179\u017a\u0005.\u0000"+
+		"\u0000\u017a\u0194\u0005\\\u0000\u0000\u017b\u017c\u0005Z\u0000\u0000"+
+		"\u017c\u017d\u0005X\u0000\u0000\u017d\u017e\u0005\u001a\u0000\u0000\u017e"+
+		"\u017f\u0005Y\u0000\u0000\u017f\u0180\u0005N\u0000\u0000\u0180\u0182\u0005"+
+		"V\u0000\u0000\u0181\u0183\u0005[\u0000\u0000\u0182\u0181\u0001\u0000\u0000"+
+		"\u0000\u0182\u0183\u0001\u0000\u0000\u0000\u0183\u0184\u0001\u0000\u0000"+
+		"\u0000\u0184\u0185\u0005R\u0000\u0000\u0185\u0186\u0005.\u0000\u0000\u0186"+
+		"\u0187\u0005\\\u0000\u0000\u0187\u0188\u0005Z\u0000\u0000\u0188\u0189"+
+		"\u0005X\u0000\u0000\u0189\u018a\u0005\u0019\u0000\u0000\u018a\u018b\u0005"+
+		"Y\u0000\u0000\u018b\u018c\u0005O\u0000\u0000\u018c\u018e\u0005V\u0000"+
+		"\u0000\u018d\u018f\u0005[\u0000\u0000\u018e\u018d\u0001\u0000\u0000\u0000"+
+		"\u018e\u018f\u0001\u0000\u0000\u0000\u018f\u0190\u0001\u0000\u0000\u0000"+
+		"\u0190\u0191\u0005R\u0000\u0000\u0191\u0192\u0005.\u0000\u0000\u0192\u0194"+
+		"\u0005\\\u0000\u0000\u0193\u0156\u0001\u0000\u0000\u0000\u0193\u015f\u0001"+
+		"\u0000\u0000\u0000\u0193\u0167\u0001\u0000\u0000\u0000\u0193\u017b\u0001"+
+		"\u0000\u0000\u0000\u0194\'\u0001\u0000\u0000\u0000\u0195\u0196\u0007\u0000"+
+		"\u0000\u0000\u0196\u0197\u0005=\u0000\u0000\u0197\u0198\u0005N\u0000\u0000"+
+		"\u0198\u0199\u0005\u0011\u0000\u0000\u0199\u019a\u0005\t\u0000\u0000\u019a"+
+		"\u019b\u0005,\u0000\u0000\u019b)\u0001\u0000\u0000\u0000\u019c\u019d\u0007"+
+		"\u0000\u0000\u0000\u019d\u019e\u00051\u0000\u0000\u019e\u019f\u00054\u0000"+
+		"\u0000\u019f\u01ae\u00052\u0000\u0000\u01a0\u01a1\u0007\u0000\u0000\u0000"+
+		"\u01a1\u01a2\u00051\u0000\u0000\u01a2\u01a3\u0005R\u0000\u0000\u01a3\u01a4"+
+		"\u0005\u0016\u0000\u0000\u01a4\u01a5\u00053\u0000\u0000\u01a5\u01a6\u0005"+
+		"4\u0000\u0000\u01a6\u01ae\u00052\u0000\u0000\u01a7\u01a8\u0007\u0000\u0000"+
+		"\u0000\u01a8\u01a9\u00051\u0000\u0000\u01a9\u01aa\u0005N\u0000\u0000\u01aa"+
+		"\u01ab\u00053\u0000\u0000\u01ab\u01ac\u00054\u0000\u0000\u01ac\u01ae\u0005"+
+		"2\u0000\u0000\u01ad\u019c\u0001\u0000\u0000\u0000\u01ad\u01a0\u0001\u0000"+
+		"\u0000\u0000\u01ad\u01a7\u0001\u0000\u0000\u0000\u01ae+\u0001\u0000\u0000"+
+		"\u0000\u01af\u01b0\u0007\u0000\u0000\u0000\u01b0\u01b1\u0005/\u0000\u0000"+
+		"\u01b1\u01c6\u0005N\u0000\u0000\u01b2\u01b3\u0007\u0000\u0000\u0000\u01b3"+
+		"\u01b4\u0005/\u0000\u0000\u01b4\u01b5\u0005R\u0000\u0000\u01b5\u01c6\u0005"+
+		"\u0016\u0000\u0000\u01b6\u01b7\u0005R\u0000\u0000\u01b7\u01b8\u0005\u0016"+
+		"\u0000\u0000\u01b8\u01b9\u0005%\u0000\u0000\u01b9\u01ba\u0005/\u0000\u0000"+
+		"\u01ba\u01bb\u00055\u0000\u0000\u01bb\u01bc\u0007\u0000\u0000\u0000\u01bc"+
+		"\u01bd\u0005M\u0000\u0000\u01bd\u01c6\u0005N\u0000\u0000\u01be\u01bf\u0005"+
+		"N\u0000\u0000\u01bf\u01c0\u0005$\u0000\u0000\u01c0\u01c1\u0005/\u0000"+
+		"\u0000\u01c1\u01c2\u00055\u0000\u0000\u01c2\u01c3\u0007\u0000\u0000\u0000"+
+		"\u01c3\u01c4\u0005M\u0000\u0000\u01c4\u01c6\u0005N\u0000\u0000\u01c5\u01af"+
+		"\u0001\u0000\u0000\u0000\u01c5\u01b2\u0001\u0000\u0000\u0000\u01c5\u01b6"+
+		"\u0001\u0000\u0000\u0000\u01c5\u01be\u0001\u0000\u0000\u0000\u01c6-\u0001"+
+		"\u0000\u0000\u0000\u01c7\u01c8\u0007\u0000\u0000\u0000\u01c8\u01ca\u0005"+
+		"7\u0000\u0000\u01c9\u01cb\u0005D\u0000\u0000\u01ca\u01c9\u0001\u0000\u0000"+
+		"\u0000\u01ca\u01cb\u0001\u0000\u0000\u0000\u01cb\u01cc\u0001\u0000\u0000"+
+		"\u0000\u01cc\u01cd\u00058\u0000\u0000\u01cd\u01d3\u0005\u0017\u0000\u0000"+
+		"\u01ce\u01cf\u0007\u0000\u0000\u0000\u01cf\u01d0\u00057\u0000\u0000\u01d0"+
+		"\u01d1\u0005R\u0000\u0000\u01d1\u01d3\u00059\u0000\u0000\u01d2\u01c7\u0001"+
+		"\u0000\u0000\u0000\u01d2\u01ce\u0001\u0000\u0000\u0000\u01d3/\u0001\u0000"+
+		"\u0000\u0000\u01d4\u01d5\u0007\u0000\u0000\u0000\u01d5\u01d6\u00056\u0000"+
+		"\u0000\u01d6\u01d7\u0007\u0000\u0000\u0000\u01d7\u01d8\u0005M\u0000\u0000"+
+		"\u01d8\u01d9\u0005N\u0000\u0000\u01d9\u01da\u0005\u0011\u0000\u0000\u01da"+
+		"\u01db\u00054\u0000\u0000\u01db\u01dc\u0005\u001b\u0000\u0000\u01dc1\u0001"+
+		"\u0000\u0000\u0000\u01dd\u01de\u0007\u0000\u0000\u0000\u01de\u01df\u0005"+
+		"M\u0000\u0000\u01df\u01e0\u0005N\u0000\u0000\u01e0\u01e1\u0005&\u0000"+
+		"\u0000\u01e1\u01e2\u0005\'\u0000\u0000\u01e2\u01e3\u0005!\u0000\u0000"+
+		"\u01e3\u01e4\u0005\t\u0000\u0000\u01e4\u01e5\u0005*\u0000\u0000\u01e5"+
+		"\u01e6\u0005+\u0000\u0000\u01e63\u0001\u0000\u0000\u0000\u01e7\u01e8\u0007"+
+		"\u0000\u0000\u0000\u01e8\u01e9\u0005M\u0000\u0000\u01e9\u01ea\u0005N\u0000"+
+		"\u0000\u01ea\u01eb\u0005$\u0000\u0000\u01eb\u01ec\u0005:\u0000\u0000\u01ec"+
+		"\u01ed\u0005;\u0000\u0000\u01ed5\u0001\u0000\u0000\u0000\u01ee\u01ef\u0005"+
+		"D\u0000\u0000\u01ef\u01f0\u0005\u0017\u0000\u0000\u01f0\u01f1\u0005$\u0000"+
+		"\u0000\u01f1\u01f2\u0005\u0003\u0000\u0000\u01f2\u01f3\u0005\u0011\u0000"+
+		"\u0000\u01f3\u01f4\u0007\u0000\u0000\u0000\u01f4\u01f5\u0005M\u0000\u0000"+
+		"\u01f5\u01fe\u0005\u001b\u0000\u0000\u01f6\u01f7\u0005N\u0000\u0000\u01f7"+
+		"\u01f8\u0005$\u0000\u0000\u01f8\u01f9\u0005\u0003\u0000\u0000\u01f9\u01fa"+
+		"\u0005\u0011\u0000\u0000\u01fa\u01fb\u0007\u0000\u0000\u0000\u01fb\u01fc"+
+		"\u0005M\u0000\u0000\u01fc\u01fe\u0005\u001b\u0000\u0000\u01fd\u01ee\u0001"+
+		"\u0000\u0000\u0000\u01fd\u01f6\u0001\u0000\u0000\u0000\u01fe7\u0001\u0000"+
+		"\u0000\u0000\u01ff\u0200\u0007\u0000\u0000\u0000\u0200\u0201\u0005M\u0000"+
+		"\u0000\u0201\u0202\u0005N\u0000\u0000\u0202\u0203\u0005$\u0000\u0000\u0203"+
+		"\u0204\u0005<\u0000\u0000\u0204\u0205\u0005#\u0000\u0000\u0205\u0206\u0007"+
+		"\u0000\u0000\u0000\u0206\u0207\u0005M\u0000\u0000\u0207\u0208\u0005N\u0000"+
+		"\u0000\u0208\u0209\u0005\u0011\u0000\u0000\u0209\u020a\u0005(\u0000\u0000"+
+		"\u020a\u020b\u0005\t\u0000\u0000\u020b\u020c\u0005*\u0000\u0000\u020c"+
+		"\u020d\u0005\u0002\u0000\u0000\u020d9\u0001\u0000\u0000\u0000\u020e\u020f"+
+		"\u0007\u0000\u0000\u0000\u020f\u0210\u0005M\u0000\u0000\u0210\u0211\u0005"+
+		"N\u0000\u0000\u0211\u0212\u00057\u0000\u0000\u0212\u0213\u0005R\u0000"+
+		"\u0000\u0213\u0214\u0005.\u0000\u0000\u0214;\u0001\u0000\u0000\u0000\u0215"+
+		"\u0216\u0007\u0000\u0000\u0000\u0216\u0217\u0005\r\u0000\u0000\u0217\u0218"+
+		"\u0005D\u0000\u0000\u0218\u0219\u0005\u000b\u0000\u0000\u0219\u021a\u0005"+
+		"E\u0000\u0000\u021a\u021b\u0005\"\u0000\u0000\u021b\u021c\u0005)\u0000"+
+		"\u0000\u021c\u021d\u0005 \u0000\u0000\u021d\u021e\u0007\u0001\u0000\u0000"+
+		"\u021e=\u0001\u0000\u0000\u0000\u021f\u0220\u0007\u0000\u0000\u0000\u0220"+
+		"\u0221\u0005\u0005\u0000\u0000\u0221\u0222\u0005O\u0000\u0000\u0222?\u0001"+
+		"\u0000\u0000\u0000\u0223\u0224\u0007\u0000\u0000\u0000\u0224\u0225\u0005"+
+		"M\u0000\u0000\u0225\u0226\u0005N\u0000\u0000\u0226\u0227\u0005&\u0000"+
+		"\u0000\u0227\u0228\u0005\'\u0000\u0000\u0228\u0229\u0005Q\u0000\u0000"+
+		"\u0229A\u0001\u0000\u0000\u0000\u022a\u022b\u0007\u0000\u0000\u0000\u022b"+
+		"\u022c\u0005>\u0000\u0000\u022c\u022d\u00054\u0000\u0000\u022d\u022e\u0005"+
+		"\u0001\u0000\u0000\u022eC\u0001\u0000\u0000\u0000\u022f\u0230\u0005B\u0000"+
+		"\u0000\u0230\u0231\u00059\u0000\u0000\u0231\u0232\u0005C\u0000\u0000\u0232"+
+		"\u0233\u0005T\u0000\u0000\u0233\u0234\u0007\u0000\u0000\u0000\u0234\u0235"+
+		"\u0005A\u0000\u0000\u0235\u023d\u0005T\u0000\u0000\u0236\u0237\u0005?"+
+		"\u0000\u0000\u0237\u0238\u0005@\u0000\u0000\u0238\u0239\u0005T\u0000\u0000"+
+		"\u0239\u023a\u0007\u0000\u0000\u0000\u023a\u023b\u0005A\u0000\u0000\u023b"+
+		"\u023d\u0005T\u0000\u0000\u023c\u022f\u0001\u0000\u0000\u0000\u023c\u0236"+
+		"\u0001\u0000\u0000\u0000\u023dE\u0001\u0000\u0000\u0000\u023e\u023f\u0005"+
+		"Z\u0000\u0000\u023f\u0244\u0005N\u0000\u0000\u0240\u0241\u0005U\u0000"+
+		"\u0000\u0241\u0243\u0005N\u0000\u0000\u0242\u0240\u0001\u0000\u0000\u0000"+
+		"\u0243\u0246\u0001\u0000\u0000\u0000\u0244\u0242\u0001\u0000\u0000\u0000"+
+		"\u0244\u0245\u0001\u0000\u0000\u0000\u0245\u0247\u0001\u0000\u0000\u0000"+
+		"\u0246\u0244\u0001\u0000\u0000\u0000\u0247\u0248\u0005\\\u0000\u0000\u0248"+
+		"G\u0001\u0000\u0000\u0000 MT^f\u008e\u0097\u00a1\u00ad\u00b5\u00b7\u00bd"+
+		"\u00c3\u00d9\u00f7\u0103\u0105\u0113\u0121\u012f\u0151\u0154\u016e\u0182"+
+		"\u018e\u0193\u01ad\u01c5\u01ca\u01d2\u01fd\u023c\u0244";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
