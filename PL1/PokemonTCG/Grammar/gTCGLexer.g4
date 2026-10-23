@@ -1,8 +1,14 @@
 lexer grammar gTCGLexer;
 
+MULLIGAN: 'Mulligan' | 'Mulligans' | 'mulligan' | 'mulligans';
 TURN    : 'Turn' | 'turn' ;
 POKEMON : 'Pokémon' ;
 ADDED   : 'added' ;
+REVEALED : 'revealed';
+AT : 'at';
+LEAST : 'least';
+PUT : 'put';
+COUNTERS : 'counters';
 
 // ============================================================
 // gTCG - POKÉMON TCG LIVE LOG LEXER
@@ -86,7 +92,7 @@ DRAWN
     ;
 
 CARDS
-    : 'cards'
+    : 'cards' | 'Cards'
     ;
 
 CARD_WORD
@@ -95,6 +101,9 @@ CARD_WORD
 
 ABILITY_WORD
     : 'Ability'
+    ;
+SUPPORTER_WORD
+    : 'Supporter'
     ;
 
 ATTACK_WORD
@@ -123,6 +132,10 @@ EVOLVED
 
 USED
     : 'used'
+    ;
+
+OF
+    : 'of'
     ;
 
 ON
@@ -167,6 +180,9 @@ LANDED
 
 ACTIVE
     : 'Active'
+    ;
+ACTIVATED
+    : 'activated'
     ;
 
 SPOT
@@ -262,7 +278,7 @@ WINS
     ;
 
 ALL
-    : 'All'
+    : 'all' | 'All'
     ;
 
 TAKEN
@@ -287,6 +303,22 @@ ENERGY
 
 SELECTED
     : 'selected'
+    ;
+
+YOU
+    : 'You' | 'you'
+    ;
+
+MORE_WORD
+    : 'more'
+    ;
+
+BECAUSE
+    : 'because'
+    ;
+
+WEAKNESS
+    : 'Weakness'
     ;
 
 // ============================================================
@@ -528,6 +560,50 @@ CARD
     | 'Braixen'
     | 'Jumbo Ice Cream'
     | 'Core Memory'
+    | 'Ciphermaniac\'s Codebreaking'
+    | 'Yveltal'
+    | 'Mega Darkrai ex'
+    | 'Gastly'
+    | 'Dark Bell'
+    | 'Hop\'s Corviknight'
+    | 'Hop\'s Rookidee'
+    | 'Nemona'
+    | 'Drayton'
+    | 'Reshiram ex'
+    | 'Noibat'
+    | 'Technical Machine: Evolution'
+    | 'Hop\'s Cramorant'
+    | 'Boomerang Energy'
+    | 'Levincia'
+    | 'Surfer'
+    | 'Hop\'s Corvisquire'
+    | 'Noivern'
+    | 'Hop\'s Snorlax'
+    | 'Jet Energy'
+    | 'Iono\'s Kilowattrel'
+    | 'Cramorant'
+    | 'Iono\'s Wattrel'
+    | 'Weedle'
+    | 'Growing Grass Energy'
+    | 'Axew'
+    | 'Haxorus'
+    | 'Lilligant'
+    | 'Kakuna'
+    | 'Thick Scale'
+    | 'Nighttime Mine'
+    | 'Sacred Ash'
+    | 'Fraxure'
+    | 'Mist Energy'
+    | 'Patrat'
+    | 'Amaura'
+    | 'Budew'
+    | 'Shadowy Darkness Energy'
+    | 'Tauros'
+    | 'Risky Ruins'
+    | 'Paldean Tauros'
+    | 'Crushing Hammer'
+    | 'Brave Bangle'
+    | 'Team Rocket\'s Transceiver'
     ;
 
 
@@ -556,6 +632,29 @@ ATTACK
     | 'Turbo Flare'
     | 'Gaia Wave'
     | 'Nullifying Zero'
+    | 'Night Joker'
+    | 'Subjugating Chains'
+    | 'Dusk Raid'
+    | 'Shred'
+    | 'Intimidating Stare'
+    | 'Speed Dive'
+    | 'Scorching Fire'
+    | 'Fickle Spitting'
+    | 'Evolution'
+    | 'Shoot Through'
+    | 'Flashing Draw'
+    | 'Frightening Howl'
+    | 'Flamebody Cannon'
+    | 'Itchy Pollen'
+    | 'Trade'
+    | 'Rampaging Thunder'
+    | 'Virtuous Flame'
+    | 'Raging Charge'
+    | 'Cosmic Beam'
+    | 'Light Punch'
+    | 'Cruel Arrow'
+    | 'Flash Ray'
+    | 'Riotous Blasting'
     ;
 
 // ============================================================
@@ -564,6 +663,36 @@ ATTACK
 
 ABILITY
     : 'Diamond Coat'
+    | 'Extra Helpings'
+    ;
+
+// ============================================================
+// CONDICIONES ESPECIALES
+// ============================================================
+
+SPECIAL_CONDITION
+    : 'Asleep'
+    | 'Burned'
+    | 'Confused'
+    | 'Paralyzed'
+    | 'Poisoned'
+    ;
+
+// ============================================================
+// TIPO DE POKEMON
+// ============================================================
+
+POKEMON_TYPE
+    : 'Grass'
+    | 'Fire'
+    | 'Water'
+    | 'Lighting'
+    | 'Fighting'
+    | 'Psychic'
+    | 'Colorless'
+    | 'Darkness'
+    | 'Metal'
+    | 'Dragon'
     ;
 
 // ============================================================
@@ -591,6 +720,7 @@ NUMBER
 
 PLAYER
     : [a-zA-Z0-9_]+
+     
     
     ;
 

@@ -1,0 +1,200 @@
+Setup
+14clau chose tails for the opening coin flip.
+14clau won the coin toss.
+14clau decided to go first.
+14clau drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • Basic Fighting Energy, Basic Fighting Energy, Hariyama, Basic Fighting Energy, Basic Fighting Energy, Premium Power Pro, Fighting Gong
+Mr_Bubblez drew 7 cards for the opening hand.
+- 7 drawn cards.
+14clau took a mulligan.
+- Cards revealed from Mulligan 1
+   • Basic Fighting Energy, Basic Fighting Energy, Hariyama, Basic Fighting Energy, Basic Fighting Energy, Premium Power Pro, Fighting Gong
+14clau took 2 mulligans.
+- Cards revealed from Mulligan 2
+   • Basic Fighting Energy, Mega Lucario ex, Judge, Hariyama, Ultra Ball, Premium Power Pro, Basic Fighting Energy
+Mr_Bubblez drew 2 more cards because 14clau took at least 1 mulligan.
+- Mr_Bubblez drew 2 cards.
+14clau played Solrock to the Active Spot.
+Mr_Bubblez played Tauros to the Active Spot.
+
+14clau's Turn
+14clau drew Air Balloon.
+14clau played Solrock to the Bench.
+14clau attached Air Balloon to Solrock on the Bench.
+14clau played Switch.
+- 14clau's Solrock was switched with 14clau's Solrock to become the Active Pokémon.
+14clau's Solrock is now in the Active Spot.
+14clau retreated Solrock to the Bench.
+14clau's Solrock is now in the Active Spot.
+14clau ended their turn.
+
+Mr_Bubblez's Turn
+Mr_Bubblez drew a card.
+Mr_Bubblez played Team Rocket's Transceiver.
+- Mr_Bubblez drew Team Rocket's Petrel.
+- Mr_Bubblez shuffled their deck.
+Mr_Bubblez played Team Rocket's Petrel.
+- Mr_Bubblez drew Risky Ruins.
+- Mr_Bubblez shuffled their deck.
+Mr_Bubblez played Risky Ruins to the Stadium spot.
+Mr_Bubblez attached Air Balloon to Tauros in the Active Spot.
+Mr_Bubblez played Precious Trolley.
+- Mr_Bubblez drew 5 cards and played them to the Bench.
+   • Paldean Tauros, Paldean Tauros, Paldean Tauros, Paldean Tauros, Tauros
+- Mr_Bubblez shuffled their deck.
+Risky Ruins was activated.
+- Mr_Bubblez put 2 damage counters on Mr_Bubblez's Paldean Tauros.
+- Mr_Bubblez put 2 damage counters on Mr_Bubblez's Paldean Tauros.
+- Mr_Bubblez put 2 damage counters on Mr_Bubblez's Paldean Tauros.
+- Mr_Bubblez put 2 damage counters on Mr_Bubblez's Paldean Tauros.
+- Mr_Bubblez put 2 damage counters on Mr_Bubblez's Tauros.
+Mr_Bubblez retreated Tauros to the Bench.
+Mr_Bubblez's Paldean Tauros is now in the Active Spot.
+Mr_Bubblez played Fighting Gong.
+- Mr_Bubblez drew Basic Fighting Energy.
+- Mr_Bubblez shuffled their deck.
+Mr_Bubblez attached Basic Fighting Energy to Paldean Tauros in the Active Spot.
+Mr_Bubblez's Paldean Tauros used Raging Charge on 14clau’s Solrock for 200 damage.
+- Damage breakdown:
+   • 5 Pokémon: 200 damage
+
+14clau's Solrock was Knocked Out!
+Mr_Bubblez took a Prize card.
+A card was added to Mr_Bubblez's hand.
+14clau's Solrock is now in the Active Spot.
+
+14clau's Turn
+14clau drew Fighting Gong.
+14clau played Lillie's Determination.
+- 14clau shuffled 4 cards into their deck.
+   • Mega Lucario ex, Team Rocket's Petrel, Mega Lucario ex, Fighting Gong
+- 14clau drew 8 cards.
+   • Fighting Gong, Premium Power Pro, Lillie's Determination, Air Balloon, Riolu, Basic Fighting Energy, Tarragon, Salvatore
+14clau attached Basic Fighting Energy to Solrock in the Active Spot.
+14clau played Riolu to the Bench.
+Risky Ruins was activated.
+- 14clau put 2 damage counters on Mr_Bubblez's Riolu.
+
+Mr_Bubblez's Turn
+Mr_Bubblez drew a card.
+Mr_Bubblez played Crushing Hammer.
+- Mr_Bubblez flipped a coin and it landed on tails.
+Mr_Bubblez's Paldean Tauros used Raging Charge on 14clau’s Solrock for 200 damage.
+- Damage breakdown:
+   • 5 Pokémon: 200 damage
+
+14clau's Solrock was Knocked Out!
+- 2 cards were discarded from 14clau's Solrock.
+   • Basic Fighting Energy, Air Balloon
+Mr_Bubblez took a Prize card.
+A card was added to Mr_Bubblez's hand.
+14clau's Riolu is now in the Active Spot.
+
+14clau's Turn
+14clau drew Fezandipiti ex.
+14clau played Fezandipiti ex to the Bench.
+14clau played Fighting Gong.
+- 14clau drew Okidogi.
+- 14clau shuffled their deck.
+14clau played Okidogi to the Bench.
+Risky Ruins was activated.
+- 14clau put 2 damage counters on Mr_Bubblez's Okidogi.
+14clau played Tarragon.
+- 14clau moved 14clau's 3 cards to their hand.
+   • Solrock, Basic Fighting Energy, Solrock
+14clau played Solrock to the Bench.
+Risky Ruins was activated.
+- 14clau put 2 damage counters on Mr_Bubblez's Solrock.
+14clau attached Basic Fighting Energy to Solrock on the Bench.
+14clau played Solrock to the Bench.
+Risky Ruins was activated.
+- 14clau put 2 damage counters on Mr_Bubblez's Solrock.
+14clau attached Air Balloon to Okidogi on the Bench.
+14clau played Premium Power Pro.
+14clau ended their turn.
+
+Mr_Bubblez's Turn
+Mr_Bubblez drew a card.
+Mr_Bubblez attached Brave Bangle to Paldean Tauros in the Active Spot.
+Mr_Bubblez played Boss's Orders.
+- 14clau's Fezandipiti ex was switched with 14clau's Riolu to become the Active Pokémon.
+14clau's Fezandipiti ex is now in the Active Spot.
+Mr_Bubblez's Paldean Tauros used Raging Charge on 14clau’s Fezandipiti ex for 460 damage. 14clau's Fezandipiti ex took 230 more damage because of Fighting Weakness.
+- Damage breakdown:
+   • (Pokémon Tool) Brave Bangle: 30 damage
+   • 5 Pokémon: 200 damage
+   • Weakness to Fighting: 230 damage
+
+14clau's Fezandipiti ex was Knocked Out!
+Mr_Bubblez took 2 Prize cards.
+A card was added to Mr_Bubblez's hand.
+A card was added to Mr_Bubblez's hand.
+14clau's Solrock is now in the Active Spot.
+
+14clau's Turn
+14clau drew Ultra Ball.
+14clau played Lillie's Determination.
+- 14clau shuffled 2 cards into their deck.
+   • Salvatore, Ultra Ball
+- 14clau drew 8 cards.
+   • Fighting Gong, Lillie's Determination, Fighting Gong, Team Rocket's Petrel, Premium Power Pro, Hilda, Premium Power Pro, Basic Fighting Energy
+14clau attached Basic Fighting Energy to Okidogi on the Bench.
+14clau played Fighting Gong.
+- 14clau drew Lunatone.
+- 14clau shuffled their deck.
+14clau played Lunatone to the Bench.
+Risky Ruins was activated.
+- 14clau put 2 damage counters on Mr_Bubblez's Lunatone.
+14clau played Premium Power Pro.
+14clau played Premium Power Pro.
+14clau played Fighting Gong.
+- 14clau drew Basic Fighting Energy.
+- 14clau shuffled their deck.
+14clau's Lunatone used Lunar Cycle.
+- 14clau discarded Basic Fighting Energy.
+- 14clau drew 3 cards.
+   • Basic Fighting Energy, Judge, Makuhita
+14clau played Makuhita to the Bench.
+Risky Ruins was activated.
+- 14clau put 2 damage counters on Mr_Bubblez's Makuhita.
+14clau ended their turn.
+
+Mr_Bubblez's Turn
+Mr_Bubblez drew a card.
+Mr_Bubblez played Boss's Orders.
+- 14clau's Okidogi was switched with 14clau's Solrock to become the Active Pokémon.
+14clau's Okidogi is now in the Active Spot.
+Mr_Bubblez's Paldean Tauros used Raging Charge on 14clau’s Okidogi for 200 damage.
+- Damage breakdown:
+   • 5 Pokémon: 200 damage
+
+14clau's Okidogi was Knocked Out!
+- 2 cards were discarded from 14clau's Okidogi.
+   • Basic Fighting Energy, Air Balloon
+Mr_Bubblez took a Prize card.
+A card was added to Mr_Bubblez's hand.
+14clau's Solrock is now in the Active Spot.
+
+14clau's Turn
+14clau drew Basic Fighting Energy.
+14clau attached Basic Fighting Energy to Lunatone on the Bench.
+14clau played Lillie's Determination.
+- 14clau shuffled 4 cards into their deck.
+   • Team Rocket's Petrel, Hilda, Basic Fighting Energy, Judge
+- 14clau drew 8 cards.
+   • Poké Pad, Switch, Basic Fighting Energy, Gravity Mountain, Premium Power Pro, Lunatone, Mega Lucario ex, Basic Fighting Energy
+14clau's Solrock used Cosmic Beam on Mr_Bubblez’s Paldean Tauros for 70 damage.
+
+Mr_Bubblez's Turn
+Mr_Bubblez drew a card.
+Mr_Bubblez's Paldean Tauros used Raging Charge on 14clau’s Solrock for 200 damage.
+- Damage breakdown:
+   • 5 Pokémon: 200 damage
+
+14clau's Solrock was Knocked Out!
+Basic Fighting Energy was discarded from 14clau's Solrock.
+Mr_Bubblez took a Prize card.
+A card was added to Mr_Bubblez's hand.
+Opponent took all of their Prize cards. Mr_Bubblez wins.
+

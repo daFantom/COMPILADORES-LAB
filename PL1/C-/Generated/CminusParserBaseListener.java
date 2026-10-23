@@ -268,13 +268,37 @@ public class CminusParserBaseListener implements CminusParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLogical_expression(CminusParserParser.Logical_expressionContext ctx) { }
+	@Override public void enterLogical_or_expression(CminusParserParser.Logical_or_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLogical_expression(CminusParserParser.Logical_expressionContext ctx) { }
+	@Override public void exitLogical_or_expression(CminusParserParser.Logical_or_expressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLogical_and_expression(CminusParserParser.Logical_and_expressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLogical_and_expression(CminusParserParser.Logical_and_expressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRelational_expression(CminusParserParser.Relational_expressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRelational_expression(CminusParserParser.Relational_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

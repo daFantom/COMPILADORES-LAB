@@ -217,15 +217,35 @@ public interface CminusParserListener extends ParseTreeListener {
 	 */
 	void exitSimple_expression(CminusParserParser.Simple_expressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#logical_expression}.
+	 * Enter a parse tree produced by {@link CminusParserParser#logical_or_expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterLogical_expression(CminusParserParser.Logical_expressionContext ctx);
+	void enterLogical_or_expression(CminusParserParser.Logical_or_expressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#logical_expression}.
+	 * Exit a parse tree produced by {@link CminusParserParser#logical_or_expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitLogical_expression(CminusParserParser.Logical_expressionContext ctx);
+	void exitLogical_or_expression(CminusParserParser.Logical_or_expressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CminusParserParser#logical_and_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogical_and_expression(CminusParserParser.Logical_and_expressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CminusParserParser#logical_and_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogical_and_expression(CminusParserParser.Logical_and_expressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CminusParserParser#relational_expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRelational_expression(CminusParserParser.Relational_expressionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CminusParserParser#relational_expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRelational_expression(CminusParserParser.Relational_expressionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CminusParserParser#additive_expression}.
 	 * @param ctx the parse tree
