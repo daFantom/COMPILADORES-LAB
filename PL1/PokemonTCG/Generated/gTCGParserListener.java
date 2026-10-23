@@ -1,4 +1,4 @@
-// Generated from ./gTCGParser.g4 by ANTLR 4.13.2
+// Generated from gTCGParser.g4 by ANTLR 4.13.2
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -66,6 +66,26 @@ public interface gTCGParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFirstPlayer(gTCGParser.FirstPlayerContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link gTCGParser#mulligan}.
+	 * @param ctx the parse tree
+	 */
+	void enterMulligan(gTCGParser.MulliganContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gTCGParser#mulligan}.
+	 * @param ctx the parse tree
+	 */
+	void exitMulligan(gTCGParser.MulliganContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link gTCGParser#mulliganCards}.
+	 * @param ctx the parse tree
+	 */
+	void enterMulliganCards(gTCGParser.MulliganCardsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gTCGParser#mulliganCards}.
+	 * @param ctx the parse tree
+	 */
+	void exitMulliganCards(gTCGParser.MulliganCardsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link gTCGParser#openingHand}.
 	 * @param ctx the parse tree
@@ -197,15 +217,15 @@ public interface gTCGParserListener extends ParseTreeListener {
 	 */
 	void exitDamageBreakdown(gTCGParser.DamageBreakdownContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link gTCGParser#damageBonusLine}.
+	 * Enter a parse tree produced by {@link gTCGParser#damageBreakdownLine}.
 	 * @param ctx the parse tree
 	 */
-	void enterDamageBonusLine(gTCGParser.DamageBonusLineContext ctx);
+	void enterDamageBreakdownLine(gTCGParser.DamageBreakdownLineContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link gTCGParser#damageBonusLine}.
+	 * Exit a parse tree produced by {@link gTCGParser#damageBreakdownLine}.
 	 * @param ctx the parse tree
 	 */
-	void exitDamageBonusLine(gTCGParser.DamageBonusLineContext ctx);
+	void exitDamageBreakdownLine(gTCGParser.DamageBreakdownLineContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link gTCGParser#retreatAction}.
 	 * @param ctx the parse tree
@@ -316,6 +336,46 @@ public interface gTCGParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFlippedAction(gTCGParser.FlippedActionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link gTCGParser#choiceAction}.
+	 * @param ctx the parse tree
+	 */
+	void enterChoiceAction(gTCGParser.ChoiceActionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gTCGParser#choiceAction}.
+	 * @param ctx the parse tree
+	 */
+	void exitChoiceAction(gTCGParser.ChoiceActionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link gTCGParser#specialConditionAction}.
+	 * @param ctx the parse tree
+	 */
+	void enterSpecialConditionAction(gTCGParser.SpecialConditionActionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gTCGParser#specialConditionAction}.
+	 * @param ctx the parse tree
+	 */
+	void exitSpecialConditionAction(gTCGParser.SpecialConditionActionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link gTCGParser#activateAction}.
+	 * @param ctx the parse tree
+	 */
+	void enterActivateAction(gTCGParser.ActivateActionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gTCGParser#activateAction}.
+	 * @param ctx the parse tree
+	 */
+	void exitActivateAction(gTCGParser.ActivateActionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link gTCGParser#putAction}.
+	 * @param ctx the parse tree
+	 */
+	void enterPutAction(gTCGParser.PutActionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gTCGParser#putAction}.
+	 * @param ctx the parse tree
+	 */
+	void exitPutAction(gTCGParser.PutActionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link gTCGParser#endTurn}.
 	 * @param ctx the parse tree

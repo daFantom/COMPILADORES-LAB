@@ -1,4 +1,4 @@
-// Generated from ./gTCGParser.g4 by ANTLR 4.13.2
+// Generated from gTCGParser.g4 by ANTLR 4.13.2
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -83,6 +83,30 @@ public class gTCGParserBaseListener implements gTCGParserListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitFirstPlayer(gTCGParser.FirstPlayerContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMulligan(gTCGParser.MulliganContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMulligan(gTCGParser.MulliganContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMulliganCards(gTCGParser.MulliganCardsContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMulliganCards(gTCGParser.MulliganCardsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -244,13 +268,13 @@ public class gTCGParserBaseListener implements gTCGParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDamageBonusLine(gTCGParser.DamageBonusLineContext ctx) { }
+	@Override public void enterDamageBreakdownLine(gTCGParser.DamageBreakdownLineContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDamageBonusLine(gTCGParser.DamageBonusLineContext ctx) { }
+	@Override public void exitDamageBreakdownLine(gTCGParser.DamageBreakdownLineContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -383,6 +407,54 @@ public class gTCGParserBaseListener implements gTCGParserListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitFlippedAction(gTCGParser.FlippedActionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterChoiceAction(gTCGParser.ChoiceActionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitChoiceAction(gTCGParser.ChoiceActionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSpecialConditionAction(gTCGParser.SpecialConditionActionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSpecialConditionAction(gTCGParser.SpecialConditionActionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterActivateAction(gTCGParser.ActivateActionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitActivateAction(gTCGParser.ActivateActionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPutAction(gTCGParser.PutActionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPutAction(gTCGParser.PutActionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

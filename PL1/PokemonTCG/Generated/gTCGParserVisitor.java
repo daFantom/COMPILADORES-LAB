@@ -1,4 +1,4 @@
-// Generated from ./gTCGParser.g4 by ANTLR 4.13.2
+// Generated from gTCGParser.g4 by ANTLR 4.13.2
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -45,6 +45,18 @@ public interface gTCGParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitFirstPlayer(gTCGParser.FirstPlayerContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link gTCGParser#mulligan}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMulligan(gTCGParser.MulliganContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link gTCGParser#mulliganCards}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMulliganCards(gTCGParser.MulliganCardsContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link gTCGParser#openingHand}.
 	 * @param ctx the parse tree
@@ -124,11 +136,11 @@ public interface gTCGParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitDamageBreakdown(gTCGParser.DamageBreakdownContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link gTCGParser#damageBonusLine}.
+	 * Visit a parse tree produced by {@link gTCGParser#damageBreakdownLine}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitDamageBonusLine(gTCGParser.DamageBonusLineContext ctx);
+	T visitDamageBreakdownLine(gTCGParser.DamageBreakdownLineContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link gTCGParser#retreatAction}.
 	 * @param ctx the parse tree
@@ -195,6 +207,30 @@ public interface gTCGParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitFlippedAction(gTCGParser.FlippedActionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link gTCGParser#choiceAction}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitChoiceAction(gTCGParser.ChoiceActionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link gTCGParser#specialConditionAction}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSpecialConditionAction(gTCGParser.SpecialConditionActionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link gTCGParser#activateAction}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitActivateAction(gTCGParser.ActivateActionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link gTCGParser#putAction}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPutAction(gTCGParser.PutActionContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link gTCGParser#endTurn}.
 	 * @param ctx the parse tree
