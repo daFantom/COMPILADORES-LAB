@@ -9,16 +9,15 @@ public class AnalizadorListener extends gTCGParserBaseListener{
         //System.out.print(node);
     }
     
-    // Métodos para llamar cuando se visite  un nodo intermedio, elementos que NO son elementos terminales.
-    @Override
-    public void enterDrawAction(gTCGParser.DrawActionContext ctx) {
-        super.enterDrawAction(ctx);
-        //System.out.println("Estamos en un nodo de acción de recogida de carta");
-        //System.out.println(ctx.getText());
-    }
+    /* 
+    ============ Métodos para llamar cuando se visite  un nodo intermedio, elementos que NO son terminales. ============
+    */
 
+    // Cuando llegamos a un nodo de fin de partida.
     @Override
     public void enterGameEnd(gTCGParser.GameEndContext ctx) {
+
+        // Se muestra el ganador de la partida.
         super.enterGameEnd(ctx);
         System.out.println("Estamos en un nodo de fin de partida.");
         System.out.println(ctx.getText());
