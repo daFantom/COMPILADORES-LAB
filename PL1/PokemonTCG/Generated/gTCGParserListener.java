@@ -17,6 +17,16 @@ public interface gTCGParserListener extends ParseTreeListener {
 	 */
 	void exitPlayer(gTCGParser.PlayerContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link gTCGParser#damageAmount}.
+	 * @param ctx the parse tree
+	 */
+	void enterDamageAmount(gTCGParser.DamageAmountContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gTCGParser#damageAmount}.
+	 * @param ctx the parse tree
+	 */
+	void exitDamageAmount(gTCGParser.DamageAmountContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link gTCGParser#log}.
 	 * @param ctx the parse tree
 	 */

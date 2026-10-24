@@ -28,6 +28,18 @@ public class gTCGParserBaseListener implements gTCGParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterDamageAmount(gTCGParser.DamageAmountContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDamageAmount(gTCGParser.DamageAmountContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterLog(gTCGParser.LogContext ctx) { }
 	/**
 	 * {@inheritDoc}

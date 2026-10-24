@@ -33,6 +33,8 @@ public class GameAnalyzer {
         System.out.println("Número total de turnos: " + summ.turnsAmount[2]);
         System.out.println("Jugador 1: " + summ.players[0].name);
         System.out.println("Jugador 2: " + summ.players[1].name);
+        System.out.println("Daño Total Jugador 1: " + summ.players[0].totalDamage);
+        System.out.println("Daño Total Jugador 2: " + summ.players[1].totalDamage);
 
     }
 }

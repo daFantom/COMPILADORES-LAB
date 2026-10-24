@@ -8,5 +8,4 @@ public class GameSummary {
         players[1] = new Player();
     }
 
-    
 }

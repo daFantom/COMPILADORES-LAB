@@ -5,6 +5,7 @@ options {
 }
 
 player : (OPPONENT | PLAYER) ;
+damageAmount : NUMBER ;
 
 
 // ============================================================
@@ -196,7 +197,7 @@ evolveAction
 // ============================================================
 
 attackAction
-    : player POSSESSIVE CARD USED ATTACK (ON player POSSESSIVE CARD FOR NUMBER DAMAGE)?
+    : player POSSESSIVE CARD USED ATTACK (ON player POSSESSIVE CARD FOR damageAmount DAMAGE)?
     (DOT player POSSESSIVE CARD TAKE NUMBER MORE_WORD DAMAGE BECAUSE OF POKEMON_TYPE WEAKNESS )?
     ;
 
@@ -212,17 +213,17 @@ damageBreakdown
 
 damageBreakdownLine
     : BULLET
-    ( BASE_DAMAGE COLON? NUMBER DAMAGE
-    | TOTAL_DAMAGE COLON? NUMBER DAMAGE
-    | NUMBER POKEMON COLON? NUMBER DAMAGE
-    | LPAREN ITEM RPAREN CARD COLON? NUMBER DAMAGE
-    | NUMBER (ATTACHED | SELECTED) ENERGY COLON? NUMBER DAMAGE
-    | WEAKNESS TO POKEMON_TYPE COLON? NUMBER DAMAGE
-    | LPAREN ABILITY_WORD RPAREN ABILITY COLON? '-'? NUMBER DAMAGE
-    | LPAREN SUPPORTER_WORD RPAREN CARD COLON? '-'? NUMBER DAMAGE
-    | LPAREN ABILITY_WORD RPAREN ABILITY COLON? '-'? NUMBER DAMAGE
-    | LPAREN POKEMON_TOOL RPAREN CARD COLON? '-'? NUMBER DAMAGE
-    | LPAREN ATTACK_WORD RPAREN ATTACK COLON? '-'? NUMBER DAMAGE
+    ( BASE_DAMAGE COLON? damageAmount DAMAGE
+    | TOTAL_DAMAGE COLON? damageAmount DAMAGE
+    | NUMBER POKEMON COLON? damageAmount DAMAGE
+    | LPAREN ITEM RPAREN CARD COLON? damageAmount DAMAGE
+    | NUMBER (ATTACHED | SELECTED) ENERGY COLON? damageAmount DAMAGE
+    | WEAKNESS TO POKEMON_TYPE COLON? damageAmount DAMAGE
+    | LPAREN ABILITY_WORD RPAREN ABILITY COLON? '-'? damageAmount DAMAGE
+    | LPAREN SUPPORTER_WORD RPAREN CARD COLON? '-'? damageAmount DAMAGE
+    | LPAREN ABILITY_WORD RPAREN ABILITY COLON? '-'? damageAmount DAMAGE
+    | LPAREN POKEMON_TOOL RPAREN CARD COLON? '-'? damageAmount DAMAGE
+    | LPAREN ATTACK_WORD RPAREN ATTACK COLON? '-'? damageAmount DAMAGE
     )
     NEWLINE
     
@@ -310,7 +311,7 @@ switchAction
     ;
 
 damagedAction
-    : player POSSESSIVE CARD TAKE NUMBER DAMAGE
+    : player POSSESSIVE CARD TAKE damageAmount DAMAGE
     ;
 
 flippedAction
@@ -326,7 +327,7 @@ activateAction
     : CARD WAS ACTIVATED
     ;
 putAction
-    : player PUT NUMBER DAMAGE COUNTERS ON player POSSESSIVE CARD
+    : player PUT damageAmount DAMAGE COUNTERS ON player POSSESSIVE CARD
     ;
 
 // ============================================================

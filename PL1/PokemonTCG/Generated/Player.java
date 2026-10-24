@@ -5,5 +5,5 @@ public class Player {
     ArrayList<String> fallenCards = new ArrayList<>();
     ArrayList<String> remainingPrizeCards = new ArrayList<>();
     ArrayList<String> cardsOnHand = new ArrayList<>();
-    int totalDamage = -1;
+    int totalDamage = 0;
 }
