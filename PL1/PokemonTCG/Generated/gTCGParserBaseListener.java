@@ -16,6 +16,18 @@ public class gTCGParserBaseListener implements gTCGParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterPlayer(gTCGParser.PlayerContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPlayer(gTCGParser.PlayerContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterLog(gTCGParser.LogContext ctx) { }
 	/**
 	 * {@inheritDoc}

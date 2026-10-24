@@ -7,6 +7,16 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface gTCGParserListener extends ParseTreeListener {
 	/**
+	 * Enter a parse tree produced by {@link gTCGParser#player}.
+	 * @param ctx the parse tree
+	 */
+	void enterPlayer(gTCGParser.PlayerContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gTCGParser#player}.
+	 * @param ctx the parse tree
+	 */
+	void exitPlayer(gTCGParser.PlayerContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link gTCGParser#log}.
 	 * @param ctx the parse tree
 	 */
