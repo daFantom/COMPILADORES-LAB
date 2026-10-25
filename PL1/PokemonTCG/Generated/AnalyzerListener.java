@@ -13,6 +13,8 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     int currentPlayer = -1;
     boolean readingAttack = false;
     boolean readingDamaged = false; //Daño recibido.
+    int attacker = -1;
+    int damaged = -1;
 
     
     @Override 
@@ -35,8 +37,14 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     }
 
     @Override 
+    public void enterMainTurnAction(gTCGParser.MainTurnActionContext ctx){
+        attacker = -1;
+    }
+
+    @Override 
     public void enterAttackAction(gTCGParser.AttackActionContext ctx){
         readingAttack = true;
+        attacker = getPlayer(ctx.player(0).getText());
     }
 
     @Override 
@@ -47,11 +55,13 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     @Override 
     public void enterDamagedAction(gTCGParser.DamagedActionContext ctx){
         readingDamaged = true;
+        damaged = getPlayer(ctx.player().getText());
     }
 
     @Override 
     public void exitDamagedAction(gTCGParser.DamagedActionContext ctx){
         readingDamaged = false;
+        damaged = -1;
     }
 
     @Override 
@@ -62,15 +72,10 @@ public class AnalyzerListener extends gTCGParserBaseListener {
             game.players[currentPlayer].totalDamage += Integer.parseInt(ctx.getText());
         }
 
-        /*  En este tipo de acciones, el daño descrito lo recibe el "sujeto" del log.
-            Ej: " - DudeJaden's Hariyama took 70 damage. "
-            
-            Por eso se registra como daño inflingido por el jugador contrario.
-        */
-        if(readingDamaged){
-            System.out.println(game.players[currentPlayer^1].name);
+        if(readingDamaged && attacker != -1 && damaged != -1 && attacker != damaged){
+            System.out.println(game.players[attacker].name);
             System.out.println(ctx.getText());
-            game.players[currentPlayer^1].totalDamage += Integer.parseInt(ctx.getText());
+            game.players[attacker].totalDamage += Integer.parseInt(ctx.getText());
         }
     }
 
@@ -108,6 +113,12 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     public void visitTerminal(TerminalNode ctx){
 
         
+    }
+
+    public int getPlayer(String name){
+        if(name.equals(game.players[0].name)) return 0;
+        if(name.equals(game.players[1].name)) return 1;
+        return -1;
     }
 
     public GameSummary getGameSummary(){
