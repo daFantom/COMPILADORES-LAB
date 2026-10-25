@@ -2,7 +2,8 @@
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 public class AnalyzerListener extends gTCGParserBaseListener {
-    GameSummary game = new GameSummary();
+
+    GameSummary game = new GameSummary(); // Clase auxiliar para guardar los datos.
 
     boolean firstTurn = true;
     boolean isSetup = false;
@@ -16,7 +17,10 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     int attacker = -1;
     int damaged = -1;
 
-    
+    /* ======= Acceso a nodo Setup =======
+        Cada vez que se accede y se sale de un nodo "Setup" se activa o
+        desactiva una variable isSetup como flag de comprobación.
+    */
     @Override 
     public void enterSetup(gTCGParser.SetupContext ctx){
         isSetup = true;
@@ -26,6 +30,9 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         isSetup = false;
     }
 
+    /* ======= Acceso a nodo Turn =======
+    Cada vez que se accede a un nodo Turn
+    */
     @Override 
     public void enterTurn(gTCGParser.TurnContext ctx){
         game.turnsAmount[2]++;
@@ -36,11 +43,17 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         currentPlayer ^= 1; //Cambia de 1 a 0 y viceversa.
     }
 
+    /* ======= Acceso a nodo acción principal de turno ======= 
+    
+    */
     @Override 
     public void enterMainTurnAction(gTCGParser.MainTurnActionContext ctx){
         attacker = -1;
     }
 
+    /* ======= Acceso a nodo de acción de ataque =======
+
+    */
     @Override 
     public void enterAttackAction(gTCGParser.AttackActionContext ctx){
         readingAttack = true;
@@ -52,6 +65,9 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         readingAttack = false;
     }
 
+    /* ======= Acceso a nodo de acción de daño =======
+    
+    */
     @Override 
     public void enterDamagedAction(gTCGParser.DamagedActionContext ctx){
         readingDamaged = true;
@@ -64,6 +80,9 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         damaged = -1;
     }
 
+    /* ======= Acceso a nodo cantidad de ataque =======
+
+    */
     @Override 
     public void enterDamageAmount(gTCGParser.DamageAmountContext ctx){
         if(readingAttack){
@@ -79,7 +98,9 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         }
     }
 
-
+    /* ======= Acceso a nodo de Player (nombre jugador) =======
+    
+    */
     @Override 
     public void enterPlayer(gTCGParser.PlayerContext ctx){
 
