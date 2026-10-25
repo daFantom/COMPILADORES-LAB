@@ -1,4 +1,4 @@
-// Generated from gTCGParser.g4 by ANTLR 4.13.2
+// Generated from ./gTCGParser.g4 by ANTLR 4.13.2
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
