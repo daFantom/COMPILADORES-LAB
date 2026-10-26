@@ -5,17 +5,22 @@ public class AnalyzerListener extends gTCGParserBaseListener {
 
     GameSummary game = new GameSummary(); // Clase auxiliar para guardar los datos.
 
-    boolean firstTurn = true;
-    boolean isSetup = false;
+    boolean firstTurn = true;   //Guarda si es el primer turno tras el setup.
+    boolean isSetup = false;    //Guarda si estamos dentro del nodo "Setup".
     
+    /*  Cantidad de jugadores cuyos nombres faltan por registrar.
+        Se utiliza al visitar los nodos relacionados a nombres de jugador.
+    */
     int playersRemainingToRegister = 2;
     
-    //Game State
-    int currentPlayer = -1;
-    boolean readingAttack = false;
-    boolean readingDamaged = false; //Daño recibido.
-    int attacker = -1;
-    int damaged = -1;
+    /*  Estado del recorrido.
+        La informacion se actualiza conforme se visitan ciertos nodos.
+    */
+    int currentPlayer = -1;         //Id del jugador que esta jugando actualmente.
+    boolean readingAttack = false;  //Guarda si se encuentra en un nodo "attackAction".
+    boolean readingDamaged = false; //Guarda si se encuentra en un nodo de "damagedAction"
+    int attacker = -1;              //Id del jugador que esta atacando.
+    int damaged = -1;               //Id del jugador que esta siendo atacado.
 
     /* ======= Acceso a nodo Setup =======
         Cada vez que se accede y se sale de un nodo "Setup" se activa o
@@ -31,7 +36,13 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     }
 
     /* ======= Acceso a nodo Turn =======
-    Cada vez que se accede a un nodo Turn
+        Cada vez que se accede al nodo "Turn" se suma 
+        al número total de turnos.
+        
+        Cada vez que se sale del nodo "Turn" se actualiza 
+        el jugador que se encuentra jugando en este momento.
+        Como solo hay dos jugadores y se intercambian entre turnos
+        solo hace falta cambiar el id de 0 a 1 y viceversa.
     */
     @Override 
     public void enterTurn(gTCGParser.TurnContext ctx){
@@ -40,11 +51,12 @@ public class AnalyzerListener extends gTCGParserBaseListener {
 
     @Override 
     public void exitTurn(gTCGParser.TurnContext ctx){
-        currentPlayer ^= 1; //Cambia de 1 a 0 y viceversa.
+        currentPlayer ^= 1; //XOR. Cambia de 1 a 0 y viceversa.
     }
 
     /* ======= Acceso a nodo acción principal de turno ======= 
-    
+        Cada vez que se accede al nodo "Main Turn Action" 
+        se quita el id del jugador que esta de atacante actual.
     */
     @Override 
     public void enterMainTurnAction(gTCGParser.MainTurnActionContext ctx){
@@ -52,7 +64,12 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     }
 
     /* ======= Acceso a nodo de acción de ataque =======
+        Cada vez que se accede al nodo "Attack Action" se identifica 
+        la accion actual como un ataque y se fija al jugador en la accion 
+        como el atacante.
 
+        Cada vez que se sale del nodo "Attack Action", se desactiva el flag
+        para representar que la accion ha terminado.
     */
     @Override 
     public void enterAttackAction(gTCGParser.AttackActionContext ctx){
@@ -66,7 +83,13 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     }
 
     /* ======= Acceso a nodo de acción de daño =======
-    
+        Cada vez que se accede del nodo "Damaged Action" se dentifica 
+        la accion actual como una de daño y fija al jugador en la accion 
+        como el que esta siendo atacado.
+
+        Cada vez que se sale del nodo "Damaged Action", se desactiva el flag
+        para representar que la accion ha terminado y se quita al jugador
+        atacado.
     */
     @Override 
     public void enterDamagedAction(gTCGParser.DamagedActionContext ctx){
@@ -81,7 +104,8 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     }
 
     /* ======= Acceso a nodo cantidad de ataque =======
-
+        Cada vez que se accede del nodo "Damage Amount" se identifica
+        quien es el jugador que esta atacando para sumarle daño inflingido.
     */
     @Override 
     public void enterDamageAmount(gTCGParser.DamageAmountContext ctx){
@@ -99,7 +123,11 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     }
 
     /* ======= Acceso a nodo de Player (nombre jugador) =======
-    
+        Cada vez que se accede del nodo "Player" se identifica
+        si faltan jugadores cuyos nombres hay que registrar,
+        de ser asi, se registran los nombres donde corresponda.
+
+        Tambien se verifica que jugador tiene el primer turno.
     */
     @Override 
     public void enterPlayer(gTCGParser.PlayerContext ctx){
@@ -119,29 +147,29 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         if(firstTurn && !isSetup){
                 
             if(ctx.getText().equals(game.players[0].name) ){
-                    currentPlayer = 0;
-                }
+                currentPlayer = 0;
+            }
 
-                else{
-                    currentPlayer = 1;
-                }
+            else{
+                currentPlayer = 1;
+            }
 
-                firstTurn = false;
+            firstTurn = false;
         }
     }
 
     @Override 
     public void visitTerminal(TerminalNode ctx){
-
-        
     }
 
-    public int getPlayer(String name){
+    //Obtiene nombre de jugador en la lista.
+    int getPlayer(String name){
         if(name.equals(game.players[0].name)) return 0;
         if(name.equals(game.players[1].name)) return 1;
         return -1;
     }
 
+    //Obtiene resumen del juego.
     public GameSummary getGameSummary(){
         return game;
     }
