@@ -1,0 +1,156 @@
+Setup
+kong857793 chose heads for the opening coin flip.
+kong857793 won the coin toss.
+kong857793 decided to go first.
+kong857793 drew 7 cards for the opening hand.
+- 7 drawn cards.
+Solrak06_ drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • Mega Charizard Y ex, Mega Charizard X ex, Mega Charizard X ex, Judge, Ultra Ball, Team Rocket's Petrel, Oricorio ex
+kong857793 took a mulligan.
+- Cards revealed from Mulligan 1
+   • Blaziken ex, Basic Fire Energy, Team Rocket's Petrel, Basic Fire Energy, Air Balloon, Wally's Compassion, Buddy-Buddy Poffin
+Solrak06_ drew 1 more card because kong857793 took at least 1 mulligan.
+- Solrak06_ drew Energy Retrieval.
+kong857793 played Fennekin to the Active Spot.
+Solrak06_ played Oricorio ex to the Active Spot.
+
+kong857793's Turn
+kong857793 drew a card.
+kong857793 played Poké Pad.
+- kong857793 drew Fennekin.
+- kong857793 shuffled their deck.
+kong857793 played Fennekin to the Bench.
+kong857793 attached Basic Fire Energy to Fennekin in the Active Spot.
+kong857793 ended their turn.
+
+Solrak06_'s Turn
+Solrak06_ drew Energy Retrieval.
+Solrak06_ played Ultra Ball.
+- Solrak06_ discarded 2 cards.
+   • Team Rocket's Petrel, Judge
+- Solrak06_ drew Charmander.
+- Solrak06_ shuffled their deck.
+Solrak06_ played Charmander to the Bench.
+Solrak06_ ended their turn.
+
+kong857793's Turn
+kong857793 drew a card.
+kong857793 played Rare Candy.
+- kong857793 evolved Fennekin to Delphox on the Bench.
+kong857793 attached Basic Fire Energy to Fennekin in the Active Spot.
+kong857793's Delphox used Flaring Magic.
+- kong857793 discarded Basic Fire Energy.
+- kong857793 drew 5 cards.
+kong857793 played Lillie's Determination.
+- kong857793 shuffled 6 cards into their deck.
+- kong857793 drew 8 cards.
+kong857793 evolved Fennekin to Braixen in the Active Spot.
+kong857793 played Buddy-Buddy Poffin.
+- kong857793 drew Fennekin and played it to the Bench.
+- kong857793 shuffled their deck.
+kong857793 ended their turn.
+
+Solrak06_'s Turn
+Solrak06_ drew Basic Fire Energy.
+Solrak06_ attached Basic Fire Energy to Oricorio ex in the Active Spot.
+Solrak06_ retreated Oricorio ex to the Bench.
+- Basic Fire Energy was discarded from Solrak06_'s Oricorio ex.
+Solrak06_'s Charmander is now in the Active Spot.
+Solrak06_ played Energy Retrieval.
+- Solrak06_ moved Solrak06_'s Basic Fire Energy to their hand.
+Solrak06_ ended their turn.
+
+kong857793's Turn
+kong857793 drew a card.
+kong857793 evolved Braixen to Mega Delphox ex in the Active Spot.
+kong857793 evolved Fennekin to Braixen on the Bench.
+kong857793 played Ultra Ball.
+- kong857793 discarded 2 cards.
+   • Lillie's Determination, Ultra Ball
+- kong857793 drew Oricorio ex.
+- kong857793 shuffled their deck.
+kong857793 played Oricorio ex to the Bench.
+kong857793's Delphox used Flaring Magic.
+- kong857793 discarded Basic Fire Energy.
+- kong857793 drew 6 cards.
+kong857793 attached Basic Fire Energy to Mega Delphox ex in the Active Spot.
+kong857793's Mega Delphox ex used Eerie Glow on Solrak06_’s Charmander for 200 damage.
+- Solrak06_'s Charmander is now Burned.
+- Solrak06_'s Charmander is now Confused.
+Solrak06_'s Charmander was Knocked Out!
+kong857793 took a Prize card.
+A card was added to kong857793's hand.
+Solrak06_'s Oricorio ex is now in the Active Spot.
+
+Solrak06_'s Turn
+Solrak06_ drew Reshiram.
+Solrak06_ played Reshiram to the Bench.
+Solrak06_ attached Basic Fire Energy to Oricorio ex in the Active Spot.
+Solrak06_ ended their turn.
+
+kong857793's Turn
+kong857793 drew a card.
+kong857793 played Team Rocket's Petrel.
+- kong857793 drew Ultra Ball.
+- kong857793 shuffled their deck.
+kong857793 played Ultra Ball.
+- kong857793 discarded 2 cards.
+   • Delphox, Oricorio ex
+- kong857793 drew Mega Delphox ex.
+- kong857793 shuffled their deck.
+kong857793 evolved Braixen to Mega Delphox ex on the Bench.
+kong857793 played Team Rocket's Factory to the Stadium spot.
+kong857793 attached Air Balloon to Oricorio ex on the Bench.
+kong857793 attached Air Balloon to Mega Delphox ex in the Active Spot.
+kong857793 played Team Rocket's Factory.
+- kong857793 drew 2 cards.
+kong857793's Delphox used Flaring Magic.
+- kong857793 discarded Basic Fire Energy.
+- kong857793 drew 4 cards.
+kong857793 attached Basic Fire Energy to Mega Delphox ex on the Bench.
+kong857793's Mega Delphox ex used Eerie Glow on Solrak06_’s Oricorio ex for 200 damage.
+- Solrak06_'s Oricorio ex is now Burned.
+- Solrak06_'s Oricorio ex is now Confused.
+Solrak06_'s Oricorio ex was Knocked Out!
+Basic Fire Energy was discarded from Solrak06_'s Oricorio ex.
+kong857793 took 2 Prize cards.
+A card was added to kong857793's hand.
+A card was added to kong857793's hand.
+Solrak06_'s Reshiram is now in the Active Spot.
+
+Solrak06_'s Turn
+Solrak06_ drew Charmander.
+Solrak06_ played Charmander to the Bench.
+Solrak06_ played Energy Retrieval.
+- Solrak06_ moved Solrak06_'s Basic Fire Energy to their hand.
+Solrak06_ attached Basic Fire Energy to Reshiram in the Active Spot.
+Solrak06_'s Reshiram used Combustion on kong857793’s Mega Delphox ex for 30 damage.
+
+kong857793's Turn
+kong857793 drew a card.
+kong857793's Mega Delphox ex used Eerie Glow on Solrak06_’s Reshiram for 200 damage.
+- Solrak06_'s Reshiram is now Burned.
+- Solrak06_'s Reshiram is now Confused.
+Solrak06_'s Reshiram was Knocked Out!
+Basic Fire Energy was discarded from Solrak06_'s Reshiram.
+kong857793 took a Prize card.
+A card was added to kong857793's hand.
+Solrak06_'s Charmander is now in the Active Spot.
+
+Solrak06_'s Turn
+Solrak06_ drew Energy Recycler.
+Solrak06_ played Energy Recycler.
+- Solrak06_ shuffled Basic Fire Energy into their deck.
+Solrak06_ ended their turn.
+
+kong857793's Turn
+kong857793 drew a card.
+kong857793's Mega Delphox ex used Eerie Glow on Solrak06_’s Charmander for 200 damage.
+- Solrak06_'s Charmander is now Burned.
+- Solrak06_'s Charmander is now Confused.
+Solrak06_'s Charmander was Knocked Out!
+kong857793 took a Prize card.
+A card was added to kong857793's hand.
+Knocked Out with no Benched Pokémon. kong857793 wins.
+

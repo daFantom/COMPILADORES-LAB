@@ -1,0 +1,6 @@
+> antlr4-parse CminusParser.g4 prog -gui ../Tests/prueba11.c
+
+RESULTADO: ACEPTADO (0 errores)
+
+Árbol (formato LISP):
+(prog (declaration_list (declaration (func_declaration void main ( (params void) ) (compound_stmt { (local_declarations (var_declaration int i ;)) (statment_list (statment (iteration_stmt for (for_cond ( (expression (var i) = (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value 0)))))))) ; (expression (simple_expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value (var i))))))) < (logical_expression (additive_expression (factor_expression (unary_expression (value 5))))))) ; (expression (var i) = (expression (simple_expression (logical_expression (additive_expression (additive_expression (factor_expression (unary_expression (value (var i))))) + (factor_expression (unary_expression (value 1)))))))) )) (compound_stmt { (statment_list (statment (expression_stmt (expression (var i) = (expression (simple_expression (logical_expression (additive_expression (additive_expression (factor_expression (unary_expression (value (var i))))) + (factor_expression (unary_expression (value 1)))))))) ;))) })))) })))))

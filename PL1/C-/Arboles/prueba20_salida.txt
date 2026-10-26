@@ -1,0 +1,17 @@
+> antlr4-parse CminusParser.g4 prog -gui ../Tests/prueba20.c
+line 3:20 missing '{' at 'output'
+line 5:0 extraneous input 'void' expecting {'if', 'for', 'while', 'return', 'int', 'char', 'bool', BOOL, CHAR, INT, ID, '+', '-', '!', ';', '(', '{', '}'}
+line 7:11 no viable alternative at input 'inta1int'
+line 7:11 missing ';' at 'int'
+line 11:7 no viable alternative at input 'iftrue'
+line 11:17 missing ';' at 'output'
+line 13:9 extraneous input ';' expecting {BOOL, CHAR, INT, ID, '+', '-', '!', '('}
+line 15:4 missing ';' at 'a2'
+line 15:12 missing ';' at 'x'
+line 15:14 extraneous input 'a2' expecting ';'
+line 17:15 extraneous input '=' expecting ';'
+
+RESULTADO: RECHAZADO (11 errores)
+
+Árbol (formato LISP):
+(prog (declaration_list (declaration (func_declaration void function ( (params void) ) (compound_stmt <missing '{'> (statment_list (statment (expression_stmt (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value (call output ( (args (args_list (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value 1))))))))) ))))))))) ;))) <missing '}'>)))) (declaration_list (declaration (func_declaration void main ( (params void) ) (compound_stmt { (local_declarations var_declaration) (local_declarations (var_declaration int)) (statment_list (statment (expression_stmt (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value (var a1)))))))) <missing ';'>))) (local_declarations (var_declaration int a2 ;)) (statment_list (statment (expression_stmt (expression (var a1) = (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value 0)))))))) ;)) (statment (expression_stmt (expression (var a2) = (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value 1)))))))) ;))) (statment_list (statment selection_stmt)) (statment_list (statment (selection_stmt if))) (statment_list (statment (expression_stmt (expression (simple_expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value true)))))) == (logical_expression (additive_expression (factor_expression (unary_expression (value 1))))))) <missing ';'>)) (statment (expression_stmt (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value (call output ( (args (args_list (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value 5))))))))) ))))))))) ;))) (statment_list (statment (expression_stmt (expression (var a1) =) ;))) (statment_list (statment (expression_stmt (expression (simple_expression (logical_expression (additive_expression (additive_expression (factor_expression (unary_expression (value (var a1))))) + (factor_expression (unary_expression (value 1))))))) <missing ';'>))) (statment_list (statment (expression_stmt (expression (var a2) = (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value (var a1))))))))) <missing ';'>))) (statment_list (statment (expression_stmt (expression (simple_expression (logical_expression (additive_expression (factor_expression (unary_expression (value (var x)))))))) a2 ;))) (local_declarations (var_declaration char sigma = ;)) })))))
