@@ -21,6 +21,7 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     boolean readingDamaged = false; //Guarda si se encuentra en un nodo de "damagedAction"
     int attacker = -1;              //Id del jugador que esta atacando.
     int damaged = -1;               //Id del jugador que esta siendo atacado.
+    String damagedPokemon = "";
 
     /* ======= Acceso a nodo Setup =======
         Cada vez que se accede y se sale de un nodo "Setup" se activa o
@@ -35,7 +36,31 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         isSetup = false;
     }
 
-    /* ======= Acceso a nodo Turn =======
+    
+    /* ======= Acceso a nodo CoinChoice =======
+        Cada vez que se accede al nodo "CoinChoice" se muestra un
+        mensaje por pantalla que identifica al usuario que hará
+        el lanzamiento de moneda para decidir quién recibe el primer turno.
+    */
+    @Override
+    public void enterCoinChoice(gTCGParser.CoinChoiceContext ctx) {
+        System.out.println(ctx.player().getText()+" comienza con el tiro de moneda.");
+    }
+
+     /* ======= Acceso a nodo CoinToss =======
+        Cada vez que se accede al nodo "CoinToss" se comprueba que
+        si estamos en un nodo Setup, pues hay otros tipos de nodos "CoinToss"
+        que sirven para otras cosas. Este nodo en concreto sirve para informar quién
+        es el usuario que ha ganado el lanzamiento de moneda.
+    */
+    @Override
+    public void enterCoinToss(gTCGParser.CoinTossContext ctx) {
+        if(isSetup)
+        {
+            System.out.println(ctx.player().getText()+" ha ganado el tiro de moneda. Será el que comienza.\n");
+        }
+    }
+   /* ======= Acceso a nodo Turn =======
         Cada vez que se accede al nodo "Turn" se suma 
         al número total de turnos.
         
@@ -46,11 +71,16 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     */
     @Override 
     public void enterTurn(gTCGParser.TurnContext ctx){
+
         game.turnsAmount[2]++;
+        System.out.println("====== Turno de: "+ctx.player().getText()+" =======");
     }
 
     @Override 
     public void exitTurn(gTCGParser.TurnContext ctx){
+
+        System.out.println("======= Fin de turno de : "+ctx.player().getText()+" =======\n");
+
         currentPlayer ^= 1; //XOR. Cambia de 1 a 0 y viceversa.
     }
 
@@ -66,13 +96,14 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     /* ======= Acceso a nodo de acción de ataque =======
         Cada vez que se accede al nodo "Attack Action" se identifica 
         la accion actual como un ataque y se fija al jugador en la accion 
-        como el atacante.
+        como el atacante. La identificación sirve para los subnnodos posteriores.
 
         Cada vez que se sale del nodo "Attack Action", se desactiva el flag
         para representar que la accion ha terminado.
     */
     @Override 
     public void enterAttackAction(gTCGParser.AttackActionContext ctx){
+
         readingAttack = true;
         attacker = getPlayer(ctx.player(0).getText());
     }
@@ -94,6 +125,8 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     @Override 
     public void enterDamagedAction(gTCGParser.DamagedActionContext ctx){
         readingDamaged = true;
+        //System.out.println("Prueba carta: "+ctx.CARD().getText());
+        damagedPokemon = ctx.CARD().getText();
         damaged = getPlayer(ctx.player().getText());
     }
 
@@ -109,16 +142,22 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     */
     @Override 
     public void enterDamageAmount(gTCGParser.DamageAmountContext ctx){
+        String currentAttacker;
+        int damageDealt;
+
         if(readingAttack){
-            System.out.println(game.players[currentPlayer].name);
-            System.out.println(ctx.getText());
-            game.players[currentPlayer].totalDamage += Integer.parseInt(ctx.getText());
+            currentAttacker = game.players[currentPlayer].name; // Se guarda el nombre de usuario del atacante.
+            damageDealt = Integer.parseInt(ctx.getText());         // Se guarda la cantidad del daño producido, que se guarda en este nodo.
+            System.out.println(currentAttacker+" ha atacado con un total de "+damageDealt+ " DMG.");
+            game.players[currentPlayer].totalDamage += damageDealt;    // Se incrementa el valor del daño total del atacante correspondiente.
         }
 
         if(readingDamaged && attacker != -1 && damaged != -1 && attacker != damaged){
-            System.out.println(game.players[attacker].name);
-            System.out.println(ctx.getText());
-            game.players[attacker].totalDamage += Integer.parseInt(ctx.getText());
+            currentAttacker = game.players[damaged].name;
+            damageDealt = Integer.parseInt(ctx.getText());
+            //System.out.println("\tTest de readingDamaged\n");
+            System.out.println("El "+damagedPokemon+" de "+currentAttacker+" ha recibido un total de "+damageDealt+ " DMG.");       // Se hace daño a sí mismo?.
+            game.players[attacker].totalDamage += damageDealt;
         }
     }
 
@@ -161,6 +200,8 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     @Override 
     public void visitTerminal(TerminalNode ctx){
     }
+
+    
 
     //Obtiene nombre de jugador en la lista.
     int getPlayer(String name){
