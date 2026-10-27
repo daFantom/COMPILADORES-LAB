@@ -215,6 +215,9 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         if(ctx.CONCEDED() != null){
             game.endReason = "Rendición";
         }
+        else if(ctx.NO_BENCHED() != null){
+            game.endReason = "Sin Pokémon en la banca";
+        }
         else{
             game.endReason = "Cartas de premio";
         }
