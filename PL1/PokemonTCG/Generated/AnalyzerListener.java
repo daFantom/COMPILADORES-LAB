@@ -145,6 +145,7 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         String currentAttacker;
         int damageDealt;
 
+        // Si estamos en un nodo de Ataque y comprobamos el daño infligido por el atacante.
         if(readingAttack){
             currentAttacker = game.players[currentPlayer].name; // Se guarda el nombre de usuario del atacante.
             damageDealt = Integer.parseInt(ctx.getText());         // Se guarda la cantidad del daño producido, que se guarda en este nodo.
@@ -152,11 +153,11 @@ public class AnalyzerListener extends gTCGParserBaseListener {
             game.players[currentPlayer].totalDamage += damageDealt;    // Se incrementa el valor del daño total del atacante correspondiente.
         }
 
+        // Si estamos en un nodo de "Daño recibido" y comprobamos el daño que el contrincante recibe por otros factores que no son un ataque básico.
         if(readingDamaged && attacker != -1 && damaged != -1 && attacker != damaged){
-            currentAttacker = game.players[damaged].name;
             damageDealt = Integer.parseInt(ctx.getText());
             //System.out.println("\tTest de readingDamaged\n");
-            System.out.println("El "+damagedPokemon+" de "+currentAttacker+" ha recibido un total de "+damageDealt+ " DMG.");       // Se hace daño a sí mismo?.
+            System.out.println("El "+damagedPokemon+" de "+game.players[damaged].name+" ha recibido un total de "+damageDealt+ " DMG.");
             game.players[attacker].totalDamage += damageDealt;
         }
     }
@@ -171,6 +172,8 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     @Override 
     public void enterPlayer(gTCGParser.PlayerContext ctx){
 
+
+        // Nódulo de registro de jugadores.
         if(playersRemainingToRegister > 0){
                 if(playersRemainingToRegister == 2){
                     game.players[0].name = ctx.getText();
@@ -183,6 +186,7 @@ public class AnalyzerListener extends gTCGParserBaseListener {
                 }
         }
 
+        // Módulo de asignación del primer jugador en base al primer turno no Setup.
         if(firstTurn && !isSetup){
                 
             if(ctx.getText().equals(game.players[0].name) ){
@@ -213,12 +217,67 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         }
         game.winnerPlayer = getPlayer(ctx.player().getText());
         if(ctx.CONCEDED() != null){
-            game.endReason = "Rendición";
+            game.endReason = "El oponente se ha rendido.";
         }
         else{
-            game.endReason = "Cartas de premio";
+            game.endReason = "Todas las Cartas de Premio han sido recogidas.";
         }
     }
+
+    /* ======= Acceso a nodo knockoutAction =======
+        Se guarda el nombre del jugador al que se le ha derribado la carta, se muestra un mensaje
+        de notificación y se guarda en la lista de Pokémons derribados del jugador actual que está
+        produciendo dicha acción de KO.
+     */
+
+    @Override
+    public void enterKnockoutAction(gTCGParser.KnockoutActionContext ctx) {
+        int p = getPlayer(ctx.player().getText());
+        System.out.println("La carta "+ctx.CARD().getText()+" de "+ctx.player().getText()+" ha sido derribada!");
+        game.players[currentPlayer].kOCards.add(game.players[p].name+"'s"+" '"+ctx.CARD().getText()+"'.");
+    }
+
+    /* ======= Acceso a nodo drawnCards =======*/
+    // TODO
+    @Override
+    public void enterDrawnCards(gTCGParser.DrawnCardsContext ctx) {
+        super.enterDrawnCards(ctx);
+    }
+
+    /* ======= Acceso a nodo drawnAction =======
+        Se muestra por pantalla si el usuario actual ha tomado una carta cualquiera o
+        una carta en concreto.
+
+        Si ctx.CARD() es null, nos encontramos en un nodo que tiene "drew a card.".
+        De otro modo, nos encontramos en un nodo que contiene el nombre de una carta en concreto.
+        TODO: El caso de que se recojan más de una carta (comprobar valores y luego mostrar las cartas
+        que ha tomado.)
+    */
+    @Override
+    public void enterDrawAction(gTCGParser.DrawActionContext ctx) {
+        //String test = ctx.getText(); Debug
+        //System.out.println(test); // Debug
+        String currentPlayerName = ctx.player().getText();
+        if(ctx.CARD() == null)
+        {
+            System.out.println(currentPlayerName+" ha tomado una carta.");
+        }
+        else
+        {
+            System.out.println(currentPlayerName+" ha tomado una carta: "+ctx.CARD());
+        }
+    }
+
+    /* ======= Acceso a nodo shuffleAction =======
+        Se muestra por pantalla que el jugador ha barajado
+        las cartas que tiene.
+    */
+    
+    @Override
+    public void enterShuffleAction(gTCGParser.ShuffleActionContext ctx) {
+        System.out.println(ctx.player().getText()+" ha barajado sus cartas.");
+    }
+
 
     @Override 
     public void visitTerminal(TerminalNode ctx){
