@@ -1,6 +1,8 @@
-grammar CminusParser;
+parser grammar CminusParser;
 
-import CminusLexer;
+options {
+    tokenVocab = CminusLexer;
+}
 
 /*  Cuerpo del programa */
 

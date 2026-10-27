@@ -3,317 +3,317 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
  * This interface defines a complete listener for a parse tree produced by
- * {@link CminusParserParser}.
+ * {@link CminusParser}.
  */
 public interface CminusParserListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#prog}.
+	 * Enter a parse tree produced by {@link CminusParser#prog}.
 	 * @param ctx the parse tree
 	 */
-	void enterProg(CminusParserParser.ProgContext ctx);
+	void enterProg(CminusParser.ProgContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#prog}.
+	 * Exit a parse tree produced by {@link CminusParser#prog}.
 	 * @param ctx the parse tree
 	 */
-	void exitProg(CminusParserParser.ProgContext ctx);
+	void exitProg(CminusParser.ProgContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#declaration_list}.
+	 * Enter a parse tree produced by {@link CminusParser#declaration_list}.
 	 * @param ctx the parse tree
 	 */
-	void enterDeclaration_list(CminusParserParser.Declaration_listContext ctx);
+	void enterDeclaration_list(CminusParser.Declaration_listContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#declaration_list}.
+	 * Exit a parse tree produced by {@link CminusParser#declaration_list}.
 	 * @param ctx the parse tree
 	 */
-	void exitDeclaration_list(CminusParserParser.Declaration_listContext ctx);
+	void exitDeclaration_list(CminusParser.Declaration_listContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#declaration}.
+	 * Enter a parse tree produced by {@link CminusParser#declaration}.
 	 * @param ctx the parse tree
 	 */
-	void enterDeclaration(CminusParserParser.DeclarationContext ctx);
+	void enterDeclaration(CminusParser.DeclarationContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#declaration}.
+	 * Exit a parse tree produced by {@link CminusParser#declaration}.
 	 * @param ctx the parse tree
 	 */
-	void exitDeclaration(CminusParserParser.DeclarationContext ctx);
+	void exitDeclaration(CminusParser.DeclarationContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#var_declaration}.
+	 * Enter a parse tree produced by {@link CminusParser#var_declaration}.
 	 * @param ctx the parse tree
 	 */
-	void enterVar_declaration(CminusParserParser.Var_declarationContext ctx);
+	void enterVar_declaration(CminusParser.Var_declarationContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#var_declaration}.
+	 * Exit a parse tree produced by {@link CminusParser#var_declaration}.
 	 * @param ctx the parse tree
 	 */
-	void exitVar_declaration(CminusParserParser.Var_declarationContext ctx);
+	void exitVar_declaration(CminusParser.Var_declarationContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#func_declaration}.
+	 * Enter a parse tree produced by {@link CminusParser#func_declaration}.
 	 * @param ctx the parse tree
 	 */
-	void enterFunc_declaration(CminusParserParser.Func_declarationContext ctx);
+	void enterFunc_declaration(CminusParser.Func_declarationContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#func_declaration}.
+	 * Exit a parse tree produced by {@link CminusParser#func_declaration}.
 	 * @param ctx the parse tree
 	 */
-	void exitFunc_declaration(CminusParserParser.Func_declarationContext ctx);
+	void exitFunc_declaration(CminusParser.Func_declarationContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#params}.
+	 * Enter a parse tree produced by {@link CminusParser#params}.
 	 * @param ctx the parse tree
 	 */
-	void enterParams(CminusParserParser.ParamsContext ctx);
+	void enterParams(CminusParser.ParamsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#params}.
+	 * Exit a parse tree produced by {@link CminusParser#params}.
 	 * @param ctx the parse tree
 	 */
-	void exitParams(CminusParserParser.ParamsContext ctx);
+	void exitParams(CminusParser.ParamsContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#param_list}.
+	 * Enter a parse tree produced by {@link CminusParser#param_list}.
 	 * @param ctx the parse tree
 	 */
-	void enterParam_list(CminusParserParser.Param_listContext ctx);
+	void enterParam_list(CminusParser.Param_listContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#param_list}.
+	 * Exit a parse tree produced by {@link CminusParser#param_list}.
 	 * @param ctx the parse tree
 	 */
-	void exitParam_list(CminusParserParser.Param_listContext ctx);
+	void exitParam_list(CminusParser.Param_listContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#param}.
+	 * Enter a parse tree produced by {@link CminusParser#param}.
 	 * @param ctx the parse tree
 	 */
-	void enterParam(CminusParserParser.ParamContext ctx);
+	void enterParam(CminusParser.ParamContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#param}.
+	 * Exit a parse tree produced by {@link CminusParser#param}.
 	 * @param ctx the parse tree
 	 */
-	void exitParam(CminusParserParser.ParamContext ctx);
+	void exitParam(CminusParser.ParamContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#compound_stmt}.
+	 * Enter a parse tree produced by {@link CminusParser#compound_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterCompound_stmt(CminusParserParser.Compound_stmtContext ctx);
+	void enterCompound_stmt(CminusParser.Compound_stmtContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#compound_stmt}.
+	 * Exit a parse tree produced by {@link CminusParser#compound_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitCompound_stmt(CminusParserParser.Compound_stmtContext ctx);
+	void exitCompound_stmt(CminusParser.Compound_stmtContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#local_declarations}.
+	 * Enter a parse tree produced by {@link CminusParser#local_declarations}.
 	 * @param ctx the parse tree
 	 */
-	void enterLocal_declarations(CminusParserParser.Local_declarationsContext ctx);
+	void enterLocal_declarations(CminusParser.Local_declarationsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#local_declarations}.
+	 * Exit a parse tree produced by {@link CminusParser#local_declarations}.
 	 * @param ctx the parse tree
 	 */
-	void exitLocal_declarations(CminusParserParser.Local_declarationsContext ctx);
+	void exitLocal_declarations(CminusParser.Local_declarationsContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#statment_list}.
+	 * Enter a parse tree produced by {@link CminusParser#statment_list}.
 	 * @param ctx the parse tree
 	 */
-	void enterStatment_list(CminusParserParser.Statment_listContext ctx);
+	void enterStatment_list(CminusParser.Statment_listContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#statment_list}.
+	 * Exit a parse tree produced by {@link CminusParser#statment_list}.
 	 * @param ctx the parse tree
 	 */
-	void exitStatment_list(CminusParserParser.Statment_listContext ctx);
+	void exitStatment_list(CminusParser.Statment_listContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#statment}.
+	 * Enter a parse tree produced by {@link CminusParser#statment}.
 	 * @param ctx the parse tree
 	 */
-	void enterStatment(CminusParserParser.StatmentContext ctx);
+	void enterStatment(CminusParser.StatmentContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#statment}.
+	 * Exit a parse tree produced by {@link CminusParser#statment}.
 	 * @param ctx the parse tree
 	 */
-	void exitStatment(CminusParserParser.StatmentContext ctx);
+	void exitStatment(CminusParser.StatmentContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#expression_stmt}.
+	 * Enter a parse tree produced by {@link CminusParser#expression_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpression_stmt(CminusParserParser.Expression_stmtContext ctx);
+	void enterExpression_stmt(CminusParser.Expression_stmtContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#expression_stmt}.
+	 * Exit a parse tree produced by {@link CminusParser#expression_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpression_stmt(CminusParserParser.Expression_stmtContext ctx);
+	void exitExpression_stmt(CminusParser.Expression_stmtContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#selection_stmt}.
+	 * Enter a parse tree produced by {@link CminusParser#selection_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterSelection_stmt(CminusParserParser.Selection_stmtContext ctx);
+	void enterSelection_stmt(CminusParser.Selection_stmtContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#selection_stmt}.
+	 * Exit a parse tree produced by {@link CminusParser#selection_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitSelection_stmt(CminusParserParser.Selection_stmtContext ctx);
+	void exitSelection_stmt(CminusParser.Selection_stmtContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#iteration_stmt}.
+	 * Enter a parse tree produced by {@link CminusParser#iteration_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterIteration_stmt(CminusParserParser.Iteration_stmtContext ctx);
+	void enterIteration_stmt(CminusParser.Iteration_stmtContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#iteration_stmt}.
+	 * Exit a parse tree produced by {@link CminusParser#iteration_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitIteration_stmt(CminusParserParser.Iteration_stmtContext ctx);
+	void exitIteration_stmt(CminusParser.Iteration_stmtContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#for_cond}.
+	 * Enter a parse tree produced by {@link CminusParser#for_cond}.
 	 * @param ctx the parse tree
 	 */
-	void enterFor_cond(CminusParserParser.For_condContext ctx);
+	void enterFor_cond(CminusParser.For_condContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#for_cond}.
+	 * Exit a parse tree produced by {@link CminusParser#for_cond}.
 	 * @param ctx the parse tree
 	 */
-	void exitFor_cond(CminusParserParser.For_condContext ctx);
+	void exitFor_cond(CminusParser.For_condContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#while_cond}.
+	 * Enter a parse tree produced by {@link CminusParser#while_cond}.
 	 * @param ctx the parse tree
 	 */
-	void enterWhile_cond(CminusParserParser.While_condContext ctx);
+	void enterWhile_cond(CminusParser.While_condContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#while_cond}.
+	 * Exit a parse tree produced by {@link CminusParser#while_cond}.
 	 * @param ctx the parse tree
 	 */
-	void exitWhile_cond(CminusParserParser.While_condContext ctx);
+	void exitWhile_cond(CminusParser.While_condContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#return_stmt}.
+	 * Enter a parse tree produced by {@link CminusParser#return_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterReturn_stmt(CminusParserParser.Return_stmtContext ctx);
+	void enterReturn_stmt(CminusParser.Return_stmtContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#return_stmt}.
+	 * Exit a parse tree produced by {@link CminusParser#return_stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitReturn_stmt(CminusParserParser.Return_stmtContext ctx);
+	void exitReturn_stmt(CminusParser.Return_stmtContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#expression}.
+	 * Enter a parse tree produced by {@link CminusParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpression(CminusParserParser.ExpressionContext ctx);
+	void enterExpression(CminusParser.ExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#expression}.
+	 * Exit a parse tree produced by {@link CminusParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpression(CminusParserParser.ExpressionContext ctx);
+	void exitExpression(CminusParser.ExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#var}.
+	 * Enter a parse tree produced by {@link CminusParser#var}.
 	 * @param ctx the parse tree
 	 */
-	void enterVar(CminusParserParser.VarContext ctx);
+	void enterVar(CminusParser.VarContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#var}.
+	 * Exit a parse tree produced by {@link CminusParser#var}.
 	 * @param ctx the parse tree
 	 */
-	void exitVar(CminusParserParser.VarContext ctx);
+	void exitVar(CminusParser.VarContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#simple_expression}.
+	 * Enter a parse tree produced by {@link CminusParser#simple_expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterSimple_expression(CminusParserParser.Simple_expressionContext ctx);
+	void enterSimple_expression(CminusParser.Simple_expressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#simple_expression}.
+	 * Exit a parse tree produced by {@link CminusParser#simple_expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitSimple_expression(CminusParserParser.Simple_expressionContext ctx);
+	void exitSimple_expression(CminusParser.Simple_expressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#logical_or_expression}.
+	 * Enter a parse tree produced by {@link CminusParser#logical_or_expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterLogical_or_expression(CminusParserParser.Logical_or_expressionContext ctx);
+	void enterLogical_or_expression(CminusParser.Logical_or_expressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#logical_or_expression}.
+	 * Exit a parse tree produced by {@link CminusParser#logical_or_expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitLogical_or_expression(CminusParserParser.Logical_or_expressionContext ctx);
+	void exitLogical_or_expression(CminusParser.Logical_or_expressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#logical_and_expression}.
+	 * Enter a parse tree produced by {@link CminusParser#logical_and_expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterLogical_and_expression(CminusParserParser.Logical_and_expressionContext ctx);
+	void enterLogical_and_expression(CminusParser.Logical_and_expressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#logical_and_expression}.
+	 * Exit a parse tree produced by {@link CminusParser#logical_and_expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitLogical_and_expression(CminusParserParser.Logical_and_expressionContext ctx);
+	void exitLogical_and_expression(CminusParser.Logical_and_expressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#relational_expression}.
+	 * Enter a parse tree produced by {@link CminusParser#relational_expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterRelational_expression(CminusParserParser.Relational_expressionContext ctx);
+	void enterRelational_expression(CminusParser.Relational_expressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#relational_expression}.
+	 * Exit a parse tree produced by {@link CminusParser#relational_expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitRelational_expression(CminusParserParser.Relational_expressionContext ctx);
+	void exitRelational_expression(CminusParser.Relational_expressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#additive_expression}.
+	 * Enter a parse tree produced by {@link CminusParser#additive_expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterAdditive_expression(CminusParserParser.Additive_expressionContext ctx);
+	void enterAdditive_expression(CminusParser.Additive_expressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#additive_expression}.
+	 * Exit a parse tree produced by {@link CminusParser#additive_expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitAdditive_expression(CminusParserParser.Additive_expressionContext ctx);
+	void exitAdditive_expression(CminusParser.Additive_expressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#factor_expression}.
+	 * Enter a parse tree produced by {@link CminusParser#factor_expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterFactor_expression(CminusParserParser.Factor_expressionContext ctx);
+	void enterFactor_expression(CminusParser.Factor_expressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#factor_expression}.
+	 * Exit a parse tree produced by {@link CminusParser#factor_expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitFactor_expression(CminusParserParser.Factor_expressionContext ctx);
+	void exitFactor_expression(CminusParser.Factor_expressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#unary_expression}.
+	 * Enter a parse tree produced by {@link CminusParser#unary_expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterUnary_expression(CminusParserParser.Unary_expressionContext ctx);
+	void enterUnary_expression(CminusParser.Unary_expressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#unary_expression}.
+	 * Exit a parse tree produced by {@link CminusParser#unary_expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitUnary_expression(CminusParserParser.Unary_expressionContext ctx);
+	void exitUnary_expression(CminusParser.Unary_expressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#value}.
+	 * Enter a parse tree produced by {@link CminusParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void enterValue(CminusParserParser.ValueContext ctx);
+	void enterValue(CminusParser.ValueContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#value}.
+	 * Exit a parse tree produced by {@link CminusParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void exitValue(CminusParserParser.ValueContext ctx);
+	void exitValue(CminusParser.ValueContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#call}.
+	 * Enter a parse tree produced by {@link CminusParser#call}.
 	 * @param ctx the parse tree
 	 */
-	void enterCall(CminusParserParser.CallContext ctx);
+	void enterCall(CminusParser.CallContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#call}.
+	 * Exit a parse tree produced by {@link CminusParser#call}.
 	 * @param ctx the parse tree
 	 */
-	void exitCall(CminusParserParser.CallContext ctx);
+	void exitCall(CminusParser.CallContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#args}.
+	 * Enter a parse tree produced by {@link CminusParser#args}.
 	 * @param ctx the parse tree
 	 */
-	void enterArgs(CminusParserParser.ArgsContext ctx);
+	void enterArgs(CminusParser.ArgsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#args}.
+	 * Exit a parse tree produced by {@link CminusParser#args}.
 	 * @param ctx the parse tree
 	 */
-	void exitArgs(CminusParserParser.ArgsContext ctx);
+	void exitArgs(CminusParser.ArgsContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CminusParserParser#args_list}.
+	 * Enter a parse tree produced by {@link CminusParser#args_list}.
 	 * @param ctx the parse tree
 	 */
-	void enterArgs_list(CminusParserParser.Args_listContext ctx);
+	void enterArgs_list(CminusParser.Args_listContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CminusParserParser#args_list}.
+	 * Exit a parse tree produced by {@link CminusParser#args_list}.
 	 * @param ctx the parse tree
 	 */
-	void exitArgs_list(CminusParserParser.Args_listContext ctx);
+	void exitArgs_list(CminusParser.Args_listContext ctx);
 }

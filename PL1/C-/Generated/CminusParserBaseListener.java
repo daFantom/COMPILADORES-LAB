@@ -16,373 +16,373 @@ public class CminusParserBaseListener implements CminusParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProg(CminusParserParser.ProgContext ctx) { }
+	@Override public void enterProg(CminusParser.ProgContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitProg(CminusParserParser.ProgContext ctx) { }
+	@Override public void exitProg(CminusParser.ProgContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDeclaration_list(CminusParserParser.Declaration_listContext ctx) { }
+	@Override public void enterDeclaration_list(CminusParser.Declaration_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDeclaration_list(CminusParserParser.Declaration_listContext ctx) { }
+	@Override public void exitDeclaration_list(CminusParser.Declaration_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDeclaration(CminusParserParser.DeclarationContext ctx) { }
+	@Override public void enterDeclaration(CminusParser.DeclarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDeclaration(CminusParserParser.DeclarationContext ctx) { }
+	@Override public void exitDeclaration(CminusParser.DeclarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVar_declaration(CminusParserParser.Var_declarationContext ctx) { }
+	@Override public void enterVar_declaration(CminusParser.Var_declarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVar_declaration(CminusParserParser.Var_declarationContext ctx) { }
+	@Override public void exitVar_declaration(CminusParser.Var_declarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunc_declaration(CminusParserParser.Func_declarationContext ctx) { }
+	@Override public void enterFunc_declaration(CminusParser.Func_declarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFunc_declaration(CminusParserParser.Func_declarationContext ctx) { }
+	@Override public void exitFunc_declaration(CminusParser.Func_declarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParams(CminusParserParser.ParamsContext ctx) { }
+	@Override public void enterParams(CminusParser.ParamsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParams(CminusParserParser.ParamsContext ctx) { }
+	@Override public void exitParams(CminusParser.ParamsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParam_list(CminusParserParser.Param_listContext ctx) { }
+	@Override public void enterParam_list(CminusParser.Param_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParam_list(CminusParserParser.Param_listContext ctx) { }
+	@Override public void exitParam_list(CminusParser.Param_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParam(CminusParserParser.ParamContext ctx) { }
+	@Override public void enterParam(CminusParser.ParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParam(CminusParserParser.ParamContext ctx) { }
+	@Override public void exitParam(CminusParser.ParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCompound_stmt(CminusParserParser.Compound_stmtContext ctx) { }
+	@Override public void enterCompound_stmt(CminusParser.Compound_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCompound_stmt(CminusParserParser.Compound_stmtContext ctx) { }
+	@Override public void exitCompound_stmt(CminusParser.Compound_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLocal_declarations(CminusParserParser.Local_declarationsContext ctx) { }
+	@Override public void enterLocal_declarations(CminusParser.Local_declarationsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLocal_declarations(CminusParserParser.Local_declarationsContext ctx) { }
+	@Override public void exitLocal_declarations(CminusParser.Local_declarationsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStatment_list(CminusParserParser.Statment_listContext ctx) { }
+	@Override public void enterStatment_list(CminusParser.Statment_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStatment_list(CminusParserParser.Statment_listContext ctx) { }
+	@Override public void exitStatment_list(CminusParser.Statment_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStatment(CminusParserParser.StatmentContext ctx) { }
+	@Override public void enterStatment(CminusParser.StatmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStatment(CminusParserParser.StatmentContext ctx) { }
+	@Override public void exitStatment(CminusParser.StatmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpression_stmt(CminusParserParser.Expression_stmtContext ctx) { }
+	@Override public void enterExpression_stmt(CminusParser.Expression_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpression_stmt(CminusParserParser.Expression_stmtContext ctx) { }
+	@Override public void exitExpression_stmt(CminusParser.Expression_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSelection_stmt(CminusParserParser.Selection_stmtContext ctx) { }
+	@Override public void enterSelection_stmt(CminusParser.Selection_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSelection_stmt(CminusParserParser.Selection_stmtContext ctx) { }
+	@Override public void exitSelection_stmt(CminusParser.Selection_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterIteration_stmt(CminusParserParser.Iteration_stmtContext ctx) { }
+	@Override public void enterIteration_stmt(CminusParser.Iteration_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitIteration_stmt(CminusParserParser.Iteration_stmtContext ctx) { }
+	@Override public void exitIteration_stmt(CminusParser.Iteration_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFor_cond(CminusParserParser.For_condContext ctx) { }
+	@Override public void enterFor_cond(CminusParser.For_condContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFor_cond(CminusParserParser.For_condContext ctx) { }
+	@Override public void exitFor_cond(CminusParser.For_condContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterWhile_cond(CminusParserParser.While_condContext ctx) { }
+	@Override public void enterWhile_cond(CminusParser.While_condContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitWhile_cond(CminusParserParser.While_condContext ctx) { }
+	@Override public void exitWhile_cond(CminusParser.While_condContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterReturn_stmt(CminusParserParser.Return_stmtContext ctx) { }
+	@Override public void enterReturn_stmt(CminusParser.Return_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitReturn_stmt(CminusParserParser.Return_stmtContext ctx) { }
+	@Override public void exitReturn_stmt(CminusParser.Return_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpression(CminusParserParser.ExpressionContext ctx) { }
+	@Override public void enterExpression(CminusParser.ExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpression(CminusParserParser.ExpressionContext ctx) { }
+	@Override public void exitExpression(CminusParser.ExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVar(CminusParserParser.VarContext ctx) { }
+	@Override public void enterVar(CminusParser.VarContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVar(CminusParserParser.VarContext ctx) { }
+	@Override public void exitVar(CminusParser.VarContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSimple_expression(CminusParserParser.Simple_expressionContext ctx) { }
+	@Override public void enterSimple_expression(CminusParser.Simple_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSimple_expression(CminusParserParser.Simple_expressionContext ctx) { }
+	@Override public void exitSimple_expression(CminusParser.Simple_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLogical_or_expression(CminusParserParser.Logical_or_expressionContext ctx) { }
+	@Override public void enterLogical_or_expression(CminusParser.Logical_or_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLogical_or_expression(CminusParserParser.Logical_or_expressionContext ctx) { }
+	@Override public void exitLogical_or_expression(CminusParser.Logical_or_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLogical_and_expression(CminusParserParser.Logical_and_expressionContext ctx) { }
+	@Override public void enterLogical_and_expression(CminusParser.Logical_and_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLogical_and_expression(CminusParserParser.Logical_and_expressionContext ctx) { }
+	@Override public void exitLogical_and_expression(CminusParser.Logical_and_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRelational_expression(CminusParserParser.Relational_expressionContext ctx) { }
+	@Override public void enterRelational_expression(CminusParser.Relational_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRelational_expression(CminusParserParser.Relational_expressionContext ctx) { }
+	@Override public void exitRelational_expression(CminusParser.Relational_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAdditive_expression(CminusParserParser.Additive_expressionContext ctx) { }
+	@Override public void enterAdditive_expression(CminusParser.Additive_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAdditive_expression(CminusParserParser.Additive_expressionContext ctx) { }
+	@Override public void exitAdditive_expression(CminusParser.Additive_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFactor_expression(CminusParserParser.Factor_expressionContext ctx) { }
+	@Override public void enterFactor_expression(CminusParser.Factor_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFactor_expression(CminusParserParser.Factor_expressionContext ctx) { }
+	@Override public void exitFactor_expression(CminusParser.Factor_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUnary_expression(CminusParserParser.Unary_expressionContext ctx) { }
+	@Override public void enterUnary_expression(CminusParser.Unary_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUnary_expression(CminusParserParser.Unary_expressionContext ctx) { }
+	@Override public void exitUnary_expression(CminusParser.Unary_expressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterValue(CminusParserParser.ValueContext ctx) { }
+	@Override public void enterValue(CminusParser.ValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitValue(CminusParserParser.ValueContext ctx) { }
+	@Override public void exitValue(CminusParser.ValueContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCall(CminusParserParser.CallContext ctx) { }
+	@Override public void enterCall(CminusParser.CallContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCall(CminusParserParser.CallContext ctx) { }
+	@Override public void exitCall(CminusParser.CallContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterArgs(CminusParserParser.ArgsContext ctx) { }
+	@Override public void enterArgs(CminusParser.ArgsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitArgs(CminusParserParser.ArgsContext ctx) { }
+	@Override public void exitArgs(CminusParser.ArgsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterArgs_list(CminusParserParser.Args_listContext ctx) { }
+	@Override public void enterArgs_list(CminusParser.Args_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitArgs_list(CminusParserParser.Args_listContext ctx) { }
+	@Override public void exitArgs_list(CminusParser.Args_listContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

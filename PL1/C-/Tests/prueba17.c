@@ -1,27 +1,16 @@
-char charNum(int n){
-    char c;
-
-    if(n < 1) c = 'A';
-
-    if(n < 3) c = 'B';
-
-    if(n < 5) c = 'C';
-
-    if(n < 7) c = 'D';
-
-    if(n <= 10) c = 'E';
-
-    if(n > 10) c = 'Z';
-
-    return c;
-}
+/* Errores flagantes de Lexico y Semantica */
 
 void main(void)
 {
-    int x;
+    bool a;
+    char c;
 
-    x = 5;
+    /*  Error lexico. No se puede definir un tipo char como vacio. */
+    c = '';
 
-    output( charNum(x) );
+    /*  Error semantico. El valor "True" se lee como una variable 
+        con este nombre, pero no ha sido declarada previamente.
+    */
+    a = True;
 
 }

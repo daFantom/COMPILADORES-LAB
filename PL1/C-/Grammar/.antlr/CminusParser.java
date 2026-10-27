@@ -1,4 +1,4 @@
-// Generated from CminusParser.g4 by ANTLR 4.13.2
+// Generated from c:/Users/pavei/Desktop/Git/COMPILADORES-LAB/PL1/C-/Grammar/CminusParser.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue", "this-escape"})
-public class CminusParserParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.13.2", RuntimeMetaData.VERSION); }
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
+public class CminusParser extends Parser {
+	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -111,7 +111,7 @@ public class CminusParserParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public CminusParserParser(TokenStream input) {
+	public CminusParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
@@ -121,19 +121,11 @@ public class CminusParserParser extends Parser {
 		public Declaration_listContext declaration_list() {
 			return getRuleContext(Declaration_listContext.class,0);
 		}
-		public TerminalNode EOF() { return getToken(CminusParserParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(CminusParser.EOF, 0); }
 		public ProgContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_prog; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterProg(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitProg(this);
-		}
 	}
 
 	public final ProgContext prog() throws RecognitionException {
@@ -171,14 +163,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaration_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterDeclaration_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitDeclaration_list(this);
-		}
 	}
 
 	public final Declaration_listContext declaration_list() throws RecognitionException {
@@ -227,14 +211,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterDeclaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitDeclaration(this);
-		}
 	}
 
 	public final DeclarationContext declaration() throws RecognitionException {
@@ -273,26 +249,18 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Var_declarationContext extends ParserRuleContext {
-		public TerminalNode SC() { return getToken(CminusParserParser.SC, 0); }
-		public TerminalNode ID() { return getToken(CminusParserParser.ID, 0); }
-		public TerminalNode INT_TYPE() { return getToken(CminusParserParser.INT_TYPE, 0); }
-		public TerminalNode CHAR_TYPE() { return getToken(CminusParserParser.CHAR_TYPE, 0); }
-		public TerminalNode BOOL_TYPE() { return getToken(CminusParserParser.BOOL_TYPE, 0); }
-		public TerminalNode OBRACKETS() { return getToken(CminusParserParser.OBRACKETS, 0); }
-		public TerminalNode INT() { return getToken(CminusParserParser.INT, 0); }
-		public TerminalNode CBRACKETS() { return getToken(CminusParserParser.CBRACKETS, 0); }
+		public TerminalNode SC() { return getToken(CminusParser.SC, 0); }
+		public TerminalNode ID() { return getToken(CminusParser.ID, 0); }
+		public TerminalNode INT_TYPE() { return getToken(CminusParser.INT_TYPE, 0); }
+		public TerminalNode CHAR_TYPE() { return getToken(CminusParser.CHAR_TYPE, 0); }
+		public TerminalNode BOOL_TYPE() { return getToken(CminusParser.BOOL_TYPE, 0); }
+		public TerminalNode OBRACKETS() { return getToken(CminusParser.OBRACKETS, 0); }
+		public TerminalNode INT() { return getToken(CminusParser.INT, 0); }
+		public TerminalNode CBRACKETS() { return getToken(CminusParser.CBRACKETS, 0); }
 		public Var_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_var_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterVar_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitVar_declaration(this);
-		}
 	}
 
 	public final Var_declarationContext var_declaration() throws RecognitionException {
@@ -355,31 +323,23 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Func_declarationContext extends ParserRuleContext {
-		public TerminalNode ID() { return getToken(CminusParserParser.ID, 0); }
-		public TerminalNode OPAREN() { return getToken(CminusParserParser.OPAREN, 0); }
+		public TerminalNode ID() { return getToken(CminusParser.ID, 0); }
+		public TerminalNode OPAREN() { return getToken(CminusParser.OPAREN, 0); }
 		public ParamsContext params() {
 			return getRuleContext(ParamsContext.class,0);
 		}
-		public TerminalNode CPAREN() { return getToken(CminusParserParser.CPAREN, 0); }
+		public TerminalNode CPAREN() { return getToken(CminusParser.CPAREN, 0); }
 		public Compound_stmtContext compound_stmt() {
 			return getRuleContext(Compound_stmtContext.class,0);
 		}
-		public TerminalNode INT_TYPE() { return getToken(CminusParserParser.INT_TYPE, 0); }
-		public TerminalNode CHAR_TYPE() { return getToken(CminusParserParser.CHAR_TYPE, 0); }
-		public TerminalNode BOOL_TYPE() { return getToken(CminusParserParser.BOOL_TYPE, 0); }
-		public TerminalNode VOID_TYPE() { return getToken(CminusParserParser.VOID_TYPE, 0); }
+		public TerminalNode INT_TYPE() { return getToken(CminusParser.INT_TYPE, 0); }
+		public TerminalNode CHAR_TYPE() { return getToken(CminusParser.CHAR_TYPE, 0); }
+		public TerminalNode BOOL_TYPE() { return getToken(CminusParser.BOOL_TYPE, 0); }
+		public TerminalNode VOID_TYPE() { return getToken(CminusParser.VOID_TYPE, 0); }
 		public Func_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_func_declaration; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterFunc_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitFunc_declaration(this);
-		}
 	}
 
 	public final Func_declarationContext func_declaration() throws RecognitionException {
@@ -427,19 +387,11 @@ public class CminusParserParser extends Parser {
 		public Param_listContext param_list() {
 			return getRuleContext(Param_listContext.class,0);
 		}
-		public TerminalNode VOID_TYPE() { return getToken(CminusParserParser.VOID_TYPE, 0); }
+		public TerminalNode VOID_TYPE() { return getToken(CminusParser.VOID_TYPE, 0); }
 		public ParamsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_params; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterParams(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitParams(this);
-		}
 	}
 
 	public final ParamsContext params() throws RecognitionException {
@@ -484,22 +436,14 @@ public class CminusParserParser extends Parser {
 		public ParamContext param(int i) {
 			return getRuleContext(ParamContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(CminusParserParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(CminusParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(CminusParserParser.COMMA, i);
+			return getToken(CminusParser.COMMA, i);
 		}
 		public Param_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_param_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterParam_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitParam_list(this);
-		}
 	}
 
 	public final Param_listContext param_list() throws RecognitionException {
@@ -542,25 +486,17 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ParamContext extends ParserRuleContext {
-		public TerminalNode ID() { return getToken(CminusParserParser.ID, 0); }
-		public TerminalNode INT_TYPE() { return getToken(CminusParserParser.INT_TYPE, 0); }
-		public TerminalNode CHAR_TYPE() { return getToken(CminusParserParser.CHAR_TYPE, 0); }
-		public TerminalNode BOOL_TYPE() { return getToken(CminusParserParser.BOOL_TYPE, 0); }
-		public TerminalNode VOID_TYPE() { return getToken(CminusParserParser.VOID_TYPE, 0); }
-		public TerminalNode OBRACKETS() { return getToken(CminusParserParser.OBRACKETS, 0); }
-		public TerminalNode CBRACKETS() { return getToken(CminusParserParser.CBRACKETS, 0); }
+		public TerminalNode ID() { return getToken(CminusParser.ID, 0); }
+		public TerminalNode INT_TYPE() { return getToken(CminusParser.INT_TYPE, 0); }
+		public TerminalNode CHAR_TYPE() { return getToken(CminusParser.CHAR_TYPE, 0); }
+		public TerminalNode BOOL_TYPE() { return getToken(CminusParser.BOOL_TYPE, 0); }
+		public TerminalNode VOID_TYPE() { return getToken(CminusParser.VOID_TYPE, 0); }
+		public TerminalNode OBRACKETS() { return getToken(CminusParser.OBRACKETS, 0); }
+		public TerminalNode CBRACKETS() { return getToken(CminusParser.CBRACKETS, 0); }
 		public ParamContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_param; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterParam(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitParam(this);
-		}
 	}
 
 	public final ParamContext param() throws RecognitionException {
@@ -616,8 +552,8 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Compound_stmtContext extends ParserRuleContext {
-		public TerminalNode OBRACES() { return getToken(CminusParserParser.OBRACES, 0); }
-		public TerminalNode CBRACES() { return getToken(CminusParserParser.CBRACES, 0); }
+		public TerminalNode OBRACES() { return getToken(CminusParser.OBRACES, 0); }
+		public TerminalNode CBRACES() { return getToken(CminusParser.CBRACES, 0); }
 		public List<Local_declarationsContext> local_declarations() {
 			return getRuleContexts(Local_declarationsContext.class);
 		}
@@ -634,14 +570,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_compound_stmt; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterCompound_stmt(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitCompound_stmt(this);
-		}
 	}
 
 	public final Compound_stmtContext compound_stmt() throws RecognitionException {
@@ -723,14 +651,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_local_declarations; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterLocal_declarations(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitLocal_declarations(this);
-		}
 	}
 
 	public final Local_declarationsContext local_declarations() throws RecognitionException {
@@ -785,14 +705,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statment_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterStatment_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitStatment_list(this);
-		}
 	}
 
 	public final Statment_listContext statment_list() throws RecognitionException {
@@ -856,14 +768,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statment; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterStatment(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitStatment(this);
-		}
 	}
 
 	public final StatmentContext statment() throws RecognitionException {
@@ -937,19 +841,11 @@ public class CminusParserParser extends Parser {
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode SC() { return getToken(CminusParserParser.SC, 0); }
+		public TerminalNode SC() { return getToken(CminusParser.SC, 0); }
 		public Expression_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expression_stmt; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterExpression_stmt(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitExpression_stmt(this);
-		}
 	}
 
 	public final Expression_stmtContext expression_stmt() throws RecognitionException {
@@ -1001,31 +897,23 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Selection_stmtContext extends ParserRuleContext {
-		public TerminalNode IF() { return getToken(CminusParserParser.IF, 0); }
-		public TerminalNode OPAREN() { return getToken(CminusParserParser.OPAREN, 0); }
+		public TerminalNode IF() { return getToken(CminusParser.IF, 0); }
+		public TerminalNode OPAREN() { return getToken(CminusParser.OPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode CPAREN() { return getToken(CminusParserParser.CPAREN, 0); }
+		public TerminalNode CPAREN() { return getToken(CminusParser.CPAREN, 0); }
 		public List<StatmentContext> statment() {
 			return getRuleContexts(StatmentContext.class);
 		}
 		public StatmentContext statment(int i) {
 			return getRuleContext(StatmentContext.class,i);
 		}
-		public TerminalNode ELSE() { return getToken(CminusParserParser.ELSE, 0); }
+		public TerminalNode ELSE() { return getToken(CminusParser.ELSE, 0); }
 		public Selection_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_selection_stmt; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterSelection_stmt(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitSelection_stmt(this);
-		}
 	}
 
 	public final Selection_stmtContext selection_stmt() throws RecognitionException {
@@ -1071,11 +959,11 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Iteration_stmtContext extends ParserRuleContext {
-		public TerminalNode FOR() { return getToken(CminusParserParser.FOR, 0); }
+		public TerminalNode FOR() { return getToken(CminusParser.FOR, 0); }
 		public For_condContext for_cond() {
 			return getRuleContext(For_condContext.class,0);
 		}
-		public TerminalNode WHILE() { return getToken(CminusParserParser.WHILE, 0); }
+		public TerminalNode WHILE() { return getToken(CminusParser.WHILE, 0); }
 		public While_condContext while_cond() {
 			return getRuleContext(While_condContext.class,0);
 		}
@@ -1089,14 +977,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_iteration_stmt; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterIteration_stmt(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitIteration_stmt(this);
-		}
 	}
 
 	public final Iteration_stmtContext iteration_stmt() throws RecognitionException {
@@ -1158,12 +1038,12 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class For_condContext extends ParserRuleContext {
-		public TerminalNode OPAREN() { return getToken(CminusParserParser.OPAREN, 0); }
-		public List<TerminalNode> SC() { return getTokens(CminusParserParser.SC); }
+		public TerminalNode OPAREN() { return getToken(CminusParser.OPAREN, 0); }
+		public List<TerminalNode> SC() { return getTokens(CminusParser.SC); }
 		public TerminalNode SC(int i) {
-			return getToken(CminusParserParser.SC, i);
+			return getToken(CminusParser.SC, i);
 		}
-		public TerminalNode CPAREN() { return getToken(CminusParserParser.CPAREN, 0); }
+		public TerminalNode CPAREN() { return getToken(CminusParser.CPAREN, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
@@ -1174,14 +1054,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_for_cond; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterFor_cond(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitFor_cond(this);
-		}
 	}
 
 	public final For_condContext for_cond() throws RecognitionException {
@@ -1244,23 +1116,15 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class While_condContext extends ParserRuleContext {
-		public TerminalNode OPAREN() { return getToken(CminusParserParser.OPAREN, 0); }
+		public TerminalNode OPAREN() { return getToken(CminusParser.OPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode CPAREN() { return getToken(CminusParserParser.CPAREN, 0); }
+		public TerminalNode CPAREN() { return getToken(CminusParser.CPAREN, 0); }
 		public While_condContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_while_cond; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterWhile_cond(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitWhile_cond(this);
-		}
 	}
 
 	public final While_condContext while_cond() throws RecognitionException {
@@ -1290,23 +1154,15 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Return_stmtContext extends ParserRuleContext {
-		public TerminalNode RET() { return getToken(CminusParserParser.RET, 0); }
+		public TerminalNode RET() { return getToken(CminusParser.RET, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode SC() { return getToken(CminusParserParser.SC, 0); }
+		public TerminalNode SC() { return getToken(CminusParser.SC, 0); }
 		public Return_stmtContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_return_stmt; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterReturn_stmt(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitReturn_stmt(this);
-		}
 	}
 
 	public final Return_stmtContext return_stmt() throws RecognitionException {
@@ -1354,7 +1210,7 @@ public class CminusParserParser extends Parser {
 		public VarContext var() {
 			return getRuleContext(VarContext.class,0);
 		}
-		public TerminalNode ASSIGN() { return getToken(CminusParserParser.ASSIGN, 0); }
+		public TerminalNode ASSIGN() { return getToken(CminusParser.ASSIGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -1365,14 +1221,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterExpression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitExpression(this);
-		}
 	}
 
 	public final ExpressionContext expression() throws RecognitionException {
@@ -1415,24 +1263,16 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class VarContext extends ParserRuleContext {
-		public TerminalNode ID() { return getToken(CminusParserParser.ID, 0); }
-		public TerminalNode OBRACKETS() { return getToken(CminusParserParser.OBRACKETS, 0); }
+		public TerminalNode ID() { return getToken(CminusParser.ID, 0); }
+		public TerminalNode OBRACKETS() { return getToken(CminusParser.OBRACKETS, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode CBRACKETS() { return getToken(CminusParserParser.CBRACKETS, 0); }
+		public TerminalNode CBRACKETS() { return getToken(CminusParser.CBRACKETS, 0); }
 		public VarContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_var; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterVar(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitVar(this);
-		}
 	}
 
 	public final VarContext var() throws RecognitionException {
@@ -1486,14 +1326,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_simple_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterSimple_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitSimple_expression(this);
-		}
 	}
 
 	public final Simple_expressionContext simple_expression() throws RecognitionException {
@@ -1525,22 +1357,14 @@ public class CminusParserParser extends Parser {
 		public Logical_and_expressionContext logical_and_expression(int i) {
 			return getRuleContext(Logical_and_expressionContext.class,i);
 		}
-		public List<TerminalNode> OR() { return getTokens(CminusParserParser.OR); }
+		public List<TerminalNode> OR() { return getTokens(CminusParser.OR); }
 		public TerminalNode OR(int i) {
-			return getToken(CminusParserParser.OR, i);
+			return getToken(CminusParser.OR, i);
 		}
 		public Logical_or_expressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_logical_or_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterLogical_or_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitLogical_or_expression(this);
-		}
 	}
 
 	public final Logical_or_expressionContext logical_or_expression() throws RecognitionException {
@@ -1589,22 +1413,14 @@ public class CminusParserParser extends Parser {
 		public Relational_expressionContext relational_expression(int i) {
 			return getRuleContext(Relational_expressionContext.class,i);
 		}
-		public List<TerminalNode> AND() { return getTokens(CminusParserParser.AND); }
+		public List<TerminalNode> AND() { return getTokens(CminusParser.AND); }
 		public TerminalNode AND(int i) {
-			return getToken(CminusParserParser.AND, i);
+			return getToken(CminusParser.AND, i);
 		}
 		public Logical_and_expressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_logical_and_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterLogical_and_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitLogical_and_expression(this);
-		}
 	}
 
 	public final Logical_and_expressionContext logical_and_expression() throws RecognitionException {
@@ -1653,22 +1469,14 @@ public class CminusParserParser extends Parser {
 		public Additive_expressionContext additive_expression(int i) {
 			return getRuleContext(Additive_expressionContext.class,i);
 		}
-		public List<TerminalNode> COMP() { return getTokens(CminusParserParser.COMP); }
+		public List<TerminalNode> COMP() { return getTokens(CminusParser.COMP); }
 		public TerminalNode COMP(int i) {
-			return getToken(CminusParserParser.COMP, i);
+			return getToken(CminusParser.COMP, i);
 		}
 		public Relational_expressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_relational_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterRelational_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitRelational_expression(this);
-		}
 	}
 
 	public final Relational_expressionContext relational_expression() throws RecognitionException {
@@ -1717,26 +1525,18 @@ public class CminusParserParser extends Parser {
 		public Factor_expressionContext factor_expression(int i) {
 			return getRuleContext(Factor_expressionContext.class,i);
 		}
-		public List<TerminalNode> PLUS() { return getTokens(CminusParserParser.PLUS); }
+		public List<TerminalNode> PLUS() { return getTokens(CminusParser.PLUS); }
 		public TerminalNode PLUS(int i) {
-			return getToken(CminusParserParser.PLUS, i);
+			return getToken(CminusParser.PLUS, i);
 		}
-		public List<TerminalNode> MINUS() { return getTokens(CminusParserParser.MINUS); }
+		public List<TerminalNode> MINUS() { return getTokens(CminusParser.MINUS); }
 		public TerminalNode MINUS(int i) {
-			return getToken(CminusParserParser.MINUS, i);
+			return getToken(CminusParser.MINUS, i);
 		}
 		public Additive_expressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_additive_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterAdditive_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitAdditive_expression(this);
-		}
 	}
 
 	public final Additive_expressionContext additive_expression() throws RecognitionException {
@@ -1793,30 +1593,22 @@ public class CminusParserParser extends Parser {
 		public Unary_expressionContext unary_expression(int i) {
 			return getRuleContext(Unary_expressionContext.class,i);
 		}
-		public List<TerminalNode> MUL() { return getTokens(CminusParserParser.MUL); }
+		public List<TerminalNode> MUL() { return getTokens(CminusParser.MUL); }
 		public TerminalNode MUL(int i) {
-			return getToken(CminusParserParser.MUL, i);
+			return getToken(CminusParser.MUL, i);
 		}
-		public List<TerminalNode> DIV() { return getTokens(CminusParserParser.DIV); }
+		public List<TerminalNode> DIV() { return getTokens(CminusParser.DIV); }
 		public TerminalNode DIV(int i) {
-			return getToken(CminusParserParser.DIV, i);
+			return getToken(CminusParser.DIV, i);
 		}
-		public List<TerminalNode> MOD() { return getTokens(CminusParserParser.MOD); }
+		public List<TerminalNode> MOD() { return getTokens(CminusParser.MOD); }
 		public TerminalNode MOD(int i) {
-			return getToken(CminusParserParser.MOD, i);
+			return getToken(CminusParser.MOD, i);
 		}
 		public Factor_expressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_factor_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterFactor_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitFactor_expression(this);
-		}
 	}
 
 	public final Factor_expressionContext factor_expression() throws RecognitionException {
@@ -1867,12 +1659,12 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class Unary_expressionContext extends ParserRuleContext {
-		public TerminalNode PLUS() { return getToken(CminusParserParser.PLUS, 0); }
+		public TerminalNode PLUS() { return getToken(CminusParser.PLUS, 0); }
 		public Unary_expressionContext unary_expression() {
 			return getRuleContext(Unary_expressionContext.class,0);
 		}
-		public TerminalNode MINUS() { return getToken(CminusParserParser.MINUS, 0); }
-		public TerminalNode NOT() { return getToken(CminusParserParser.NOT, 0); }
+		public TerminalNode MINUS() { return getToken(CminusParser.MINUS, 0); }
+		public TerminalNode NOT() { return getToken(CminusParser.NOT, 0); }
 		public ValueContext value() {
 			return getRuleContext(ValueContext.class,0);
 		}
@@ -1880,14 +1672,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_unary_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterUnary_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitUnary_expression(this);
-		}
 	}
 
 	public final Unary_expressionContext unary_expression() throws RecognitionException {
@@ -1952,14 +1736,14 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ValueContext extends ParserRuleContext {
-		public TerminalNode OPAREN() { return getToken(CminusParserParser.OPAREN, 0); }
+		public TerminalNode OPAREN() { return getToken(CminusParser.OPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode CPAREN() { return getToken(CminusParserParser.CPAREN, 0); }
-		public TerminalNode INT() { return getToken(CminusParserParser.INT, 0); }
-		public TerminalNode BOOL() { return getToken(CminusParserParser.BOOL, 0); }
-		public TerminalNode CHAR() { return getToken(CminusParserParser.CHAR, 0); }
+		public TerminalNode CPAREN() { return getToken(CminusParser.CPAREN, 0); }
+		public TerminalNode INT() { return getToken(CminusParser.INT, 0); }
+		public TerminalNode BOOL() { return getToken(CminusParser.BOOL, 0); }
+		public TerminalNode CHAR() { return getToken(CminusParser.CHAR, 0); }
 		public VarContext var() {
 			return getRuleContext(VarContext.class,0);
 		}
@@ -1970,14 +1754,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_value; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterValue(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitValue(this);
-		}
 	}
 
 	public final ValueContext value() throws RecognitionException {
@@ -2048,24 +1824,16 @@ public class CminusParserParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class CallContext extends ParserRuleContext {
-		public TerminalNode ID() { return getToken(CminusParserParser.ID, 0); }
-		public TerminalNode OPAREN() { return getToken(CminusParserParser.OPAREN, 0); }
+		public TerminalNode ID() { return getToken(CminusParser.ID, 0); }
+		public TerminalNode OPAREN() { return getToken(CminusParser.OPAREN, 0); }
 		public ArgsContext args() {
 			return getRuleContext(ArgsContext.class,0);
 		}
-		public TerminalNode CPAREN() { return getToken(CminusParserParser.CPAREN, 0); }
+		public TerminalNode CPAREN() { return getToken(CminusParser.CPAREN, 0); }
 		public CallContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_call; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterCall(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitCall(this);
-		}
 	}
 
 	public final CallContext call() throws RecognitionException {
@@ -2104,14 +1872,6 @@ public class CminusParserParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_args; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterArgs(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitArgs(this);
-		}
 	}
 
 	public final ArgsContext args() throws RecognitionException {
@@ -2152,22 +1912,14 @@ public class CminusParserParser extends Parser {
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(CminusParserParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(CminusParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(CminusParserParser.COMMA, i);
+			return getToken(CminusParser.COMMA, i);
 		}
 		public Args_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_args_list; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).enterArgs_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof CminusParserListener ) ((CminusParserListener)listener).exitArgs_list(this);
-		}
 	}
 
 	public final Args_listContext args_list() throws RecognitionException {
