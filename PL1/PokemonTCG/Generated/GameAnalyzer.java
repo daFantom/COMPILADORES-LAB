@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -9,11 +11,19 @@ import org.antlr.v4.runtime.tree.ParseTreeWalker;
 public class GameAnalyzer {
     public static void main(String[] args) throws Exception{
         
-        if(args.length < 1) throw new Exception("No specified file");
+        String inputFilename;
+        if(args.length < 1){
+            System.out.print("Introduce ubicación al archivo a analizar: ");
+            Scanner sc = new Scanner(System.in);
+            inputFilename = sc.nextLine();
+        }
 
-        String inputFilename = args[0];
+        else{
+            inputFilename = args[0];
+        }
+
         CharStream inputStream = CharStreams.fromFileName(inputFilename);
-
+        
         // Conectamos con el lexer
         gTCGLexer lexer = new gTCGLexer(inputStream);
 

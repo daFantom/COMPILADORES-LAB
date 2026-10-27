@@ -19,7 +19,8 @@ public class GameSummary {
         System.out.println("\tDaño total infligido: "+players[0].totalDamage);
         System.out.println("\tCartas de premio restantes: "+players[0].remainingPrizeCards);
         System.out.println("\tCartas derribadas:");
-        for(int i = 0; i< players[0].kOCards.size();i++)
+
+        for(int i = 0; i < players[0].kOCards.size() ;i++)
         {
             System.out.println("\t\t- "+players[0].kOCards.get(i));
         }

@@ -35,7 +35,6 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     public void exitSetup(gTCGParser.SetupContext ctx){
         isSetup = false;
     }
-
     
     /* ======= Acceso a nodo CoinChoice =======
         Cada vez que se accede al nodo "CoinChoice" se muestra un
@@ -282,8 +281,6 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     @Override 
     public void visitTerminal(TerminalNode ctx){
     }
-
-    
 
     //Obtiene nombre de jugador en la lista.
     int getPlayer(String name){
