@@ -197,6 +197,29 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         }
     }
 
+    @Override
+    public void enterNoAction(gTCGParser.NoActionContext ctx){
+        int p = getPlayer(ctx.player().getText());
+        if(p != -1){
+            game.players[p].turnsWithoutAction++;
+        }
+        System.out.println(ctx.player().getText()+" no ha hecho nada a tiempo.");
+    }
+
+    @Override
+    public void enterGameEnd(gTCGParser.GameEndContext ctx){
+        if(ctx.player() == null){
+            return;
+        }
+        game.winnerPlayer = getPlayer(ctx.player().getText());
+        if(ctx.CONCEDED() != null){
+            game.endReason = "Rendición";
+        }
+        else{
+            game.endReason = "Cartas de premio";
+        }
+    }
+
     @Override 
     public void visitTerminal(TerminalNode ctx){
     }

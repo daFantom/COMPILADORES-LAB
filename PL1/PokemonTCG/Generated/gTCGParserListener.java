@@ -1,4 +1,4 @@
-// Generated from gTCGParser.g4 by ANTLR 4.13.2
+// Generated from gTCGParser.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -407,6 +407,16 @@ public interface gTCGParserListener extends ParseTreeListener {
 	 */
 	void exitEndTurn(gTCGParser.EndTurnContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link gTCGParser#noAction}.
+	 * @param ctx the parse tree
+	 */
+	void enterNoAction(gTCGParser.NoActionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link gTCGParser#noAction}.
+	 * @param ctx the parse tree
+	 */
+	void exitNoAction(gTCGParser.NoActionContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link gTCGParser#gameEnd}.
 	 * @param ctx the parse tree
 	 */
@@ -426,4 +436,4 @@ public interface gTCGParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCardList(gTCGParser.CardListContext ctx);
-}
+}

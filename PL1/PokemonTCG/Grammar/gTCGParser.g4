@@ -148,6 +148,7 @@ turnActionBody
     | activateAction
     | putAction
     | endTurn
+    | noAction
     ;
 
 
@@ -336,6 +337,10 @@ putAction
 
 endTurn
     : player ENDED THEIR TURN
+    ;
+
+noAction
+    : player NO_ACTION
     ;
 
 

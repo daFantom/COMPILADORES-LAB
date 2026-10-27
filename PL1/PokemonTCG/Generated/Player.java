@@ -29,4 +29,5 @@ public class Player {
     ArrayList<String> remainingPrizeCards = new ArrayList<>();
     ArrayList<String> cardsOnHand = new ArrayList<>();
     int totalDamage = 0;
+    int turnsWithoutAction = 0;
 }

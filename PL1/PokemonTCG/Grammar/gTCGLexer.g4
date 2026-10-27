@@ -718,6 +718,10 @@ NUMBER
 // por eso NO son palabras reservadas.
 // ============================================================
 
+NO_ACTION
+    : 'didn' ('\'' | '’') 't take an action in time'
+    ;
+
 PLAYER
     : [a-zA-Z0-9_]+
      
