@@ -223,18 +223,58 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         }
     }
 
+    
+    @Override
+    public void enterPrizeAction(gTCGParser.PrizeActionContext ctx) {
+        String playerName = ctx.player().getText();
+        int p = getPlayer(playerName);
+
+        if (p == -1) {
+            return;
+        }
+
+        int prizesTaken = 1;
+
+        if (ctx.NUMBER() != null) {
+            prizesTaken = Integer.parseInt(ctx.NUMBER().getText());
+        }
+
+        game.players[p].remainingPrizeCards -= prizesTaken;
+
+        if (game.players[p].remainingPrizeCards < 0) {
+            game.players[p].remainingPrizeCards = 0;
+        }
+
+        System.out.println(
+            playerName + " ha tomado " + prizesTaken + " carta(s) de premio."
+        );
+    }
+
+
     /* ======= Acceso a nodo knockoutAction =======
         Se guarda el nombre del jugador al que se le ha derribado la carta, se muestra un mensaje
         de notificación y se guarda en la lista de Pokémons derribados del jugador actual que está
         produciendo dicha acción de KO.
      */
 
+
     @Override
     public void enterKnockoutAction(gTCGParser.KnockoutActionContext ctx) {
-        int p = getPlayer(ctx.player().getText());
-        System.out.println("La carta "+ctx.CARD().getText()+" de "+ctx.player().getText()+" ha sido derribada!");
-        game.players[currentPlayer].kOCards.add(game.players[p].name+"'s"+" '"+ctx.CARD().getText()+"'.");
+        String playerName = ctx.player().getText();
+        String pokemon = ctx.CARD().getText();
+        int p = getPlayer(playerName);
+
+        System.out.println(
+            "La carta " + pokemon + " de " + playerName + " ha sido derribada."
+        );
+
+        if (p != -1 && currentPlayer != -1 && p != currentPlayer) {
+            game.players[currentPlayer].kOCards.add(
+                playerName + " - " + pokemon
+            );
+        }
     }
+
 
     /* ======= Acceso a nodo drawnCards =======*/
     // TODO
@@ -252,18 +292,42 @@ public class AnalyzerListener extends gTCGParserBaseListener {
         TODO: El caso de que se recojan más de una carta (comprobar valores y luego mostrar las cartas
         que ha tomado.)
     */
+    //Cuando se roban varias cartas, los nombres pueden aparecer en las subaccione
+
+
     @Override
     public void enterDrawAction(gTCGParser.DrawActionContext ctx) {
-        //String test = ctx.getText(); Debug
-        //System.out.println(test); // Debug
-        String currentPlayerName = ctx.player().getText();
-        if(ctx.CARD() == null)
-        {
-            System.out.println(currentPlayerName+" ha tomado una carta.");
+        String playerName = ctx.player().getText();
+
+        if (ctx.NUMBER() != null) {
+            System.out.println(
+                playerName + " ha robado " + ctx.NUMBER().getText() + " cartas."
+            );
+        } else if (ctx.CARD_WORD() != null) {
+            String cardName = ctx.CARD_WORD().getText();
+
+            if ("card".equalsIgnoreCase(cardName)) {
+                System.out.println(playerName + " ha robado una carta.");
+            } else {
+                System.out.println(
+                    playerName + " ha robado la carta: " + cardName
+                );
+            }
+        } else if (ctx.CARD() != null) {
+            System.out.println(
+                playerName + " ha robado la carta: " + ctx.CARD().getText()
+            );
         }
-        else
-        {
-            System.out.println(currentPlayerName+" ha tomado una carta: "+ctx.CARD());
+    }
+
+
+    
+    @Override
+    public void enterCardList(gTCGParser.CardListContext ctx) {
+        System.out.println("Cartas:");
+
+        for (int i = 0; i < ctx.CARD().size(); i++) {
+            System.out.println("  - " + ctx.CARD(i).getText());
         }
     }
 
@@ -293,4 +357,6 @@ public class AnalyzerListener extends gTCGParserBaseListener {
     public GameSummary getGameSummary(){
         return game;
     }
-}
+    }
+
+
