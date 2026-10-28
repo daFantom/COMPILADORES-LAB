@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-
+@SuppressWarnings("unchecked")
 public class TurnSnapshot {
     public int turnNumber;
     public String playerName;                  // quién juega este turno
