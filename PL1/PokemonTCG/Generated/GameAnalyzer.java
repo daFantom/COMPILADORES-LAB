@@ -42,6 +42,6 @@ public class GameAnalyzer {
 
         summ.playerStatGenerator();
         summ.showGameStats();
-
+        summ.printTurnHistory();
     }
 }

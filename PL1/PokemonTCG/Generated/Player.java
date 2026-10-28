@@ -31,4 +31,12 @@ public class Player {
     ArrayList<String> cardsOnHand = new ArrayList<>();
     int totalDamage = 0;
     int turnsWithoutAction = 0;
+    public int unknownCardsInHand = 0;
+    public String activePokemon = null;
+    public java.util.List<String> benchPokemons = new java.util.ArrayList<>();
+    public Player() {
+    // ... lo que ya tuvieras ...
+    this.activePokemon = null;
+    this.benchPokemons = new java.util.ArrayList<>();
+}
 }
