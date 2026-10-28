@@ -23,7 +23,7 @@ INT: DIGIT+;
 INPUT:  'input'  ;
 OUTPUT: 'output' ;
 
-ID: LETRA(LETRA|DIGIT)*;
+ID: LETRA+;
 
 ASSIGN: '=';
 

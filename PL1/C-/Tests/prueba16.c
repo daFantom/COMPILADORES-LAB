@@ -10,6 +10,8 @@ void main(void)
         output(1);
     }
 
+    A = input();
+
     for ( ; ; )
         i = i + 1;
     
