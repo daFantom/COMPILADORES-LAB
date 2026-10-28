@@ -113,7 +113,7 @@ logical_and_expression
     ;
 
 relational_expression
-    : relational_expression COMP additive_expression
+    : additive_expression COMP additive_expression
     | additive_expression
     ;
 
