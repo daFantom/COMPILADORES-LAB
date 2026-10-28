@@ -47,6 +47,16 @@ public interface CminusParserListener extends ParseTreeListener {
 	 */
 	void exitVar_declaration(CminusParser.Var_declarationContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link CminusParser#type_specifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterType_specifier(CminusParser.Type_specifierContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CminusParser#type_specifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitType_specifier(CminusParser.Type_specifierContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link CminusParser#func_declaration}.
 	 * @param ctx the parse tree
 	 */
@@ -186,6 +196,36 @@ public interface CminusParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitReturn_stmt(CminusParser.Return_stmtContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CminusParser#io_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterIo_stmt(CminusParser.Io_stmtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CminusParser#io_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitIo_stmt(CminusParser.Io_stmtContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CminusParser#input_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterInput_stmt(CminusParser.Input_stmtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CminusParser#input_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitInput_stmt(CminusParser.Input_stmtContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CminusParser#output_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void enterOutput_stmt(CminusParser.Output_stmtContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CminusParser#output_stmt}.
+	 * @param ctx the parse tree
+	 */
+	void exitOutput_stmt(CminusParser.Output_stmtContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CminusParser#expression}.
 	 * @param ctx the parse tree

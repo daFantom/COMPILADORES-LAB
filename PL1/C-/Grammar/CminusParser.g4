@@ -103,38 +103,43 @@ simple_expression
     ;
 
 logical_or_expression
-    : logical_and_expression (OR logical_and_expression)*
+    : logical_or_expression OR logical_and_expression
+    | logical_and_expression
     ;
 
 logical_and_expression
-    : relational_expression (AND relational_expression)*
+    : logical_and_expression AND relational_expression
+    | relational_expression
     ;
 
 relational_expression
-    : additive_expression (COMP additive_expression)*
+    : relational_expression COMP additive_expression
+    | additive_expression
     ;
 
 additive_expression
-    : factor_expression ((PLUS | MINUS) factor_expression)*
+    : additive_expression (PLUS | MINUS) factor_expression
+    | factor_expression
     ;
 
 factor_expression
-    : unary_expression ((MUL | DIV | MOD) unary_expression)*
+    : factor_expression (MUL | DIV | MOD) unary_expression
+    | unary_expression
     ;
 
-unary_expression:       PLUS unary_expression
-                    |   MINUS unary_expression
-                    |   NOT unary_expression
-                    |   value
-                    ;
+unary_expression:   PLUS unary_expression
+                |   MINUS unary_expression
+                |   NOT unary_expression
+                |   value
+                ;
 
-value:      OPAREN expression CPAREN
-        |   INT
-        |   BOOL
-        |   CHAR
-        |   var
-        |   call
-        ;
+value:  OPAREN expression CPAREN
+    |   INT
+    |   BOOL
+    |   CHAR
+    |   var
+    |   call
+    ;
 
 /*  LLamadas a función. */
 call: ID OPAREN args CPAREN ;
