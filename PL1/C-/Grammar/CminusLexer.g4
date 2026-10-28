@@ -17,9 +17,11 @@ BOOL: (BOOL_TRUE | BOOL_FALSE) ;
 BOOL_TRUE   : 'true';
 BOOL_FALSE  : 'false';
 
-
 CHAR: SINGLE_QUOTES (LETRA|DIGIT|'\\n') SINGLE_QUOTES;
 INT: DIGIT+;
+
+INPUT:  'input'  ;
+OUTPUT: 'output' ;
 
 ID: LETRA(LETRA|DIGIT)*;
 

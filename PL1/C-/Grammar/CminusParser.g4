@@ -50,7 +50,8 @@ statment: expression_stmt
         | compound_stmt 
         | selection_stmt 
         | iteration_stmt 
-        | return_stmt 
+        | return_stmt
+        | io_stmt
         ;
 
 /*  Instrucción común de expresión.
@@ -77,6 +78,10 @@ while_cond: OPAREN expression CPAREN ;
 /*  Instrucción "return".
 */
 return_stmt: RET expression SC | RET SC ;
+
+io_stmt : INPUT OPAREN CPAREN SC
+        | OUTPUT OPAREN expression CPAREN SC
+        ; 
 
 /*  Expresión que define una asignación, una operación o un valor. */
 expression: var ASSIGN expression | simple_expression ;
