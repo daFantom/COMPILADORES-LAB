@@ -11,9 +11,10 @@ import java.util.ArrayList;
     -  ArrayList<String> fallenCards: Lista de las cartas de Pokémon KO
     de un jugador en concreto. Es decir, de aquellas que ha perdido.
 
-    - ArrayList<String> remainingPrizeCards: lista de las cartas de premio
+    - int remainingPrizeCards: cantidad de cartas de premio
     que le faltaban al jugador correspondiente en caso de que haya terminado
-    la partida por otra condición de triunfo.
+    la partida por otra condición de triunfo. Los nombres de estas cartas no se muestran a
+    priori en los logs, pero el jugador sí que la conoce en la partida y la puede jugar posteriormente.
 
     - ArrayList<String> cardsOnHand: Lista de cartas que el jugador correspondiente
     tenía en mano al finalizar la partida.
@@ -25,9 +26,17 @@ import java.util.ArrayList;
 public class Player {
 
     String name = "";
-    ArrayList<String> fallenCards = new ArrayList<>();
-    ArrayList<String> remainingPrizeCards = new ArrayList<>();
+    ArrayList<String> kOCards = new ArrayList<>();
+    int remainingPrizeCards = 6;
     ArrayList<String> cardsOnHand = new ArrayList<>();
     int totalDamage = 0;
     int turnsWithoutAction = 0;
+    public int unknownCardsInHand = 0;
+    public String activePokemon = null;
+    public java.util.List<String> benchPokemons = new java.util.ArrayList<>();
+    public Player() {
+    // ... lo que ya tuvieras ...
+    this.activePokemon = null;
+    this.benchPokemons = new java.util.ArrayList<>();
+}
 }
