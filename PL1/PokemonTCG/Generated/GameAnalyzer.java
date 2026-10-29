@@ -40,8 +40,8 @@ public class GameAnalyzer {
         
         GameSummary summ = listener.getGameSummary();
 
+        summ.printTurnHistory(); 
         summ.playerStatGenerator();
         summ.showGameStats();
-        summ.printTurnHistory();
     }
 }
