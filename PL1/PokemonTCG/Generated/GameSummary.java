@@ -58,9 +58,17 @@ public class GameSummary {
         playerStatGen(1);
     }
 
-    public void showGameStats() {
+        public void showGameStats() {
         System.out.println("=============== Estadísticas de la partida ===============");
-        System.out.println("Total de turnos: " + turnsAmount[2] + "\n");
+        System.out.println("Total de turnos: " + turnsAmount[2]);
+        
+        // Añadimos la impresión del ganador
+        if (winnerPlayer != -1) {
+            System.out.println("Ganador de la partida: " + players[winnerPlayer].name);
+        } else {
+            System.out.println("Ganador de la partida: (No determinado)");
+        }
+        
         System.out.println("Condición de triunfo: '" + endReason + "'\n");
     }
 
