@@ -556,6 +556,7 @@ CARD
     | 'Basic Fighting Energy'
     | 'Prism Energy'
     | 'Neo Upper Energy'
+    | 'Legacy Energy'
     | 'Energy Coin'
 
 // ---------- CARTAS QUE APARECEN EN LOS LOGS ----------
