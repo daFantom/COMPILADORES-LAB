@@ -1,39 +1,12 @@
 lexer grammar gTCGLexer;
 
-MULLIGAN: 'Mulligan' | 'Mulligans' | 'mulligan' | 'mulligans';
-TURN    : 'Turn' | 'turn' ;
-POKEMON : 'Pokémon' ;
-ADDED   : 'added' ;
-REVEALED : 'revealed';
-AT : 'at';
-LEAST : 'least';
-PUT : 'put';
-COUNTERS : 'counters';
-
 // ============================================================
 // gTCG - POKÉMON TCG LIVE LOG LEXER
 // ============================================================
 
-
 // ============================================================
 // PALABRAS RESERVADAS / ESTRUCTURA DEL LOG
 // ============================================================
-
-SETUP
-    : 'Setup'
-    ;
-
-CHOSE
-    : 'chose'
-    ;
-
-HEADS
-    : 'heads'
-    ;
-
-TAILS
-    : 'tails'
-    ;
 
 FOR
     : 'for'
@@ -43,95 +16,8 @@ THE
     : 'the'
     ;
 
-OPENING
-    : 'opening'
-    ;
-
-COIN
-    : 'coin'
-    ;
-
-FLIP
-    : 'flip'
-    ;
-
-FLIPPED
-    : 'flipped'
-    ;
-
-WON
-    : 'won'
-    ;
-
-TOSS
-    : 'toss'
-    ;
-
-DECIDED
-    : 'decided'
-    ;
-
 TO
     : 'to'
-    ;
-
-GO
-    : 'go'
-    ;
-
-FIRST
-    : 'first'
-    ;
-
-DREW
-    : 'drew'
-    ;
-
-DRAWN
-    : 'drawn'
-    ;
-
-CARDS
-    : 'cards' | 'Cards'
-    ;
-
-CARD_WORD
-    : 'card'
-    ;
-
-ABILITY_WORD
-    : 'Ability'
-    ;
-SUPPORTER_WORD
-    : 'Supporter'
-    ;
-
-ATTACK_WORD
-    : 'Attack'
-    ;
-
-POKEMON_TOOL
-    : 'Pokémon Tool'
-    ;
-
-HAND
-    : 'hand'
-    ;
-
-PLAYED
-    : 'played'
-    ;
-
-ATTACHED
-    : 'attached'
-    ;
-
-EVOLVED
-    : 'evolved'
-    ;
-
-USED
-    : 'used'
     ;
 
 OF
@@ -166,57 +52,6 @@ IS
     : 'is'
     ;
 
-NOW
-    : 'now'
-    ;
-
-BECOME
-    : 'become'
-    ;
-
-LANDED
-    : 'landed'
-    ;
-
-ACTIVE
-    : 'Active'
-    ;
-ACTIVATED
-    : 'activated'
-    ;
-
-SPOT
-    : 'Spot' | 'spot'
-    ;
-
-BENCH
-    : 'Bench'
-    ;
-
-STADIUM
-    : 'Stadium'
-    ;
-
-DAMAGE
-    : 'damage'
-    ;
-
-DISCARDED
-    : 'discarded'
-    ;
-
-DISCARDS
-    : 'discard'
-    ;
-
-SHUFFLED
-    : 'shuffled'
-    ;
-
-DECK
-    : 'deck'
-    ;
-
 INTO
     : 'into'
     ;
@@ -229,28 +64,36 @@ FROM
     : 'from'
     ;
 
-MOVED
-    : 'moved'
+AND
+    : 'and'
     ;
 
-TAKE
-    : 'took'
+THEM
+    : 'them'
     ;
 
-PRIZE
-    : 'Prize'
+A_SOMETHING
+    : 'a' | 'A'
     ;
 
-PRIZE_CARDS
-    : 'Prize cards'
+AT
+    : 'at'
     ;
 
-KNOCKED
-    : 'Knocked'
+YOU
+    : 'You' | 'you'
     ;
 
-OUT
-    : 'Out'
+ALL
+    : 'all' | 'All'
+    ;
+
+LEAST
+    : 'least'
+    ;
+
+CHOSE
+    : 'chose'
     ;
 
 SWITCHED
@@ -265,48 +108,115 @@ ENDED
     : 'ended'
     ;
 
-OPPONENT
-    : 'Opponent'
+FLIPPED
+    : 'flipped'
     ;
 
-CONCEDED
-    : 'conceded'
+DECIDED
+    : 'decided'
     ;
 
-WINS
-    : 'wins'
+PLAYED
+    : 'played'
     ;
 
-ALL
-    : 'all' | 'All'
+ATTACHED
+    : 'attached'
     ;
 
-TAKEN
-    : 'taken'
+EVOLVED
+    : 'evolved'
     ;
 
-A_SOMETHING
-    : 'a' | 'A'
+USED
+    : 'used'
     ;
 
-AND
-    : 'and'
+ACTIVATED
+    : 'activated'
     ;
 
-THEM
-    : 'them'
+DISCARDED
+    : 'discarded'
     ;
 
-ENERGY
-    : 'Energy'
+DISCARDS
+    : 'discard'
+    ;
+
+SHUFFLED
+    : 'shuffled'
     ;
 
 SELECTED
     : 'selected'
     ;
 
-YOU
-    : 'You' | 'you'
+MOVED
+    : 'moved'
+    ;
+
+LANDED
+    : 'landed'
+    ;
+
+TAKE
+    : 'took'
+    ;
+
+BECOME
+    : 'become'
+    ;
+
+CONCEDED
+    : 'conceded'
+    ;
+
+ADDED
+    : 'added'
+    ;
+
+REVEALED 
+    : 'revealed'
+    ;
+
+WON
+    : 'won'
+    ;
+
+WINS
+    : 'wins'
+    ;
+
+TAKEN
+    : 'taken'
+    ;
+
+GO
+    : 'go'
+    ;
+
+OPENING
+    : 'opening'
+    ;
+
+DREW
+    : 'drew'
+    ;
+
+DRAWN
+    : 'drawn'
+    ;
+
+PUT
+    : 'put'
+    ;
+COUNTERS 
+    : 'counters'
+    ;
+
+NOW
+    : 'now'
     ;
 
 MORE_WORD
@@ -317,8 +227,119 @@ BECAUSE
     : 'because'
     ;
 
+KNOCKED
+    : 'Knocked'
+    ;
+
+OUT
+    : 'Out'
+    ;
+
+FIRST
+    : 'first'
+    ;
+
+SETUP
+    : 'Setup'
+    ;
+
+COIN
+    : 'coin'
+    ;
+
+TOSS
+    : 'toss'
+    ;
+
+FLIP
+    : 'flip'
+    ;
+
+HEADS
+    : 'heads'
+    ;
+
+TAILS
+    : 'tails'
+    ;
+
+CARDS
+    : 'cards' | 'Cards'
+    ;
+
+CARD_WORD
+    : 'card'
+    ;
+
+ABILITY_WORD
+    : 'Ability'
+    ;
+SUPPORTER_WORD
+    : 'Supporter'
+    ;
+
+ATTACK_WORD
+    : 'Attack'
+    ;
+
 WEAKNESS
     : 'Weakness'
+    ;
+
+ENERGY
+    : 'Energy'
+    ;
+
+POKEMON_TOOL
+    : 'Pokémon Tool'
+    ;
+
+OPPONENT
+    : 'Opponent'
+    ;
+
+TURN
+    : 'Turn' | 'turn' 
+    ;
+
+POKEMON
+    : 'Pokémon' 
+    ;
+
+SPOT
+    : 'Spot' | 'spot'
+    ;
+
+BENCH
+    : 'Bench'
+    ;
+
+STADIUM
+    : 'Stadium'
+    ;
+
+ACTIVE
+    : 'Active'
+    ;
+
+PRIZE
+    : 'Prize'
+    ;
+
+PRIZE_CARDS
+    : 'Prize cards'
+    ;
+
+HAND
+    : 'hand'
+    ;
+
+DAMAGE
+    : 'damage'
+    ;
+
+DECK
+    : 'deck'
     ;
 
 // ============================================================
@@ -339,6 +360,16 @@ TOTAL_DAMAGE
 
 ITEM
     : 'Item'
+    ;
+
+MULLIGAN: 'Mulligan' | 'Mulligans' | 'mulligan' | 'mulligans';
+
+NO_ACTION
+    : 'didn' ('\'' | '’') 't take an action in time'
+    ;
+
+NO_BENCHED
+    : 'with no Benched Pokémon'
     ;
 
 POSSESSIVE
@@ -718,18 +749,9 @@ NUMBER
 // por eso NO son palabras reservadas.
 // ============================================================
 
-NO_ACTION
-    : 'didn' ('\'' | '’') 't take an action in time'
-    ;
-
-NO_BENCHED
-    : 'with no Benched Pokémon'
-    ;
-
 PLAYER
     : [a-zA-Z0-9_]+
-     
-    
+
     ;
 
 
@@ -768,7 +790,6 @@ BULLET
 HYPHEN
     : '-'
     ;
-
 
 // ============================================================
 // SALTO DE LÍNEA

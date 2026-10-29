@@ -1,4 +1,4 @@
-// Generated from gTCGParser.g4 by ANTLR 4.13.1
+// Generated from gTCGParser.g4 by ANTLR 4.13.2
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -436,4 +436,4 @@ public interface gTCGParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCardList(gTCGParser.CardListContext ctx);
-}
+}
