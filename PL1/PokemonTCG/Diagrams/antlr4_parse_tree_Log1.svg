@@ -1,0 +1,3310 @@
+<svg width="20299.4" height="1030.7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><line x1="7257.5" y1="7.5" x2="1268.25" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="79.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="112.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="165.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="71.5" x2="165.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="25.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="25.5" y1="135.5" x2="25.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="71.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="106.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="134.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="159.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="197.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="237.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="265.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="284.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="165.25" y1="103.5" x2="305.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="430.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="430.75" y1="71.5" x2="430.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="430.75" y1="103.5" x2="343.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="343.5" y1="135.5" x2="343.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="430.75" y1="103.5" x2="385.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="430.75" y1="103.5" x2="414.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="430.75" y1="103.5" x2="443.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="430.75" y1="103.5" x2="474.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="430.75" y1="103.5" x2="497.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="430.75" y1="103.5" x2="518.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="643.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="643.75" y1="71.5" x2="643.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="643.75" y1="103.5" x2="556.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="556.5" y1="135.5" x2="556.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="643.75" y1="103.5" x2="606.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="643.75" y1="103.5" x2="640.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="643.75" y1="103.5" x2="662.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="643.75" y1="103.5" x2="688.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="643.75" y1="103.5" x2="710.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="643.75" y1="103.5" x2="731.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="936.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="71.5" x2="936.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="769.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="769.5" y1="135.5" x2="769.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="813.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="840.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="868.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="900.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="925.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="963.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="1005.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="1029.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="1050.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="936.75" y1="103.5" x2="1104.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1104.0" y1="135.5" x2="1037.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1104.0" y1="135.5" x2="1053.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1104.0" y1="135.5" x2="1083.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1104.0" y1="135.5" x2="1124.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1104.0" y1="135.5" x2="1150.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1104.0" y1="135.5" x2="1171.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="1394.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="71.5" x2="1394.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1227.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1227.5" y1="135.5" x2="1227.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1271.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1298.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1326.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1358.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1383.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1421.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1463.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1487.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1508.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1394.75" y1="103.5" x2="1562.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1562.0" y1="135.5" x2="1473.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1562.0" y1="135.5" x2="1489.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1562.0" y1="135.5" x2="1519.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1562.0" y1="135.5" x2="1560.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1562.0" y1="135.5" x2="1587.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1562.0" y1="135.5" x2="1607.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1562.0" y1="135.5" x2="1650.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1249.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1280.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1310.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1371.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1432.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1468.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1505.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1589.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1673.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1743.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1813.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1859.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1905.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="1975.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1650.5" y1="167.5" x2="2051.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="1838.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="71.5" x2="1838.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="103.5" x2="1709.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1709.0" y1="135.5" x2="1709.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="103.5" x2="1755.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="103.5" x2="1798.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="103.5" x2="1829.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="103.5" x2="1852.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="103.5" x2="1886.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="103.5" x2="1923.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="103.5" x2="1947.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1838.25" y1="103.5" x2="1967.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="2143.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2143.25" y1="71.5" x2="2143.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2143.25" y1="103.5" x2="2006.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2006.0" y1="135.5" x2="2006.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2143.25" y1="103.5" x2="2052.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2143.25" y1="103.5" x2="2119.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2143.25" y1="103.5" x2="2175.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2143.25" y1="103.5" x2="2198.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2143.25" y1="103.5" x2="2232.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2143.25" y1="103.5" x2="2260.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2143.25" y1="103.5" x2="2280.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="1268.25" y1="39.5" x2="2456.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="71.5" x2="2456.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="103.5" x2="2319.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2319.0" y1="135.5" x2="2319.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="103.5" x2="2365.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="103.5" x2="2416.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="103.5" x2="2456.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="103.5" x2="2479.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="103.5" x2="2513.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="103.5" x2="2550.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="103.5" x2="2574.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2456.75" y1="103.5" x2="2594.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="2145.375" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="3018.5" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3018.5" y1="39.5" x2="2542.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2542.75" y1="71.5" x2="2542.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3018.5" y1="39.5" x2="2577.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3018.5" y1="39.5" x2="2603.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3018.5" y1="39.5" x2="2633.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3018.5" y1="39.5" x2="2694.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2694.25" y1="71.5" x2="2656.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2656.75" y1="103.5" x2="2656.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2656.75" y1="135.5" x2="2614.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2614.75" y1="167.5" x2="2614.75" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2656.75" y1="135.5" x2="2658.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2656.75" y1="135.5" x2="2698.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2694.25" y1="71.5" x2="2711.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2694.25" y1="71.5" x2="2731.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3018.5" y1="39.5" x2="2872.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2872.75" y1="71.5" x2="2835.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2835.25" y1="103.5" x2="2835.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2835.25" y1="135.5" x2="2745.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2745.75" y1="167.5" x2="2745.75" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2835.25" y1="135.5" x2="2792.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2835.25" y1="135.5" x2="2835.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2835.25" y1="135.5" x2="2867.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2835.25" y1="135.5" x2="2890.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2835.25" y1="135.5" x2="2924.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2872.75" y1="71.5" x2="2889.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2872.75" y1="71.5" x2="2910.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3018.5" y1="39.5" x2="3201.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3201.5" y1="71.5" x2="3164.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="103.5" x2="3164.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="135.5" x2="2970.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="2970.75" y1="167.5" x2="2970.75" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="135.5" x2="3022.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="135.5" x2="3111.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="135.5" x2="3184.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="135.5" x2="3224.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="135.5" x2="3263.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="135.5" x2="3285.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="135.5" x2="3319.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3164.0" y1="135.5" x2="3357.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3201.5" y1="71.5" x2="3218.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3201.5" y1="71.5" x2="3239.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3018.5" y1="39.5" x2="3494.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3494.25" y1="71.5" x2="3455.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3455.25" y1="103.5" x2="3455.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3455.25" y1="135.5" x2="3398.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3398.75" y1="167.5" x2="3398.75" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3455.25" y1="135.5" x2="3444.25" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3455.25" y1="135.5" x2="3480.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3455.25" y1="135.5" x2="3511.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3494.25" y1="71.5" x2="3512.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3494.25" y1="71.5" x2="3533.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="3479.5625" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="3940.625" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3940.625" y1="39.5" x2="3575.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3575.75" y1="71.5" x2="3575.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3940.625" y1="39.5" x2="3610.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3940.625" y1="39.5" x2="3636.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3940.625" y1="39.5" x2="3666.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3940.625" y1="39.5" x2="3727.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3727.25" y1="71.5" x2="3689.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3689.75" y1="103.5" x2="3689.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3689.75" y1="135.5" x2="3642.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3642.0" y1="167.5" x2="3642.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3689.75" y1="135.5" x2="3685.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3689.75" y1="135.5" x2="3712.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3689.75" y1="135.5" x2="3737.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3727.25" y1="71.5" x2="3744.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3727.25" y1="71.5" x2="3764.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3940.625" y1="39.5" x2="4009.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4009.0" y1="71.5" x2="3971.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3971.5" y1="103.5" x2="3971.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3971.5" y1="135.5" x2="3779.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3779.0" y1="167.5" x2="3779.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3971.5" y1="135.5" x2="3830.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3971.5" y1="135.5" x2="3920.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3971.5" y1="135.5" x2="3993.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3971.5" y1="135.5" x2="4048.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3971.5" y1="135.5" x2="4105.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3971.5" y1="135.5" x2="4130.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3971.5" y1="135.5" x2="4164.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4009.0" y1="71.5" x2="4026.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4009.0" y1="71.5" x2="4046.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="3940.625" y1="39.5" x2="4305.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4305.5" y1="71.5" x2="4266.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4266.5" y1="103.5" x2="4266.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4266.5" y1="135.5" x2="4210.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4210.0" y1="167.5" x2="4210.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4266.5" y1="135.5" x2="4255.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4266.5" y1="135.5" x2="4292.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4266.5" y1="135.5" x2="4323.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4305.5" y1="71.5" x2="4324.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4305.5" y1="71.5" x2="4344.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="5228.375" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="6516.125" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="4401.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4401.0" y1="71.5" x2="4401.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="4435.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="4461.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="4491.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="4552.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4552.5" y1="71.5" x2="4515.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4515.0" y1="103.5" x2="4515.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4515.0" y1="135.5" x2="4470.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4470.0" y1="167.5" x2="4470.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4515.0" y1="135.5" x2="4513.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4515.0" y1="135.5" x2="4560.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4552.5" y1="71.5" x2="4569.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4552.5" y1="71.5" x2="4590.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="4914.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4914.5" y1="71.5" x2="4658.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4658.5" y1="103.5" x2="4658.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4658.5" y1="135.5" x2="4613.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4613.0" y1="167.5" x2="4613.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4658.5" y1="135.5" x2="4659.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4658.5" y1="135.5" x2="4704.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4914.5" y1="71.5" x2="4726.916666666666" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4914.5" y1="71.5" x2="4761.333333333334" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4914.5" y1="71.5" x2="4834.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4834.25" y1="103.5" x2="4710.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4834.25" y1="103.5" x2="4765.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4765.5" y1="135.5" x2="4765.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4765.5" y1="167.5" x2="4716.25" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4716.25" y1="199.5" x2="4716.25" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4765.5" y1="167.5" x2="4759.75" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4765.5" y1="167.5" x2="4786.75" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4765.5" y1="167.5" x2="4814.75" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4834.25" y1="103.5" x2="4844.833333333334" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4834.25" y1="103.5" x2="4890.166666666666" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4834.25" y1="103.5" x2="4958.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4958.0" y1="135.5" x2="4811.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4958.0" y1="135.5" x2="4861.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4958.0" y1="135.5" x2="4910.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4958.0" y1="135.5" x2="4959.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4958.0" y1="135.5" x2="5008.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4958.0" y1="135.5" x2="5053.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4958.0" y1="135.5" x2="5104.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="4914.5" y1="71.5" x2="5170.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5170.5" y1="103.5" x2="5105.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5170.5" y1="103.5" x2="5160.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5160.5" y1="135.5" x2="5160.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5160.5" y1="167.5" x2="5098.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5098.0" y1="199.5" x2="5098.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5160.5" y1="167.5" x2="5148.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5160.5" y1="167.5" x2="5190.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5160.5" y1="167.5" x2="5223.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5170.5" y1="103.5" x2="5215.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5170.5" y1="103.5" x2="5235.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="5490.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5490.75" y1="71.5" x2="5453.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="103.5" x2="5453.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="135.5" x2="5283.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5283.0" y1="167.5" x2="5283.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="135.5" x2="5332.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="135.5" x2="5386.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="135.5" x2="5426.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="135.5" x2="5478.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="135.5" x2="5529.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="135.5" x2="5552.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="135.5" x2="5586.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5453.25" y1="135.5" x2="5623.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5490.75" y1="71.5" x2="5507.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5490.75" y1="71.5" x2="5528.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="5808.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5808.0" y1="71.5" x2="5770.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5770.5" y1="103.5" x2="5770.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5770.5" y1="135.5" x2="5665.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5665.0" y1="167.5" x2="5665.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5770.5" y1="135.5" x2="5711.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5770.5" y1="135.5" x2="5771.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5770.5" y1="135.5" x2="5819.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5770.5" y1="135.5" x2="5842.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5770.5" y1="135.5" x2="5876.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5808.0" y1="71.5" x2="5825.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5808.0" y1="71.5" x2="5845.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="6165.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6165.25" y1="71.5" x2="6127.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="103.5" x2="6127.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="135.5" x2="5922.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="5922.0" y1="167.5" x2="5922.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="135.5" x2="5973.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="135.5" x2="6063.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="135.5" x2="6136.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="135.5" x2="6188.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="135.5" x2="6239.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="135.5" x2="6262.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="135.5" x2="6296.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6127.75" y1="135.5" x2="6333.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6165.25" y1="71.5" x2="6182.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6165.25" y1="71.5" x2="6202.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="6574.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6574.0" y1="71.5" x2="6423.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6423.0" y1="103.5" x2="6423.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6423.0" y1="135.5" x2="6375.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6375.0" y1="167.5" x2="6375.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6423.0" y1="135.5" x2="6421.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6423.0" y1="135.5" x2="6471.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6574.0" y1="71.5" x2="6477.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6574.0" y1="71.5" x2="6498.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6574.0" y1="71.5" x2="6557.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6557.0" y1="103.5" x2="6492.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6557.0" y1="103.5" x2="6547.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6547.0" y1="135.5" x2="6547.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6547.0" y1="167.5" x2="6499.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6499.5" y1="199.5" x2="6499.5" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6547.0" y1="167.5" x2="6543.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6547.0" y1="167.5" x2="6594.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6557.0" y1="103.5" x2="6601.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6557.0" y1="103.5" x2="6622.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6574.0" y1="71.5" x2="6725.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6725.0" y1="103.5" x2="6660.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6725.0" y1="103.5" x2="6715.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6715.0" y1="135.5" x2="6715.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6715.0" y1="167.5" x2="6652.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6652.5" y1="199.5" x2="6652.5" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6715.0" y1="167.5" x2="6703.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6715.0" y1="167.5" x2="6744.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6715.0" y1="167.5" x2="6777.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6725.0" y1="103.5" x2="6769.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6725.0" y1="103.5" x2="6790.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="6975.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6975.5" y1="71.5" x2="6938.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6938.0" y1="103.5" x2="6938.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6938.0" y1="135.5" x2="6837.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6837.5" y1="167.5" x2="6837.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6938.0" y1="135.5" x2="6884.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6938.0" y1="135.5" x2="6938.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6938.0" y1="135.5" x2="6981.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6938.0" y1="135.5" x2="7004.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6938.0" y1="135.5" x2="7038.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6975.5" y1="71.5" x2="6992.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6975.5" y1="71.5" x2="7013.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="7498.875" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7498.875" y1="71.5" x2="7337.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="103.5" x2="7337.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7084.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7084.5" y1="167.5" x2="7084.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7119.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7170.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7230.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7280.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7324.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7360.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7360.5" y1="167.5" x2="7360.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7395.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7425.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7459.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7519.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7519.0" y1="167.5" x2="7519.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7337.75" y1="135.5" x2="7591.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7498.875" y1="71.5" x2="7455.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7498.875" y1="71.5" x2="7538.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7498.875" y1="71.5" x2="7660.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7660.0" y1="103.5" x2="7599.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7660.0" y1="103.5" x2="7657.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7657.0" y1="135.5" x2="7657.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7657.0" y1="167.5" x2="7614.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7614.0" y1="199.5" x2="7614.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7657.0" y1="167.5" x2="7659.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7657.0" y1="167.5" x2="7700.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7660.0" y1="103.5" x2="7721.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="7880.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7880.5" y1="71.5" x2="7842.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7842.0" y1="103.5" x2="7842.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7842.0" y1="135.5" x2="7749.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7749.0" y1="167.5" x2="7749.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7842.0" y1="135.5" x2="7783.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7842.0" y1="135.5" x2="7814.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7842.0" y1="135.5" x2="7851.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7842.0" y1="135.5" x2="7894.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7842.0" y1="135.5" x2="7935.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7880.5" y1="71.5" x2="7899.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7880.5" y1="71.5" x2="7919.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="8075.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8075.25" y1="71.5" x2="8036.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8036.25" y1="103.5" x2="8036.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8036.25" y1="135.5" x2="7974.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7974.0" y1="167.5" x2="7974.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8036.25" y1="135.5" x2="8014.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8036.25" y1="135.5" x2="8038.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8036.25" y1="135.5" x2="8064.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8036.25" y1="135.5" x2="8098.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8075.25" y1="71.5" x2="8093.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8075.25" y1="71.5" x2="8114.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="8324.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8324.5" y1="71.5" x2="8287.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8287.0" y1="103.5" x2="8287.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8287.0" y1="135.5" x2="8169.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8287.0" y1="135.5" x2="8240.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8287.0" y1="135.5" x2="8277.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8287.0" y1="135.5" x2="8308.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8287.0" y1="135.5" x2="8343.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8343.0" y1="167.5" x2="8343.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8287.0" y1="135.5" x2="8377.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8287.0" y1="135.5" x2="8404.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8324.5" y1="71.5" x2="8341.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8324.5" y1="71.5" x2="8362.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="6516.125" y1="39.5" x2="8631.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8631.25" y1="71.5" x2="8592.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="103.5" x2="8592.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="135.5" x2="8447.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8447.0" y1="167.5" x2="8447.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="135.5" x2="8481.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="135.5" x2="8536.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="135.5" x2="8591.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="135.5" x2="8617.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="135.5" x2="8643.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="135.5" x2="8666.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="135.5" x2="8700.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8592.25" y1="135.5" x2="8737.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8631.25" y1="71.5" x2="8649.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8631.25" y1="71.5" x2="8670.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="8185.9375" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="9855.75" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="8712.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8712.75" y1="71.5" x2="8712.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="8747.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="8773.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="8803.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="8864.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8864.25" y1="71.5" x2="8826.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8826.75" y1="103.5" x2="8826.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8826.75" y1="135.5" x2="8779.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8779.0" y1="167.5" x2="8779.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8826.75" y1="135.5" x2="8822.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8826.75" y1="135.5" x2="8849.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8826.75" y1="135.5" x2="8874.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8864.25" y1="71.5" x2="8881.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8864.25" y1="71.5" x2="8901.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="9112.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9112.25" y1="71.5" x2="8970.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8970.5" y1="103.5" x2="8970.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8970.5" y1="135.5" x2="8916.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8916.0" y1="167.5" x2="8916.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8970.5" y1="135.5" x2="8962.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8970.5" y1="135.5" x2="9025.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9112.25" y1="71.5" x2="9074.833333333334" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9112.25" y1="71.5" x2="9145.166666666666" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9112.25" y1="71.5" x2="9254.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9254.0" y1="103.5" x2="9186.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9254.0" y1="103.5" x2="9244.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="135.5" x2="9244.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="8970.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="8970.0" y1="199.5" x2="8970.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9004.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9047.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9096.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9141.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9185.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9226.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9226.0" y1="199.5" x2="9226.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9260.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9312.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9364.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9398.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9436.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9470.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9244.0" y1="167.5" x2="9518.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9254.0" y1="103.5" x2="9301.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9254.0" y1="103.5" x2="9322.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="9759.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9759.75" y1="71.5" x2="9720.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="103.5" x2="9720.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="135.5" x2="9588.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9588.0" y1="167.5" x2="9588.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="135.5" x2="9622.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="135.5" x2="9665.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="135.5" x2="9707.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="135.5" x2="9733.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="135.5" x2="9759.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="135.5" x2="9782.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="135.5" x2="9816.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9720.75" y1="135.5" x2="9853.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9759.75" y1="71.5" x2="9778.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9759.75" y1="71.5" x2="9798.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="10141.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10141.75" y1="71.5" x2="10104.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="103.5" x2="10104.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="135.5" x2="9895.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9895.0" y1="167.5" x2="9895.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="135.5" x2="9946.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="135.5" x2="10036.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="135.5" x2="10109.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="135.5" x2="10164.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="135.5" x2="10219.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="135.5" x2="10242.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="135.5" x2="10276.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10104.25" y1="135.5" x2="10313.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10141.75" y1="71.5" x2="10158.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10141.75" y1="71.5" x2="10179.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="10477.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10477.0" y1="71.5" x2="10402.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10402.5" y1="103.5" x2="10402.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10402.5" y1="135.5" x2="10355.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10355.0" y1="167.5" x2="10355.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10402.5" y1="135.5" x2="10401.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10402.5" y1="135.5" x2="10450.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10477.0" y1="71.5" x2="10462.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10477.0" y1="71.5" x2="10487.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10477.0" y1="71.5" x2="10551.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10551.5" y1="103.5" x2="10483.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10551.5" y1="103.5" x2="10541.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10541.5" y1="135.5" x2="10541.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10541.5" y1="167.5" x2="10446.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10446.0" y1="199.5" x2="10446.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10541.5" y1="167.5" x2="10480.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10541.5" y1="167.5" x2="10523.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10541.5" y1="167.5" x2="10565.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10541.5" y1="167.5" x2="10591.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10541.5" y1="167.5" x2="10637.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10551.5" y1="103.5" x2="10599.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10551.5" y1="103.5" x2="10619.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="9855.75" y1="39.5" x2="10998.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10998.75" y1="71.5" x2="10961.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="103.5" x2="10961.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="10695.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10695.0" y1="167.5" x2="10695.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="10729.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="10784.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="10847.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="10895.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="10936.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="10973.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10973.0" y1="167.5" x2="10973.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="11007.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="11050.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="11095.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="11155.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11155.5" y1="167.5" x2="11155.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10961.25" y1="135.5" x2="11227.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10998.75" y1="71.5" x2="11015.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="10998.75" y1="71.5" x2="11036.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="10982.4375" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="12109.125" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12109.125" y1="39.5" x2="11225.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11225.5" y1="71.5" x2="11225.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12109.125" y1="39.5" x2="11260.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12109.125" y1="39.5" x2="11286.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12109.125" y1="39.5" x2="11316.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12109.125" y1="39.5" x2="11377.0" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11377.0" y1="71.5" x2="11339.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11339.5" y1="103.5" x2="11339.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11339.5" y1="135.5" x2="11277.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11277.0" y1="167.5" x2="11277.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11339.5" y1="135.5" x2="11320.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11339.5" y1="135.5" x2="11402.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11377.0" y1="71.5" x2="11394.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11377.0" y1="71.5" x2="11414.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12109.125" y1="39.5" x2="11692.5" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11692.5" y1="71.5" x2="11655.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11655.0" y1="103.5" x2="11655.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11655.0" y1="135.5" x2="11490.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11490.0" y1="167.5" x2="11490.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11655.0" y1="135.5" x2="11541.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11655.0" y1="135.5" x2="11607.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11655.0" y1="135.5" x2="11656.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11655.0" y1="135.5" x2="11708.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11655.0" y1="135.5" x2="11761.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11655.0" y1="135.5" x2="11786.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11655.0" y1="135.5" x2="11820.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11692.5" y1="71.5" x2="11709.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11692.5" y1="71.5" x2="11730.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12109.125" y1="39.5" x2="12308.625" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12308.625" y1="71.5" x2="11969.5" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11969.5" y1="103.5" x2="11969.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11969.5" y1="135.5" x2="11866.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11866.0" y1="167.5" x2="11866.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11969.5" y1="135.5" x2="11900.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11969.5" y1="135.5" x2="11948.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11969.5" y1="135.5" x2="12003.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11969.5" y1="135.5" x2="12073.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12308.625" y1="71.5" x2="12062.166666666668" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12308.625" y1="71.5" x2="12120.833333333332" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12308.625" y1="71.5" x2="12218.0" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12218.0" y1="103.5" x2="12150.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12218.0" y1="103.5" x2="12208.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="135.5" x2="12208.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="11934.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="11934.0" y1="199.5" x2="11934.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="11968.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12020.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12078.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12123.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12167.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12208.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="199.5" x2="12208.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12242.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12285.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12328.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12362.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12400.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12434.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12208.0" y1="167.5" x2="12482.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12218.0" y1="103.5" x2="12265.5" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12218.0" y1="103.5" x2="12286.0" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12308.625" y1="71.5" x2="12647.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12647.75" y1="103.5" x2="12579.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12647.75" y1="103.5" x2="12637.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12637.75" y1="135.5" x2="12637.75" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12637.75" y1="167.5" x2="12534.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12534.0" y1="199.5" x2="12534.0" y2="224.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12637.75" y1="167.5" x2="12568.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12637.75" y1="167.5" x2="12620.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12637.75" y1="167.5" x2="12671.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12637.75" y1="167.5" x2="12697.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12637.75" y1="167.5" x2="12741.5" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12647.75" y1="103.5" x2="12695.25" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12647.75" y1="103.5" x2="12715.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12109.125" y1="39.5" x2="12992.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12992.75" y1="71.5" x2="12953.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="103.5" x2="12953.75" y2="128.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="135.5" x2="12812.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12812.0" y1="167.5" x2="12812.0" y2="192.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="135.5" x2="12846.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="135.5" x2="12898.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="135.5" x2="12949.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="135.5" x2="12975.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="135.5" x2="13001.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="135.5" x2="13024.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="135.5" x2="13058.0" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12953.75" y1="135.5" x2="13095.5" y2="160.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12992.75" y1="71.5" x2="13011.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="12992.75" y1="71.5" x2="13031.75" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="13166.25" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="13166.25" y1="39.5" x2="13069.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="13166.25" y1="39.5" x2="13127.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="13166.25" y1="39.5" x2="13164.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="13166.25" y1="39.5" x2="13196.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="13196.25" y1="71.5" x2="13196.25" y2="96.0" style="stroke:black; stroke-width:1px;" />
+<line x1="13166.25" y1="39.5" x2="13238.75" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="13166.25" y1="39.5" x2="13263.25" y2="64.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="13211.75" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<line x1="7257.5" y1="7.5" x2="13246.75" y2="32.0" style="stroke:black; stroke-width:1px;" />
+<rect x="4535.5" y="160.0" width="49.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4537" y="169" style="font-family:sans-serif;font-size:10px;">
+Poké·Pad
+</text>
+<rect x="11255.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11257" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="8303.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8305" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="8338.0" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8340" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="4022.5" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4024" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="13137.75" y="32.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13139" y="41" style="font-family:sans-serif;font-size:10px;">
+gameEnd:2
+</text>
+<rect x="13201.75" y="32.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13203" y="41" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="2034.5" y="128.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2036" y="137" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="5121.5" y="160.0" width="78.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5123" y="169" style="font-family:sans-serif;font-size:10px;">
+shuffleAction:1
+</text>
+<rect x="5225.5" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5227" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="402.25" y="96.0" width="57.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="404" y="105" style="font-family:sans-serif;font-size:10px;">
+coinToss:1
+</text>
+<rect x="5882.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5884" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="10383.5" y="160.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10385" y="169" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="12321.5" y="192.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12323" y="201" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="13021.75" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13023" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="2680.25" y="160.0" width="37.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2682" y="169" style="font-family:sans-serif;font-size:10px;">
+Yveltal
+</text>
+<rect x="4498.5" y="160.0" width="30.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4500" y="169" style="font-family:sans-serif;font-size:10px;">
+drew
+</text>
+<rect x="12684.5" y="192.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12686" y="201" style="font-family:sans-serif;font-size:10px;">
+now
+</text>
+<rect x="3523.25" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3525" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="1597.5" y="160.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1599" y="169" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="6192.75" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6194" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="4744.75" y="192.0" width="30.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4746" y="201" style="font-family:sans-serif;font-size:10px;">
+drew
+</text>
+<rect x="10300.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10302" y="169" style="font-family:sans-serif;font-size:10px;">
+Spot
+</text>
+<rect x="9566.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9568" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="5439.5" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5441" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="10951.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10953" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="10060.25" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10062" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:3
+</text>
+<rect x="4481.5" y="64.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4483" y="73" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="9873.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9875" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="8085.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8087" y="169" style="font-family:sans-serif;font-size:10px;">
+card
+</text>
+<rect x="9186.5" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9188" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="6488.0" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6490" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="12458.5" y="192.0" width="47.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12460" y="201" style="font-family:sans-serif;font-size:10px;">
+Pokémon
+</text>
+<rect x="4591.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4593" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="6121.25" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6123" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="5311.5" y="160.0" width="42.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5313" y="169" style="font-family:sans-serif;font-size:10px;">
+evolved
+</text>
+<rect x="6474.0" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6476" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="12772.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12774" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="10213.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10215" y="169" style="font-family:sans-serif;font-size:10px;">
+in
+</text>
+<rect x="10458.5" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10460" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="10474.5" y="192.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10476" y="201" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="12341.5" y="192.0" width="42.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12343" y="201" style="font-family:sans-serif;font-size:10px;">
+become
+</text>
+<rect x="9839.75" y="32.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9841" y="41" style="font-family:sans-serif;font-size:10px;">
+turn:1
+</text>
+<rect x="2417.25" y="96.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2419" y="105" style="font-family:sans-serif;font-size:10px;">
+initialPokemon:1
+</text>
+<rect x="1687.5" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1689" y="137" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="8687.25" y="96.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8689" y="105" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="5218.375" y="32.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5220" y="41" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="12906.75" y="96.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12908" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:12
+</text>
+<rect x="6512.0" y="160.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6514" y="169" style="font-family:sans-serif;font-size:10px;">
+drawAction:3
+</text>
+<rect x="11962.5" y="192.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11964" y="201" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="8545.25" y="96.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8547" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:12
+</text>
+<rect x="8938.5" y="128.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8940" y="137" style="font-family:sans-serif;font-size:10px;">
+playAction:1
+</text>
+<rect x="7316.0" y="160.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7318" y="169" style="font-family:sans-serif;font-size:10px;">
+on
+</text>
+<rect x="3377.25" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3379" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="1809.5" y="192.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1811" y="201" style="font-family:sans-serif;font-size:10px;">
+,
+</text>
+<rect x="5736.5" y="160.0" width="69.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5738" y="169" style="font-family:sans-serif;font-size:10px;">
+Pecharunt·ex
+</text>
+<rect x="8757.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8759" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="12169.5" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12171" y="169" style="font-family:sans-serif;font-size:10px;">
+switchAction:1
+</text>
+<rect x="3450.25" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3452" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="4684.5" y="160.0" width="39.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4686" y="169" style="font-family:sans-serif;font-size:10px;">
+Cyrano
+</text>
+<rect x="8724.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8726" y="169" style="font-family:sans-serif;font-size:10px;">
+Spot
+</text>
+<rect x="11111.5" y="160.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11113" y="169" style="font-family:sans-serif;font-size:10px;">
+damageAmount:1
+</text>
+<rect x="4448.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4450" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="1901.5" y="192.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1903" y="201" style="font-family:sans-serif;font-size:10px;">
+,
+</text>
+<rect x="6995.0" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6997" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="8260.5" y="160.0" width="34.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8262" y="169" style="font-family:sans-serif;font-size:10px;">
+added
+</text>
+<rect x="3344.25" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3346" y="169" style="font-family:sans-serif;font-size:10px;">
+Spot
+</text>
+<rect x="12058.666666666668" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12060" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="4480.0" y="128.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4482" y="137" style="font-family:sans-serif;font-size:10px;">
+drawAction:3
+</text>
+<rect x="5419.5" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5421" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="517.0" y="160.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="519" y="169" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="3229.0" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3231" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="6129.5" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6131" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="2041.5" y="192.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2043" y="201" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="6683.0" y="96.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6685" y="105" style="font-family:sans-serif;font-size:10px;">
+subTurnAction:1
+</text>
+<rect x="11894.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11896" y="169" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="3670.5" y="160.0" width="30.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3672" y="169" style="font-family:sans-serif;font-size:10px;">
+drew
+</text>
+<rect x="7335.0" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7337" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="9635.5" y="160.0" width="59.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9637" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zekrom
+</text>
+<rect x="891.0" y="128.0" width="18.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="893" y="137" style="font-family:sans-serif;font-size:10px;">
+for
+</text>
+<rect x="4694.75" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4696" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="7451.5" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7453" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="8002.25" y="128.0" width="68.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8004" y="137" style="font-family:sans-serif;font-size:10px;">
+prizeAction:1
+</text>
+<rect x="10169.25" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10171" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="1161.0" y="160.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1163" y="169" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="6083.75" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6085" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:3
+</text>
+<rect x="8104.25" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8106" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="3927.5" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3929" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:3
+</text>
+<rect x="7570.0" y="160.0" width="42.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7572" y="169" style="font-family:sans-serif;font-size:10px;">
+damage
+</text>
+<rect x="11649.5" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11651" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="2279.5" y="160.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2281" y="169" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="8321.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8323" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="7592.5" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7594" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="2999.25" y="160.0" width="46.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3001" y="169" style="font-family:sans-serif;font-size:10px;">
+attached
+</text>
+<rect x="2791.25" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2793" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:2
+</text>
+<rect x="4361.5" y="96.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4363" y="105" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="1484.5" y="160.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1486" y="169" style="font-family:sans-serif;font-size:10px;">
+7
+</text>
+<rect x="3604.25" y="64.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3606" y="73" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="10329.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10331" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="12494.5" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12496" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="4311.5" y="160.0" width="23.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4313" y="169" style="font-family:sans-serif;font-size:10px;">
+turn
+</text>
+<rect x="3645.75" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3647" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:1
+</text>
+<rect x="11012.25" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11014" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="10928.5" y="160.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10930" y="169" style="font-family:sans-serif;font-size:10px;">
+on
+</text>
+<rect x="9701.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9703" y="169" style="font-family:sans-serif;font-size:10px;">
+is
+</text>
+<rect x="405.0" y="128.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="407" y="137" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="5726.5" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5728" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:2
+</text>
+<rect x="12255.5" y="192.0" width="59.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12257" y="201" style="font-family:sans-serif;font-size:10px;">
+N's·Zekrom
+</text>
+<rect x="942.0" y="128.0" width="42.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="944" y="137" style="font-family:sans-serif;font-size:10px;">
+opening
+</text>
+<rect x="6515.0" y="96.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6517" y="105" style="font-family:sans-serif;font-size:10px;">
+subTurnAction:1
+</text>
+<rect x="3656.25" y="64.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3658" y="73" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="12065.5" y="192.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12067" y="201" style="font-family:sans-serif;font-size:10px;">
+was
+</text>
+<rect x="6149.5" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6151" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="2537.5" y="128.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2539" y="137" style="font-family:sans-serif;font-size:10px;">
+Spot
+</text>
+<rect x="10258.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10260" y="169" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="4430.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4432" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="798.0" y="128.0" width="30.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="800" y="137" style="font-family:sans-serif;font-size:10px;">
+drew
+</text>
+<rect x="9753.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9755" y="169" style="font-family:sans-serif;font-size:10px;">
+in
+</text>
+<rect x="4448.5" y="64.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4450" y="73" style="font-family:sans-serif;font-size:10px;">
+Turn
+</text>
+<rect x="12576.75" y="160.0" width="122.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12578" y="169" style="font-family:sans-serif;font-size:10px;">
+specialConditionAction:1
+</text>
+<rect x="8238.0" y="128.0" width="98.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8240" y="137" style="font-family:sans-serif;font-size:10px;">
+cardMovedAction:2
+</text>
+<rect x="707.0" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="709" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="9377.5" y="192.0" width="42.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9379" y="201" style="font-family:sans-serif;font-size:10px;">
+become
+</text>
+<rect x="5415.25" y="128.0" width="76.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5417" y="137" style="font-family:sans-serif;font-size:10px;">
+evolveAction:1
+</text>
+<rect x="3754.75" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3756" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="10155.25" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10157" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="13156.75" y="96.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13158" y="105" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="2495.5" y="128.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2497" y="137" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="10669.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10671" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="7909.0" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7911" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="8544.75" y="128.0" width="95.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8546" y="137" style="font-family:sans-serif;font-size:10px;">
+activeSpotAction:1
+</text>
+<rect x="9426.5" y="192.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9428" y="201" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="8227.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8229" y="169" style="font-family:sans-serif;font-size:10px;">
+was
+</text>
+<rect x="4146.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4148" y="169" style="font-family:sans-serif;font-size:10px;">
+Bench
+</text>
+<rect x="2390.5" y="128.0" width="52.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2392" y="137" style="font-family:sans-serif;font-size:10px;">
+N's·Zorua
+</text>
+<rect x="2949.25" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2951" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="3654.75" y="128.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3656" y="137" style="font-family:sans-serif;font-size:10px;">
+drawAction:2
+</text>
+<rect x="9616.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9618" y="169" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="6906.0" y="128.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6908" y="137" style="font-family:sans-serif;font-size:10px;">
+playAction:1
+</text>
+<rect x="3509.25" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3511" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="7610.0" y="128.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7612" y="137" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:17
+</text>
+<rect x="11912.5" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11914" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="1984.5" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1986" y="137" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="6233.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6235" y="169" style="font-family:sans-serif;font-size:10px;">
+in
+</text>
+<rect x="7711.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7713" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="3550.25" y="96.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3552" y="105" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="10406.5" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10408" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="2593.25" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2595" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="1248.25" y="32.0" width="40.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1250" y="41" style="font-family:sans-serif;font-size:10px;">
+setup:1
+</text>
+<rect x="748.0" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="750" y="137" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="11611.0" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11613" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:3
+</text>
+<rect x="4626.5" y="128.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4628" y="137" style="font-family:sans-serif;font-size:10px;">
+playAction:1
+</text>
+<rect x="10924.75" y="128.0" width="73.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10926" y="137" style="font-family:sans-serif;font-size:10px;">
+attackAction:1
+</text>
+<rect x="7723.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7725" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="1823.5" y="192.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1825" y="201" style="font-family:sans-serif;font-size:10px;">
+Binding·Mochi
+</text>
+<rect x="3707.5" y="160.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3709" y="169" style="font-family:sans-serif;font-size:10px;">
+a
+</text>
+<rect x="4721.5" y="128.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4723" y="137" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:1
+</text>
+<rect x="9357.5" y="192.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9359" y="201" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="11669.5" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11671" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="13043.75" y="64.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13045" y="73" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="3757.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3759" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="9205.5" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9207" y="169" style="font-family:sans-serif;font-size:10px;">
+switchAction:1
+</text>
+<rect x="6681.0" y="192.0" width="44.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6683" y="201" style="font-family:sans-serif;font-size:10px;">
+shuffled
+</text>
+<rect x="634.0" y="128.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="636" y="137" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="10595.5" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10597" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="6732.0" y="192.0" width="25.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6734" y="201" style="font-family:sans-serif;font-size:10px;">
+their
+</text>
+<rect x="8890.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8892" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="3616.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3618" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="11333.0" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11335" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="12262.0" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12264" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="12590.75" y="128.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12592" y="137" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:18
+</text>
+<rect x="6598.0" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6600" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="4723.416666666666" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4725" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="7796.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7798" y="169" style="font-family:sans-serif;font-size:10px;">
+Gastly
+</text>
+<rect x="8371.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8373" y="169" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="11913.5" y="160.0" width="69.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11915" y="169" style="font-family:sans-serif;font-size:10px;">
+Pecharunt·ex
+</text>
+<rect x="2469.5" y="128.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2471" y="137" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="5835.5" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5837" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="1065.0" y="160.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1067" y="169" style="font-family:sans-serif;font-size:10px;">
+drawn
+</text>
+<rect x="1525.0" y="128.0" width="74.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1527" y="137" style="font-family:sans-serif;font-size:10px;">
+drawnCards:1
+</text>
+<rect x="2886.25" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2888" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="2900.25" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2902" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="4320.5" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4322" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="5126.5" y="192.0" width="44.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5128" y="201" style="font-family:sans-serif;font-size:10px;">
+shuffled
+</text>
+<rect x="1349.0" y="128.0" width="18.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1351" y="137" style="font-family:sans-serif;font-size:10px;">
+for
+</text>
+<rect x="4036.5" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4038" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="8760.25" y="64.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8762" y="73" style="font-family:sans-serif;font-size:10px;">
+Turn
+</text>
+<rect x="11618.0" y="128.0" width="74.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11620" y="137" style="font-family:sans-serif;font-size:10px;">
+attachAction:1
+</text>
+<rect x="7683.5" y="192.0" width="33.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7685" y="201" style="font-family:sans-serif;font-size:10px;">
+Shred
+</text>
+<rect x="12562.5" y="192.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12564" y="201" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="5409.25" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5411" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:4
+</text>
+<rect x="8793.25" y="64.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8795" y="73" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="6391.0" y="128.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6393" y="137" style="font-family:sans-serif;font-size:10px;">
+playAction:1
+</text>
+<rect x="6178.75" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6180" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="9182.0" y="128.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9184" y="137" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="901.25" y="64.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="903" y="73" style="font-family:sans-serif;font-size:10px;">
+setupAction:4
+</text>
+<rect x="608.25" y="64.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="610" y="73" style="font-family:sans-serif;font-size:10px;">
+setupAction:3
+</text>
+<rect x="7301.25" y="128.0" width="73.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7303" y="137" style="font-family:sans-serif;font-size:10px;">
+attackAction:1
+</text>
+<rect x="7642.5" y="192.0" width="34.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7644" y="201" style="font-family:sans-serif;font-size:10px;">
+chose
+</text>
+<rect x="9273.5" y="192.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9275" y="201" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="5004.5" y="160.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5006" y="169" style="font-family:sans-serif;font-size:10px;">
+,
+</text>
+<rect x="6478.0" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6480" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="2270.5" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2272" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="585.0" y="128.0" width="42.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="587" y="137" style="font-family:sans-serif;font-size:10px;">
+decided
+</text>
+<rect x="6003.5" y="160.0" width="119.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6005" y="169" style="font-family:sans-serif;font-size:10px;">
+Basic·Darkness·Energy
+</text>
+<rect x="6764.0" y="192.0" width="27.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6766" y="201" style="font-family:sans-serif;font-size:10px;">
+deck
+</text>
+<rect x="13174.75" y="64.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13176" y="73" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="5693.5" y="160.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5695" y="169" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="1245.5" y="192.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1247" y="201" style="font-family:sans-serif;font-size:10px;">
+•
+</text>
+<rect x="4792.25" y="96.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4794" y="105" style="font-family:sans-serif;font-size:10px;">
+subTurnAction:1
+</text>
+<rect x="2575.25" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2577" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="5116.5" y="128.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5118" y="137" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:7
+</text>
+<rect x="11306.0" y="64.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11308" y="73" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="8691.25" y="64.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8693" y="73" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="5101.5" y="128.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5103" y="137" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="2347.5" y="128.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2349" y="137" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="5625.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5627" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="7836.5" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7838" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="8390.5" y="160.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8392" y="169" style="font-family:sans-serif;font-size:10px;">
+hand
+</text>
+<rect x="6488.0" y="128.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6490" y="137" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="8820.25" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8822" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="5094.5" y="160.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5096" y="169" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="1356.75" y="96.0" width="76.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1358" y="105" style="font-family:sans-serif;font-size:10px;">
+openingHand:1
+</text>
+<rect x="6090.75" y="128.0" width="74.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6092" y="137" style="font-family:sans-serif;font-size:10px;">
+attachAction:1
+</text>
+<rect x="6631.0" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6633" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="8948.5" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8950" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="4807.5" y="160.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4809" y="169" style="font-family:sans-serif;font-size:10px;">
+•
+</text>
+<rect x="9720.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9722" y="169" style="font-family:sans-serif;font-size:10px;">
+now
+</text>
+<rect x="8604.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8606" y="169" style="font-family:sans-serif;font-size:10px;">
+now
+</text>
+<rect x="4798.75" y="192.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4800" y="201" style="font-family:sans-serif;font-size:10px;">
+cards
+</text>
+<rect x="3257.25" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3259" y="169" style="font-family:sans-serif;font-size:10px;">
+in
+</text>
+<rect x="7063.0" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7065" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="12154.5" y="192.0" width="25.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12156" y="201" style="font-family:sans-serif;font-size:10px;">
+with
+</text>
+<rect x="281.0" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="283" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="991.0" y="128.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="993" y="137" style="font-family:sans-serif;font-size:10px;">
+hand
+</text>
+<rect x="3740.75" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3742" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="10433.0" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10435" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="10609.5" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10611" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="4920.5" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4922" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="3965.0" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3967" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="916.0" y="128.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="918" y="137" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="3359.25" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3361" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="5610.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5612" y="169" style="font-family:sans-serif;font-size:10px;">
+Spot
+</text>
+<rect x="4641.5" y="160.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4643" y="169" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="10509.5" y="96.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10511" y="105" style="font-family:sans-serif;font-size:10px;">
+subTurnAction:1
+</text>
+<rect x="10559.5" y="192.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10561" y="201" style="font-family:sans-serif;font-size:10px;">
+is
+</text>
+<rect x="12110.833333333332" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12112" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="12176.0" y="96.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12178" y="105" style="font-family:sans-serif;font-size:10px;">
+subTurnAction:1
+</text>
+<rect x="11254.0" y="64.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11256" y="73" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="12691.75" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12693" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="9172.5" y="192.0" width="25.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9174" y="201" style="font-family:sans-serif;font-size:10px;">
+with
+</text>
+<rect x="11648.5" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11650" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="8877.75" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8879" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="11826.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11828" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="12093.125" y="32.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12095" y="41" style="font-family:sans-serif;font-size:10px;">
+turn:1
+</text>
+<rect x="7113.0" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7115" y="169" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="4429.5" y="64.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4431" y="73" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="852.0" y="128.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="854" y="137" style="font-family:sans-serif;font-size:10px;">
+cards
+</text>
+<rect x="1484.0" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1486" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="322.0" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="324" y="137" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="6500.125" y="32.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6502" y="41" style="font-family:sans-serif;font-size:10px;">
+turn:1
+</text>
+<rect x="2570.5" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2572" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="5446.75" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5448" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="7619.0" y="160.0" width="76.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7621" y="169" style="font-family:sans-serif;font-size:10px;">
+choiceAction:1
+</text>
+<rect x="8587.25" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8589" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="5821.5" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5823" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="11450.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11452" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="13082.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13084" y="169" style="font-family:sans-serif;font-size:10px;">
+Spot
+</text>
+<rect x="1842.5" y="128.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1844" y="137" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="9772.5" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9774" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="5542.5" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5544" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="12790.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12792" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="5243.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5245" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="7408.0" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7410" y="169" style="font-family:sans-serif;font-size:10px;">
+Gastly
+</text>
+<rect x="8753.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8755" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="12024.5" y="160.0" width="97.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12026" y="169" style="font-family:sans-serif;font-size:10px;">
+Subjugating·Chains
+</text>
+<rect x="2724.25" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2726" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="12995.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12997" y="169" style="font-family:sans-serif;font-size:10px;">
+in
+</text>
+<rect x="677.0" y="128.0" width="23.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="679" y="137" style="font-family:sans-serif;font-size:10px;">
+first
+</text>
+<rect x="2256.5" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2258" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="462.0" y="128.0" width="25.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="464" y="137" style="font-family:sans-serif;font-size:10px;">
+toss
+</text>
+<rect x="9673.25" y="128.0" width="95.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9675" y="137" style="font-family:sans-serif;font-size:10px;">
+activeSpotAction:1
+</text>
+<rect x="10333.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10335" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="1293.0" y="128.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1295" y="137" style="font-family:sans-serif;font-size:10px;">
+7
+</text>
+<rect x="8844.5" y="160.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8846" y="169" style="font-family:sans-serif;font-size:10px;">
+a
+</text>
+<rect x="898.75" y="96.0" width="76.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="900" y="105" style="font-family:sans-serif;font-size:10px;">
+openingHand:1
+</text>
+<rect x="3120.0" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3122" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:3
+</text>
+<rect x="4219.5" y="96.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4221" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:21
+</text>
+<rect x="1374.0" y="128.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1376" y="137" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="5950.5" y="160.0" width="46.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5952" y="169" style="font-family:sans-serif;font-size:10px;">
+attached
+</text>
+<rect x="7511.0" y="192.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7513" y="201" style="font-family:sans-serif;font-size:10px;">
+70
+</text>
+<rect x="8791.75" y="128.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8793" y="137" style="font-family:sans-serif;font-size:10px;">
+drawAction:2
+</text>
+<rect x="9212.0" y="96.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9214" y="105" style="font-family:sans-serif;font-size:10px;">
+subTurnAction:1
+</text>
+<rect x="9452.5" y="192.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9454" y="201" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="7934.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7936" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="1026.0" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1028" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="9976.5" y="160.0" width="119.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9978" y="169" style="font-family:sans-serif;font-size:10px;">
+Basic·Darkness·Energy
+</text>
+<rect x="4573.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4575" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="7450.0" y="160.0" width="18.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7452" y="169" style="font-family:sans-serif;font-size:10px;">
+for
+</text>
+<rect x="744.0" y="160.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="746" y="169" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="2907.25" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2909" y="169" style="font-family:sans-serif;font-size:10px;">
+Bench
+</text>
+<rect x="4508.5" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4510" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="9548.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9550" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="6335.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6337" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="10358.5" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10360" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:2
+</text>
+<rect x="13224.75" y="64.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13226" y="73" style="font-family:sans-serif;font-size:10px;">
+wins
+</text>
+<rect x="256.0" y="128.0" width="18.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="258" y="137" style="font-family:sans-serif;font-size:10px;">
+flip
+</text>
+<rect x="1033.0" y="160.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1035" y="169" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="3178.25" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3180" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="6403.5" y="160.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6405" y="169" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="7795.0" y="96.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7797" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:14
+</text>
+<rect x="12512.5" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12514" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="2590.25" y="64.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2592" y="73" style="font-family:sans-serif;font-size:10px;">
+Turn
+</text>
+<rect x="3724.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3726" y="169" style="font-family:sans-serif;font-size:10px;">
+card
+</text>
+<rect x="3753.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3755" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="1583.5" y="160.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1585" y="169" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="8280.5" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8282" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="6909.0" y="160.0" width="59.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6911" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zekrom
+</text>
+<rect x="8050.5" y="160.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8052" y="169" style="font-family:sans-serif;font-size:10px;">
+Prize
+</text>
+<rect x="4932.0" y="128.0" width="52.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4934" y="137" style="font-family:sans-serif;font-size:10px;">
+cardList:1
+</text>
+<rect x="8585.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8587" y="169" style="font-family:sans-serif;font-size:10px;">
+is
+</text>
+<rect x="11086.5" y="160.0" width="18.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11088" y="169" style="font-family:sans-serif;font-size:10px;">
+for
+</text>
+<rect x="1683.5" y="192.0" width="119.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1685" y="201" style="font-family:sans-serif;font-size:10px;">
+Basic·Darkness·Energy
+</text>
+<rect x="12575.75" y="128.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12577" y="137" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="150.0" y="128.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="152" y="137" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="4580.0" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4582" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="7475.0" y="160.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7477" y="169" style="font-family:sans-serif;font-size:10px;">
+damageAmount:1
+</text>
+<rect x="4730.5" y="160.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4732" y="169" style="font-family:sans-serif;font-size:10px;">
+drawAction:5
+</text>
+<rect x="1822.5" y="128.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1824" y="137" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="535.0" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="537" y="137" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="9017.5" y="192.0" width="59.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9019" y="201" style="font-family:sans-serif;font-size:10px;">
+N's·Zekrom
+</text>
+<rect x="2650.25" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2652" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="9298.0" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9300" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="10833.5" y="160.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10835" y="169" style="font-family:sans-serif;font-size:10px;">
+used
+</text>
+<rect x="8987.5" y="160.0" width="75.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8989" y="169" style="font-family:sans-serif;font-size:10px;">
+Boss's·Orders
+</text>
+<rect x="13007.75" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13009" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="10954.75" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10956" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="3620.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3622" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="2107.75" y="64.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2109" y="73" style="font-family:sans-serif;font-size:10px;">
+setupAction:5
+</text>
+<rect x="11304.5" y="128.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11306" y="137" style="font-family:sans-serif;font-size:10px;">
+drawAction:3
+</text>
+<rect x="12705.75" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12707" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="7618.0" y="96.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7620" y="105" style="font-family:sans-serif;font-size:10px;">
+subTurnAction:1
+</text>
+<rect x="5128.5" y="96.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5130" y="105" style="font-family:sans-serif;font-size:10px;">
+subTurnAction:1
+</text>
+<rect x="1428.5" y="192.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1430" y="201" style="font-family:sans-serif;font-size:10px;">
+,
+</text>
+<rect x="5177.5" y="192.0" width="25.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5179" y="201" style="font-family:sans-serif;font-size:10px;">
+their
+</text>
+<rect x="5568.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5570" y="169" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="1067.0" y="128.0" width="74.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1069" y="137" style="font-family:sans-serif;font-size:10px;">
+drawnCards:1
+</text>
+<rect x="2706.25" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2708" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="5900.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5902" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="1915.5" y="192.0" width="119.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1917" y="201" style="font-family:sans-serif;font-size:10px;">
+Basic·Darkness·Energy
+</text>
+<rect x="6612.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6614" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="3554.25" y="64.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3556" y="73" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="4870.5" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4872" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="4822.5" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4824" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="2861.25" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2863" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="6975.0" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6977" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="7021.0" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7023" y="169" style="font-family:sans-serif;font-size:10px;">
+Bench
+</text>
+<rect x="7777.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7779" y="169" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="7045.0" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7047" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="8637.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8639" y="169" style="font-family:sans-serif;font-size:10px;">
+in
+</text>
+<rect x="9116.5" y="192.0" width="49.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9118" y="201" style="font-family:sans-serif;font-size:10px;">
+switched
+</text>
+<rect x="4614.5" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4616" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:2
+</text>
+<rect x="2931.25" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2933" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="12390.5" y="192.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12392" y="201" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="12962.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12964" y="169" style="font-family:sans-serif;font-size:10px;">
+now
+</text>
+<rect x="6530.0" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6532" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="8475.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8477" y="169" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="10611.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10613" y="201" style="font-family:sans-serif;font-size:10px;">
+Confused
+</text>
+<rect x="129.75" y="64.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="131" y="73" style="font-family:sans-serif;font-size:10px;">
+setupAction:1
+</text>
+<rect x="11981.5" y="192.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11983" y="201" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="5076.5" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5078" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="3807.5" y="160.0" width="46.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3809" y="169" style="font-family:sans-serif;font-size:10px;">
+attached
+</text>
+<rect x="2803.25" y="128.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2805" y="137" style="font-family:sans-serif;font-size:10px;">
+playAction:1
+</text>
+<rect x="11206.5" y="160.0" width="42.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11208" y="169" style="font-family:sans-serif;font-size:10px;">
+damage
+</text>
+<rect x="2077.5" y="128.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2079" y="137" style="font-family:sans-serif;font-size:10px;">
+Mega·Darkrai·ex
+</text>
+<rect x="9197.0" y="128.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9199" y="137" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:13
+</text>
+<rect x="10578.5" y="192.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10580" y="201" style="font-family:sans-serif;font-size:10px;">
+now
+</text>
+<rect x="2612.75" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2614" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:1
+</text>
+<rect x="1957.5" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1959" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="11404.5" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11406" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="11295.5" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11297" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:1
+</text>
+<rect x="13228.75" y="32.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13230" y="41" style="font-family:sans-serif;font-size:10px;">
+&lt;EOF&gt;
+</text>
+<rect x="132.25" y="96.0" width="66.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="134" y="105" style="font-family:sans-serif;font-size:10px;">
+coinChoice:1
+</text>
+<rect x="612.75" y="96.0" width="62.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="614" y="105" style="font-family:sans-serif;font-size:10px;">
+firstPlayer:1
+</text>
+<rect x="1188.0" y="160.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1190" y="169" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="6613.0" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6615" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="3002.5" y="32.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3004" y="41" style="font-family:sans-serif;font-size:10px;">
+turn:1
+</text>
+<rect x="5523.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5525" y="169" style="font-family:sans-serif;font-size:10px;">
+in
+</text>
+<rect x="5643.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5645" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="1980.5" y="160.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1982" y="169" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="9312.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9314" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="1400.0" y="128.0" width="42.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1402" y="137" style="font-family:sans-serif;font-size:10px;">
+opening
+</text>
+<rect x="1868.5" y="128.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1870" y="137" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="4841.333333333334" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4843" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="1501.5" y="160.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1503" y="169" style="font-family:sans-serif;font-size:10px;">
+drawn
+</text>
+<rect x="9923.5" y="160.0" width="46.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9925" y="169" style="font-family:sans-serif;font-size:10px;">
+attached
+</text>
+<rect x="2103.75" y="96.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2105" y="105" style="font-family:sans-serif;font-size:10px;">
+initialPokemon:1
+</text>
+<rect x="4706.5" y="128.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4708" y="137" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="9068.25" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9070" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="3198.25" y="160.0" width="52.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3200" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zorua
+</text>
+<rect x="8782.75" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8784" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:1
+</text>
+<rect x="7595.0" y="128.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7597" y="137" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="11518.5" y="160.0" width="46.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11520" y="169" style="font-family:sans-serif;font-size:10px;">
+attached
+</text>
+<rect x="1206.0" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1208" y="137" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="11204.0" y="64.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11206" y="73" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="2168.5" y="128.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2170" y="137" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="2135.375" y="32.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2137" y="41" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="8944.5" y="160.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8946" y="169" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="8930.5" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8932" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="6320.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6322" y="169" style="font-family:sans-serif;font-size:10px;">
+Spot
+</text>
+<rect x="2881.25" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2883" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="2707.75" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2709" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="2828.75" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2830" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="4781.75" y="192.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4783" y="201" style="font-family:sans-serif;font-size:10px;">
+3
+</text>
+<rect x="9788.75" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9790" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="10933.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10935" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="11925.5" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11927" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:5
+</text>
+<rect x="6379.0" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6381" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:2
+</text>
+<rect x="11776.5" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11778" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="9715.75" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9717" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="12717.5" y="192.0" width="48.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12719" y="201" style="font-family:sans-serif;font-size:10px;">
+Poisoned
+</text>
+<rect x="9494.5" y="192.0" width="47.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9496" y="201" style="font-family:sans-serif;font-size:10px;">
+Pokémon
+</text>
+<rect x="7339.0" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7341" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="8090.25" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8092" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="3408.25" y="96.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3410" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:21
+</text>
+<rect x="1108.0" y="160.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1110" y="169" style="font-family:sans-serif;font-size:10px;">
+cards
+</text>
+<rect x="7952.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7954" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="8682.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8684" y="169" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="8646.25" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8648" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="12098.5" y="192.0" width="49.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12100" y="201" style="font-family:sans-serif;font-size:10px;">
+switched
+</text>
+<rect x="12948.75" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12950" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="1798.75" y="96.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1800" y="105" style="font-family:sans-serif;font-size:10px;">
+initialPokemon:1
+</text>
+<rect x="3924.625" y="32.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3926" y="41" style="font-family:sans-serif;font-size:10px;">
+turn:1
+</text>
+<rect x="6252.5" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6254" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="1515.5" y="192.0" width="147.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1517" y="201" style="font-family:sans-serif;font-size:10px;">
+Ciphermaniac's·Codebreaking
+</text>
+<rect x="721.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="723" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="5261.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5263" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="9083.5" y="192.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9085" y="201" style="font-family:sans-serif;font-size:10px;">
+was
+</text>
+<rect x="1147.0" y="160.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1149" y="169" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="11001.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11003" y="169" style="font-family:sans-serif;font-size:10px;">
+’s
+</text>
+<rect x="2297.5" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2299" y="137" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="2521.25" y="64.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2523" y="73" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="4751.333333333334" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4753" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="1256.0" y="128.0" width="30.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1258" y="137" style="font-family:sans-serif;font-size:10px;">
+drew
+</text>
+<rect x="1737.5" y="128.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1739" y="137" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="2449.5" y="128.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2451" y="137" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="5209.5" y="192.0" width="27.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5211" y="201" style="font-family:sans-serif;font-size:10px;">
+deck
+</text>
+<rect x="7251.0" y="160.0" width="58.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7253" y="169" style="font-family:sans-serif;font-size:10px;">
+Night·Joker
+</text>
+<rect x="6676.0" y="160.0" width="78.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6678" y="169" style="font-family:sans-serif;font-size:10px;">
+shuffleAction:1
+</text>
+<rect x="7989.25" y="96.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7991" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:10
+</text>
+<rect x="8118.5" y="160.0" width="102.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8120" y="169" style="font-family:sans-serif;font-size:10px;">
+Buddy-Buddy·Poffin
+</text>
+<rect x="8656.5" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8658" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="8175.9375" y="32.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8177" y="41" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="8998.5" y="192.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9000" y="201" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="6565.0" y="192.0" width="59.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6567" y="201" style="font-family:sans-serif;font-size:10px;">
+N's·Zekrom
+</text>
+<rect x="7924.5" y="160.0" width="21.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7926" y="169" style="font-family:sans-serif;font-size:10px;">
+Out
+</text>
+<rect x="6353.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6355" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="10067.25" y="128.0" width="74.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10069" y="137" style="font-family:sans-serif;font-size:10px;">
+attachAction:1
+</text>
+<rect x="10477.5" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10479" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="11305.5" y="160.0" width="30.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11307" y="169" style="font-family:sans-serif;font-size:10px;">
+drew
+</text>
+<rect x="12161.0" y="128.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12163" y="137" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:13
+</text>
+<rect x="4334.5" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4336" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="11273.0" y="64.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11275" y="73" style="font-family:sans-serif;font-size:10px;">
+Turn
+</text>
+<rect x="12416.5" y="192.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12418" y="201" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="13259.75" y="64.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13261" y="73" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="63.75" y="64.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="65" y="73" style="font-family:sans-serif;font-size:10px;">
+Setup
+</text>
+<rect x="4676.75" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4678" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="7871.5" y="160.0" width="46.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7873" y="169" style="font-family:sans-serif;font-size:10px;">
+Knocked
+</text>
+<rect x="6671.0" y="128.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6673" y="137" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:7
+</text>
+<rect x="7896.0" y="96.0" width="6.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7898" y="105" style="font-family:sans-serif;font-size:10px;">
+!
+</text>
+<rect x="431.0" y="128.0" width="24.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="433" y="137" style="font-family:sans-serif;font-size:10px;">
+coin
+</text>
+<rect x="8891.75" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8893" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="4880.166666666666" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4882" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="6528.0" y="192.0" width="30.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6530" y="201" style="font-family:sans-serif;font-size:10px;">
+drew
+</text>
+<rect x="295.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="297" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="2421.25" y="64.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2423" y="73" style="font-family:sans-serif;font-size:10px;">
+setupAction:5
+</text>
+<rect x="10232.5" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10234" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="2584.5" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2586" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="1260.5" y="192.0" width="39.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1262" y="201" style="font-family:sans-serif;font-size:10px;">
+Cyrano
+</text>
+<rect x="95.0" y="128.0" width="23.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="97" y="137" style="font-family:sans-serif;font-size:10px;">
+tails
+</text>
+<rect x="7293.75" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7295" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:5
+</text>
+<rect x="2623.25" y="64.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2625" y="73" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="54.0" y="128.0" width="34.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="56" y="137" style="font-family:sans-serif;font-size:10px;">
+chose
+</text>
+<rect x="9254.5" y="192.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9256" y="201" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="8861.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8863" y="169" style="font-family:sans-serif;font-size:10px;">
+card
+</text>
+<rect x="7798.5" y="128.0" width="87.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7800" y="137" style="font-family:sans-serif;font-size:10px;">
+knockoutAction:1
+</text>
+<rect x="8033.5" y="160.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8035" y="169" style="font-family:sans-serif;font-size:10px;">
+a
+</text>
+<rect x="2643.25" y="160.0" width="30.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2645" y="169" style="font-family:sans-serif;font-size:10px;">
+drew
+</text>
+<rect x="7574.5" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7576" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="5211.5" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5213" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="9840.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9842" y="169" style="font-family:sans-serif;font-size:10px;">
+Spot
+</text>
+<rect x="8301.5" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8303" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="8894.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8896" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="12146.0" y="128.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12148" y="137" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="4184.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4186" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="8660.25" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8662" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="2621.75" y="128.0" width="70.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2623" y="137" style="font-family:sans-serif;font-size:10px;">
+drawAction:3
+</text>
+<rect x="3468.25" y="160.0" width="25.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3470" y="169" style="font-family:sans-serif;font-size:10px;">
+their
+</text>
+<rect x="3986.5" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3988" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="7528.25" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7530" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="11753.5" y="160.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11755" y="169" style="font-family:sans-serif;font-size:10px;">
+on
+</text>
+<rect x="3428.75" y="128.0" width="53.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3430" y="137" style="font-family:sans-serif;font-size:10px;">
+endTurn:1
+</text>
+<rect x="125.0" y="128.0" width="18.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="127" y="137" style="font-family:sans-serif;font-size:10px;">
+for
+</text>
+<rect x="1359.25" y="64.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1361" y="73" style="font-family:sans-serif;font-size:10px;">
+setupAction:4
+</text>
+<rect x="1310.0" y="128.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1312" y="137" style="font-family:sans-serif;font-size:10px;">
+cards
+</text>
+<rect x="10493.5" y="192.0" width="59.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10495" y="201" style="font-family:sans-serif;font-size:10px;">
+N's·Zekrom
+</text>
+<rect x="1320.5" y="192.0" width="101.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1322" y="201" style="font-family:sans-serif;font-size:10px;">
+Lillie's·Determination
+</text>
+<rect x="6503.0" y="128.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6505" y="137" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:1
+</text>
+<rect x="11468.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11470" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="11802.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11804" y="169" style="font-family:sans-serif;font-size:10px;">
+Bench
+</text>
+<rect x="0.0" y="160.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2" y="169" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="3302.25" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3304" y="169" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="835.0" y="128.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="837" y="137" style="font-family:sans-serif;font-size:10px;">
+7
+</text>
+<rect x="4238.5" y="160.0" width="34.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4240" y="169" style="font-family:sans-serif;font-size:10px;">
+ended
+</text>
+<rect x="4906.5" y="160.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4908" y="169" style="font-family:sans-serif;font-size:10px;">
+,
+</text>
+<rect x="3500.25" y="160.0" width="23.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3502" y="169" style="font-family:sans-serif;font-size:10px;">
+turn
+</text>
+<rect x="6766.0" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6768" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="494.0" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="496" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="2774.25" y="160.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2776" y="169" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="3276.25" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3278" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="3934.5" y="128.0" width="74.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3936" y="137" style="font-family:sans-serif;font-size:10px;">
+attachAction:1
+</text>
+<rect x="8926.5" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8928" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:2
+</text>
+<rect x="10122.5" y="160.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10124" y="169" style="font-family:sans-serif;font-size:10px;">
+Mega·Darkrai·ex
+</text>
+<rect x="3157.5" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3159" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="12605.75" y="96.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12607" y="105" style="font-family:sans-serif;font-size:10px;">
+subTurnAction:1
+</text>
+<rect x="1449.0" y="128.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1451" y="137" style="font-family:sans-serif;font-size:10px;">
+hand
+</text>
+<rect x="1780.5" y="128.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1782" y="137" style="font-family:sans-serif;font-size:10px;">
+Gastly
+</text>
+<rect x="5832.5" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5834" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="2817.25" y="160.0" width="37.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2819" y="169" style="font-family:sans-serif;font-size:10px;">
+Yveltal
+</text>
+<rect x="10480.5" y="160.0" width="122.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10482" y="169" style="font-family:sans-serif;font-size:10px;">
+specialConditionAction:1
+</text>
+<rect x="1040.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1042" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="11571.5" y="160.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11573" y="169" style="font-family:sans-serif;font-size:10px;">
+Binding·Mochi
+</text>
+<rect x="6989.0" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6991" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="9673.75" y="96.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9675" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:12
+</text>
+<rect x="12943.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12945" y="169" style="font-family:sans-serif;font-size:10px;">
+is
+</text>
+<rect x="7838.5" y="160.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7840" y="169" style="font-family:sans-serif;font-size:10px;">
+was
+</text>
+<rect x="8807.5" y="160.0" width="30.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8809" y="169" style="font-family:sans-serif;font-size:10px;">
+drew
+</text>
+<rect x="10972.4375" y="32.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10974" y="41" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="5858.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5860" y="169" style="font-family:sans-serif;font-size:10px;">
+Bench
+</text>
+<rect x="6798.0" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6800" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="9869.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9871" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="1683.5" y="160.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1685" y="169" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="10102.5" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10104" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="11933.0" y="128.0" width="73.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11935" y="137" style="font-family:sans-serif;font-size:10px;">
+attackAction:1
+</text>
+<rect x="5738.5" y="128.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5740" y="137" style="font-family:sans-serif;font-size:10px;">
+playAction:1
+</text>
+<rect x="6656.0" y="128.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6658" y="137" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="1469.5" y="160.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1471" y="169" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="6894.0" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6896" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:2
+</text>
+<rect x="10426.5" y="160.0" width="47.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10428" y="169" style="font-family:sans-serif;font-size:10px;">
+Dark·Bell
+</text>
+<rect x="12276.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12278" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="6816.0" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6818" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="7216.0" y="160.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7218" y="169" style="font-family:sans-serif;font-size:10px;">
+used
+</text>
+<rect x="7727.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7729" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="12581.5" y="192.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12583" y="201" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="8494.5" y="160.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8496" y="169" style="font-family:sans-serif;font-size:10px;">
+Mega·Darkrai·ex
+</text>
+<rect x="1501.5" y="192.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1503" y="201" style="font-family:sans-serif;font-size:10px;">
+,
+</text>
+<rect x="4279.5" y="160.0" width="25.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4281" y="169" style="font-family:sans-serif;font-size:10px;">
+their
+</text>
+<rect x="4240.0" y="128.0" width="53.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4242" y="137" style="font-family:sans-serif;font-size:10px;">
+endTurn:1
+</text>
+<rect x="5360.5" y="160.0" width="52.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5362" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zorua
+</text>
+<rect x="8243.0" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8245" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:8
+</text>
+<rect x="1442.5" y="192.0" width="52.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1444" y="201" style="font-family:sans-serif;font-size:10px;">
+N's·Zorua
+</text>
+<rect x="12236.5" y="192.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12238" y="201" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="10868.5" y="160.0" width="53.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10870" y="169" style="font-family:sans-serif;font-size:10px;">
+Dusk·Raid
+</text>
+<rect x="9135.166666666666" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9137" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="3860.5" y="160.0" width="119.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3862" y="169" style="font-family:sans-serif;font-size:10px;">
+Basic·Darkness·Energy
+</text>
+<rect x="3052.25" y="160.0" width="119.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3054" y="169" style="font-family:sans-serif;font-size:10px;">
+Basic·Darkness·Energy
+</text>
+<rect x="3683.25" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3685" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="7003.0" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7005" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="9774.75" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9776" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="8002.5" y="160.0" width="24.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8004" y="169" style="font-family:sans-serif;font-size:10px;">
+took
+</text>
+<rect x="12906.25" y="128.0" width="95.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12908" y="137" style="font-family:sans-serif;font-size:10px;">
+activeSpotAction:1
+</text>
+<rect x="1498.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1500" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="4188.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4190" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="6780.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6782" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="225.0" y="128.0" width="24.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="227" y="137" style="font-family:sans-serif;font-size:10px;">
+coin
+</text>
+<rect x="1910.5" y="128.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1912" y="137" style="font-family:sans-serif;font-size:10px;">
+Spot
+</text>
+<rect x="10097.75" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10099" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="10370.5" y="128.0" width="64.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10372" y="137" style="font-family:sans-serif;font-size:10px;">
+playAction:1
+</text>
+<rect x="10742.5" y="160.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10744" y="169" style="font-family:sans-serif;font-size:10px;">
+Mega·Darkrai·ex
+</text>
+<rect x="4.0" y="128.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6" y="137" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="11720.0" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11722" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="654.0" y="128.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="656" y="137" style="font-family:sans-serif;font-size:10px;">
+go
+</text>
+<rect x="3427.25" y="160.0" width="34.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3429" y="169" style="font-family:sans-serif;font-size:10px;">
+ended
+</text>
+<rect x="3215.0" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3217" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="4379.5" y="64.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4381" y="73" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="4097.5" y="160.0" width="16.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4099" y="169" style="font-family:sans-serif;font-size:10px;">
+on
+</text>
+<rect x="9204.5" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9206" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="13014.5" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13016" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="1624.5" y="160.0" width="52.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1626" y="169" style="font-family:sans-serif;font-size:10px;">
+cardList:1
+</text>
+<rect x="5764.0" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5766" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="6278.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6280" y="169" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="7389.0" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7391" y="169" style="font-family:sans-serif;font-size:10px;">
+’s
+</text>
+<rect x="8031.25" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8033" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="372.0" y="128.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="374" y="137" style="font-family:sans-serif;font-size:10px;">
+won
+</text>
+<rect x="9071.333333333334" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9073" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="7454.875" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7456" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="11026.25" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11028" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="1943.5" y="128.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1945" y="137" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="4006.5" y="160.0" width="84.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4008" y="169" style="font-family:sans-serif;font-size:10px;">
+Mega·Darkrai·ex
+</text>
+<rect x="5518.25" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5520" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="3127.0" y="128.0" width="74.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3129" y="137" style="font-family:sans-serif;font-size:10px;">
+attachAction:1
+</text>
+<rect x="1802.75" y="64.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1804" y="73" style="font-family:sans-serif;font-size:10px;">
+setupAction:5
+</text>
+<rect x="5058.5" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5060" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="10494.5" y="128.0" width="94.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10496" y="137" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:18
+</text>
+<rect x="6931.5" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6933" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="11144.5" y="192.0" width="22.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11146" y="201" style="font-family:sans-serif;font-size:10px;">
+110
+</text>
+<rect x="11390.5" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11392" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="7244.0" y="0.0" width="27.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7246" y="9" style="font-family:sans-serif;font-size:10px;">
+log:1
+</text>
+<rect x="10673.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10675" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="395.25" y="64.0" width="71.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="397" y="73" style="font-family:sans-serif;font-size:10px;">
+setupAction:2
+</text>
+<rect x="2214.5" y="128.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2216" y="137" style="font-family:sans-serif;font-size:10px;">
+Bench
+</text>
+<rect x="508.0" y="128.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="510" y="137" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="4120.5" y="160.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4122" y="169" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="8421.5" y="192.0" width="51.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8423" y="201" style="font-family:sans-serif;font-size:10px;">
+Opponent
+</text>
+<rect x="4566.0" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4568" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="13101.75" y="64.0" width="52.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13103" y="73" style="font-family:sans-serif;font-size:10px;">
+conceded
+</text>
+<rect x="6866.0" y="160.0" width="36.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6868" y="169" style="font-family:sans-serif;font-size:10px;">
+played
+</text>
+<rect x="4261.5" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4263" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="12264.625" y="64.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12266" y="73" style="font-family:sans-serif;font-size:10px;">
+mainTurnAction:1
+</text>
+<rect x="6460.0" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6462" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="176.0" y="128.0" width="42.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="178" y="137" style="font-family:sans-serif;font-size:10px;">
+opening
+</text>
+<rect x="11342.5" y="160.0" width="119.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11344" y="169" style="font-family:sans-serif;font-size:10px;">
+Basic·Darkness·Energy
+</text>
+<rect x="11989.5" y="160.0" width="28.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11991" y="169" style="font-family:sans-serif;font-size:10px;">
+used
+</text>
+<rect x="9798.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="9800" y="169" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="8352.0" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8354" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="304.0" y="160.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="306" y="169" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="5812.5" y="160.0" width="13.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5814" y="169" style="font-family:sans-serif;font-size:10px;">
+to
+</text>
+<rect x="7132.0" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="7134" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="11186.0" y="96.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11188" y="105" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="11894.5" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11896" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="3623.25" y="64.0" width="26.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3625" y="73" style="font-family:sans-serif;font-size:10px;">
+Turn
+</text>
+<rect x="8425.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8427" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="2721.75" y="96.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2723" y="105" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="1306.5" y="192.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1308" y="201" style="font-family:sans-serif;font-size:10px;">
+,
+</text>
+<rect x="1048.0" y="160.0" width="10.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1050" y="169" style="font-family:sans-serif;font-size:10px;">
+7
+</text>
+<rect x="13160.75" y="64.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13162" y="73" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="4471.0" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="4473" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:1
+</text>
+<rect x="1669.5" y="192.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1671" y="201" style="font-family:sans-serif;font-size:10px;">
+,
+</text>
+<rect x="5504.25" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5506" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="8741.25" y="64.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="8743" y="73" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="11020.5" y="160.0" width="59.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11022" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zekrom
+</text>
+<rect x="3469.5625" y="32.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="3471" y="41" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="12665.5" y="192.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12667" y="201" style="font-family:sans-serif;font-size:10px;">
+is
+</text>
+<rect x="13040.5" y="160.0" width="35.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="13042" y="169" style="font-family:sans-serif;font-size:10px;">
+Active
+</text>
+<rect x="10479.5" y="128.0" width="8.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10481" y="137" style="font-family:sans-serif;font-size:10px;">
+-
+</text>
+<rect x="5018.5" y="160.0" width="69.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="5020" y="169" style="font-family:sans-serif;font-size:10px;">
+Pecharunt·ex
+</text>
+<rect x="11237.5" y="192.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11239" y="201" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="11844.5" y="160.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11846" y="169" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="10723.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10725" y="169" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="12840.5" y="160.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12842" y="169" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="10424.5" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10426" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="12859.5" y="160.0" width="77.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12861" y="169" style="font-family:sans-serif;font-size:10px;">
+N's·Zoroark·ex
+</text>
+<rect x="2503.25" y="96.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2505" y="105" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="102.75" y="64.0" width="20.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="104" y="73" style="font-family:sans-serif;font-size:10px;">
+\r\n
+</text>
+<rect x="11706.0" y="96.0" width="7.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="11708" y="105" style="font-family:sans-serif;font-size:10px;">
+.
+</text>
+<rect x="12168.5" y="224.0" width="79.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12170" y="233" style="font-family:sans-serif;font-size:10px;">
+Organmaster98
+</text>
+<rect x="2571.25" y="64.0" width="12.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2573" y="73" style="font-family:sans-serif;font-size:10px;">
+'s
+</text>
+<rect x="2188.5" y="128.0" width="19.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="2190" y="137" style="font-family:sans-serif;font-size:10px;">
+the
+</text>
+<rect x="12186.5" y="192.0" width="43.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="12188" y="201" style="font-family:sans-serif;font-size:10px;">
+player:1
+</text>
+<rect x="10917.25" y="96.0" width="88.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="10919" y="105" style="font-family:sans-serif;font-size:10px;">
+turnActionBody:5
+</text>
+<rect x="6446.5" y="160.0" width="49.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="6448" y="169" style="font-family:sans-serif;font-size:10px;">
+Poké·Pad
+</text>
+<rect x="1544.5" y="160.0" width="32.0" height="15.0" style="fill:orange; stroke:rgb(0,0,0);" rx="1"/>
+<text x="1546" y="169" style="font-family:sans-serif;font-size:10px;">
+cards
+</text>
+</svg>
